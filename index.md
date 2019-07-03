@@ -5,6 +5,7 @@ nav_order: 1
 description: "通常のSDカードの代わりに無線LAN機能を搭載したFlashAirを組み込むことで、あらゆる機器がIoTデバイスになります。 
 「FlashAir Developers」は、FlashAir対応アプリ、サービス、デバイス開発をサポートする開発者むけ情報サイトです"
 permalink: /
+nav_exclude: true
 ---
 
 # あらゆる機器をIoTデバイスに
