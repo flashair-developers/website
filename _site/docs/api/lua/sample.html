@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  
+    <title>Luaサンプルプログラム - website</title>
+
+    
+  
+
+  <link rel="shortcut icon" href="http://localhost:4000/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/just-the-docs.css">
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/customstyles.css">
+  
+
+  
+    <script type="text/javascript" src="http://localhost:4000/assets/js/vendor/lunr.min.js"></script>
+  
+  <script type="text/javascript" src="http://localhost:4000/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Luaサンプルプログラム | website</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Luaサンプルプログラム" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/docs/api/lua/sample.html" />
+<meta property="og:url" content="http://localhost:4000/docs/api/lua/sample.html" />
+<meta property="og:site_name" content="website" />
+<script type="application/ld+json">
+{"@type":"WebPage","headline":"Luaサンプルプログラム","url":"http://localhost:4000/docs/api/lua/sample.html","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+
+  <div class="page-wrap">
+    <div class="side-bar">
+      <a href="http://localhost:4000" class="site-title fs-6 lh-tight">website</a>
+      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+      <div class="navigation main-nav js-main-nav">
+        <nav role="navigation" aria-label="Main navigation">
+    <ul class="navigation-list">
+      
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/api/command.cgi.html" class="navigation-list-link">command.cgi</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/api/config.cgi.html" class="navigation-list-link">config.cgi</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/api/thumbnail.cgi.html" class="navigation-list-link">thumbnail.cgi</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/api/upload.cgi.html" class="navigation-list-link">upload.cgi</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/api/config.html" class="navigation-list-link">CONFIG</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/api/utility.html" class="navigation-list-link">ブラウザユーティリティ</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item active">
+              
+              <a href="http://localhost:4000/docs/api/lua.html" class="navigation-list-link">Lua機能</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/api/isdio.html" class="navigation-list-link">iSDIO</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+
+      <li>
+        <br>
+        <a href="./">目次に戻る</a>
+      </li>
+    </ul>
+  </nav>
+      </div>
+      <footer role="contentinfo" class="site-footer">
+        <p class="text-small text-grey-dk-000 mb-0">This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.</p>
+      </footer>
+    </div>
+    <div class="main-content-wrap js-main-content" tabindex="0">
+      <div class="page-header">
+        <div class="main-content">
+          
+          <div class="search js-search">
+            <div class="search-input-wrap">
+              <input type="text" class="js-search-input search-input" tabindex="0" placeholder="Search website" aria-label="Search website" autocomplete="off">
+              <svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z"/><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z"/></g></svg>
+            </div>
+            <div class="js-search-results search-results-wrap"></div>
+          </div>
+          
+          
+        </div>
+      </div>
+      <div class="main-content">
+        
+          
+            <nav class="breadcrumb-nav">
+              <ol class="breadcrumb-nav-list">
+                
+                  <li class="breadcrumb-nav-list-item"><span>APIガイド</span></li>
+                  <li class="breadcrumb-nav-list-item"><span>Lua機能</span></li>
+                
+                <li class="breadcrumb-nav-list-item"><span>Luaサンプルプログラム</span></li>
+              </ol>
+            </nav>
+          
+        
+        <div id="main-content" class="page-content" role="main">
+          <h1 id="luaサンプルプログラム">Luaサンプルプログラム</h1>
+
+<p>FlashAirの /DCIM 以下の最新フォルダーから、Facebookへアップロードするサンプルプログラムです。</p>
+
+<p><a href="https://github.com/FlashAirDevelopers/LuaTutorial/tree/master/lua_tutorial_5" target="_blank" class="btn btn-primary">リポジトリを見る（GitHub）</a></p>
+
+<p>このサイトのサンプルコードは
+<a href="/docs/license">二条項BSDライセンス</a>で提供されています。</p>
+
+<ol>
+  <li><a href="#1-開発者登録">開発者登録</a></li>
+  <li><a href="#2-アプリの登録">アプリ登録</a></li>
+  <li><a href="#3-アクセストークンの取得">アクセストークンの取得</a></li>
+  <li><a href="#4-アップロードの準備">アップロードの準備</a></li>
+  <li><a href="#5-写真のアップロード">写真のアップロード</a></li>
+</ol>
+
+<p>サンプルプログラムをFlashAirの /lua フォルダに保存しておきましょう。 FlashAirのフォルダ・ファイル構成は次のようになります。</p>
+
+<pre>
+/
++-- DCIM/
+|   +-- 100__TSB/
+|   +-- 101_FILE/
+|       +-- JPEGファイル
++-- lua/
+|   +-- facebook.html
+|   +-- facebook.cfg
+|   +-- fb_auto_up.lua
+|   +-- fb_get_token.lua
+|   +-- fb_token_handler.lua
+|   +-- lastupload.cfg
++-- SD_WLAN/
+    +-- CONFIG
+</pre>
+
+<ul>
+  <li>DCIM/101_FILEフォルダーは例です。お使いのカメラによってフォルダー名は異なります。</li>
+  <li>Luaスクリプトは lua フォルダーに保存します。別のフォルダーに保存する場合は、fb_auto_up.lua, SD_WLAN/CONFIGの設定を実際の構成に合わせてください。</li>
+</ul>
+
+<h3 id="注意事項">注意事項</h3>
+
+<ul>
+  <li>本プログラムは、実用を想定したものではありません。</li>
+  <li>カメラに挿入したカードでの実行、カードのデータの削除、カードの空き容量不足、 などの場合に正しく動かない可能性があります。</li>
+  <li>Facebookの仕様変更があった場合、動作しない可能性があります。</li>
+</ul>
+
+<hr />
+<h2 id="1-開発者登録">1. 開発者登録</h2>
+
+<p>Facebookにアクセスするアプリを作成するには、開発者登録が必要です。 開発者登録済の場合は、次のステップに進んでください。</p>
+
+<p>この作業は、インターネットに接続されたPC上で行います。</p>
+
+<ol>
+  <li><a href="https://developers.facebook.com/" target="_blank">Facebook Developers</a>を開きます。</li>
+  <li>画面右上の”ログイン”をクリックし、Facebookアカウントにログインします。</li>
+  <li>ログイン後、画面右上の”登録”をクリックし、開発者登録します。
+    <ul>
+      <li><a href="https://developers.facebook.com/docs/apps" target="_blank">アプリ開発</a></li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+<h2 id="2-アプリの登録">2. アプリの登録</h2>
+
+<p>Facebookにアクセスするアプリの登録とアプリ情報の取得を行います。</p>
+
+<p>この作業は、インターネットに接続されたPC上で行います。</p>
+
+<ol>
+  <li>Facebook Developersの<a href="https://developers.facebook.com/apps" target="_blank">アプリ管理ページ</a>を開きます。</li>
+  <li>
+    <p>画面上の “新しいアプリを作成”をクリックします。
+  <img src="/assets/images/lua_sample_02_03.png" alt="lua_sample_02_03" class="d-block img-thumbnail" /></p>
+  </li>
+  <li>“表示名”を入力し、”アプリIDを作成してください”をクリックします。
+  <img src="/assets/images/lua_sample_02_04.png" alt="lua_sample_02_04" class="d-block img-thumbnail" />
+    <ul>
+      <li>例: “Lua Upload”</li>
+    </ul>
+  </li>
+  <li>
+    <p>登録が完了すると、下記のような画面が表示されます。左ナビゲーションの”ダッシュボード”をクリックします。
+  <img src="/assets/images/lua_sample_02_05.png" alt="lua_sample_02_05" class="d-block img-thumbnail" /></p>
+  </li>
+  <li>
+    <p>左ナビゲーションの”設定”をクリックします。
+  <img src="/assets/images/lua_sample_02_06.png" alt="lua_sample_02_06" class="d-block img-thumbnail" /></p>
+  </li>
+  <li>“カテゴリ”を入力し、”＋プラットフォームを追加”をクリックします。
+  <img src="/assets/images/lua_sample_02_07.png" alt="lua_sample_02_07" class="d-block img-thumbnail" />
+    <ul>
+      <li>例: “写真”</li>
+    </ul>
+  </li>
+  <li>
+    <p>“ウェブサイト”をクリックします。
+  <img src="/assets/images/lua_sample_02_08.png" alt="lua_sample_02_08" class="d-block img-thumbnail" /></p>
+  </li>
+  <li>
+    <p>ウェブサイトに関する入力欄が追加されます。 サイトURLに http://flashair.local/lua/facebook.html と入力し、”変更を保存”をクリックします。
+  <img src="/assets/images/lua_sample_02_09.png" alt="lua_sample_02_09" class="d-block" /></p>
+  </li>
+  <li>アプリの情報を控えます。これらの情報は取扱に注意し、他人と共有しないようにしてください。
+  <img src="/assets/images/lua_sample_02_10.png" alt="lua_sample_02_10" class="d-block img-thumbnail" />
+    <ul>
+      <li>アプリID</li>
+      <li>app secret</li>
+    </ul>
+    <ul>
+      <li>“表示”をクリックすると、アプリのシークレットキーが表示されます。</li>
+    </ul>
+  </li>
+  <li>
+    <p>メニューの”ツール＆サポート”をクリックします。
+  <img src="/assets/images/lua_sample_02_11.png" alt="lua_sample_02_11" class="d-block img-thumbnail" /></p>
+  </li>
+  <li>
+    <p>ツールの”アクセストークンツール”をクリックします。
+  <img src="/assets/images/lua_sample_02_12.png" alt="lua_sample_02_12" class="d-block img-thumbnail" /></p>
+  </li>
+  <li>“App Token”を控えます。
+  <img src="/assets/images/lua_sample_02_13.png" alt="lua_sample_02_13" class="d-block img-thumbnail" /></li>
+</ol>
+
+<hr />
+<h2 id="3-アクセストークンの取得">3. アクセストークンの取得</h2>
+
+<ol>
+  <li>FlashAirをカードリーダーに挿入します。</li>
+  <li>
+    <p>FlashAirのSD_WLANフォルダに保存されている、CONFIGファイルを編集します。</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>キー</th>
+          <th>値</th>
+          <th>意味</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>APPMODE</td>
+          <td><code class="highlighter-rouge">6</code></td>
+          <td>インターネット同時接続モードで起動</td>
+        </tr>
+        <tr>
+          <td>APPSSID</td>
+          <td><code class="highlighter-rouge">例) lua_test</code></td>
+          <td>FlashAirのSSID</td>
+        </tr>
+        <tr>
+          <td>APPNETWORKKEY</td>
+          <td><code class="highlighter-rouge">例) 12345678</code></td>
+          <td>FlashAirのパスワード</td>
+        </tr>
+        <tr>
+          <td>BRGSSID</td>
+          <td><code class="highlighter-rouge">例) my_home_wlan</code></td>
+          <td>家庭の無線LAN APのSSID</td>
+        </tr>
+        <tr>
+          <td>BRGNETWORKKEY</td>
+          <td><code class="highlighter-rouge">例) password12345678</code></td>
+          <td>家庭の無線LAN APのパスワード</td>
+        </tr>
+        <tr>
+          <td>APPAUTOTIME</td>
+          <td><code class="highlighter-rouge">0</code></td>
+          <td>FlashAirの無線LAN機能自動停止無効</td>
+        </tr>
+        <tr>
+          <td>WEBDAV</td>
+          <td><code class="highlighter-rouge">2</code></td>
+          <td>WebDAV機能有効</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <p>facebook.htmlを編集し、変数 appID をApp IDの値にします。</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> var appId = "1369419999999999";
+</code></pre></div>    </div>
+  </li>
+  <li>FlashAirをカードリーダーから一旦取り出し、再び挿入します。</li>
+  <li>PCの無線LANを、FlashAirに接続します。 SSIDとパスワードはCONFIGファイルに設定した値です。</li>
+  <li>ウェブブラウザから、http://flashair.local/lua/facebook.html にアクセスします。</li>
+  <li>
+    <p>OAuthの認証画面が出るので、”（名前）としてログイン”をクリックします。
+  <img src="/assets/images/lua_sample_02_14.png" alt="lua_sample_02_14" class="d-block img-thumbnail" /></p>
+  </li>
+  <li>
+    <p>“投稿をシェアしたい相手は？”の選択肢を”自分のみ”に変更し、”OK”をクリックします。
+  <img src="/assets/images/lua_sample_02_15.png" alt="lua_sample_02_15" class="d-block img-thumbnail" /></p>
+  </li>
+  <li>PUT Success: OK と表示されれば成功です。
+  <img src="/assets/images/lua_sample_02_16.png" alt="lua_sample_02_16" class="d-block img-thumbnail" />
+    <ul>
+      <li>FlashAirのluaフォルダに”fb_access_token”というファイルが作成されます。</li>
+      <li>このファイルは、FlashAirをカードリーダーから抜き差ししてから確認して下さい。</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+<h2 id="4-アップロードの準備">4. アップロードの準備</h2>
+
+<ol>
+  <li>FlashAirをカードリーダーに挿入します。</li>
+  <li>
+    <p>facebook.cfg ファイルを編集し、控えた、App Token, App Secret, App IDを設定します。</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> app_access_token=1369419999999999|x2bu1ED9XxXxXxXxXxXxXxXxXxX
+ app_secret=e820256be7XxXxXxXxXxXxXxXxXxXxXx
+ app_id=1369419999999999
+ token_fullpath=/lua/fb_access_token
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>アクセストークンを、約60日間有効なアクセストークンに更新します。 現在のトークンは約1時間で無効になります。http://flashair.local/lua/fb_get_token.luaにアクセスします。 user access token:に続けて以下の様な文字列が表示されれば成功です。
+  <img src="/assets/images/lua_sample_02_17.png" alt="lua_sample_02_17" class="d-block img-thumbnail" /></p>
+  </li>
+  <li>
+    <p>lastupload.cfg ファイルを編集し、下記のような内容に変更してください。無ければ新規に作成してください。</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> lastupload=1000001
+</code></pre></div>    </div>
+
+    <ul>
+      <li>100__TSBフォルダーのFA000001.JPGファイルはアップロード済みという意味になります。</li>
+    </ul>
+  </li>
+  <li>
+    <p>FlashAirのSD_WLANフォルダに保存されている、CONFIGファイルを編集します。</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>キー</th>
+          <th>値</th>
+          <th>意味</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>APPMODE</td>
+          <td><code class="highlighter-rouge">5</code></td>
+          <td>ステーションモードで起動</td>
+        </tr>
+        <tr>
+          <td>APPSSID</td>
+          <td><code class="highlighter-rouge">例) my_home_wlan</code></td>
+          <td>家庭の無線LAN APのSSID</td>
+        </tr>
+        <tr>
+          <td>APPNETWORKKEY</td>
+          <td><code class="highlighter-rouge">例) password12345678</code></td>
+          <td>家庭の無線LAN APのパスワード</td>
+        </tr>
+        <tr>
+          <td>LUA_RUN_SCRIPT</td>
+          <td><code class="highlighter-rouge">例) /lua/fb_auto_up.lua</code></td>
+          <td>電源投入後に実行したいスクリプトのフルパス</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>FlashAirをカードリーダーから抜きます。</li>
+</ol>
+
+<hr />
+<h2 id="5-写真のアップロード">5. 写真のアップロード</h2>
+
+<ol>
+  <li>FlashAirをカードリーダーに挿入します。</li>
+  <li>自動的に、アクセスポイントへの接続と、Facebookへのアップロードが開始されます。
+    <ul>
+      <li>画像ファイルの更新日を元にアルバムを作成してアップロードします。</li>
+      <li>アルバム名の書式は“YYYY-M-D”です。</li>
+      <li>DCIM以下の古いフォルダーから順にアップロードします。</li>
+      <li>フォルダーの削除並びに、名前の変更をした場合、正しく動作しません。</li>
+      <li>フォルダー内の古い画像ファイルから順にアップロードします。</li>
+      <li>サイズにもよりますが、１枚の写真のアップロードに数分かかることもあります。</li>
+    </ul>
+  </li>
+  <li>Facebookのページにアクセスすると、写真がアップロードされていることが確認できます。
+  <img src="/assets/images/lua_sample_02_18.png" alt="lua_sample_02_18" class="d-block img-thumbnail" /></li>
+</ol>
+
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

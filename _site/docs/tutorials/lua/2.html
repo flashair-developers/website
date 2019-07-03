@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  
+    <title>FlashAirでLuaを実行する - website</title>
+
+    
+  
+
+  <link rel="shortcut icon" href="http://localhost:4000/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/just-the-docs.css">
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/customstyles.css">
+  
+
+  
+    <script type="text/javascript" src="http://localhost:4000/assets/js/vendor/lunr.min.js"></script>
+  
+  <script type="text/javascript" src="http://localhost:4000/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>FlashAirでLuaを実行する | website</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="FlashAirでLuaを実行する" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/docs/tutorials/lua/2.html" />
+<meta property="og:url" content="http://localhost:4000/docs/tutorials/lua/2.html" />
+<meta property="og:site_name" content="website" />
+<script type="application/ld+json">
+{"@type":"WebPage","headline":"FlashAirでLuaを実行する","url":"http://localhost:4000/docs/tutorials/lua/2.html","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+
+  <div class="page-wrap">
+    <div class="side-bar">
+      <a href="http://localhost:4000" class="site-title fs-6 lh-tight">website</a>
+      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+      <div class="navigation main-nav js-main-nav">
+        <nav role="navigation" aria-label="Main navigation">
+    <ul class="navigation-list">
+      
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/1.html" class="navigation-list-link">FlashAir Lua機能の概要</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item active">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/2.html" class="navigation-list-link active">FlashAirでLuaを実行する</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/3.html" class="navigation-list-link">HTTPを利用したファイルのダウンロード</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/4.html" class="navigation-list-link">FTPを使ったファイルのアップロード</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/5.html" class="navigation-list-link">Facebookへのアップロード</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/6.html" class="navigation-list-link">OAUTH2を使ったDropboxへのアップロード</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/7.html" class="navigation-list-link">無線LAN設定</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/8.html" class="navigation-list-link">Webインターフェースの作成</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/9.html" class="navigation-list-link">Googleドライブへのアップロード</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/10.html" class="navigation-list-link">Luaスクリプトをバイトコードにコンパイル</a>
+            </li>
+          
+        
+      
+
+      <li>
+        <br>
+        <a href="./">目次に戻る</a>
+      </li>
+    </ul>
+  </nav>
+      </div>
+      <footer role="contentinfo" class="site-footer">
+        <p class="text-small text-grey-dk-000 mb-0">This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.</p>
+      </footer>
+    </div>
+    <div class="main-content-wrap js-main-content" tabindex="0">
+      <div class="page-header">
+        <div class="main-content">
+          
+          <div class="search js-search">
+            <div class="search-input-wrap">
+              <input type="text" class="js-search-input search-input" tabindex="0" placeholder="Search website" aria-label="Search website" autocomplete="off">
+              <svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z"/><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z"/></g></svg>
+            </div>
+            <div class="js-search-results search-results-wrap"></div>
+          </div>
+          
+          
+        </div>
+      </div>
+      <div class="main-content">
+        
+          
+            <nav class="breadcrumb-nav">
+              <ol class="breadcrumb-nav-list">
+                
+                  <li class="breadcrumb-nav-list-item"><span>チュートリアル</span></li>
+                  <li class="breadcrumb-nav-list-item"><span>Lua機能チュートリアル</span></li>
+                
+                <li class="breadcrumb-nav-list-item"><span>FlashAirでLuaを実行する</span></li>
+              </ol>
+            </nav>
+          
+        
+        <div id="main-content" class="page-content" role="main">
+          <h1 class="no_toc" id="flashairでluaを実行する">FlashAirでLuaを実行する</h1>
+<p>このチュートリアルでは、 基本的なスクリプトの実行方法をみていきます。
+Luaスクリプトの実行方法には下記の3種類があります。</p>
+
+<ol id="markdown-toc">
+  <li><a href="#flashair起動時に実行する" id="markdown-toc-flashair起動時に実行する">FlashAir起動時に実行する</a></li>
+  <li><a href="#flashairへのファイル書き込み時に実行する" id="markdown-toc-flashairへのファイル書き込み時に実行する">FlashAirへのファイル書き込み時に実行する</a></li>
+  <li><a href="#flashairへのhttpアクセス時に実行する" id="markdown-toc-flashairへのhttpアクセス時に実行する">FlashAirへのHTTPアクセス時に実行する</a></li>
+</ol>
+
+<p>それではさっそく”Hello World”プログラムを実行してみましょう。まずは簡単なluaスクリプトを作成しておきます。</p>
+
+<h5 class="no_toc" id="helloworldlua"><em>/HelloWorld.lua</em></h5>
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Hello World!"</span><span class="p">)</span>
+    <span class="kd">local</span> <span class="n">file</span> <span class="o">=</span> <span class="nb">io.open</span><span class="p">(</span><span class="s2">"Hello.txt"</span><span class="p">,</span> <span class="s2">"a"</span><span class="p">)</span>
+    <span class="n">file</span><span class="p">:</span><span class="n">write</span><span class="p">(</span><span class="s2">"Hello There!\n"</span><span class="p">)</span>
+    <span class="n">file</span><span class="p">:</span><span class="n">close</span><span class="p">()</span>
+</code></pre></div></div>
+<p>このスクリプトは、 Hello World! と出力し、 Hello.txtファイルに、 Hello There! という文字列を追加します。</p>
+
+<hr />
+<h2 id="flashair起動時に実行する">FlashAir起動時に実行する</h2>
+
+<ol>
+  <li>作成したLuaスクリプトをFlashAirのルートフォルダに保存します。</li>
+  <li>/SD_WLAN/CONFIGファイルに、<a href="../../api/config/#lua_run_script">LUA_RUN_SCRIPT</a>パラメータを追加します。スクリプトのファイルパスを指定します。引数には、スクリプトのファイルパスを絶対パスで指定します。
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> LUA_RUN_SCRIPT=/HelloWorld.lua
+</code></pre></div>    </div>
+  </li>
+  <li>FlashAirをSDメモリカードスロットから一旦取り出し、再度挿入します。</li>
+  <li>以降、起動５秒後に指定したLuaスクリプトが実行されます。</li>
+  <li>FlashAirをSDメモリカードスロットから一旦取り出し、再度挿入後、Hello.txtファイルを開きます。</li>
+  <li>Hello.txtファイルに、 Hello There! という文字列が表示されます。
+  <img src="/assets/images/tutorials/lua_tutorial_02_01.png" alt="FlashAir起動時に実行する" class="d-block" /></li>
+</ol>
+
+<hr />
+<h2 id="flashairへのファイル書き込み時に実行する">FlashAirへのファイル書き込み時に実行する</h2>
+
+<ol>
+  <li>作成したLuaスクリプトをFlashAirのルートフォルダに保存します。</li>
+  <li>/SD_WLAN/CONFIGファイルに、<a href="../../api/config/#lua_sd_event">LUA_SD_EVENT</a>パラメータを追加します。スクリプトのファイルパスを指定します。引数には、スクリプトのファイルパスを絶対パスで指定します。
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> LUA_SD_EVENT=/HelloWorld.lua
+</code></pre></div>    </div>
+  </li>
+  <li>FlashAirをSDメモリカードスロットから一旦取り出し、再度挿入します。</li>
+  <li>以降、SDメモリカードの書き込みが発生した場合に指定したLuaスクリプトが実行されます。ファイルをFlashAirにコピーしたり、FlashAirに保存されたファイルを編集してみましょう。</li>
+  <li>FlashAirをSDメモリカードスロットから一旦取り出し、再度挿入後、Hello.txtファイルを開きます。</li>
+  <li>Hello.txtファイルに、 Hello There! という文字列が表示されます。すでに実行済みの場合は、文字列が追加されます。
+  <img src="/assets/images/tutorials/lua_tutorial_02_02.png" alt="FlashAirへのファイル書き込み時に実行する" class="d-block" /></li>
+</ol>
+
+<hr />
+<h2 class="no_toc" id="lua_run_scriptとlua_sd_eventを併用する">LUA_RUN_SCRIPTとLUA_SD_EVENTを併用する</h2>
+<p><a href="#flashair起動時に実行する">LUA_RUN_SCRIPT</a>と<a href="#flashairへのファイル書き込み時に実行する">LUA_SD_EVENT</a>を併用することができます。LUA_RUN_SCRIPTの動作が終了するまでLUA_SD_EVENTは無視されます。LUA_RUN_SCRIPTが実行終了した後LUA_SD_EVENTが実行可能になります。<br />
+LUA_RUN_SCRIPTはFlashAirへの電源投入の5秒後に実行されます。LUA_SD_EVENTはデータの書き込み終了後500ms後に実行されます。</p>
+
+<p><img src="/assets/images/tutorials/lua_tutorial_02_05.png" alt="LUA_RUN_SCRIPTとLUA_SD_EVENTを併用する" class="d-block w-75" /></p>
+
+<hr />
+<h2 id="flashairへのhttpアクセス時に実行する">FlashAirへのHTTPアクセス時に実行する</h2>
+
+<ol>
+  <li>HTTPリクエストに対する応答を標準出力に書き込むLuaスクリプトを作成します。出力にはHTTPレスポンスヘッダも含む必要があります。</li>
+  <li>作成したLuaスクリプトをFlashAirのルートフォルダに保存します。</li>
+  <li>FlashAirに無線LANで接続したPCのブラウザなどのクライアントプログラムから、スクリプトのファイルパスを指定します。
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  http://flashair/HelloWorld.lua 
+</code></pre></div>    </div>
+  </li>
+  <li>スクリプトの標準出力がブラウザの画面に表示されます。
+  <img src="/assets/images/tutorials/lua_tutorial_02_03.png" alt="FlashAirへのHTTPアクセス時に実行する" class="d-block" /></li>
+  <li>Hello.txtファイルに、 Hello There! という文字列が表示されます。すでに実行済みの場合は、文字列が追加されます。
+  <img src="/assets/images/tutorials/lua_tutorial_02_04.png" alt="FlashAirへのHTTPアクセス時に実行する" class="d-block" /></li>
+</ol>
+
+<hr />
+<h2 class="no_toc" id="サンプルコード">サンプルコード</h2>
+
+<p><a href="https://github.com/FlashAirDevelopers/LuaTutorial/tree/master/lua_tutorial_2" target="_blank" class="btn btn-primary">リポジトリを見る（GitHub）</a></p>
+
+<p>このサイトのサンプルコードは<a href="../../license">二条項BSDライセンス</a>で提供されています。</p>
+
+
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

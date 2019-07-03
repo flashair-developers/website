@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  
+    <title>Googleドライブへのアップロード - website</title>
+
+    
+  
+
+  <link rel="shortcut icon" href="http://localhost:4000/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/just-the-docs.css">
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/customstyles.css">
+  
+
+  
+    <script type="text/javascript" src="http://localhost:4000/assets/js/vendor/lunr.min.js"></script>
+  
+  <script type="text/javascript" src="http://localhost:4000/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Googleドライブへのアップロード | website</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Googleドライブへのアップロード" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/docs/tutorials/lua/9.html" />
+<meta property="og:url" content="http://localhost:4000/docs/tutorials/lua/9.html" />
+<meta property="og:site_name" content="website" />
+<script type="application/ld+json">
+{"@type":"WebPage","headline":"Googleドライブへのアップロード","url":"http://localhost:4000/docs/tutorials/lua/9.html","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+
+  <div class="page-wrap">
+    <div class="side-bar">
+      <a href="http://localhost:4000" class="site-title fs-6 lh-tight">website</a>
+      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+      <div class="navigation main-nav js-main-nav">
+        <nav role="navigation" aria-label="Main navigation">
+    <ul class="navigation-list">
+      
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/1.html" class="navigation-list-link">FlashAir Lua機能の概要</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/2.html" class="navigation-list-link">FlashAirでLuaを実行する</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/3.html" class="navigation-list-link">HTTPを利用したファイルのダウンロード</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/4.html" class="navigation-list-link">FTPを使ったファイルのアップロード</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/5.html" class="navigation-list-link">Facebookへのアップロード</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/6.html" class="navigation-list-link">OAUTH2を使ったDropboxへのアップロード</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/7.html" class="navigation-list-link">無線LAN設定</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/8.html" class="navigation-list-link">Webインターフェースの作成</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="navigation-list-item active">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/9.html" class="navigation-list-link active">Googleドライブへのアップロード</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/10.html" class="navigation-list-link">Luaスクリプトをバイトコードにコンパイル</a>
+            </li>
+          
+        
+      
+
+      <li>
+        <br>
+        <a href="./">目次に戻る</a>
+      </li>
+    </ul>
+  </nav>
+      </div>
+      <footer role="contentinfo" class="site-footer">
+        <p class="text-small text-grey-dk-000 mb-0">This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.</p>
+      </footer>
+    </div>
+    <div class="main-content-wrap js-main-content" tabindex="0">
+      <div class="page-header">
+        <div class="main-content">
+          
+          <div class="search js-search">
+            <div class="search-input-wrap">
+              <input type="text" class="js-search-input search-input" tabindex="0" placeholder="Search website" aria-label="Search website" autocomplete="off">
+              <svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z"/><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z"/></g></svg>
+            </div>
+            <div class="js-search-results search-results-wrap"></div>
+          </div>
+          
+          
+        </div>
+      </div>
+      <div class="main-content">
+        
+          
+            <nav class="breadcrumb-nav">
+              <ol class="breadcrumb-nav-list">
+                
+                  <li class="breadcrumb-nav-list-item"><span>チュートリアル</span></li>
+                  <li class="breadcrumb-nav-list-item"><span>Lua機能チュートリアル</span></li>
+                
+                <li class="breadcrumb-nav-list-item"><span>Googleドライブへのアップロード</span></li>
+              </ol>
+            </nav>
+          
+        
+        <div id="main-content" class="page-content" role="main">
+          <h1 id="googleドライブへのアップロード">Googleドライブへのアップロード</h1>
+
+<p><strong>本記事はFixstars Solutions Incの許可を得て転載したものです。</strong><br />
+<strong>転載元：<a href="http://www.fixstars.com/en/news/?p=451" target="_blank">http://www.fixstars.com/en/news/?p=451</a></strong></p>
+
+<hr />
+<h2 id="はじめに">はじめに</h2>
+
+<ol>
+  <li>FlashAirに<code class="highlighter-rouge">testfile.jpg</code>を設置します。</li>
+  <li><a href="2">FlashAirでLuaを実行する</a>を参考に、Luaスクリプト実行方法をCONFIGファイルに指定します。</li>
+</ol>
+
+<hr />
+<h2 id="導入">導入</h2>
+
+<p>このチュートリアルでは、LUAとGoogle device APIを使ってGoogleドライブへイメージデータをアップロードする方法を紹介いたします。これはFlashAirのような限られた入力機能を持つものから実行するアイデアになります。残念ながらすべての設定が完了するまでは入力機能デバイスが必要となりますが、一度設定が完了したら、ヘッドレス運用で無制限にアップロードすることができます。</p>
+
+<hr />
+<h2 id="手順">手順</h2>
+
+<h3 id="1-googleでプロジェクトを設定">1. Googleでプロジェクトを設定</h3>
+
+<ol>
+  <li>Googleの<a href="https://console.developers.google.com/" target="_blank">API Console</a>を開き、”プロジェクトを選択”をクリックします。
+  <img src="/assets/images/tutorials/lua_tutorial_09_01.png" alt="Googleでプロジェクトを設定" class="d-block img-thumbnail" /></li>
+  <li>”+”をクリックします。
+  <img src="/assets/images/tutorials/lua_tutorial_09_02.png" alt="Googleでプロジェクトを設定" class="d-block img-thumbnail" /></li>
+  <li>“プロジェクト名”を入力し”作成”をクリックします。
+  <img src="/assets/images/tutorials/lua_tutorial_09_03.png" alt="Googleでプロジェクトを設定" class="d-block img-thumbnail" />
+    <ul>
+      <li>例: “My Project 1”</li>
+    </ul>
+  </li>
+  <li>プロジェクトの作成が終了したら、画面上部の”プロジェクトを選択”をクリックします。
+  <img src="/assets/images/tutorials/lua_tutorial_09_04.png" alt="Googleでプロジェクトを設定" class="d-block img-thumbnail" /></li>
+  <li>作成したプロジェクト名をクリックします。
+  <img src="/assets/images/tutorials/lua_tutorial_09_05.png" alt="Googleでプロジェクトを設定" class="d-block img-thumbnail" /></li>
+  <li>左ナビゲーションの”ライブラリ”をクリックし、”Drive API”をクリックします。
+  <img src="/assets/images/tutorials/lua_tutorial_09_06.png" alt="Googleでプロジェクトを設定" class="d-block img-thumbnail" /></li>
+  <li>Google Drive API画面に切り替わったら、”有効にする”をクリックします。
+  <img src="/assets/images/tutorials/lua_tutorial_09_07.png" alt="Googleでプロジェクトを設定" class="d-block img-thumbnail" /></li>
+  <li>“認証情報を作成”をクリックします。
+  <img src="/assets/images/tutorials/lua_tutorial_09_08.png" alt="Googleでプロジェクトを設定" class="d-block img-thumbnail" /></li>
+  <li>プロジェクトへの認証情報の追加画面が表示されます。”必要な設定を決定します”と”アクセスするデータの種類”を入力し、”必要な認証情報”をクリックします。
+  <img src="/assets/images/tutorials/lua_tutorial_09_09.png" alt="Googleでプロジェクトを設定" class="d-block img-thumbnail" /></li>
+  <li>“名前”を入力し、”クライアントIDの作成”クリックします。
+  <img src="/assets/images/tutorials/lua_tutorial_09_10.png" alt="Googleでプロジェクトを設定" class="d-block img-thumbnail" />
+    <ul>
+      <li>例: “flashair”</li>
+    </ul>
+  </li>
+  <li>“ユーザーに表示するサービス名”を入力し、”次へ”クリックします。
+  <img src="/assets/images/tutorials/lua_tutorial_09_11.png" alt="Googleでプロジェクトを設定" class="d-block img-thumbnail" />
+    <ul>
+      <li>例: “Lua Upload”</li>
+    </ul>
+  </li>
+  <li>“完了”をクリックします。
+  <img src="/assets/images/tutorials/lua_tutorial_09_12.png" alt="Googleでプロジェクトを設定" class="d-block img-thumbnail" /></li>
+  <li>認証情報が作成されました。OAuth 2.0 クライアントIDの”flashair”をクリックします。
+  <img src="/assets/images/tutorials/lua_tutorial_09_13.png" alt="Googleでプロジェクトを設定" class="d-block img-thumbnail" /></li>
+  <li>アプリの情報を控えます。これらの情報は取扱に注意し、他人と共有しないようにしてください。
+  <img src="/assets/images/tutorials/lua_tutorial_09_14.png" alt="Googleでプロジェクトを設定" class="d-block img-thumbnail" />
+    <ul>
+      <li>クライアント ID</li>
+      <li>クライアント シークレット</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="2-使用デバイスの承認">2. 使用デバイスの承認</h3>
+
+<p>セットアップでは、Googleに2段階のプロセスでデバイスを承認させる必要があります。まず、「accounts.google.com/o/oauth2/device/code」にPOSTリクエストの送信が必要です。Content-Typeに「application/x-www-form-urlencoded」を入れて、client_id（上の手順で作成したOAuthクライアントID内の「クライアントID」を入れる）とscope（「https://docs.google.com/feeds」を入れてください）の２つのフィールドを付与します。この作業のためにいくつかのツールの使用が考えられますが、GoogleChrome拡張機能「postman」がすごく使いやすいでしょう。</p>
+
+<p>例:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST /o/oauth2/device/code HTTP/1.1
+Host: accounts.google.com
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+
+client_id={Your client ID}
+scope=http://docs.google.com/feeds/
+</code></pre></div></div>
+
+<p>postmanのHeaders設定</p>
+
+<p><img src="/assets/images/tutorials/lua_tutorial_09_15.png" alt="使用デバイスの承認" class="d-block img-thumbnail" /></p>
+
+<p>postmanのBody設定</p>
+
+<p><img src="/assets/images/tutorials/lua_tutorial_09_16.png" alt="使用デバイスの承認" class="d-block img-thumbnail" /></p>
+
+<p>注：Googleではscopeに「https://www.googleapis.com/auth/drive」を使用するように指示していますが、「Invalid_scope：Not authorized to request the scop」で返ってきます。代わりに/feeds/を使用すると、Googleドライブの許可が付与されます。</p>
+
+<p>レスポンスには、user_codeとverification_urlが含まれるでしょう。そのurl（おそらくhttps://www.google.com/device）へ移動し、user_codeを入力します。すると、device_codeも返ってきます。</p>
+
+<p>レスポンス例:</p>
+
+<pre>
+"device_code": {Device code},
+"user_code": {Your user code},
+"verification_url": "https://www.google.com/device",
+"expires_in": 1800,
+"interval": 5
+</pre>
+
+<p><img src="/assets/images/tutorials/lua_tutorial_09_17.png" alt="使用デバイスの承認" class="d-block img-thumbnail" /></p>
+
+<p>ウェブブラウザから<a href="https://www.google.com/device" target="_blank">https://www.google.com/device</a>にアクセスすると、端末の接続画面が表示されます。</p>
+
+<p>取得したuser_codeを入力し、”次へ”をクリックします。</p>
+
+<p><img src="/assets/images/tutorials/lua_tutorial_09_19.png" alt="使用デバイスの承認" class="d-block img-thumbnail" /></p>
+
+<p>“許可”をクリックします。</p>
+
+<p><img src="/assets/images/tutorials/lua_tutorial_09_20.png" alt="使用デバイスの承認" class="d-block img-thumbnail" /></p>
+
+<p>Googleドライブの許可が付与されました。</p>
+
+<p><img src="/assets/images/tutorials/lua_tutorial_09_21.png" alt="使用デバイスの承認" class="d-block img-thumbnail" /></p>
+
+<h3 id="3-永続リフレッシュトークンの取得">3. 永続リフレッシュトークンの取得</h3>
+
+<p>これまですべて適切に承認されてもまだ、使用しようとしているアプリのリフレッシュトークンを取得する必要があります。Googleドライブにアップロードできる一時的な「認証」トークンとは別のトークンを取得します。Googleにはたくさんのトークンがあります。リフレッシュトークンを取得するには、以下のようなPOSTリクエストを送信します。</p>
+
+<pre>
+POST /o/oauth2/token HTTP/1.1
+Host: accounts.google.com
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+
+client_id={Your full client ID}
+client_secret={Your client secret}
+code={Your device code}
+grant_type=http://oauth.net/grant_type/device/1.0
+</pre>
+
+<p>postmanのBody設定</p>
+
+<p><img src="/assets/images/tutorials/lua_tutorial_09_22.png" alt="使用デバイスの承認" class="d-block img-thumbnail" /></p>
+
+<p>あなたは以下のような形で受信します:</p>
+
+<pre>
+"access_token": {Your access token here},
+    "token_type": "Bearer",
+    "expires_in": 3600,
+    "refresh_token": {Your refresh token here}
+</pre>
+
+<p><img src="/assets/images/tutorials/lua_tutorial_09_23.png" alt="使用デバイスの承認" class="d-block img-thumbnail" /></p>
+
+<p>最後に、ヘッドレス運用のアップロードスクリプトを作成します！私たちに本当に必要なトークンは、リフレッシュトークンです。アクセストークンは動作が短く有効期限が切れます。リフレッシュトークンを使えば、必要な時（許可が長く続かない場合がかなりある）に新しいアクセスコードを取得できます。</p>
+
+<p>refresh_tokenを控えておきます。</p>
+
+<h3 id="4-luaのインポート必須事項">4. Luaのインポート必須事項</h3>
+
+<p>取得しているすべての必要な情報を含むローカル変数を使い、以下のコードを作成します。</p>
+
+<p>コード例:</p>
+
+<h5 id="googledriveuploadlua"><em>/GoogleDriveUpload.lua</em></h5>
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- Basic account info</span>
+<span class="kd">local</span> <span class="n">client_id</span> <span class="o">=</span> <span class="s2">"{Your full client ID}"</span>
+<span class="kd">local</span> <span class="n">client_secret</span> <span class="o">=</span> <span class="s2">"{Your client secret}"</span>
+<span class="kd">local</span> <span class="n">refresh_token</span> <span class="o">=</span> <span class="s2">"{Your refresh token}"</span>
+<span class="c1">-- For refresh</span>
+<span class="kd">local</span> <span class="n">scope</span> <span class="o">=</span> <span class="s2">"https://docs.google.com/feeds"</span>
+<span class="kd">local</span> <span class="n">response_type</span> <span class="o">=</span> <span class="s2">"code"</span>
+<span class="kd">local</span> <span class="n">access_type</span> <span class="o">=</span> <span class="s2">"offline"</span>
+</code></pre></div></div>
+<h3 id="5-リフレッシュトークンを使用して再認証">5. リフレッシュトークンを使用して再認証</h3>
+
+<p>何かをアップロードする前に、サーバーに再認証する必要があるので、まずはgetAuth()関数と一緒に入れてみましょう。本手法では、（必要なパラメータとしての）長さを考えHTTPリクエストを作成し、送信するメッセージを設定します。
+「配列」としてレスポンスが来ますが、それは実際にLuaがJSONへデコードすることができない、最初で唯一の大きな文字列です。ですが便利なことに、JSONライブラリを入れる前にテーブルでそれを解析し、新しいアクセストークンを取得するために使用することができます。</p>
+
+<p>関数例:</p>
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">local</span> <span class="k">function</span> <span class="nf">getAuth</span><span class="p">()</span>
+  <span class="c1">-- Set our message</span>
+  <span class="kd">local</span> <span class="n">mes</span><span class="o">=</span><span class="s2">"client_id="</span><span class="o">..</span><span class="n">client_id</span>
+  <span class="n">mes</span><span class="o">=</span><span class="n">mes</span><span class="o">..</span><span class="s2">"&amp;client_secret="</span><span class="o">..</span><span class="n">client_secret</span>
+  <span class="n">mes</span><span class="o">=</span><span class="n">mes</span><span class="o">..</span><span class="s2">"&amp;refresh_token="</span><span class="o">..</span><span class="n">refresh_token</span>
+  <span class="n">mes</span><span class="o">=</span><span class="n">mes</span><span class="o">..</span><span class="s2">"&amp;grant_type=refresh_token"</span>
+
+  <span class="kd">local</span> <span class="n">length</span> <span class="o">=</span> <span class="nb">string.len</span><span class="p">(</span><span class="n">mes</span><span class="p">)</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">"Sending: ["</span><span class="o">..</span><span class="n">mes</span><span class="o">..</span><span class="s2">"]"</span><span class="p">)</span>
+  <span class="nb">print</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span>
+  <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">h</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">request</span><span class="p">{</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="s2">"https://accounts.google.com/o/oauth2/token"</span><span class="p">,</span>
+    <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="p">[</span><span class="s2">"Content-Type"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"application/x-www-form-urlencoded"</span><span class="p">,</span>
+        <span class="p">[</span><span class="s2">"Content-Length"</span><span class="p">]</span> <span class="o">=</span> <span class="n">length</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="n">method</span> <span class="o">=</span> <span class="s2">"POST"</span><span class="p">,</span>
+    <span class="n">body</span><span class="o">=</span><span class="n">mes</span><span class="p">,</span>
+  <span class="p">}</span>
+
+  <span class="kd">local</span> <span class="n">tempTable</span> <span class="o">=</span> <span class="p">{}</span>
+
+  <span class="n">tempTable</span> <span class="o">=</span> <span class="n">cjson</span><span class="p">.</span><span class="n">decode</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+
+  <span class="n">access_token</span> <span class="o">=</span> <span class="n">tempTable</span><span class="p">[</span><span class="s2">"access_token"</span><span class="p">]</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<h3 id="6-アップロード用lua関数">6. アップロード用Lua関数</h3>
+
+<p>これで新しいアクセストークンを取得して、アップロードの準備が整いました！別のHTTP
+POSTリクエストでssl.httpsを使用して行います。アップロードするイメージファイルを用意し、認証コードを設定して行います。</p>
+
+<p>例:</p>
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">local</span> <span class="k">function</span> <span class="nf">uploadTest</span><span class="p">(</span><span class="n">token</span><span class="p">)</span>
+  <span class="n">filePath</span><span class="o">=</span><span class="s2">"testfile.jpg"</span>
+  <span class="kd">local</span> <span class="n">fileSize</span> <span class="o">=</span> <span class="n">lfs</span><span class="p">.</span><span class="n">attributes</span><span class="p">(</span><span class="n">filePath</span><span class="p">,</span><span class="s2">"size"</span><span class="p">)</span>
+  <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">h</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">request</span><span class="p">{</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="s2">"https://www.googleapis.com/upload/drive/v2/files"</span><span class="p">,</span>
+    <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="p">[</span><span class="s2">"Content-Type"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"image/jpeg"</span><span class="p">,</span>
+      <span class="p">[</span><span class="s2">"Content-Length"</span><span class="p">]</span> <span class="o">=</span> <span class="n">fileSize</span><span class="p">,</span> <span class="c1">-- calculate file size</span>
+      <span class="p">[</span><span class="s2">"authorization"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"Bearer "</span><span class="o">..</span><span class="n">token</span><span class="p">,</span>
+      <span class="p">[</span><span class="s2">"uploadType"</span><span class="p">]</span><span class="o">=</span><span class="s2">"media"</span>
+    <span class="p">},</span>
+    <span class="n">method</span> <span class="o">=</span> <span class="s2">"POST"</span><span class="p">,</span>
+    <span class="c1">--NOTE: You probably want to set your own file here,</span>
+    <span class="c1">--or maybe even pass it as a parameter!</span>
+    <span class="n">file</span><span class="o">=</span><span class="n">filePath</span>
+  <span class="p">}</span>
+<span class="k">end</span>
+</code></pre></div></div>
+<p>ここまでの例を掲載順に組み合わせて最後に以下の２つの関数コードを付け足して実行すれば、Googleドライブへファイルがアップロードされるでしょう（accounts.google.comを参照してください）。</p>
+
+<p>最後に動かす関数コード:</p>
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">getAuth</span><span class="p">()</span>
+<span class="n">uploadTest</span><span class="p">(</span><span class="n">access_token</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="7-実行結果">7. 実行結果</h3>
+
+<p><img src="/assets/images/tutorials/lua_tutorial_09_24.png" alt="実行結果" class="d-block img-thumbnail" /></p>
+
+<hr />
+<h2 id="サンプルコード">サンプルコード</h2>
+
+<p><a href="https://github.com/FlashAirDevelopers/LuaTutorial/tree/master/lua_tutorial_9" target="_blank" class="btn btn-primary">リポジトリを見る（GitHub）</a></p>
+
+<p>このサイトのサンプルコードは<a href="../../license">二条項BSDライセンス</a>で提供されています。</p>
+
+
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

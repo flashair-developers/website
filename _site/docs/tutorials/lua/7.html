@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  
+    <title>無線LAN設定 - website</title>
+
+    
+  
+
+  <link rel="shortcut icon" href="http://localhost:4000/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/just-the-docs.css">
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/customstyles.css">
+  
+
+  
+    <script type="text/javascript" src="http://localhost:4000/assets/js/vendor/lunr.min.js"></script>
+  
+  <script type="text/javascript" src="http://localhost:4000/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>無線LAN設定 | website</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="無線LAN設定" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/docs/tutorials/lua/7.html" />
+<meta property="og:url" content="http://localhost:4000/docs/tutorials/lua/7.html" />
+<meta property="og:site_name" content="website" />
+<script type="application/ld+json">
+{"@type":"WebPage","headline":"無線LAN設定","url":"http://localhost:4000/docs/tutorials/lua/7.html","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+
+  <div class="page-wrap">
+    <div class="side-bar">
+      <a href="http://localhost:4000" class="site-title fs-6 lh-tight">website</a>
+      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+      <div class="navigation main-nav js-main-nav">
+        <nav role="navigation" aria-label="Main navigation">
+    <ul class="navigation-list">
+      
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/1.html" class="navigation-list-link">FlashAir Lua機能の概要</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/2.html" class="navigation-list-link">FlashAirでLuaを実行する</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/3.html" class="navigation-list-link">HTTPを利用したファイルのダウンロード</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/4.html" class="navigation-list-link">FTPを使ったファイルのアップロード</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/5.html" class="navigation-list-link">Facebookへのアップロード</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/6.html" class="navigation-list-link">OAUTH2を使ったDropboxへのアップロード</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item active">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/7.html" class="navigation-list-link active">無線LAN設定</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/8.html" class="navigation-list-link">Webインターフェースの作成</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/9.html" class="navigation-list-link">Googleドライブへのアップロード</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/10.html" class="navigation-list-link">Luaスクリプトをバイトコードにコンパイル</a>
+            </li>
+          
+        
+      
+
+      <li>
+        <br>
+        <a href="./">目次に戻る</a>
+      </li>
+    </ul>
+  </nav>
+      </div>
+      <footer role="contentinfo" class="site-footer">
+        <p class="text-small text-grey-dk-000 mb-0">This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.</p>
+      </footer>
+    </div>
+    <div class="main-content-wrap js-main-content" tabindex="0">
+      <div class="page-header">
+        <div class="main-content">
+          
+          <div class="search js-search">
+            <div class="search-input-wrap">
+              <input type="text" class="js-search-input search-input" tabindex="0" placeholder="Search website" aria-label="Search website" autocomplete="off">
+              <svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z"/><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z"/></g></svg>
+            </div>
+            <div class="js-search-results search-results-wrap"></div>
+          </div>
+          
+          
+        </div>
+      </div>
+      <div class="main-content">
+        
+          
+            <nav class="breadcrumb-nav">
+              <ol class="breadcrumb-nav-list">
+                
+                  <li class="breadcrumb-nav-list-item"><span>チュートリアル</span></li>
+                  <li class="breadcrumb-nav-list-item"><span>Lua機能チュートリアル</span></li>
+                
+                <li class="breadcrumb-nav-list-item"><span>無線LAN設定</span></li>
+              </ol>
+            </nav>
+          
+        
+        <div id="main-content" class="page-content" role="main">
+          <h1 id="無線lan設定">無線LAN設定</h1>
+
+<p>このチュートリアルでは、ネットワークのスキャン、接続、ファイルアップロードまで、LUAから無線LANデバイスを扱う基本的な操作をみていきます。</p>
+
+<hr />
+<h2 id="はじめに">はじめに</h2>
+
+<ol>
+  <li>FlashAirに<a href="6">OAUTH2を使ったDropboxへのアップロード</a>で作成した<code class="highlighter-rouge">DropboxUpload.lua</code>が無い場合は、<a href="6/#samplecode">サンプルコード</a>よりファイルをダウンロードしてください。</li>
+  <li><a href="../../api/config/#upload">アップロード機能を有効</a>にするために、CONFIGファイルに<code class="highlighter-rouge">UPLOAD=1</code>を追加します。</li>
+  <li><a href="2">FlashAirでLuaを実行する</a>を参考に、Luaスクリプト実行方法をCONFIGファイルに指定します。</li>
+</ol>
+
+<hr />
+<h2 id="スキャン">スキャン</h2>
+
+<p>まず、スキャンして取得したローカルネットワークのリストを、ログファイルに記録してみましょう。このスクリプトは、FlashAir起動時に実行するのが良いでしょう。FlashAirが既にネットワークに接続している場合、<a href="../../api/lua/#scan">fa.Scan</a>及び<a href="../../api/lua/#getscaninfo">fa.GetScanInfo</a>は利用できないのでご注意ください。</p>
+
+<h5 id="ssidlistlua"><em>/SSIDList.lua</em></h5>
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">--[[
+This script will scan for available WiFi networks,
+and output their SSIDs to a file.
+]]</span><span class="c1">--</span>
+
+<span class="kd">local</span> <span class="n">logfile</span> <span class="o">=</span> <span class="s2">"ssidList.txt"</span>
+
+<span class="n">count</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">Scan</span><span class="p">()</span>
+<span class="c1">-- Open the log file</span>
+<span class="kd">local</span> <span class="n">outfile</span> <span class="o">=</span> <span class="nb">io.open</span><span class="p">(</span><span class="n">logfile</span><span class="p">,</span> <span class="s2">"w"</span><span class="p">)</span>
+
+<span class="c1">-- Write a header</span>
+<span class="n">outfile</span><span class="p">:</span><span class="n">write</span><span class="p">(</span><span class="s2">"SSID list: \n"</span><span class="p">)</span>
+
+<span class="c1">--Note that the ssids start at 0, and go to (count-1)</span>
+<span class="k">for</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="p">(</span><span class="n">count</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="mi">1</span> <span class="k">do</span>
+ 	<span class="n">ssid</span><span class="p">,</span> <span class="n">other</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">GetScanInfo</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+ 	<span class="n">outfile</span><span class="p">:</span><span class="n">write</span><span class="p">(</span><span class="n">i</span><span class="o">..</span><span class="s2">": "</span><span class="o">..</span><span class="n">ssid</span><span class="o">..</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<span class="k">end</span>
+</code></pre></div></div>
+<p>Luaスクリプト実行後、ルートフォルダにssidList.txtが表示されます。</p>
+
+<p><img src="/assets/images/tutorials/lua_tutorial_07_01.png" alt="スキャン" class="d-block img-thumbnail" /></p>
+
+<hr />
+<h2 id="接続">接続</h2>
+
+<p>次に、特定のSSIDをスキャンし、接続してみましょう。接続すると、アップロードするためのスクリプトを実行します。アップロードには、Dropboxチュートリアルで作成したスクリプトを利用します。</p>
+
+<h5 id="wificonnectlua"><em>/WifiConnect.lua</em></h5>
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">--[[
+This script will scan for a specific network, and if it sees it
+will connect... then trigger a dropbox uploading script!
+It logs to a file.
+]]</span><span class="c1">--</span>
+
+<span class="kd">local</span> <span class="n">logfile</span> 	<span class="o">=</span> <span class="s2">"wifiConnect.txt"</span>
+<span class="kd">local</span> <span class="n">SSID</span> 	<span class="o">=</span> <span class="s2">"VITP_Open"</span> <span class="c1">-- SSID to connect to</span>
+<span class="kd">local</span> <span class="n">PASSWORD</span> 	<span class="o">=</span> <span class="s2">""</span> <span class="c1">--A blank password should be used for an open network</span>
+<span class="kd">local</span> <span class="n">uploader</span>	<span class="o">=</span> <span class="s2">"DropboxUpload.lua"</span>
+
+<span class="c1">-- Open the log file</span>
+<span class="kd">local</span> <span class="n">outfile</span> <span class="o">=</span> <span class="nb">io.open</span><span class="p">(</span><span class="n">logfile</span><span class="p">,</span> <span class="s2">"w"</span><span class="p">)</span>
+
+<span class="k">while</span> <span class="kc">true</span> <span class="k">do</span>
+
+	<span class="c1">-- Initiate a scan</span>
+	<span class="n">count</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">Scan</span><span class="p">(</span><span class="n">SSID</span><span class="p">)</span>
+	<span class="c1">--count = fa.Scan()</span>
+	<span class="n">found</span><span class="o">=</span><span class="mi">0</span>
+	<span class="c1">--See if we found it</span>
+	<span class="k">if</span> <span class="n">count</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">then</span>
+		<span class="c1">--ssid, other = fa.GetScanInfo(0) --Should return SSID provided</span>
+		<span class="k">for</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="p">(</span><span class="n">count</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="mi">1</span> <span class="k">do</span>
+			<span class="n">found_ssid</span><span class="p">,</span> <span class="n">other</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">GetScanInfo</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+			<span class="nb">print</span><span class="p">(</span><span class="n">SSID</span><span class="o">..</span><span class="s2">"|"</span><span class="o">..</span><span class="n">found_ssid</span><span class="p">)</span>
+			<span class="k">if</span> <span class="n">SSID</span> <span class="o">==</span> <span class="n">found_ssid</span> <span class="k">then</span>
+				<span class="c1">--We did!</span>
+				<span class="nb">print</span><span class="p">(</span><span class="s2">"Found: "</span><span class="o">..</span><span class="n">SSID</span><span class="o">..</span><span class="s2">"... attempting to connect."</span><span class="p">)</span>
+				<span class="n">outfile</span><span class="p">:</span><span class="n">write</span><span class="p">(</span><span class="s2">"Found: "</span><span class="o">..</span><span class="n">SSID</span><span class="o">..</span><span class="s2">"... attempting to connect."</span><span class="p">)</span>
+				<span class="n">found</span><span class="o">=</span><span class="mi">1</span>
+				<span class="k">break</span>
+			<span class="k">end</span>
+		<span class="k">end</span>
+	<span class="k">end</span>
+
+  <span class="k">if</span> <span class="n">found</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">then</span> <span class="k">break</span> <span class="k">end</span> <span class="c1">--If we found it, stop looping</span>
+<span class="k">end</span>
+
+<span class="c1">--We should only get here if the above loop found the network</span>
+<span class="c1">--fa.Connect has no return, but if the SSID and password are correct it should work.</span>
+<span class="n">fa</span><span class="p">.</span><span class="n">Connect</span><span class="p">(</span><span class="n">SSID</span><span class="p">,</span> <span class="n">PASSWORD</span><span class="p">)</span>
+
+<span class="c1">--Execute the upload script</span>
+<span class="nb">dofile</span><span class="p">(</span><span class="n">uploader</span><span class="p">)</span>
+<span class="c1">--Close our log file</span>
+<span class="n">outfile</span><span class="p">:</span><span class="n">close</span><span class="p">()</span>
+</code></pre></div></div>
+<p>Luaスクリプト実行後、ルートフォルダにwifiConnect.txtが表示されます。</p>
+
+<p><img src="/assets/images/tutorials/lua_tutorial_07_02.png" alt="接続" class="d-block img-thumbnail" /></p>
+
+<hr />
+<h2 id="サンプルコード">サンプルコード</h2>
+
+<p><a href="https://github.com/FlashAirDevelopers/LuaTutorial/tree/master/lua_tutorial_7" target="_blank" class="btn btn-primary">リポジトリを見る（GitHub）</a></p>
+
+<p>このサイトのサンプルコードは<a href="../../license">二条項BSDライセンス</a>で提供されています。</p>
+
+
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

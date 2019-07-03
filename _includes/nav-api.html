@@ -1,0 +1,22 @@
+<nav role="navigation" aria-label="Main navigation">
+    <ul class="navigation-list">
+      {% assign pages_list = site.html_pages | sort:"nav_order" %}
+      {% for node in pages_list %}
+        {% unless node.nav_exclude %}
+          {% if node.parent == "APIガイド" %}
+            <li class="navigation-list-item{% if page.url == node.url or page.parent == node.title or page.grand_parent == node.title %} active{% endif %}">
+              {% if page.parent == node.title or page.grand_parent == node.title %}
+                {% assign first_level_url = node.url | absolute_url %}
+              {% endif %}
+              <a href="{{ node.url | absolute_url }}" class="navigation-list-link{% if page.url == node.url %} active{% endif %}">{{ node.title }}</a>
+            </li>
+          {% endif %}
+        {% endunless %}
+      {% endfor %}
+
+      <li>
+        <br>
+        <a href="./">目次に戻る</a>
+      </li>
+    </ul>
+  </nav>

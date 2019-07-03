@@ -1,0 +1,1737 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  
+    <title>Webページの取得 - website</title>
+
+    
+  
+
+  <link rel="shortcut icon" href="http://localhost:4000/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/just-the-docs.css">
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/customstyles.css">
+  
+
+  
+    <script type="text/javascript" src="http://localhost:4000/assets/js/vendor/lunr.min.js"></script>
+  
+  <script type="text/javascript" src="http://localhost:4000/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Webページの取得 | website</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Webページの取得" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/docs/tutorials/arduino/6.html" />
+<meta property="og:url" content="http://localhost:4000/docs/tutorials/arduino/6.html" />
+<meta property="og:site_name" content="website" />
+<script type="application/ld+json">
+{"@type":"WebPage","headline":"Webページの取得","url":"http://localhost:4000/docs/tutorials/arduino/6.html","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+
+  <div class="page-wrap">
+    <div class="side-bar">
+      <a href="http://localhost:4000" class="site-title fs-6 lh-tight">website</a>
+      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+      <div class="navigation main-nav js-main-nav">
+        <nav role="navigation" aria-label="Main navigation">
+    <ul class="navigation-list">
+      
+      <li>
+        <h3>Arduino向けチュートリアル</h3>
+      </li>
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/arduino/1.html" class="navigation-list-link">ArduinoでFlashAir制御の概要</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/arduino/2.html" class="navigation-list-link">iSDIO拡張コマンドの作成</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/arduino/3.html" class="navigation-list-link">カードステータスの読み取り</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/arduino/4.html" class="navigation-list-link">APモードでの起動</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/arduino/5.html" class="navigation-list-link">STAモードでの起動</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item active">
+              
+              <a href="http://localhost:4000/docs/tutorials/arduino/6.html" class="navigation-list-link active">Webページの取得</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+      <li>
+        <h3>Raspberry Pi向けチュートリアル</h3>
+      </li>
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/raspberrypi/1.html" class="navigation-list-link">インターネット同時接続モードの設定</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/raspberrypi/2.html" class="navigation-list-link">APIリファレンス</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+      <li>
+        <h3>Mbed™向けチュートリアル</h3>
+      </li>
+      
+        
+      
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/mbed/1.html" class="navigation-list-link">MbedでAPモード起動</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/mbed/2.html" class="navigation-list-link">APIリファレンス</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+      <li>
+        <br>
+        <a href="../../tutorials/isdio">目次に戻る</a>
+      </li>
+    </ul>
+  </nav>
+      </div>
+      <footer role="contentinfo" class="site-footer">
+        <p class="text-small text-grey-dk-000 mb-0">This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.</p>
+      </footer>
+    </div>
+    <div class="main-content-wrap js-main-content" tabindex="0">
+      <div class="page-header">
+        <div class="main-content">
+          
+          <div class="search js-search">
+            <div class="search-input-wrap">
+              <input type="text" class="js-search-input search-input" tabindex="0" placeholder="Search website" aria-label="Search website" autocomplete="off">
+              <svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z"/><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z"/></g></svg>
+            </div>
+            <div class="js-search-results search-results-wrap"></div>
+          </div>
+          
+          
+        </div>
+      </div>
+      <div class="main-content">
+        
+          
+            <nav class="breadcrumb-nav">
+              <ol class="breadcrumb-nav-list">
+                
+                  <li class="breadcrumb-nav-list-item"><span>チュートリアル</span></li>
+                  <li class="breadcrumb-nav-list-item"><span>Arduino向けチュートリアル</span></li>
+                
+                <li class="breadcrumb-nav-list-item"><span>Webページの取得</span></li>
+              </ol>
+            </nav>
+          
+        
+        <div id="main-content" class="page-content" role="main">
+          <h1 id="webページの取得">Webページの取得</h1>
+
+<p>本チュートリアルでは、iSDIOコマンドでFlashAirを制御し、 インターネット上のファイルを取得してみます。</p>
+
+<hr />
+<h2 id="概要">概要</h2>
+
+<p>iSDIOの無線LAN仕様には、HTTP (HyperText Transfer Protocol) 通信を利用したデータの送受信機能が含まれています。</p>
+
+<p>通信に必要な HTTPや TCP/IP (Transmission Control Protocol/Internet Protocol) の処理を、
+Arduino自身が行うことなくすべてFlashAirに任せることができます。
+逆に言えば、それ以外のプロトコルを使うことはできませんが、 Arduinoの小さいRAMの上では、このトレードオフは多くの場合でメリットの方が大きいのではないでしょうか。</p>
+
+<p>本チュートリアルでは、Webページの取得を行ってみましょう。</p>
+
+<hr />
+<h2 id="http通信コマンドの種類">HTTP通信コマンドの種類</h2>
+
+<p>HTTP通信コマンドには、プロトコルやデータの渡し方の違いなどにより、いくつかのバージョンがあります。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>コマンドID</th>
+      <th>名称</th>
+      <th>プロトコル</th>
+      <th>送信データの種類</th>
+      <th>コマンドにデータを渡す方法</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>21h</td>
+      <td>SendHTTPMessageByRegister</td>
+      <td>HTTP</td>
+      <td>テキスト</td>
+      <td>メモリ上から</td>
+    </tr>
+    <tr>
+      <td>22h</td>
+      <td>SendHTTPFileByRegister</td>
+      <td>HTTP</td>
+      <td>ファイル</td>
+      <td>メモリ上から</td>
+    </tr>
+    <tr>
+      <td>23h</td>
+      <td>SendHTTPSSLMessageByRegister</td>
+      <td>HTTP over SSL</td>
+      <td>テキスト</td>
+      <td>メモリ上から</td>
+    </tr>
+    <tr>
+      <td>24h</td>
+      <td>SendHTTPSSLFileByRegister</td>
+      <td>HTTP over SSL</td>
+      <td>ファイル</td>
+      <td>メモリ上から</td>
+    </tr>
+    <tr>
+      <td>25h</td>
+      <td>SendHTTPMessageByFile</td>
+      <td>HTTP</td>
+      <td>テキスト</td>
+      <td>ファイルから</td>
+    </tr>
+    <tr>
+      <td>26h</td>
+      <td>SendHTTPFileByFile</td>
+      <td>HTTP</td>
+      <td>ファイル</td>
+      <td>ファイルから</td>
+    </tr>
+    <tr>
+      <td>27h</td>
+      <td>SendHTTPSSLMessageByFile</td>
+      <td>HTTP over SSL</td>
+      <td>テキスト</td>
+      <td>ファイルから</td>
+    </tr>
+    <tr>
+      <td>28h</td>
+      <td>SendHTTPSSLFileByFile</td>
+      <td>HTTP over SSL</td>
+      <td>ファイル</td>
+      <td>ファイルから</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>いずれも Send から始まる名前ですが、送受信両方に使います。 HTTP通信は、クライアントからリクエストを送信し、サーバーが返信する、という仕組みだからです。
+ファイルを返信してというリクエストであればサーバーからのファイル受信、
+リクエストにファイルを付けて送るとサーバーへのファイル送信、となります。</p>
+
+<p>HTTPに関しては
+<a href="http://ja.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_blank">Wikipedia</a>をご覧ください。</p>
+
+<p>なお、受信サイズは最大2048バイトとなっています。(iSDIOヘッダを除くと2024バイト。) 送信にはファイルを使う方法があるためサイズ制限は厳しくありません。</p>
+
+<hr />
+<h2 id="sendhttpsslmessagebyregisterコマンドの作成">SendHTTPSSLMessageByRegisterコマンドの作成</h2>
+
+<p>この例では、FlashAir Developersのトップページのデータを取得することにします。</p>
+
+<h3 id="リクエストの送信">リクエストの送信</h3>
+
+<p>FlashAir Developersは、暗号化された通信を行うため HTTP over SSL (Secure Socket Layer) を使用しています。 データ取得には、HTTPの
+<code class="highlighter-rouge">GET</code>というコマンドを使います。
+<code class="highlighter-rouge">GET</code>リクエストでは、リクエストヘッダのテキストデータのみが必要です。</p>
+
+<p>以上の条件から、コマンドID 23hの、SendHTTPSSLMessageByRegisterコマンドを使います。</p>
+
+<h5 id="arduino_tutorial_6ino-一部抜粋"><em>arduino_tutorial_6.ino (一部抜粋)</em></h5>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="n">boolean</span> <span class="nf">iSDIO_http</span><span class="p">(</span><span class="kt">uint32_t</span> <span class="n">sequenceId</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">http command: </span><span class="se">\n</span><span class="s">"</span><span class="p">));</span>
+      <span class="n">memset</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">512</span><span class="p">);</span>
+      <span class="kt">uint8_t</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="n">buffer</span><span class="p">;</span>
+      <span class="n">p</span> <span class="o">=</span> <span class="n">put_command_header</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+      <span class="n">p</span> <span class="o">=</span> <span class="n">put_command_info_header</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="mh">0x23</span><span class="p">,</span> <span class="n">sequenceId</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+      <span class="n">p</span> <span class="o">=</span> <span class="n">put_str_arg</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="s">"flashair-developers.com"</span><span class="p">);</span>  <span class="c1">// Argument #1.
+</span>      <span class="n">p</span> <span class="o">=</span> <span class="n">put_str_arg</span><span class="p">(</span><span class="n">p</span><span class="p">,</span>                              <span class="c1">// Argument #2. 
+</span>          <span class="s">"GET /en/ HTTP/1.1</span><span class="se">\r\n</span><span class="s">"</span>
+          <span class="s">"Host: flashair-developers.com</span><span class="se">\r\n</span><span class="s">"</span>
+          <span class="s">"User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36</span><span class="se">\r\n</span><span class="s">"</span>
+          <span class="s">"</span><span class="se">\r\n</span><span class="s">"</span><span class="p">);</span>
+      <span class="n">put_command_header</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="p">(</span><span class="n">p</span> <span class="o">-</span> <span class="n">buffer</span><span class="p">));</span>
+      <span class="n">printHex</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="p">(</span><span class="n">p</span> <span class="o">-</span> <span class="n">buffer</span><span class="p">));</span>
+      <span class="k">return</span> <span class="n">card</span><span class="p">.</span><span class="n">writeExtDataPort</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mh">0x000</span><span class="p">,</span> <span class="n">buffer</span><span class="p">)</span> <span class="o">?</span> <span class="nb">true</span> <span class="o">:</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<ul>
+  <li>7行目<br />
+   サーバーのドメイン名を指定します。IPアドレスも指定できます。</li>
+  <li>9行目<br />
+   GETコマンドです。<code class="highlighter-rouge">GET &lt;取得したいデータのパス&gt; &lt;プロトコルとバージョン&gt;&lt;改行&gt;</code> という書式です。 プロトコルとバージョンは通常<code class="highlighter-rouge">HTTP/1.1</code>でよいでしょう。改行は<code class="highlighter-rouge">\r\n</code>を使うのがHTTP通信のルールです。</li>
+  <li>10行目<br />
+   ホスト名を指定します。</li>
+  <li>
+    <p>11行目<br />
+   ユーザーエージェントを指定ています。FlashAir Developersは、ユーザーの使っているウェブブラウザを判別して 対応していないブラウザを使っている場合に警告を出しています。そのため、この例ではChromeのユーザーエージェント名を指定し（つまりChromeのふりをして）、 正しいデータが返ってくるようにしています。</p>
+  </li>
+  <li>12行名<br />
+   最後に空行をつけます。</li>
+</ul>
+
+<h3 id="レスポンスの受信">レスポンスの受信</h3>
+
+<p>コマンド完了を待機してから、取得したデータを読み取ります。
+<strong>Response Data</strong>に、サーバーから返されたデータが書かれています。 コマンド完了待機とデータの読み取り方法は、
+<a href="4">APモードでの起動</a>の
+<em>コマンド処理状況の確認</em> を参照してください。</p>
+
+<p>今回はWebページのテキストデータが書かれていることを期待していますので、そのまま画面出力してみます。</p>
+
+<h5 id="isdio-command-response-data-sd-specifications-part-e7-wireless-lan-simplified-addendum-version-110より抜粋"><em>iSDIO Command Response Data (SD Specifications Part E7 Wireless LAN Simplified Addendum Version 1.10より抜粋)</em></h5>
+
+<p><img src="/assets/images/tutorials/arduino_tutorial_05_1.png" alt="Wireless LAN SSID List" class="d-block" /></p>
+
+<div class="alert alert-warning" role="alert">Response Registerポートは一度に512バイトまでしか読み出せないため、 レスポンスデータ (Size of iSDIO Command Response Data) が大きい場合は、適切な回数だけ読み出しを繰り返す必要があります。その場合、iSDIO Command Response Dataは読み出したデータを連結したものとして考えます。 つまり、繰り返し読んでもヘッダは一度しか現れません。</div>
+
+<h5 id="arduino_tutorial_6ino-一部抜粋-1"><em>arduino_tutorial_6.ino (一部抜粋)</em></h5>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="n">boolean</span> <span class="nf">iSDIO_httpResponse</span><span class="p">()</span> <span class="p">{</span>
+      <span class="c1">// Read header and data.
+</span>      <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">card</span><span class="p">.</span><span class="n">readExtDataPort</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mh">0x200</span><span class="p">,</span> <span class="n">buffer</span><span class="p">))</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="kt">uint32_t</span> <span class="n">totalSize</span> <span class="o">=</span> <span class="n">get_u32</span><span class="p">(</span><span class="n">buffer</span> <span class="o">+</span> <span class="mi">20</span><span class="p">);</span>
+      <span class="kt">uint32_t</span> <span class="n">availableSize</span> <span class="o">=</span> <span class="n">totalSize</span> <span class="o">&gt;</span> <span class="mi">488</span> <span class="o">?</span> <span class="mi">488</span> <span class="o">:</span> <span class="n">totalSize</span><span class="p">;</span>
+      <span class="kt">uint32_t</span> <span class="n">pos</span> <span class="o">=</span> <span class="mi">24</span><span class="p">;</span>
+      <span class="k">for</span> <span class="p">(;;)</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">uint32_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">availableSize</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+          <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">((</span><span class="kt">char</span><span class="p">)</span><span class="n">buffer</span><span class="p">[</span><span class="n">pos</span> <span class="o">+</span> <span class="n">i</span><span class="p">]);</span>
+        <span class="p">}</span>
+        <span class="n">totalSize</span> <span class="o">-=</span> <span class="n">availableSize</span><span class="p">;</span>
+
+        <span class="c1">// Have we read all data?
+</span>        <span class="k">if</span> <span class="p">(</span><span class="n">totalSize</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span>
+
+        <span class="c1">// Read next data.
+</span>        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">card</span><span class="p">.</span><span class="n">readExtDataPort</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mh">0x200</span><span class="p">,</span> <span class="n">buffer</span><span class="p">))</span> <span class="p">{</span>
+          <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="n">availableSize</span> <span class="o">=</span> <span class="n">totalSize</span> <span class="o">&gt;</span> <span class="mi">512</span> <span class="o">?</span> <span class="mi">512</span> <span class="o">:</span> <span class="n">totalSize</span><span class="p">;</span>
+        <span class="n">pos</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<ul>
+  <li>3-8行目<br />
+   レスポンスの最初の部分を読み出します。先頭24バイト分はデータサイズなどの情報が書かれています。 必要な情報を保存しています。</li>
+  <li>9-24行目<br />
+   サーバから受信したHTMLデータを画面に表示する部分です。 サイズが大きい場合は残りの部分を512バイトずつ読み取っています。</li>
+</ul>
+
+<hr />
+<h2 id="メインプログラム">メインプログラム</h2>
+
+<p>メインプログラムに、追加します。</p>
+
+<h5 id="arduino_tutorial_06ino-一部抜粋"><em>arduino_tutorial_06.ino (一部抜粋)</em></h5>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
+        <span class="p">..</span> <span class="p">(</span><span class="n">snip</span><span class="p">)</span> <span class="p">..</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">5. HTTP Get"</span><span class="p">));</span>
+        <span class="p">..</span> <span class="p">(</span><span class="n">snip</span><span class="p">)</span> <span class="p">..</span>
+        <span class="k">case</span> <span class="mi">5</span> <span class="p">:</span>
+          <span class="k">if</span> <span class="p">(</span><span class="n">iSDIO_http</span><span class="p">(</span><span class="n">nextSequenceId</span><span class="p">)</span> <span class="o">&amp;&amp;</span>
+              <span class="n">iSDIO_waitResponse</span><span class="p">(</span><span class="n">nextSequenceId</span><span class="p">))</span> <span class="p">{</span>
+              <span class="n">iSDIO_httpResponse</span><span class="p">();</span>
+            <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Success."</span><span class="p">));</span>
+          <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Failed or waiting. errorCode="</span><span class="p">));</span>
+            <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">card</span><span class="p">.</span><span class="n">errorCode</span><span class="p">(),</span> <span class="n">HEX</span><span class="p">);</span>
+          <span class="p">}</span>
+          <span class="n">nextSequenceId</span><span class="o">++</span><span class="p">;</span>
+          <span class="k">break</span><span class="p">;</span>
+        <span class="p">..</span> <span class="p">(</span><span class="n">snip</span><span class="p">)</span> <span class="p">..</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+
+<hr />
+<h2 id="実行結果">実行結果</h2>
+
+<p>実行してみましょう。</p>
+
+<div class="alert alert-warning" role="alert">注意点： 以降ではInternetにアクセスできる無線LANが必要です。準備してから先に進んでください。</div>
+
+<div class="alert alert-warning" role="alert">注意点： もしFlashAirが別の機器につながっている場合は、まずDisconnectを実行してください。</div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Initializing SD card...OK
+Waiting response 
+  Process Succeeded
+... (snip) ...
+0. Show status
+1. Disconnect
+2. Establish
+3. Connect
+4. Scan
+5. HTTP Get
+
+Command? (next sequence id = 1)
+</code></pre></div></div>
+
+<p>Connectコマンドで、Internetの利用できる無線LANにつなぎます。 ここでは、iPhoneのインターネット共有（テザリング）を使ってみます。</p>
+
+<p>シリアルターミナルのボックスに、
+<code class="highlighter-rouge">3</code>、Enterと入力します。 つづいて、SSIDとパスワードを入力します。 (SSIDとパスワードの入力は、; (セミコロン) で終端することを忘れずに！)</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SSID? iPhone
+Network Key? 12345678
+
+Connect command: 
+
+00: 01010000300000000000000000000200
+01: 0200000002000000060000006950686F
+02: 6E650000080000003132333435363738
+
+Waiting response 
+  Command Processing.............
+  Process Succeeded
+
+Success.
+</code></pre></div></div>
+
+<p>ステータスで、IPアドレスが正しく得られていることを確認しましょう。</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>... (snip) ...
+ [0550h] IP Address: 172.20.10.4
+... (snip) ...
+</code></pre></div></div>
+
+<p>続いてHTTPによる受信です。 シリアルターミナルのボックスに、
+<code class="highlighter-rouge">5</code>、Enterと入力します。</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Command? (next sequence id = 2)
+
+http command: 
+
+00: 01010000E80000000000000000002300
+01: 030000000200000017000000666C6173
+02: 686169722D646576656C6F706572732E
+03: 636F6D00AF000000474554202F656E2F
+04: 20485454502F312E310D0A486F73743A
+05: 20666C6173686169722D646576656C6F
+06: 706572732E636F6D0D0A557365722D41
+07: 67656E743A204D6F7A696C6C612F352E
+08: 30202857696E646F7773204E5420362E
+09: 333B20574F57363429204170706C6557
+0A: 65624B69742F3533372E333620284B48
+0B: 544D4C2C206C696B65204765636B6F29
+0C: 204368726F6D652F33362E302E313938
+0D: 352E313235205361666172692F353337
+0E: 2E33360D0A0D0A00
+
+Waiting response 
+  Command Processing...
+  Process Succeeded
+HTTP/1.1 200 OK
+Date: Tue, 21 Oct 2014 06:25:10 GMT
+Server: Apache/2.2.15 (CentOS)
+X-Powered-By: PHP/5.3.3
+Set-Cookie: FASSID=c637h0hs62jvc9055f5krvpfc4; path=/
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: FASSID=o4365cm2e7nqf4afflk727flr3; path=/
+Set-Cookie: FASSID=u5h3v3tf0ik7kn2jv3os2aakc4; path=/
+X-Mod-Pagespeed: 1.8.31.4-4056
+Vary: Accept-Encoding,User-Agent
+Content-Length: 25710
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+<span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="c">&lt;!--[if lt IE 7]&gt; &lt;html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"&gt; &lt;![endif]--&gt;</span>
+<span class="c">&lt;!--[if IE 7]&gt; &lt;html class="no-js lt-ie9 lt-ie8" lang="en"&gt; &lt;![endif]--&gt;</span>
+<span class="c">&lt;!--[if IE 8]&gt; &lt;html class="no-js lt-ie9" lang="en"&gt; &lt;![endif]--&gt;</span>
+<span class="c">&lt;!--[if gt IE 8] --&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+<span class="c">&lt;!-- &lt;![endif] --&gt;</span>
+
+
+<span class="nt">&lt;head&gt;</span>
+
+<span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">/&gt;</span>
+<span class="c">&lt;!-- %meta{:content =&gt; "IE=edge,chrome=1", "http-equiv" =&gt; "X-UA-Compatible"} --&gt;</span>
+
+<span class="c">&lt;!--Google Apps verification--&gt;</span>
+
+<span class="nt">&lt;title&gt;</span>FlashAir Developers - Home<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1.0"</span> <span class="na">name=</span><span class="s">"viewport"</span><span class="nt">/&gt;</span>
+
+<span class="c">&lt;!--[if lt IE 9]&gt;
+    &lt;script src="http://html5shim.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;
+&lt;![endif]--&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"/images/flashair_favicon.ico"</span> <span class="na">rel=</span><span class="s">"shortcut icon"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"/images/apple-touch-icon-114x114-precomposed.png"</span> <span class="na">rel=</span><span class="s">"apple-touch-icon-precomposed"</span> <span class="na">sizes=</span><span class="s">"114x114"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"/images/apple-touch-icon-72x72-precomposed.png"</span> <span class="na">rel=</span><span class="s">"apple-touch-icon-precomposed"</span> <span class="na">sizes=</span><span class="s">"72x72"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"/images/apple-touch-icon-57x57-precomposed.png"</span> <span class="na">rel=</span><span class="s">"apple-touch-icon-precomposed"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"/css/bootstrap.css"</span> <span class="na">media=</span><span class="s">"screen"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">type=</span><span class="s">"text/css"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"/css/responsive.css"</span> <span class="na">media=</span><span class="s">"screen"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">type=</span><span class="s">"text/css"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"/css/font-awesome.css"</span> <span class="na">media=</span><span class="s">"screen"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">type=</span><span class="s">"text/css"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"/css/theme.css"</span> <span class="na">media=</span><span class="s">"screen"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">type=</span><span class="s">"text/css"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"/css/fonts.css"</span> <span class="na">media=</span><span class="s">"screen"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">type=</span><span class="s">"text/css"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"/css/prett
+Success.
+... (snip) ...
+</span></code></pre></div></div>
+
+<p><code class="highlighter-rouge">HTTP/1.1 200 OK</code>と書かれた行から、
+<code class="highlighter-rouge">Success.</code>の上の行までが、受信したデータです。 受信サイズ制限のため切れてしまっていますが、FlashAir Developersのページが受信できました。</p>
+
+<hr />
+<h2 id="サンプルコード">サンプルコード</h2>
+
+<p><a href="/files/samplecode/arduino/arduino_tutorial_06.zip" class="btn btn-primary">arduino_tutorial_06.zip</a> (24KB)</p>
+
+<p>本チュートリアルのサンプルコードはGPLv3および<a href="../../license">二条項BSDライセンス</a>で提供されています。 詳細はダウンロードした各ファイルを参照してください。</p>
+
+
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

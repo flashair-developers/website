@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  
+    <title>共通コマンド - website</title>
+
+    
+  
+
+  <link rel="shortcut icon" href="http://localhost:4000/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/just-the-docs.css">
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/customstyles.css">
+  
+
+  
+    <script type="text/javascript" src="http://localhost:4000/assets/js/vendor/lunr.min.js"></script>
+  
+  <script type="text/javascript" src="http://localhost:4000/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>共通コマンド | website</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="共通コマンド" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/docs/api/reference/common.html" />
+<meta property="og:url" content="http://localhost:4000/docs/api/reference/common.html" />
+<meta property="og:site_name" content="website" />
+<script type="application/ld+json">
+{"@type":"WebPage","headline":"共通コマンド","url":"http://localhost:4000/docs/api/reference/common.html","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+
+  <div class="page-wrap">
+    <div class="side-bar">
+      <a href="http://localhost:4000" class="site-title fs-6 lh-tight">website</a>
+      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+      <div class="navigation main-nav js-main-nav">
+        <nav role="navigation" aria-label="Main navigation">
+  <ul class="navigation-list">
+    <li class="navigation-list-item">          
+      <a href="/docs/api/command.cgi.html" class="navigation-list-link">command.cgi</a>
+    </li>
+    <li class="navigation-list-item">
+      <a href="/docs/api/config.cgi.html" class="navigation-list-link">config.cgi</a>
+    </li>        
+    <li class="navigation-list-item">          
+      <a href="/docs/api/thumbnail.cgi.html" class="navigation-list-link">thumbnail.cgi</a>
+    </li>        
+    <li class="navigation-list-item">            
+      <a href="/docs/api/upload.cgi.html" class="navigation-list-link">upload.cgi</a>
+    </li>      
+    <li class="navigation-list-item">            
+      <a href="/docs/api/CONFIG.html" class="navigation-list-link">CONFIG</a>
+    </li>        
+    <li class="navigation-list-item">            
+      <a href="/docs/api/utility.html" class="navigation-list-link">ブラウザユーティリティ</a>
+    </li>             
+    <li class="navigation-list-item">            
+      <a href="/docs/api/lua.html" class="navigation-list-link">Lua機能</a>
+    </li>
+    <li class="navigation-list-item active">            
+      <a href="/docs/api/isdio.html" class="navigation-list-link active">iSDIO</a>
+    </li>
+    <li>
+      <br>
+      <a href="/docs/api/isdio">iSDIOトップに戻る</a>
+    </li>
+  </ul>
+</nav>
+      </div>
+      <footer role="contentinfo" class="site-footer">
+        <p class="text-small text-grey-dk-000 mb-0">This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.</p>
+      </footer>
+    </div>
+    <div class="main-content-wrap js-main-content" tabindex="0">
+      <div class="page-header">
+        <div class="main-content">
+          
+          <div class="search js-search">
+            <div class="search-input-wrap">
+              <input type="text" class="js-search-input search-input" tabindex="0" placeholder="Search website" aria-label="Search website" autocomplete="off">
+              <svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z"/><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z"/></g></svg>
+            </div>
+            <div class="js-search-results search-results-wrap"></div>
+          </div>
+          
+          
+        </div>
+      </div>
+      <div class="main-content">
+        
+          
+            <nav class="breadcrumb-nav">
+              <ol class="breadcrumb-nav-list">
+                
+                  <li class="breadcrumb-nav-list-item"><span>iSDIO</span></li>
+                  <li class="breadcrumb-nav-list-item"><span>コマンドリファレンス</span></li>
+                
+                <li class="breadcrumb-nav-list-item"><span>共通コマンド</span></li>
+              </ol>
+            </nav>
+          
+        
+        <div id="main-content" class="page-content" role="main">
+          <h1 id="共通コマンド">共通コマンド</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>コマンドID</th>
+      <th>コマンド名</th>
+      <th>機能</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0011h</td>
+      <td><a href="#SetCurrentTime">SetCurrentTime(currentDate, currentTime)</a></td>
+      <td>現在時刻の設定</td>
+    </tr>
+    <tr>
+      <td>0012h</td>
+      <td><a href="#Abort">Abort(sequenceID)</a></td>
+      <td>特定のiSDIOコマンドの実行を停止</td>
+    </tr>
+    <tr>
+      <td>0013h</td>
+      <td><a href="#ReadResponse">ReadResponse(sequenceID)</a></td>
+      <td>レスポンスデータの読み取り</td>
+    </tr>
+    <tr>
+      <td>0014h</td>
+      <td><a href="#SetPowerSaveMode">SetPowerSaveMode(powerMode)</a></td>
+      <td>パワーセーブモードの設定（オン/オフ）</td>
+    </tr>
+    <tr>
+      <td>0015h</td>
+      <td><a href="#SetChannel">SetChannel(channelNum)</a></td>
+      <td>APモードで使用する無線チャネルの設定</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+<h2 id="SetCurrentTime">SetCurrentTime(currentDate, currentTime)</h2>
+
+<p>FlashAirに現在時刻を設定するためのホストリクエストです。FlashAirの内部の時計の数字からカウントが始まります。時刻を設定、修正、アクセスしたときに、ファイルやディレクトリにタイムスタンプが設定されます。</p>
+
+<h3 id="コマンドid">コマンドID</h3>
+
+<p>0011h</p>
+
+<h3 id="引数">引数</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Size</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>現在時刻</td>
+      <td>integer (little endian)</td>
+      <td>2バイト</td>
+      <td>
+        <code>currentDate</code>はFlashAirに設定する時刻です。フォーマットは以下のとおりです。
+        <ul>
+          <li>Bits 0 to 4: 日の設定、有効な数値は1～31</li>
+          <li>Bits 5 to 8: 月の設定、有効な数値は1～12</li>
+          <li>Bits 9 to 15: 年の設定、有効な数値は0～127（1980～2107）</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>現在時刻</td>
+      <td>integer (little endian)</td>
+      <td>2バイト</td>
+      <td>
+        <code>currentDate</code>はFlashAirに設定する時刻です。フォーマットは以下のとおりです。<p></p>
+        <ul>
+          <li>Bits 0 to 4: 秒の設定（2秒？）、有効な数値は0～29(0～58秒) 2-second count</li>
+          <li>Bits 5 to 10: 分の設定、有効な数値は0～59</li>
+          <li>Bits 11 to 15: 時の設定、有効な数値は0～23、設定可能な時刻は深夜00:00:00～23:59:58</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="レスポンス">レスポンス</h3>
+
+<p>無し</p>
+
+<hr />
+<h2 id="abort">Abort(sequenceID)</h2>
+
+<p>特定のiSDIOコマンドの実行を停止するためのホストリクエストです。FlashAirがこのコマンドを受信すると、現在プロセス中のコマンドは発行されていないものとみなして動作します。しかし、NANDメモリーモジュールの中にファイルを作るコマンド（”SendHTTPMessageByFile”、”SendHTTPFileByFile”、”SendHTTPSSLMessageByFile”、”SendHTTPSSLFileByFile”、”DLNA_AcceptUpload”、”GetFile” and “PTP_ReceiveFile”など）があっても、FlashAirはプロセスが完全に終わっていなくてもファイルを除く必要はありません。これは、FlashAirがすべてのデータを保存しているとは限らないということです。そのためプロセス中断後、ホストは完了していないファイルを適切に処理します。さらに、FlashAirはファイルアロケーションテーブル、ディレクトリーエントリーなどのファイルシステムのメタデータを継続的に維持します。このコマンドは、受信された場合、現在のプロセス中のコマンドより先に実行されます。このコマンドのためのCommand Response Status はCommand Response Status Queue に登録されません。しかし、中断したコマンドのCommand Response Statusは”04h: Process Terminated”に変換されます。つまり、このコマンドが発行されていても、いずれのコマンドのステータスはキューにから除かれないということです。例えば、複数のコマンドがプロセス中で、そのうちの一つが中断されたとき、他のコマンドは影響を受けずプロセスを継続します。</p>
+
+<p>コマンドが発行されたタイミングによって、このコマンドは無視され、中断されたターゲットコマンドはプロセスを完了します。ターゲットコマンドのコマンドレスポンスステータスは”03h: Process Succeeded”または “80h to FFh: Process Failed”になります。この場合も “Abort”コマンドのプロセス時間は変わりません。</p>
+
+<p>無線LAN接続の終了またはPeer-to-Peer File Transferアプリケーションの終了には、”Disconnect”コマンドを使用することが推奨されています。</p>
+
+<h3 id="コマンドid-1">コマンドID</h3>
+
+<p>0012h</p>
+
+<h3 id="引数-1">引数</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Size</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>sequenceID</td>
+      <td>integer</td>
+      <td>4-byte</td>
+      <td><code class="highlighter-rouge">sequenceID</code>は、コマンド発行時ホストによって特定された、コマンドのiSDIOコマンドシークエンスIDを意味します。値は “00 00 00 00h”から”FF FFFF FFh”となります。</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="レスポンス-1">レスポンス</h3>
+
+<p>無し</p>
+
+<hr />
+<h2 id="readresponse">ReadResponse(sequenceID)</h2>
+
+<p>指定のiSDIOコマンドシークエンスIDによって発行されたコマンドに対応して、レスポンスデータを読み取るためのホストリクエストです。レスポンスデータは、バッファオーバーフローでない限り、Response Data Register Portから取得可能です。このコマンドは特定のコマンドが完了しCommand Response Status Queueにあるときにのみ有効です。さらに、このコマンドのプロセスは、現在プロセス中のコマンドより優先され、このコマンドのコマンドレスポンスステータスはCommand Response Status Queueに登録されません。つまり、このコマンドが発行されても、いずれのコマンドステータスもキューから除かれることはありません。</p>
+
+<h3 id="コマンドid-2">コマンドID</h3>
+
+<p>0013h</p>
+
+<h3 id="引数-2">引数</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Size</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>sequenceID</td>
+      <td>integer</td>
+      <td>4-byte</td>
+      <td><code class="highlighter-rouge">sequenceID</code>は、コマンド発行時ホストによって特定された、コマンドのiSDIOコマンドシークエンスIDを意味します。値は “00 00 00 00h”から”FF FFFF FFh”となります。</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="レスポンス-2">レスポンス</h3>
+
+<p>レスポンスデータは特定のiSDIOコマンドによります。(2.2.2.3 iSDIO Command Response Data in [iSDIO]を参照してください)。</p>
+
+<p>Command Response Status Queueにある最初のコマンドにおいて、コマンドレスポンスステータス#1のレスポンスデータはResponse Data Register Portにデフォルトでマップされます。また#2～8のコマンドレスポンスステータスについては、このコマンドは特定のレスポンスデータがResponse Register Portにマップされるよう発行されます。（もしホストがCommand Write DataにあるひとつのiSDIOコマンドを、キューのプロセス無しで発行した場合、ホストはこのコマンドを使う必要がなくなります。）このコマンドはResponse DataをCommand Response Status #1にマップするために発行されることが可能です。</p>
+
+<p>さらに、現在のレスポンスデータの読み込みが完了する前に、このコマンドが発行された場合でも、新しいレスポンスデータはデータの最初から読み取りが可能です。つまり、同じコマンドのうち、一つがこのコマンドによって特定され、現在のレスポンスデータの読み込みが完了する前でも、レスポンスデータは最初から読み取りが可能です。</p>
+
+<hr />
+<h2 id="setpowersavemode">SetPowerSaveMode(powerMode)</h2>
+
+<p>FlashAirのパワーセーブモードを変更するためのホストリクエストです。モードがオンのとき、FlashAirはパワーセーブモードで機能します。（パワーセービングの認識はFlashAir実行によります。データ移行など他の動作が行われていた場合はFlashAirによってはこのモードが低くなります。）</p>
+
+<h3 id="コマンドid-3">コマンドID</h3>
+
+<p>0014h</p>
+
+<h3 id="引数-3">引数</h3>
+
+<table>
+  <colgroup>
+    <col />
+    <col class="w-25" />
+    <col />
+    <col class="w-50" />
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Size</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        パワーモード
+      </td>
+      <td>
+        integer
+      </td>
+      <td>
+        1-byte
+      </td>
+      <td>
+        <code>powerMode</code>はパワーセーブモードを意味します。
+        <dl>
+          <dt>00h</dt>
+          <dd>
+            パワーセーブモード Off
+          </dd>
+          <dt>01h</dt>
+          <dd>
+            パワーセーブモード On
+          </dd>
+        </dl>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;section&gt;
+    ### レスポンス
+
+    無し
+&lt;/section&gt;
+</code></pre></div></div>
+<p>&lt;/section&gt;</p>
+
+<section>
+    ## SetChannel(channelNum)
+
+    <div class="separator-2"></div>
+
+    FlashAirのAPにチャンネルを設定するためのホストリクエストです。FlashAirが一部のチャンネルをサポートしていない場合、このコマンドは拒否されます。ホストはCapability
+    Registerの"Channel
+    Support"を確認する必要があります。iSDIO Capability Register for Wireless LANを参照してください。
+
+    <section>
+        ### コマンドID
+
+        0015h
+    </section>
+
+    <section>
+        ### 引数
+
+        <colgroup>
+                            <col />
+                            <col class="w-25" />
+                            <col />
+                            <col class="w-50" />
+                          </colgroup>
+        Name                                                   | Type                                                   | Size                                                  | 説明                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+        ------------------------------------------------------ | ------------------------------------------------------ | ----------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                チャンネル番号
+                               |                         integer
+                               |                         1-byte
+                               | `channelNum`はチャンネルの番号を意味します。
+
+
+        <dl>
+            <dt>00h</dt>
+            <dd>                            チャンネル番号は自動的に設定されます。
+                                      </dd>
+            <dt>01h</dt>
+            <dd>                            チャンネル 1 …​
+                                      </dd>
+            <dt>0Eh</dt>
+            <dd>                            チャンネル 14
+                                      </dd>
+            <dt>24h</dt>
+            <dd>                            チャンネル 36 …​
+                                      </dd>
+            <dt>A1h</dt>
+            <dd>                            チャンネル 161
+                                      </dd>
+        </dl>
+    </section>
+
+    <section>
+        ### レスポンス
+
+        無し
+    </section>
+</section>
+
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

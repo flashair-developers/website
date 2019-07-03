@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  
+    <title>Webインターフェースの作成 - website</title>
+
+    
+  
+
+  <link rel="shortcut icon" href="http://localhost:4000/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/just-the-docs.css">
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/customstyles.css">
+  
+
+  
+    <script type="text/javascript" src="http://localhost:4000/assets/js/vendor/lunr.min.js"></script>
+  
+  <script type="text/javascript" src="http://localhost:4000/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Webインターフェースの作成 | website</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Webインターフェースの作成" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/docs/tutorials/lua/8.html" />
+<meta property="og:url" content="http://localhost:4000/docs/tutorials/lua/8.html" />
+<meta property="og:site_name" content="website" />
+<script type="application/ld+json">
+{"@type":"WebPage","headline":"Webインターフェースの作成","url":"http://localhost:4000/docs/tutorials/lua/8.html","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+
+  <div class="page-wrap">
+    <div class="side-bar">
+      <a href="http://localhost:4000" class="site-title fs-6 lh-tight">website</a>
+      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+      <div class="navigation main-nav js-main-nav">
+        <nav role="navigation" aria-label="Main navigation">
+    <ul class="navigation-list">
+      
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/1.html" class="navigation-list-link">FlashAir Lua機能の概要</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/2.html" class="navigation-list-link">FlashAirでLuaを実行する</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/3.html" class="navigation-list-link">HTTPを利用したファイルのダウンロード</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/4.html" class="navigation-list-link">FTPを使ったファイルのアップロード</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/5.html" class="navigation-list-link">Facebookへのアップロード</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/6.html" class="navigation-list-link">OAUTH2を使ったDropboxへのアップロード</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/7.html" class="navigation-list-link">無線LAN設定</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item active">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/8.html" class="navigation-list-link active">Webインターフェースの作成</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/9.html" class="navigation-list-link">Googleドライブへのアップロード</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/lua/10.html" class="navigation-list-link">Luaスクリプトをバイトコードにコンパイル</a>
+            </li>
+          
+        
+      
+
+      <li>
+        <br>
+        <a href="./">目次に戻る</a>
+      </li>
+    </ul>
+  </nav>
+      </div>
+      <footer role="contentinfo" class="site-footer">
+        <p class="text-small text-grey-dk-000 mb-0">This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.</p>
+      </footer>
+    </div>
+    <div class="main-content-wrap js-main-content" tabindex="0">
+      <div class="page-header">
+        <div class="main-content">
+          
+          <div class="search js-search">
+            <div class="search-input-wrap">
+              <input type="text" class="js-search-input search-input" tabindex="0" placeholder="Search website" aria-label="Search website" autocomplete="off">
+              <svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z"/><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z"/></g></svg>
+            </div>
+            <div class="js-search-results search-results-wrap"></div>
+          </div>
+          
+          
+        </div>
+      </div>
+      <div class="main-content">
+        
+          
+            <nav class="breadcrumb-nav">
+              <ol class="breadcrumb-nav-list">
+                
+                  <li class="breadcrumb-nav-list-item"><span>チュートリアル</span></li>
+                  <li class="breadcrumb-nav-list-item"><span>Lua機能チュートリアル</span></li>
+                
+                <li class="breadcrumb-nav-list-item"><span>Webインターフェースの作成</span></li>
+              </ol>
+            </nav>
+          
+        
+        <div id="main-content" class="page-content" role="main">
+          <h1 id="webインターフェースの作成">Webインターフェースの作成</h1>
+
+<p>LuaでHTML/JavaScriptをprintすることで、動的にHTMLコンテンツを作成します。PHPでWebコンテンツを作成するのと似ています。
+このチュートリアルでは、2つの基本的な例をみていきましょう。</p>
+
+<hr />
+<h2 id="画像のダウンロードと表示">画像のダウンロードと表示</h2>
+
+<p>まず、
+<a href="../../api/lua/#httpgetfile">fa.HTTPGetFile</a>を使用して、画像をダウンロードしてみましょう。ダウンロードが成功すると、画像を表示します。それでは、FlashAirのロゴを表示してみましょう。</p>
+
+<h5 id="imagedownloadlua"><em>/ImageDownload.lua</em></h5>
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">--HTTP request</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">HTTPGetFile</span><span class="p">(</span><span class="s2">"https://flashair-developers.com/images/assets/flashairLogo_official_small.png"</span><span class="p">,</span> <span class="s2">"logo.png"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"&lt;!DOCTYPE html&gt;"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"&lt;html&gt;"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"&lt;body&gt;&lt;center&gt;"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"&lt;h2&gt;Hello HTML!&lt;/h2&gt;"</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">result</span> <span class="o">~=</span> <span class="kc">nil</span> <span class="k">then</span>
+  <span class="c1">--Display the image</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">"&lt;img src=\"</span><span class="n">logo</span><span class="p">.</span><span class="n">png</span><span class="err">\</span><span class="s2">" alt=\"</span><span class="n">FlashAir</span> <span class="n">Developers</span> <span class="n">Logo</span><span class="err">\</span><span class="s2">"&gt;"</span><span class="p">)</span>
+<span class="k">else</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">"File failed to download..."</span><span class="p">)</span>
+<span class="k">end</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"&lt;/body&gt;"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"&lt;/html&gt;"</span><span class="p">)</span>
+</code></pre></div></div>
+<p>これで終わりです!ブラウザからスクリプトを呼び出すと、画像が表示されます。</p>
+
+<p><img src="/assets/images/tutorials/lua_tutorial_08_01.png" alt="画像のダウンロードと表示" class="d-block img-thumbnail" /></p>
+
+<hr />
+<h2 id="flashairステータス表示">FlashAirステータス表示</h2>
+
+<p>次に、ステータスを表示する画面を作成してみましょう。このページには、SSID、ディレクトリ等FlashAirの情報をいくつか表示します。Luaで情報を集め、それをHTMLで表示します。</p>
+
+<p>それでは、loadConfig()関数を使って、SD_WLAN/CONFIGファイルから情報を取得してみましょう。</p>
+
+<h5 id="showstatuslua"><em>/ShowStatus.lua</em></h5>
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">--Read the FlashAir config file, store it in a table</span>
+<span class="kd">local</span> <span class="k">function</span> <span class="nf">loadConfig</span><span class="p">()</span>
+	<span class="kd">local</span> <span class="n">file</span> <span class="o">=</span> <span class="nb">io.open</span><span class="p">(</span><span class="s2">"/SD_WLAN/CONFIG"</span><span class="p">,</span> <span class="s2">"r"</span> <span class="p">)</span>
+	<span class="n">config</span> <span class="o">=</span> <span class="p">{}</span>
+	<span class="k">for</span> <span class="n">line</span> <span class="k">in</span> <span class="n">file</span><span class="p">:</span><span class="n">lines</span><span class="p">()</span> <span class="k">do</span>
+		<span class="c1">--Split the config file into variables and values</span>
+		<span class="c1">--ie: APPMODE=5</span>
+		<span class="n">var</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="n">line</span><span class="p">:</span><span class="n">match</span><span class="p">(</span><span class="s2">"([^,]+)=([^,]+)"</span><span class="p">)</span>
+		<span class="k">if</span> <span class="n">var</span> <span class="o">~=</span> <span class="kc">nil</span> <span class="ow">and</span> <span class="n">value</span> <span class="o">~=</span> <span class="kc">nil</span> <span class="k">then</span>
+			<span class="n">config</span><span class="p">[</span><span class="n">var</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+		<span class="k">end</span>
+	<span class="k">end</span>
+	<span class="k">return</span> <span class="n">config</span>
+<span class="k">end</span>
+</code></pre></div></div>
+<p>次に、ディレクトリ内のファイルリストを作成します。再帰的にファイルの合計数をカウントするために、2つの関数を作成します。</p>
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">--Returns a list of files in a directory, as well as their size</span>
+<span class="kd">local</span> <span class="k">function</span> <span class="nf">getfileSize</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+	<span class="n">size</span><span class="o">=</span><span class="mi">0</span>
+	<span class="k">for</span> <span class="n">file</span> <span class="k">in</span> <span class="n">lfs</span><span class="p">.</span><span class="n">dir</span><span class="p">(</span><span class="n">path</span><span class="p">)</span> <span class="k">do</span>
+		<span class="n">attr</span> <span class="o">=</span> <span class="n">lfs</span><span class="p">.</span><span class="n">attributes</span><span class="p">(</span><span class="n">path</span><span class="o">..</span><span class="s2">"/"</span><span class="o">..</span><span class="n">file</span><span class="p">)</span>
+		<span class="k">if</span> <span class="n">attr</span> <span class="o">~=</span> <span class="kc">nil</span> <span class="ow">and</span> <span class="n">attr</span><span class="p">.</span><span class="n">mode</span> <span class="o">==</span> <span class="s2">"file"</span> <span class="k">then</span>
+			<span class="n">size</span> <span class="o">=</span> <span class="n">size</span> <span class="o">+</span> <span class="nb">math.floor</span><span class="p">(</span> <span class="n">attr</span><span class="p">.</span><span class="n">size</span> <span class="o">/</span> <span class="mi">1024</span> <span class="o">*</span> <span class="nb">math.pow</span><span class="p">(</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">1</span> <span class="p">)</span> <span class="p">)</span> <span class="o">/</span> <span class="nb">math.pow</span><span class="p">(</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">1</span> <span class="p">)</span>
+		<span class="k">end</span>
+	<span class="k">end</span>
+	<span class="k">return</span> <span class="n">size</span>
+<span class="k">end</span>
+
+<span class="kd">local</span> <span class="k">function</span> <span class="nf">getfileList</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+	<span class="n">file_list</span> <span class="o">=</span> <span class="p">{}</span>
+	<span class="k">for</span> <span class="n">file</span> <span class="k">in</span> <span class="n">lfs</span><span class="p">.</span><span class="n">dir</span><span class="p">(</span><span class="n">path</span><span class="p">)</span> <span class="k">do</span>
+		<span class="n">attr</span> <span class="o">=</span> <span class="n">lfs</span><span class="p">.</span><span class="n">attributes</span><span class="p">(</span><span class="n">path</span><span class="o">..</span><span class="s2">"/"</span><span class="o">..</span><span class="n">file</span><span class="p">)</span>
+		<span class="n">file_list</span><span class="p">[</span><span class="n">file</span><span class="p">]</span> <span class="o">=</span> <span class="n">getfileSize</span><span class="p">(</span><span class="n">path</span><span class="o">..</span><span class="s2">"/"</span><span class="o">..</span><span class="n">file</span><span class="p">)</span>
+	<span class="k">end</span>
+	<span class="k">return</span> <span class="n">file_list</span>
+<span class="k">end</span>
+
+<span class="c1">--Recursively counts the number of files in a directory (not including folders)</span>
+<span class="kd">local</span> <span class="k">function</span> <span class="nf">countFiles</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+	<span class="c1">--print("Counting: "..path)</span>
+	<span class="n">count</span><span class="o">=</span><span class="mi">0</span>
+	<span class="k">for</span> <span class="n">file</span> <span class="k">in</span> <span class="n">lfs</span><span class="p">.</span><span class="n">dir</span><span class="p">(</span><span class="n">path</span><span class="p">)</span> <span class="k">do</span>
+		<span class="n">attr</span> <span class="o">=</span> <span class="n">lfs</span><span class="p">.</span><span class="n">attributes</span><span class="p">(</span><span class="n">path</span><span class="o">..</span><span class="s2">"/"</span><span class="o">..</span><span class="n">file</span><span class="p">)</span>
+		<span class="k">if</span> <span class="n">attr</span> <span class="o">~=</span> <span class="kc">nil</span> <span class="ow">and</span> <span class="n">attr</span><span class="p">.</span><span class="n">mode</span> <span class="o">==</span> <span class="s2">"file"</span> <span class="k">then</span>
+			<span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span><span class="mi">1</span>
+		<span class="k">end</span>
+		<span class="k">if</span> <span class="n">attr</span> <span class="o">~=</span> <span class="kc">nil</span> <span class="ow">and</span> <span class="n">attr</span><span class="p">.</span><span class="n">mode</span> <span class="o">==</span> <span class="s2">"directory"</span> <span class="k">then</span>
+			<span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="n">countFiles</span><span class="p">(</span><span class="n">path</span><span class="o">..</span><span class="s2">"/"</span><span class="o">..</span><span class="n">file</span><span class="p">)</span>
+		<span class="k">end</span>
+	<span class="k">end</span>
+	<span class="k">return</span> <span class="n">count</span>
+<span class="k">end</span>
+</code></pre></div></div>
+<p><a href="../../api/lua/#request">fa.request</a>を使ってcommand.cgiを呼び出すことで、これらの情報を得ることはできますが、LuaFileSystemを使用する方が高速に処理できます。</p>
+
+<p>では、これらの2つの関数が準備できたので、残りのスクリプトを書いていきましょう。基本的なHTMLを使用し、ページを再読み込みするためにリフレッシュタグも使います。</p>
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">reloadTime</span> <span class="o">=</span> <span class="s2">"60"</span> <span class="c1">--How often (in seconds) the status page should update.</span>
+<span class="n">monitorDir</span> <span class="o">=</span> <span class="s2">"/DCIM"</span> <span class="c1">--What directory to monitor</span>
+
+<span class="c1">--load the config file</span>
+<span class="n">config_table</span><span class="o">=</span><span class="n">loadConfig</span><span class="p">()</span>
+<span class="n">file_count</span><span class="o">=</span><span class="n">countFiles</span><span class="p">(</span><span class="n">monitorDir</span><span class="p">)</span>
+<span class="n">file_list</span><span class="o">=</span><span class="n">getfileList</span><span class="p">(</span><span class="n">monitorDir</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"&lt;!DOCTYPE html&gt;"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"&lt;html&gt;"</span><span class="p">)</span>
+<span class="c1">--Set the page to reload every x seconds</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"&lt;meta http-equiv=\"</span><span class="n">refresh</span><span class="err">\</span><span class="s2">" content=\""..reloadTime.."</span><span class="err">\</span><span class="s2">" /&gt;"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"&lt;body&gt;&lt;center&gt;"</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">config_table</span><span class="p">[</span><span class="s2">"APPNAME"</span><span class="p">]</span> <span class="o">~=</span> <span class="kc">nil</span> <span class="k">then</span>
+	<span class="nb">print</span><span class="p">(</span><span class="s2">"&lt;h2&gt;"</span><span class="o">..</span><span class="n">config_table</span><span class="p">[</span><span class="s2">"APPNAME"</span><span class="p">]</span><span class="o">..</span><span class="s2">" Status Page&lt;/h2&gt;"</span><span class="p">)</span>
+<span class="k">else</span>
+	<span class="nb">print</span><span class="p">(</span><span class="s2">"&lt;h2&gt;FlashAir Status Page&lt;/h2&gt;"</span><span class="p">)</span>
+<span class="k">end</span>
+
+<span class="k">if</span> <span class="n">config_table</span><span class="p">[</span><span class="s2">"APPMODE"</span><span class="p">]</span> <span class="o">~=</span> <span class="kc">nil</span> <span class="ow">and</span> <span class="n">config_table</span><span class="p">[</span><span class="s2">"APPSSID"</span><span class="p">]</span> <span class="o">~=</span> <span class="kc">nil</span> <span class="ow">and</span> <span class="n">config_table</span><span class="p">[</span><span class="s2">"VERSION"</span><span class="p">]</span>  <span class="o">~=</span> <span class="kc">nil</span> <span class="k">then</span>
+	<span class="nb">print</span><span class="p">(</span><span class="s2">"&lt;b&gt;APPMODE:&lt;/b&gt; "</span><span class="o">..</span><span class="n">config_table</span><span class="p">[</span><span class="s2">"APPMODE"</span><span class="p">]</span><span class="o">..</span><span class="s2">"&lt;b&gt;SSID:&lt;/b&gt; &lt;i&gt;"</span><span class="o">..</span><span class="n">config_table</span><span class="p">[</span><span class="s2">"APPSSID"</span><span class="p">]</span><span class="o">..</span><span class="s2">"&lt;/i&gt;"</span><span class="p">)</span>
+	<span class="nb">print</span><span class="p">(</span><span class="s2">"&lt;br&gt;"</span><span class="p">)</span>
+	<span class="nb">print</span><span class="p">(</span><span class="s2">"&lt;b&gt;Version: &lt;/b&gt;"</span><span class="o">..</span><span class="n">config_table</span><span class="p">[</span><span class="s2">"VERSION"</span><span class="p">])</span>
+
+<span class="k">else</span>
+	<span class="nb">print</span><span class="p">(</span><span class="s2">"&lt;b&gt;Error loading CONFIG file!&lt;/b&gt;"</span><span class="p">)</span>
+<span class="k">end</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"&lt;br&gt;&lt;br&gt;"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"&lt;h2&gt;"</span><span class="o">..</span><span class="n">monitorDir</span><span class="o">..</span><span class="s2">"&lt;/h2&gt;"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"&lt;div&gt;"</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">file</span><span class="p">,</span><span class="n">size</span> <span class="k">in</span> <span class="nb">pairs</span><span class="p">(</span><span class="n">file_list</span><span class="p">)</span> <span class="k">do</span>
+	<span class="k">if</span> <span class="n">file</span> <span class="o">~=</span> <span class="s2">""</span> <span class="ow">and</span> <span class="n">size</span> <span class="o">~=</span> <span class="s2">""</span> <span class="k">then</span>
+		<span class="nb">print</span><span class="p">(</span><span class="s2">"&lt;a href="</span><span class="o">..</span><span class="n">monitorDir</span><span class="o">..</span><span class="s2">"/"</span><span class="o">..</span><span class="n">file</span><span class="o">..</span><span class="s2">"&gt;"</span><span class="o">..</span><span class="n">file</span><span class="o">..</span><span class="s2">"&lt;/a&gt;: "</span><span class="o">..</span><span class="n">size</span><span class="o">..</span><span class="s2">"kb&lt;br&gt;"</span><span class="p">)</span>
+	<span class="k">end</span>
+<span class="k">end</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"&lt;/div&gt;"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Total files: "</span><span class="o">..</span><span class="n">file_count</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"&lt;/body&gt;"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"&lt;/html&gt;"</span><span class="p">)</span>
+</code></pre></div></div>
+<p><span class="badge label-blue">Note:</span> print文で表示する引用符をすべて’'でエスケープしているか確認してください！</p>
+
+<p><img src="/assets/images/tutorials/lua_tutorial_08_02.png" alt="FlashAirステータス表示" class="d-block img-thumbnail" /></p>
+
+<hr />
+<h2 id="サンプルコード">サンプルコード</h2>
+
+<p><a href="https://github.com/FlashAirDevelopers/LuaTutorial/tree/master/lua_tutorial_8" target="_blank" class="btn btn-primary">リポジトリを見る（GitHub）</a></p>
+
+<p>このサイトのサンプルコードは<a href="../../license">二条項BSDライセンス</a>で提供されています。</p>
+
+
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

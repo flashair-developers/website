@@ -1,0 +1,1676 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  
+    <title>カードステータスの読み取り - website</title>
+
+    
+  
+
+  <link rel="shortcut icon" href="http://localhost:4000/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/just-the-docs.css">
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/customstyles.css">
+  
+
+  
+    <script type="text/javascript" src="http://localhost:4000/assets/js/vendor/lunr.min.js"></script>
+  
+  <script type="text/javascript" src="http://localhost:4000/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>カードステータスの読み取り | website</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="カードステータスの読み取り" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/docs/tutorials/arduino/3.html" />
+<meta property="og:url" content="http://localhost:4000/docs/tutorials/arduino/3.html" />
+<meta property="og:site_name" content="website" />
+<script type="application/ld+json">
+{"@type":"WebPage","headline":"カードステータスの読み取り","url":"http://localhost:4000/docs/tutorials/arduino/3.html","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+
+  <div class="page-wrap">
+    <div class="side-bar">
+      <a href="http://localhost:4000" class="site-title fs-6 lh-tight">website</a>
+      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+      <div class="navigation main-nav js-main-nav">
+        <nav role="navigation" aria-label="Main navigation">
+    <ul class="navigation-list">
+      
+      <li>
+        <h3>Arduino向けチュートリアル</h3>
+      </li>
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/arduino/1.html" class="navigation-list-link">ArduinoでFlashAir制御の概要</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/arduino/2.html" class="navigation-list-link">iSDIO拡張コマンドの作成</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item active">
+              
+              <a href="http://localhost:4000/docs/tutorials/arduino/3.html" class="navigation-list-link active">カードステータスの読み取り</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/arduino/4.html" class="navigation-list-link">APモードでの起動</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/arduino/5.html" class="navigation-list-link">STAモードでの起動</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/arduino/6.html" class="navigation-list-link">Webページの取得</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+      <li>
+        <h3>Raspberry Pi向けチュートリアル</h3>
+      </li>
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/raspberrypi/1.html" class="navigation-list-link">インターネット同時接続モードの設定</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/raspberrypi/2.html" class="navigation-list-link">APIリファレンス</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+      <li>
+        <h3>Mbed™向けチュートリアル</h3>
+      </li>
+      
+        
+      
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/mbed/1.html" class="navigation-list-link">MbedでAPモード起動</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/mbed/2.html" class="navigation-list-link">APIリファレンス</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+      <li>
+        <br>
+        <a href="../../tutorials/isdio">目次に戻る</a>
+      </li>
+    </ul>
+  </nav>
+      </div>
+      <footer role="contentinfo" class="site-footer">
+        <p class="text-small text-grey-dk-000 mb-0">This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.</p>
+      </footer>
+    </div>
+    <div class="main-content-wrap js-main-content" tabindex="0">
+      <div class="page-header">
+        <div class="main-content">
+          
+          <div class="search js-search">
+            <div class="search-input-wrap">
+              <input type="text" class="js-search-input search-input" tabindex="0" placeholder="Search website" aria-label="Search website" autocomplete="off">
+              <svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z"/><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z"/></g></svg>
+            </div>
+            <div class="js-search-results search-results-wrap"></div>
+          </div>
+          
+          
+        </div>
+      </div>
+      <div class="main-content">
+        
+          
+            <nav class="breadcrumb-nav">
+              <ol class="breadcrumb-nav-list">
+                
+                  <li class="breadcrumb-nav-list-item"><span>チュートリアル</span></li>
+                  <li class="breadcrumb-nav-list-item"><span>Arduino向けチュートリアル</span></li>
+                
+                <li class="breadcrumb-nav-list-item"><span>カードステータスの読み取り</span></li>
+              </ol>
+            </nav>
+          
+        
+        <div id="main-content" class="page-content" role="main">
+          <h1 id="カードステータスの読み取り">カードステータスの読み取り</h1>
+
+<p>本チュートリアルでは、iSDIOコマンドを使って、FlashAirの無線LANステータスを読み取ってみます。</p>
+
+<hr />
+<h2 id="ステータス読み取りの概要">ステータス読み取りの概要</h2>
+
+<p>下記の図は、簡易版仕様書から引用したiSDIOレジスタのメモリ配置です。</p>
+
+<h4 id="isdioレジスタのメモリ配置-sd-specifications-part-e7-isdio-simplifed-specification-version-110より抜粋"><em>iSDIOレジスタのメモリ配置 (SD Specifications Part E7 iSDIO Simplifed Specification Version 1.10より抜粋)</em></h4>
+
+<p><img src="/assets/images/tutorials/arduino_tutorial_03_3.png" alt="Commands" class="d-block" /></p>
+
+<p>iSDIOステータスは、アドレス0x400番地からはじまるページ(512バイト分の領域)を読み取ることで取得できます。</p>
+
+<p>0x400～0x4FF番地はiSDIO共通ステータスです。 0x500～0x5FF番地はアプリケーションごとのステータスとなっており、
+FlashAirの場合は、ここを読み取ることで無線LAN機能の各種情報が取得できます。</p>
+
+<h4 id="isdio共通ステータス-sd-specifications-part-e7-isdio-simplifed-specification-version-110より抜粋"><em>iSDIO共通ステータス (SD Specifications Part E7 iSDIO Simplifed Specification Version 1.10より抜粋)</em></h4>
+
+<p><img src="/assets/images/tutorials/arduino_tutorial_03_4.png" alt="Commands" class="d-block" /></p>
+
+<h4 id="isdio無線lan機能ステータス-sd-specifications-part-e7-isdio-simplifed-specification-version-110より抜粋"><em>iSDIO無線LAN機能ステータス (SD Specifications Part E7 iSDIO Simplifed Specification Version 1.10より抜粋)</em></h4>
+
+<p><img src="/assets/images/tutorials/arduino_tutorial_03_5.png" alt="Commands" class="d-block" /></p>
+
+<hr />
+<h2 id="ステータス読み取り関数の作成">ステータス読み取り関数の作成</h2>
+
+<p>0x400番地からの領域を読み取り、前述のステータスマップに従って、 読み取れた状態を表示する関数を作ります。</p>
+
+<h5 id="arduino_tutorial_03ino-その1"><em>arduino_tutorial_03.ino (その1)</em></h5>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kt">uint8_t</span> <span class="n">buffer</span><span class="p">[</span><span class="mi">512</span><span class="p">];</span>
+
+    <span class="kt">void</span> <span class="nf">printByte</span><span class="p">(</span><span class="kt">uint8_t</span> <span class="n">value</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">value</span> <span class="o">&gt;&gt;</span> <span class="mi">4</span><span class="p">,</span> <span class="n">HEX</span><span class="p">);</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">value</span> <span class="o">&amp;</span> <span class="mh">0xF</span><span class="p">,</span> <span class="n">HEX</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kt">void</span> <span class="nf">printBytes</span><span class="p">(</span><span class="kt">uint8_t</span><span class="o">*</span> <span class="n">p</span><span class="p">,</span> <span class="kt">uint32_t</span> <span class="n">len</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">len</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">printByte</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="kt">void</span> <span class="nf">printIPAddress</span><span class="p">(</span><span class="kt">uint8_t</span><span class="o">*</span> <span class="n">p</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">DEC</span><span class="p">);</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="sc">'.'</span><span class="p">);</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">DEC</span><span class="p">);</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="sc">'.'</span><span class="p">);</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">DEC</span><span class="p">);</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="sc">'.'</span><span class="p">);</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">DEC</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="n">boolean</span> <span class="nf">iSDIO_status</span><span class="p">()</span> <span class="p">{</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Read iSDIO Status Register"</span><span class="p">));</span>
+      <span class="c1">// Read iSDIO Status Register (E7 1.10 2.2.2.1)
+</span>      <span class="n">memset</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mh">0x200</span><span class="p">);</span>
+      <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">card</span><span class="p">.</span><span class="n">readExtMemory</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mh">0x400</span><span class="p">,</span> <span class="mh">0x200</span><span class="p">,</span> <span class="n">buffer</span><span class="p">))</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="c1">// Show values in the common status area.
+</span>      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s"> == iSDIO Status Registers == "</span><span class="p">));</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s"> [0400h] Command Write Status: "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x000</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x01</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"CWU "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x000</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x02</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"CWA "</span><span class="p">));</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s"> [0420h] iSDIO Status: "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x020</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x01</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"CRU "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x020</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x02</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"ESU "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x020</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x04</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"MCU "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x020</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x08</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"ASU "</span><span class="p">));</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s"> [0422h] iSDIO Int Enable: "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x022</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x01</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"CRU_ENA "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x022</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x02</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"ESU_ENA "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x022</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x04</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"MCU_ENA "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x022</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x08</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"ASU_ENA "</span><span class="p">));</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s"> [0424h] Error Status: "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x024</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x01</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"CRE "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x024</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x02</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"CWE "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x024</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x04</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"RRE "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x024</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x08</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"APE "</span><span class="p">));</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s"> [0426h] Memory Status: "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x026</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x01</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"MEX "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x026</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x02</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"FAT "</span><span class="p">));</span>
+      <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">8</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">uint8_t</span> <span class="n">addr</span> <span class="o">=</span> <span class="mh">0x40</span> <span class="o">+</span> <span class="n">i</span> <span class="o">*</span> <span class="mh">0x14</span><span class="p">;</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s"> [04"</span><span class="p">));</span>
+        <span class="n">printByte</span><span class="p">(</span><span class="n">addr</span><span class="p">);</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"h] Command Response Status #"</span><span class="p">));</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">DEC</span><span class="p">);</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">": "</span><span class="p">));</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="n">addr</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x01</span><span class="p">)</span> <span class="p">{</span>
+          <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"id = "</span><span class="p">));</span>
+          <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">get_u16</span><span class="p">(</span><span class="n">buffer</span> <span class="o">+</span> <span class="n">addr</span> <span class="o">+</span> <span class="mi">2</span><span class="p">),</span> <span class="n">DEC</span><span class="p">);</span>
+          <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">", sequence id = "</span><span class="p">));</span>
+          <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">get_u32</span><span class="p">(</span><span class="n">buffer</span> <span class="o">+</span> <span class="n">addr</span> <span class="o">+</span> <span class="mi">4</span><span class="p">),</span> <span class="n">DEC</span><span class="p">);</span>
+          <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">", status = "</span><span class="p">));</span>
+          <span class="k">switch</span> <span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="n">addr</span> <span class="o">+</span> <span class="mi">8</span><span class="p">])</span> <span class="p">{</span>
+            <span class="k">case</span> <span class="mh">0x00</span><span class="p">:</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"Initial"</span><span class="p">));</span> <span class="k">break</span><span class="p">;</span>
+            <span class="k">case</span> <span class="mh">0x01</span><span class="p">:</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"Command Processing"</span><span class="p">));</span> <span class="k">break</span><span class="p">;</span>
+            <span class="k">case</span> <span class="mh">0x02</span><span class="p">:</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"Command Rejected"</span><span class="p">));</span> <span class="k">break</span><span class="p">;</span>
+            <span class="k">case</span> <span class="mh">0x03</span><span class="p">:</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"Process Succeeded"</span><span class="p">));</span> <span class="k">break</span><span class="p">;</span>
+            <span class="k">case</span> <span class="mh">0x04</span><span class="p">:</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"Process Terminated"</span><span class="p">));</span> <span class="k">break</span><span class="p">;</span>
+            <span class="nl">default:</span>   <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"Process Failed "</span><span class="p">));</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="n">addr</span> <span class="o">+</span> <span class="mi">8</span><span class="p">],</span> <span class="n">HEX</span><span class="p">);</span> <span class="k">break</span><span class="p">;</span>
+          <span class="p">}</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+          <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"Not registered"</span><span class="p">));</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+      <span class="c1">// Show values in the application status area.
+</span>      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s"> == Wireless LAN Status Registers =="</span><span class="p">));</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s"> [0500h] DLNA Status: "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x100</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x01</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"ULR "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x100</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x02</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"DLU "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x100</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x04</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"CBR "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x100</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x08</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"CDR "</span><span class="p">));</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s"> [0501h] P2P Status: "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x101</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x01</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"ILU "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x101</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x02</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"FLU "</span><span class="p">));</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s"> [0502h] PTP Status: "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x102</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x01</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"RPO "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x102</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x02</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"RPD "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x102</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x04</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"RPC "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x102</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x08</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"CPI "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x102</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x10</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"DPI "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x102</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x20</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"CIL "</span><span class="p">));</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s"> [0504h] Application: "</span><span class="p">));</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x104</span><span class="p">]);</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s"> [0506h] WLAN: "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">((</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x106</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x01</span><span class="p">)</span> <span class="o">==</span> <span class="mh">0x00</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"No Scan, "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">((</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x106</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x01</span><span class="p">)</span> <span class="o">==</span> <span class="mh">0x01</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"Scanning, "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">((</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x106</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x06</span><span class="p">)</span> <span class="o">==</span> <span class="mh">0x00</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"No WPS, "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">((</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x106</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x06</span><span class="p">)</span> <span class="o">==</span> <span class="mh">0x02</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"WPS with PIN, "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">((</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x106</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x06</span><span class="p">)</span> <span class="o">==</span> <span class="mh">0x04</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"WPS with PBC, "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">((</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x106</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x08</span><span class="p">)</span> <span class="o">==</span> <span class="mh">0x00</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"Group Client, "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">((</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x106</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x08</span><span class="p">)</span> <span class="o">==</span> <span class="mh">0x08</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"Group Owner "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">((</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x106</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x10</span><span class="p">)</span> <span class="o">==</span> <span class="mh">0x00</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"STA, "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">((</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x106</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x10</span><span class="p">)</span> <span class="o">==</span> <span class="mh">0x10</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"AP, "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">((</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x106</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x60</span><span class="p">)</span> <span class="o">==</span> <span class="mh">0x00</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"Initial, "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">((</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x106</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x60</span><span class="p">)</span> <span class="o">==</span> <span class="mh">0x20</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"Infrastructure, "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">((</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x106</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x60</span><span class="p">)</span> <span class="o">==</span> <span class="mh">0x40</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"Wi-Fi Direct, "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">((</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x106</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x80</span><span class="p">)</span> <span class="o">==</span> <span class="mh">0x00</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"No Connection, "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">((</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x106</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x80</span><span class="p">)</span> <span class="o">==</span> <span class="mh">0x80</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"Connected, "</span><span class="p">));</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s"> [0508h] SSID: "</span><span class="p">));</span>
+      <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">32</span> <span class="o">&amp;&amp;</span> <span class="n">buffer</span><span class="p">[</span><span class="mh">0x108</span> <span class="o">+</span> <span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span> 
+        <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">((</span><span class="kt">char</span><span class="p">)</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x108</span> <span class="o">+</span> <span class="n">i</span><span class="p">]);</span>
+      <span class="p">}</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s"> [0528h] Encryption Mode: "</span><span class="p">));</span>
+      <span class="k">switch</span> <span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x128</span><span class="p">])</span> <span class="p">{</span>
+        <span class="k">case</span> <span class="mi">0</span> <span class="p">:</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"Open System and no encryption"</span><span class="p">));</span> <span class="k">break</span><span class="p">;</span>
+        <span class="k">case</span> <span class="mi">1</span> <span class="p">:</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"Open System and WEP"</span><span class="p">));</span> <span class="k">break</span><span class="p">;</span>
+        <span class="k">case</span> <span class="mi">2</span> <span class="p">:</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"Shared Key and WEP"</span><span class="p">));</span> <span class="k">break</span><span class="p">;</span>
+        <span class="k">case</span> <span class="mi">3</span> <span class="p">:</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"WPA-PSK and TKIP"</span><span class="p">));</span> <span class="k">break</span><span class="p">;</span>
+        <span class="k">case</span> <span class="mi">4</span> <span class="p">:</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"WPA-PSK and AES"</span><span class="p">));</span> <span class="k">break</span><span class="p">;</span>
+        <span class="k">case</span> <span class="mi">5</span> <span class="p">:</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"WPA2-PSK and TKIP"</span><span class="p">));</span> <span class="k">break</span><span class="p">;</span>
+        <span class="k">case</span> <span class="mi">6</span> <span class="p">:</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"WPA2-PSK and AES"</span><span class="p">));</span> <span class="k">break</span><span class="p">;</span>
+        <span class="nl">default:</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"Unknown"</span><span class="p">));</span>
+      <span class="p">}</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s"> [0529h] Signal Strength: "</span><span class="p">));</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x129</span><span class="p">],</span> <span class="n">DEC</span><span class="p">);</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s"> [052Ah] Channel: "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x12A</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"No connection"</span><span class="p">));</span>
+      <span class="k">else</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x12A</span><span class="p">],</span> <span class="n">DEC</span><span class="p">);</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s"> [0530h] MAC Address: "</span><span class="p">));</span>
+      <span class="n">printBytes</span><span class="p">(</span><span class="n">buffer</span> <span class="o">+</span> <span class="mh">0x130</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s"> [0540h] ID: "</span><span class="p">));</span>
+      <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">16</span> <span class="o">&amp;&amp;</span> <span class="n">buffer</span><span class="p">[</span><span class="mh">0x140</span> <span class="o">+</span> <span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span> 
+        <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">((</span><span class="kt">char</span><span class="p">)</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x140</span> <span class="o">+</span> <span class="n">i</span><span class="p">]);</span>
+      <span class="p">}</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s"> [0550h] IP Address: "</span><span class="p">));</span>
+      <span class="n">printIPAddress</span><span class="p">(</span><span class="n">buffer</span> <span class="o">+</span> <span class="mh">0x150</span><span class="p">);</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s"> [0554h] Subnet Mask: "</span><span class="p">));</span>
+      <span class="n">printIPAddress</span><span class="p">(</span><span class="n">buffer</span> <span class="o">+</span> <span class="mh">0x154</span><span class="p">);</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s"> [0558h] Default Gateway: "</span><span class="p">));</span>
+      <span class="n">printIPAddress</span><span class="p">(</span><span class="n">buffer</span> <span class="o">+</span> <span class="mh">0x158</span><span class="p">);</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s"> [055Ch] Preferred DNS Server: "</span><span class="p">));</span>
+      <span class="n">printIPAddress</span><span class="p">(</span><span class="n">buffer</span> <span class="o">+</span> <span class="mh">0x15C</span><span class="p">);</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s"> [0560h] Alternate DNS Server: "</span><span class="p">));</span>
+      <span class="n">printIPAddress</span><span class="p">(</span><span class="n">buffer</span> <span class="o">+</span> <span class="mh">0x160</span><span class="p">);</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s"> [0564h] Proxy Server: "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">((</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x164</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x01</span><span class="p">)</span> <span class="o">==</span> <span class="mh">0x00</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"Disabled"</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">((</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x164</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x01</span><span class="p">)</span> <span class="o">==</span> <span class="mh">0x01</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"Enabled"</span><span class="p">));</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s"> [0570h] Date: "</span><span class="p">));</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x171</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1980</span><span class="p">,</span> <span class="n">DEC</span><span class="p">);</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="sc">'-'</span><span class="p">);</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x170</span><span class="p">]</span> <span class="o">&gt;&gt;</span> <span class="mi">4</span><span class="p">,</span> <span class="n">DEC</span><span class="p">);</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="sc">'-'</span><span class="p">);</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x170</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0xF</span><span class="p">,</span> <span class="n">DEC</span><span class="p">);</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s"> [0572h] Time: "</span><span class="p">));</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x173</span><span class="p">]</span> <span class="o">&gt;&gt;</span> <span class="mi">3</span><span class="p">,</span> <span class="n">DEC</span><span class="p">);</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="sc">':'</span><span class="p">);</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x172</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="mi">3</span> <span class="o">|</span> <span class="n">buffer</span><span class="p">[</span><span class="mh">0x170</span><span class="p">]</span> <span class="o">&gt;&gt;</span> <span class="mi">3</span><span class="p">,</span> <span class="n">DEC</span><span class="p">);</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="sc">':'</span><span class="p">);</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">((</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x172</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x1F</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span><span class="p">,</span> <span class="n">DEC</span><span class="p">);</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s"> [0574h] HTTP Status: "</span><span class="p">));</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x174</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0xEF</span><span class="p">,</span> <span class="n">DEC</span><span class="p">);</span>
+      <span class="k">if</span> <span class="p">((</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x174</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x80</span><span class="p">)</span> <span class="o">==</span> <span class="mh">0x00</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">" (No Processing)"</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">((</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x174</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x80</span><span class="p">)</span> <span class="o">==</span> <span class="mh">0x80</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">" (Processing)"</span><span class="p">));</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s"> [0575h] Power Save Management: "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">((</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x175</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x01</span><span class="p">)</span> <span class="o">==</span> <span class="mh">0x00</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"Power Save Mode Off"</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">((</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x175</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x01</span><span class="p">)</span> <span class="o">==</span> <span class="mh">0x01</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"Power Save Mode On"</span><span class="p">));</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s"> [0576h] File System Management: "</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">((</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x176</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x01</span><span class="p">)</span> <span class="o">==</span> <span class="mh">0x00</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"FS Information may be modified"</span><span class="p">));</span>
+      <span class="k">if</span> <span class="p">((</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x176</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x01</span><span class="p">)</span> <span class="o">==</span> <span class="mh">0x01</span><span class="p">)</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"FS Information shall not be modified"</span><span class="p">));</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">();</span>
+
+      <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p>なお、
+<code class="highlighter-rouge">Serial.print()</code>や
+<code class="highlighter-rouge">Serial.println()</code>は、「シリアルモニタ」に文字を出力するための関数ですが、 文字列引数を
+<code class="highlighter-rouge">F()</code>というマクロで囲っています。 通常文字列定数は、言語仕様上書き換え可能であるためRAM上に置かれてしまい、 たくさんの文字列表示をするとあっという間にメモリが不足してしまいます。
+しかし、表示用の文字列は変更することがないため、RAMには置かずにメモリを節約したいところです。
+そこで、
+<code class="highlighter-rouge">F()</code>マクロを使います。 囲まれた文字列はROM領域に置かれてRAMを消費しなくなります。</p>
+
+<p>そして、
+<code class="highlighter-rouge">setup()</code>で呼び出します。</p>
+
+<h5 id="arduino_tutorial_03ino-その2"><em>arduino_tutorial_03.ino (その2)</em></h5>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
+      <span class="c1">// Initialize UART for message print.
+</span>      <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+      <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="n">Serial</span><span class="p">)</span> <span class="p">{</span>
+        <span class="p">;</span>
+      <span class="p">}</span>
+
+      <span class="c1">// Initialize SD card.
+</span>      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Initializing SD card..."</span><span class="p">));</span>  
+      <span class="k">if</span> <span class="p">(</span><span class="n">card</span><span class="p">.</span><span class="n">init</span><span class="p">(</span><span class="n">SPI_HALF_SPEED</span><span class="p">,</span> <span class="n">chipSelectPin</span><span class="p">))</span> <span class="p">{</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"OK"</span><span class="p">));</span>
+      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"NG"</span><span class="p">));</span>
+        <span class="n">abort</span><span class="p">();</span>
+      <span class="p">}</span>
+
+      <span class="k">if</span> <span class="p">(</span><span class="n">iSDIO_status</span><span class="p">())</span> <span class="p">{</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">OK"</span><span class="p">));</span>
+      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Failed to read status."</span><span class="p">));</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+
+<hr />
+<h2 id="実行結果">実行結果</h2>
+
+<p>これを実行するとたとえば下記のような出力が得られます。</p>
+
+<h4 id="実行結果例"><em>実行結果例</em></h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Read iSDIO Status Register
+ == iSDIO Status Registers == 
+ [0400h] Command Write Status: 
+ [0420h] iSDIO Status: CRU 
+ [0422h] iSDIO Int Enable: 
+ [0424h] Error Status: 
+ [0426h] Memory Status: MEX 
+ [0440] Command Response Status #1: id = 3, sequence id = 0, status = Process Succeeded
+ [0454] Command Response Status #2: Not registered
+ [0468] Command Response Status #3: Not registered
+ [047C] Command Response Status #4: Not registered
+ [0490] Command Response Status #5: Not registered
+ [04A4] Command Response Status #6: Not registered
+ [04B8] Command Response Status #7: Not registered
+ [04CC] Command Response Status #8: Not registered
+ == Wireless LAN Status Registers ==
+ [0500h] DLNA Status: 
+ [0501h] P2P Status: 
+ [0502h] PTP Status: 
+ [0504h] Application: 0
+ [0506h] WLAN: No Scan, No WPS, Group Client, AP, Infrastructure, No Connection, 
+ [0508h] SSID: flashair_sdio
+ [0528h] Encryption Mode: WPA2-PSK and AES
+ [0529h] Signal Strength: 0
+ [052Ah] Channel: 11
+ [0530h] MAC Address: B86B23733F4F
+ [0540h] ID: 
+ [0550h] IP Address: 192.168.0.1
+ [0554h] Subnet Mask: 255.255.255.0
+ [0558h] Default Gateway: 192.168.0.1
+ [055Ch] Preferred DNS Server: 192.168.0.1
+ [0560h] Alternate DNS Server: 0.0.0.0
+ [0564h] Proxy Server: Disabled
+ [0570h] Date: 1980-0-0
+ [0572h] Time: 0:0:0
+ [0574h] HTTP Status: 0 (No Processing)
+ [0575h] Power Save Management: Power Save Mode Off
+ [0576h] File System Management: FS Information may be modified
+
+OK
+</code></pre></div></div>
+
+<hr />
+<h2 id="サンプルコード">サンプルコード</h2>
+
+<p><a href="/files/samplecode/arduino/arduino_tutorial_03.zip" class="btn btn-primary">arduino_tutorial_03.zip</a> (23KB)</p>
+
+<p>本チュートリアルのサンプルコードはGPLv3および<a href="../../license">二条項BSDライセンス</a>で提供されています。 詳細はダウンロードした各ファイルを参照してください。</p>
+
+
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

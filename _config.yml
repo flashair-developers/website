@@ -1,1 +1,8 @@
-theme: jekyll-theme-cayman
+encding: utf-8
+plugins: 
+  - jekyll-seo-tag
+github : [metadata]
+repository: flashair-developers/website
+theme: just-the-docs
+# Enable or disable the site search
+search_enabled: true

@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  
+    <title>コンテンツリストの取得2 - website</title>
+
+    
+  
+
+  <link rel="shortcut icon" href="http://localhost:4000/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/just-the-docs.css">
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/customstyles.css">
+  
+
+  
+    <script type="text/javascript" src="http://localhost:4000/assets/js/vendor/lunr.min.js"></script>
+  
+  <script type="text/javascript" src="http://localhost:4000/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>コンテンツリストの取得2 | website</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="コンテンツリストの取得2" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/docs/tutorials/web/3.html" />
+<meta property="og:url" content="http://localhost:4000/docs/tutorials/web/3.html" />
+<meta property="og:site_name" content="website" />
+<script type="application/ld+json">
+{"@type":"WebPage","headline":"コンテンツリストの取得2","url":"http://localhost:4000/docs/tutorials/web/3.html","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+
+  <div class="page-wrap">
+    <div class="side-bar">
+      <a href="http://localhost:4000" class="site-title fs-6 lh-tight">website</a>
+      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+      <div class="navigation main-nav js-main-nav">
+        <nav role="navigation" aria-label="Main navigation">
+    <ul class="navigation-list">
+      
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/web/1.html" class="navigation-list-link">ウェブブラウザ向けFlashAirアプリ開発の概要</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/web/2.html" class="navigation-list-link">コンテンツリストの取得1</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item active">
+              
+              <a href="http://localhost:4000/docs/tutorials/web/3.html" class="navigation-list-link active">コンテンツリストの取得2</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/web/4.html" class="navigation-list-link">サムネイルの表示</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/web/5.html" class="navigation-list-link">コンテンツの自動更新</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/web/6.html" class="navigation-list-link">SSIDとパスワードの変更</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/web/7.html" class="navigation-list-link">画面デザインの改良</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+
+      <li>
+        <br>
+        <a href="./">目次に戻る</a>
+      </li>
+    </ul>
+  </nav>
+      </div>
+      <footer role="contentinfo" class="site-footer">
+        <p class="text-small text-grey-dk-000 mb-0">This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.</p>
+      </footer>
+    </div>
+    <div class="main-content-wrap js-main-content" tabindex="0">
+      <div class="page-header">
+        <div class="main-content">
+          
+          <div class="search js-search">
+            <div class="search-input-wrap">
+              <input type="text" class="js-search-input search-input" tabindex="0" placeholder="Search website" aria-label="Search website" autocomplete="off">
+              <svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z"/><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z"/></g></svg>
+            </div>
+            <div class="js-search-results search-results-wrap"></div>
+          </div>
+          
+          
+        </div>
+      </div>
+      <div class="main-content">
+        
+          
+            <nav class="breadcrumb-nav">
+              <ol class="breadcrumb-nav-list">
+                
+                  <li class="breadcrumb-nav-list-item"><span>チュートリアル</span></li>
+                  <li class="breadcrumb-nav-list-item"><span>ウェブブラウザ向けチュートリアル</span></li>
+                
+                <li class="breadcrumb-nav-list-item"><span>コンテンツリストの取得2</span></li>
+              </ol>
+            </nav>
+          
+        
+        <div id="main-content" class="page-content" role="main">
+          <h1 id="コンテンツリストの取得2">コンテンツリストの取得2</h1>
+
+<p>FlashAirに保存されたコンテンツのリストを取得する方法について学びます。<br />
+<a href="2">コンテンツリストの取得1</a>では、HTMLへ埋め込まれるファイルリストを利用しましたが、
+CGIだけを使って同じことを実現することもできます。
+<a href="../../api/command.cgi">command.cgi</a>を使ってフォルダ一覧を取得してみましょう。</p>
+
+<hr />
+<h2 id="事前準備">事前準備</h2>
+
+<p><a href="2">コンテンツリストの取得1</a>と同様に、 jQueryを
+<a href="http://jquery.com/" target="_blank">ダウンロード</a>し、FlashAirに
+<code class="highlighter-rouge">/SD_WLAN/js/jquery.js</code>として保存します。</p>
+
+<hr />
+<h2 id="画面レイアウトの作成">画面レイアウトの作成</h2>
+
+<p>ブラウザユーティリティ本体となるHTMLファイルを作成します。
+<a href="../web/2">コンテンツリストの取得1</a>で作成したものとよく似ていますが、
+ファイルリストの差し込みをするためのスクリプト部分はありません。</p>
+
+<p>それ以外は、重要な２つの仕事、１つはJavaScriptをロードすること、 もう１つはそのJavaScriptが画面要素を書き込むための
+<code class="highlighter-rouge">&lt;div&gt;</code>タグを用意すること、を行っています。</p>
+
+<p>作成したファイルは必ず、FlashAirの
+<code class="highlighter-rouge">/SD_WLAN/List.htm</code>に保存してください。</p>
+
+<h5 id="sd_wlanlisthtm"><em>/SD_WLAN/List.htm</em></h5>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="cp">&lt;!doctype html&gt;</span>
+    <span class="nt">&lt;html&gt;</span>
+    <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;</span>FlashAir<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"/SD_WLAN/js/jquery.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"/SD_WLAN/js/main.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>header<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;hr&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"list"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;hr&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"footer"</span><span class="nt">&gt;</span>
+    footer
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+    <span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+<ul>
+  <li>
+    <p>6,7行目<br />
+  <code class="highlighter-rouge">jquery.js</code>と、次に作成する<code class="highlighter-rouge">main.js</code>をロードしています。</p>
+  </li>
+  <li>
+    <p>14行目<br />
+  <code class="highlighter-rouge">list</code>という<code class="highlighter-rouge">id</code>属性を持つ<code class="highlighter-rouge">div</code>タグを宣言しています。この中にフォルダのファイルリストが挿入されます。</p>
+  </li>
+</ul>
+
+<hr />
+<h2 id="コードの作成">コードの作成</h2>
+
+<p>CGIコマンドでフォルダリストを取得し、それを読みやすい形でHTMLに挿入する作業を、JavaScriptで記述します。</p>
+
+<p><code class="highlighter-rouge">getFileList(dir)</code>関数でCGIコマンドを発行してファイル一覧を取得し、
+<code class="highlighter-rouge">showFileList(path)</code>では取得した一覧を元に、HTMLの要素を作成するという流れになっています。</p>
+
+<p><a href="../web/2">コンテンツリストの取得1</a>で作成したヘルパー関数を再利用しましょう。 ただし、
+<code class="highlighter-rouge">isV1(wlansd)</code>は今回は使用していません。</p>
+
+<p>作成したファイルはFlashAirの
+<code class="highlighter-rouge">/SD_WLAN/js/main.js</code>というファイルとして保存しましょう。</p>
+
+<h5 id="sd_wlanjsmainjs"><em>/SD_WLAN/js/main.js</em></h5>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="c1">// JavaScript Document</span>
+
+    <span class="c1">// Judge the card is V1 or V2.</span>
+    <span class="kd">function</span> <span class="nx">isV1</span><span class="p">(</span><span class="nx">wlansd</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span> <span class="nx">wlansd</span><span class="p">.</span><span class="nx">length</span> <span class="o">==</span> <span class="kc">undefined</span> <span class="o">||</span> <span class="nx">wlansd</span><span class="p">.</span><span class="nx">length</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">)</span> <span class="p">{</span>
+            <span class="c1">// List is empty so the card version is not detectable. Assumes as V2.</span>
+            <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span> <span class="nx">wlansd</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">length</span> <span class="o">!=</span> <span class="kc">undefined</span> <span class="p">)</span> <span class="p">{</span>
+            <span class="c1">// Each row in the list is array. V1.</span>
+            <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="c1">// Otherwise V2.</span>
+            <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="c1">// Convert data format from V1 to V2.</span>
+    <span class="kd">function</span> <span class="nx">convertFileList</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">wlansd</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="kd">var</span> <span class="nx">elements</span> <span class="o">=</span> <span class="nx">wlansd</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">split</span><span class="p">(</span><span class="s2">","</span><span class="p">);</span>
+            <span class="nx">wlansd</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">();</span>
+            <span class="nx">wlansd</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="s2">"r_uri"</span><span class="p">]</span> <span class="o">=</span> <span class="nx">elements</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+            <span class="nx">wlansd</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="s2">"fname"</span><span class="p">]</span> <span class="o">=</span> <span class="nx">elements</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+            <span class="nx">wlansd</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="s2">"fsize"</span><span class="p">]</span> <span class="o">=</span> <span class="nb">Number</span><span class="p">(</span><span class="nx">elements</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span>
+            <span class="nx">wlansd</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="s2">"attr"</span><span class="p">]</span>  <span class="o">=</span> <span class="nb">Number</span><span class="p">(</span><span class="nx">elements</span><span class="p">[</span><span class="mi">3</span><span class="p">]);</span>
+            <span class="nx">wlansd</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="s2">"fdate"</span><span class="p">]</span> <span class="o">=</span> <span class="nb">Number</span><span class="p">(</span><span class="nx">elements</span><span class="p">[</span><span class="mi">4</span><span class="p">]);</span>
+            <span class="nx">wlansd</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="s2">"ftime"</span><span class="p">]</span> <span class="o">=</span> <span class="nb">Number</span><span class="p">(</span><span class="nx">elements</span><span class="p">[</span><span class="mi">5</span><span class="p">]);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="c1">// Callback Function for sort()</span>
+    <span class="kd">function</span> <span class="nx">cmptime</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span><span class="p">(</span> <span class="nx">a</span><span class="p">[</span><span class="s2">"fdate"</span><span class="p">]</span> <span class="o">==</span> <span class="nx">b</span><span class="p">[</span><span class="s2">"fdate"</span><span class="p">]</span> <span class="p">)</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="nx">a</span><span class="p">[</span><span class="s2">"ftime"</span><span class="p">]</span> <span class="o">-</span> <span class="nx">b</span><span class="p">[</span><span class="s2">"ftime"</span><span class="p">];</span>
+        <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+            <span class="k">return</span> <span class="nx">a</span><span class="p">[</span><span class="s2">"fdate"</span><span class="p">]</span> <span class="o">-</span> <span class="nx">b</span><span class="p">[</span><span class="s2">"fdate"</span><span class="p">];</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="c1">// Show file list</span>
+    <span class="kd">function</span> <span class="nx">showFileList</span><span class="p">(</span><span class="nx">path</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Clear box.</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s2">"#list"</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="s1">''</span><span class="p">);</span>
+        <span class="c1">// Output a link to the parent directory if it is not the root directory.</span>
+        <span class="k">if</span><span class="p">(</span> <span class="nx">path</span> <span class="o">!=</span> <span class="s2">"/"</span> <span class="p">)</span> <span class="p">{</span>
+            <span class="nx">$</span><span class="p">(</span><span class="s2">"#list"</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span>
+                <span class="nx">$</span><span class="p">(</span><span class="s2">"&lt;div&gt;&lt;/div&gt;"</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span>
+                    <span class="nx">$</span><span class="p">(</span><span class="s1">'&lt;a href="javascript:void(0)" class="dir"&gt;..&lt;/a&gt;'</span><span class="p">)</span>
+                <span class="p">)</span>
+            <span class="p">);</span>
+        <span class="p">}</span>
+        <span class="nx">$</span><span class="p">.</span><span class="nx">each</span><span class="p">(</span><span class="nx">wlansd</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+            <span class="kd">var</span> <span class="nx">file</span> <span class="o">=</span> <span class="k">this</span><span class="p">;</span>
+            <span class="c1">// Skip hidden file.</span>
+            <span class="k">if</span> <span class="p">(</span> <span class="nx">file</span><span class="p">[</span><span class="s2">"attr"</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x02</span> <span class="p">)</span> <span class="p">{</span>
+                <span class="k">return</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="c1">// Make a link to directories and files.</span>
+            <span class="kd">var</span> <span class="nx">filelink</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">'&lt;a href="javascript:void(0)"&gt;&lt;/a&gt;'</span><span class="p">);</span>
+            <span class="kd">var</span> <span class="nx">caption</span> <span class="o">=</span> <span class="nx">file</span><span class="p">[</span><span class="s2">"fname"</span><span class="p">];</span>
+            <span class="kd">var</span> <span class="nx">fileobj</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">"&lt;div&gt;&lt;/div&gt;"</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span> <span class="nx">file</span><span class="p">[</span><span class="s2">"attr"</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x10</span> <span class="p">)</span> <span class="p">{</span>
+                <span class="nx">filelink</span><span class="p">.</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">"dir"</span><span class="p">);</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="nx">filelink</span><span class="p">.</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">"file"</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s1">'href'</span><span class="p">,</span> <span class="nx">file</span><span class="p">[</span><span class="s2">"r_uri"</span><span class="p">]</span> <span class="o">+</span> <span class="s1">'/'</span> <span class="o">+</span> <span class="nx">file</span><span class="p">[</span><span class="s2">"fname"</span><span class="p">]).</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"target"</span><span class="p">,</span><span class="s2">"_blank"</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="c1">// Append a file entry or directory to the end of the list.</span>
+            <span class="nx">$</span><span class="p">(</span><span class="s2">"#list"</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span>
+                <span class="nx">fileobj</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span>
+                    <span class="nx">filelink</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span>
+                        <span class="nx">caption</span>
+                    <span class="p">)</span>
+                <span class="p">)</span>
+            <span class="p">);</span>
+        <span class="p">});</span>     
+    <span class="p">}</span>
+    <span class="c1">//Making Path</span>
+    <span class="kd">function</span> <span class="nx">makePath</span><span class="p">(</span><span class="nx">dir</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">arrPath</span> <span class="o">=</span> <span class="nx">currentPath</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">'/'</span><span class="p">);</span>
+        <span class="k">if</span> <span class="p">(</span> <span class="nx">currentPath</span> <span class="o">==</span> <span class="s2">"/"</span> <span class="p">)</span> <span class="p">{</span>
+            <span class="nx">arrPath</span><span class="p">.</span><span class="nx">pop</span><span class="p">();</span>
+        <span class="p">}</span>
+        <span class="k">if</span> <span class="p">(</span> <span class="nx">dir</span> <span class="o">==</span> <span class="s2">".."</span> <span class="p">)</span> <span class="p">{</span>
+            <span class="c1">// Go to parent directory. Remove last fragment.</span>
+            <span class="nx">arrPath</span><span class="p">.</span><span class="nx">pop</span><span class="p">();</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span> <span class="nx">dir</span> <span class="o">!=</span> <span class="s2">""</span> <span class="o">&amp;&amp;</span> <span class="nx">dir</span> <span class="o">!=</span> <span class="s2">"."</span> <span class="p">)</span> <span class="p">{</span>
+            <span class="c1">// Go to child directory. Append dir to the current path.</span>
+            <span class="nx">arrPath</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">dir</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="k">if</span> <span class="p">(</span> <span class="nx">arrPath</span><span class="p">.</span><span class="nx">length</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">)</span> <span class="p">{</span>
+            <span class="nx">arrPath</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s2">""</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="nx">arrPath</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s2">"/"</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="c1">// Get file list</span>
+    <span class="kd">function</span> <span class="nx">getFileList</span><span class="p">(</span><span class="nx">dir</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Make a path to show next.</span>
+        <span class="kd">var</span> <span class="nx">nextPath</span> <span class="o">=</span> <span class="nx">makePath</span><span class="p">(</span><span class="nx">dir</span><span class="p">);</span>
+        <span class="c1">// Make URL for CGI. (DIR must not end with '/' except if it is the root.)</span>
+        <span class="kd">var</span> <span class="nx">url</span> <span class="o">=</span> <span class="s2">"/command.cgi?op=100&amp;DIR="</span> <span class="o">+</span> <span class="nx">nextPath</span><span class="p">;</span>
+        <span class="c1">// Issue CGI command.</span>
+        <span class="nx">$</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="nx">url</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+           <span class="c1">// Save the current path.</span>
+            <span class="nx">currentPath</span> <span class="o">=</span> <span class="nx">nextPath</span><span class="p">;</span>
+            <span class="c1">// Split lines by new line characters.</span>
+            <span class="nx">wlansd</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="sr">/</span><span class="se">\n</span><span class="sr">/g</span><span class="p">);</span>
+            <span class="c1">// Ignore the first line (title) and last line (blank).</span>
+            <span class="nx">wlansd</span><span class="p">.</span><span class="nx">shift</span><span class="p">();</span>
+            <span class="nx">wlansd</span><span class="p">.</span><span class="nx">pop</span><span class="p">();</span>
+            <span class="c1">// Convert to V2 format.</span>
+            <span class="nx">convertFileList</span><span class="p">(</span><span class="nx">wlansd</span><span class="p">);</span>
+            <span class="c1">// Sort by date and time.</span>
+            <span class="nx">wlansd</span><span class="p">.</span><span class="nx">sort</span><span class="p">(</span><span class="nx">cmptime</span><span class="p">);</span>
+
+            <span class="c1">// Show</span>
+            <span class="nx">showFileList</span><span class="p">(</span><span class="nx">currentPath</span><span class="p">);</span>
+        <span class="p">});</span>
+    <span class="p">}</span>
+    <span class="c1">//Document Ready</span>
+    <span class="nx">$</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="c1">// Iniialize global variables.</span>
+        <span class="nx">currentPath</span> <span class="o">=</span> <span class="nx">location</span><span class="p">.</span><span class="nx">pathname</span><span class="p">;</span>
+        <span class="nx">wlansd</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">();</span>
+        <span class="c1">// Show the root directory.</span>
+        <span class="nx">getFileList</span><span class="p">(</span><span class="s1">''</span><span class="p">);</span>
+        <span class="c1">// Register onClick handler for &lt;a class="dir"&gt;</span>
+        <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s2">"click"</span><span class="p">,</span><span class="s2">"a.dir"</span><span class="p">,</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+            <span class="nx">getFileList</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">text</span><span class="p">);</span>
+        <span class="p">});</span> 
+    <span class="p">});</span>
+</code></pre></div></div>
+<ul>
+  <li>
+    <p>38-73行目<br />
+   得られたファイルリストの各行に対して、アンカー(<code class="highlighter-rouge">&lt;a&gt;</code>)とボックス(<code class="highlighter-rouge">&lt;div&gt;</code>)を生成し、 HTML中に用意した表示位置(<code class="highlighter-rouge">$("#list")</code>)に追加しています。
+                                  <a href="../web/2">コンテンツリストの取得1</a>とよく似ていますが、 フォルダの場合はハイパーリンクに
+                                  <code class="highlighter-rouge">javascript:void(0)</code>を設定してクリックしても画面遷移しないようにしています。</p>
+  </li>
+  <li>
+    <p>75-91行目<br />
+   URLに使う絶対パスを作成するヘルパー関数です。 ルートフォルダである場合を除き、最後のスラッシュはつけてはならない点に注意しましょう。</p>
+  </li>
+  <li>
+    <p>93-115行目<br />
+   ページ読み込み時またはフォルダがクリックされたときに起動されて、 ファイル一覧を取得する関数です。 99行目でCGIコマンドを発行しています。
+                                  FlashAirから返ってきたデータに対する処理は、
+                                  2番目の引数であるコールバック関数(
+                                  <code class="highlighter-rouge">function(data) {...}</code>)の内部に記述します。 これは、CGIコマンドの実行が非同期的に行われるためです。
+                                  取得したデータは113行目で表示させています。</p>
+  </li>
+  <li>
+    <p>117-127行目<br />
+   本ファイルが読み込まれたときに自動的に呼び出されて、処理を実行する部分です。 119行目では表示されているフォルダのパスの初期設定をしています。
+                                  120行目は、ファイルリストを格納する配列の初期化をしています。
+                                  124行目以降では、
+                                  <code class="highlighter-rouge">class="dir"</code>を持つリンクがクリックされたときに実行されるイベントハンドラ関数を割り当てています。
+                                  クリックされると、リンクのテキスト部分を引数としてgetFileList(dir)が呼び出されて、新しいコンテンツリストを取得します。</p>
+  </li>
+</ul>
+
+<hr />
+<h2 id="実行結果">実行結果</h2>
+
+<p>コードをFlashAirに置いたら、FlashAirに無線LAN接続したPCまたはスマートフォンのブラウザで確認してみましょう。 例えば、以下のような画面が表示されるでしょう。</p>
+
+<p>これは
+<code class="highlighter-rouge">/DCIM/100__TSB</code>を表示した例ですが、URLが
+<code class="highlighter-rouge">flashair</code>とルートのままであることに注目してください。
+ファイル一覧の取得と表示をCGIとJavaScriptのみで実行しており、画面遷移を行っていないためです。</p>
+
+<p>文字の大きさなどはCSSなどで工夫してみてください。</p>
+
+<p><img src="/assets/images/tutorials/web_tutorial_03_1.png" alt="Browser Utility Tutorial 3 Result" class="d-block" /></p>
+
+<hr />
+<h2 id="サンプルコード">サンプルコード</h2>
+
+<p><a href="/files/samplecode/web/web_tutorial_03.zip" class="btn btn-primary">web_tutorial_03.zip</a> (4KB)</p>
+
+<p>このサイトのサンプルコードは<a href="../../license">二条項BSDライセンス</a>で提供されています。</p>
+
+
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

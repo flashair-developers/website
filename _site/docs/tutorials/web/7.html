@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  
+    <title>画面デザインの改良 - website</title>
+
+    
+  
+
+  <link rel="shortcut icon" href="http://localhost:4000/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/just-the-docs.css">
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/customstyles.css">
+  
+
+  
+    <script type="text/javascript" src="http://localhost:4000/assets/js/vendor/lunr.min.js"></script>
+  
+  <script type="text/javascript" src="http://localhost:4000/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>画面デザインの改良 | website</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="画面デザインの改良" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/docs/tutorials/web/7.html" />
+<meta property="og:url" content="http://localhost:4000/docs/tutorials/web/7.html" />
+<meta property="og:site_name" content="website" />
+<script type="application/ld+json">
+{"@type":"WebPage","headline":"画面デザインの改良","url":"http://localhost:4000/docs/tutorials/web/7.html","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+
+  <div class="page-wrap">
+    <div class="side-bar">
+      <a href="http://localhost:4000" class="site-title fs-6 lh-tight">website</a>
+      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+      <div class="navigation main-nav js-main-nav">
+        <nav role="navigation" aria-label="Main navigation">
+    <ul class="navigation-list">
+      
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/web/1.html" class="navigation-list-link">ウェブブラウザ向けFlashAirアプリ開発の概要</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/web/2.html" class="navigation-list-link">コンテンツリストの取得1</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/web/3.html" class="navigation-list-link">コンテンツリストの取得2</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/web/4.html" class="navigation-list-link">サムネイルの表示</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/web/5.html" class="navigation-list-link">コンテンツの自動更新</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/web/6.html" class="navigation-list-link">SSIDとパスワードの変更</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item active">
+              
+              <a href="http://localhost:4000/docs/tutorials/web/7.html" class="navigation-list-link active">画面デザインの改良</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+
+      <li>
+        <br>
+        <a href="./">目次に戻る</a>
+      </li>
+    </ul>
+  </nav>
+      </div>
+      <footer role="contentinfo" class="site-footer">
+        <p class="text-small text-grey-dk-000 mb-0">This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.</p>
+      </footer>
+    </div>
+    <div class="main-content-wrap js-main-content" tabindex="0">
+      <div class="page-header">
+        <div class="main-content">
+          
+          <div class="search js-search">
+            <div class="search-input-wrap">
+              <input type="text" class="js-search-input search-input" tabindex="0" placeholder="Search website" aria-label="Search website" autocomplete="off">
+              <svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z"/><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z"/></g></svg>
+            </div>
+            <div class="js-search-results search-results-wrap"></div>
+          </div>
+          
+          
+        </div>
+      </div>
+      <div class="main-content">
+        
+          
+            <nav class="breadcrumb-nav">
+              <ol class="breadcrumb-nav-list">
+                
+                  <li class="breadcrumb-nav-list-item"><span>チュートリアル</span></li>
+                  <li class="breadcrumb-nav-list-item"><span>ウェブブラウザ向けチュートリアル</span></li>
+                
+                <li class="breadcrumb-nav-list-item"><span>画面デザインの改良</span></li>
+              </ol>
+            </nav>
+          
+        
+        <div id="main-content" class="page-content" role="main">
+          <h1 id="画面デザインの改良">画面デザインの改良</h1>
+
+<p>画面デザインをより見やすいものに改良しましょう。 人気のあるWebサイト用画面デザインフレームワークである
+<a href="http://getbootstrap.com/2.3.2/" target="_blank">Bootstrap</a>を使用してみます。</p>
+
+<hr />
+<h2 id="事前準備">事前準備</h2>
+
+<p><a href="http://getbootstrap.com/2.3.2/" target="_blank">Bootstrap</a>と
+<a href="http://jquery.com/" target="_blank">jQuery</a>をダウンロードし、 ファイルをFlashAirにコピーします。</p>
+
+<p>ファームウェアバージョン1系ではロングファイルネームが使えないため、短い名前にリネームします。 ファイルのコピー先とファイル名は例えば下記のようにします。
+左が元々のファイル名、右がSDメモリカード内のパスを表しています。</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jquery-x.yy.z.min.js                          --&gt; /SD_WLAN/js/jquery.js
+bootstrap/js/bootstrap.min.js                 --&gt; /SD_WLAN/js/bstrap.js
+bootstrap/css/bootstrap.min.css               --&gt; /SD_WLAN/css/bstrap.css
+bootstrap/css/bootstrap-responsive.min.css    --&gt; /SD_WLAN/css/bstrapr.css
+bootstrap/img/glyphicons-halflings.png        --&gt; /SD_WLAN/img/bstrap.png 
+bootstrap/img/glyphicons-halflings-white.png  --&gt; /SD_WLAN/img/bstrapw.png
+</code></pre></div></div>
+
+<p>ファイルをリネームしたので、
+<code class="highlighter-rouge">bstrap.css</code>内を編集します。</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>../img/glyphicons-halflings.png       --&gt; /SD_WLAN/img/bstrap.png
+../img/glyphicons-halflings-white.png --&gt; /SD_WLAN/img/bstrapw.png
+</code></pre></div></div>
+
+<p>フォルダアイコン用の
+<code class="highlighter-rouge">folder.png</code>と、画像以外のファイルのアイコン用の
+<code class="highlighter-rouge">other.png</code>、 ２つの画像を用意し、以下のパスに配置してください。</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/SD_WLAN/img/folder.png
+/SD_WLAN/img/other.png
+</code></pre></div></div>
+
+<hr />
+<h2 id="画面レイアウトの作成">画面レイアウトの作成</h2>
+
+<p>HTMLファイルは
+<a href="2">コンテンツリストの取得1</a>を元にしますが、
+Bootstrap対応のためいくつか変更を加えます。</p>
+
+<h3 id="cssの読み込み">CSSの読み込み</h3>
+
+<p>BootstrapのCSSを読み込みます。 HTML冒頭の
+<code class="highlighter-rouge">&lt;head&gt;</code>タグ内に置きます。</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;link href="/SD_WLAN/css/bstrap.css" rel="stylesheet" media="screen"&gt;
+&lt;link href="/SD_WLAN/css/bstrapr.css" rel="stylesheet" media="screen"&gt;
+</code></pre></div></div>
+
+<h3 id="javascriptの読み込み">JavaScriptの読み込み</h3>
+
+<p>jQuery、Bootstrap、および本チュートリアルで作成するJavaScriptを読み込みます。 Bootstrapのルールにより、HTMLの本体部分の終わり（
+<code class="highlighter-rouge">&lt;/body&gt;</code>の直前）で読み込みます。</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;script type="text/javascript" src="/SD_WLAN/js/jquery.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="/SD_WLAN/js/main.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="/SD_WLAN/js/bstrap.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+wlansd = new Array();
+&lt;!--WLANSDJLST--&gt;
+&lt;/script&gt;
+</code></pre></div></div>
+
+<h3 id="表示領域の作成">表示領域の作成</h3>
+
+<p><code class="highlighter-rouge">&lt;body&gt;</code>タグ内の適当な位置に、サムネイルを出力する領域を設定します。</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    &lt;div class="container"&gt;
+        &lt;div class="row"&gt;
+            &lt;ul class="thumbnails" id="list"&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+</code></pre></div></div>
+
+<h3 id="メニューを付けてみる">メニューを付けてみる</h3>
+
+<p>多くのWebサイトが備えている、メニューバーを上部に表示してみましょう。 FlashAirまたはHomeと書かれたボタンを押すと、いつでもルートフォルダに戻れるようにします。
+<code class="highlighter-rouge">&lt;body&gt;</code>タグ内の先頭に以下を追加します。</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="navbar navbar-inverse navbar-fixed-top"&gt;
+    &lt;div class="navbar-inner"&gt;
+        &lt;div class="container"&gt;
+            &lt;a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse"&gt;
+                &lt;span class="icon-bar"&gt;&lt;/span&gt;
+                &lt;span class="icon-bar"&gt;&lt;/span&gt;
+                &lt;span class="icon-bar"&gt;&lt;/span&gt;
+            &lt;/a&gt;
+            &lt;a class="brand" href="/"&gt;FlashAir&lt;/a&gt;
+            &lt;div class="nav-collapse collapse"&gt;
+                &lt;ul class="nav pull-right"&gt;
+                    &lt;li class="active"&gt;&lt;a href="/"&gt;&lt;i class="icon-home"&gt;&lt;/i&gt;Home&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;&lt;!--/.nav-collapse --&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre></div></div>
+
+<p>さらに、メニューバーが使う余白を空けるため、
+<code class="highlighter-rouge">&lt;head&gt;</code>タグ内に下記のコードを置きます。</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;style&gt;
+  body {
+    padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+  }
+&lt;/style&gt;
+</code></pre></div></div>
+
+<p>HTML全体としては次のようになります。</p>
+
+<h5 id="sd_wlanlisthtm"><em>/SD_WLAN/List.htm</em></h5>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="cp">&lt;!doctype html&gt;</span>
+    <span class="nt">&lt;html&gt;</span>
+    <span class="nt">&lt;head&gt;</span>
+        <span class="nt">&lt;title&gt;</span>FlashAir<span class="nt">&lt;/title&gt;</span>
+        <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1.0"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;style&gt;</span>
+          <span class="nt">body</span> <span class="p">{</span>
+            <span class="nl">padding-top</span><span class="p">:</span> <span class="m">60px</span><span class="p">;</span> <span class="c">/* 60px to make the container go all the way to the bottom of the topbar */</span>
+          <span class="p">}</span>
+        <span class="nt">&lt;/style&gt;</span>
+        <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"/SD_WLAN/css/bstrap.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">media=</span><span class="s">"screen"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"/SD_WLAN/css/bstrapr.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">media=</span><span class="s">"screen"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar navbar-inverse navbar-fixed-top"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-inner"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-navbar"</span> <span class="na">data-target=</span><span class="s">".nav-collapse"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+                    <span class="nt">&lt;/a&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"brand"</span> <span class="na">href=</span><span class="s">"/"</span><span class="nt">&gt;</span>FlashAir<span class="nt">&lt;/a&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nav-collapse collapse"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav pull-right"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-home"</span><span class="nt">&gt;&lt;/i&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                            <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#about"</span><span class="nt">&gt;</span>About<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                            <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#contact"</span><span class="nt">&gt;</span>Contact<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="nt">&lt;/ul&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!--/.nav-collapse --&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"thumbnails"</span> <span class="na">id=</span><span class="s">"list"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"/SD_WLAN/js/jquery.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+        <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"/SD_WLAN/js/main.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+        <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"/SD_WLAN/js/bstrap.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+        <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
+        <span class="nx">wlansd</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">();</span>
+        <span class="o">&lt;!--</span><span class="nx">WLANSDJLST</span><span class="o">--&gt;</span>
+        <span class="nt">&lt;/script&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+    <span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+<ul>
+  <li>
+    <p>5行目<br />
+   日本語などを含むファイル名も正しく表示できるよう、UTF-8形式を指定しています。</p>
+  </li>
+  <li>
+    <p>19-31行目<br />
+   スマートフォンなど画面が小さいデバイスの場合に、 メニューをタップ操作で開いたり閉じたりするようにしています。</p>
+  </li>
+  <li>
+    <p>37行目<br />
+   この<code class="highlighter-rouge">&lt;ul&gt;</code>タグ内にサムネイル画像を追加していきます。 Bootstrapの<code class="highlighter-rouge">thumbnails</code>クラスを設定しています。</p>
+  </li>
+  <li>
+    <p>44-47行目<br />
+   FlashAirのコンテンツリストを受け取る部分です。主役を忘れないようにしましょう。</p>
+  </li>
+</ul>
+
+<hr />
+<h2 id="コードの変更">コードの変更</h2>
+
+<p><code class="highlighter-rouge">main.js</code>のサムネイルを出力する部分をBootstrap対応に改造します。</p>
+
+<h3 id="サムネイルスタイルの設定">サムネイルスタイルの設定</h3>
+
+<p>画像のアンカータグに
+<code class="highlighter-rouge">thumbnail</code>クラスを設定すると、サムネイルに適した表示になります。 HTMLで設定した
+<code class="highlighter-rouge">thumbnails</code>クラスとセットで使います。</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var filelink = $('&lt;a class="thumbnail"&gt;&lt;/a&gt;').attr('href', file["r_uri"] + '/' + file["fname"]);
+</code></pre></div></div>
+
+<h3 id="画像の角を丸くする設定">画像の角を丸くする設定</h3>
+
+<p>イメージタグに
+<code class="highlighter-rouge">img-rounded</code>クラスを適用すると角丸になります。</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var img = $('&lt;img class="img-rounded"&gt;');
+</code></pre></div></div>
+
+<p>その他にもクラスを設定して、調整を行います。 コード全体は次のようになります。</p>
+
+<h5 id="sd_wlanjsmainjs"><em>/SD_WLAN/js/main.js</em></h5>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="c1">// Judge the card is V1 or V2.</span>
+    <span class="kd">function</span> <span class="nx">isV1</span><span class="p">(</span><span class="nx">wlansd</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span> <span class="nx">wlansd</span><span class="p">.</span><span class="nx">length</span> <span class="o">==</span> <span class="kc">undefined</span> <span class="o">||</span> <span class="nx">wlansd</span><span class="p">.</span><span class="nx">length</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">)</span> <span class="p">{</span>
+            <span class="c1">// List is empty so the card version is not detectable. Assumes as V2.</span>
+            <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span> <span class="nx">wlansd</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">length</span> <span class="o">!=</span> <span class="kc">undefined</span> <span class="p">)</span> <span class="p">{</span>
+            <span class="c1">// Each row in the list is array. V1.</span>
+            <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="c1">// Otherwise V2.</span>
+            <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="c1">// Convert data format from V1 to V2.</span>
+    <span class="kd">function</span> <span class="nx">convertFileList</span><span class="p">(</span><span class="nx">wlansd</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">wlansd</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="kd">var</span> <span class="nx">elements</span> <span class="o">=</span> <span class="nx">wlansd</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">split</span><span class="p">(</span><span class="s2">","</span><span class="p">);</span>
+            <span class="nx">wlansd</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">();</span>
+            <span class="nx">wlansd</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="s2">"r_uri"</span><span class="p">]</span> <span class="o">=</span> <span class="nx">elements</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+            <span class="nx">wlansd</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="s2">"fname"</span><span class="p">]</span> <span class="o">=</span> <span class="nx">elements</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+            <span class="nx">wlansd</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="s2">"fsize"</span><span class="p">]</span> <span class="o">=</span> <span class="nb">Number</span><span class="p">(</span><span class="nx">elements</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span>
+            <span class="nx">wlansd</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="s2">"attr"</span><span class="p">]</span>  <span class="o">=</span> <span class="nb">Number</span><span class="p">(</span><span class="nx">elements</span><span class="p">[</span><span class="mi">3</span><span class="p">]);</span>
+            <span class="nx">wlansd</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="s2">"fdate"</span><span class="p">]</span> <span class="o">=</span> <span class="nb">Number</span><span class="p">(</span><span class="nx">elements</span><span class="p">[</span><span class="mi">4</span><span class="p">]);</span>
+            <span class="nx">wlansd</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="s2">"ftime"</span><span class="p">]</span> <span class="o">=</span> <span class="nb">Number</span><span class="p">(</span><span class="nx">elements</span><span class="p">[</span><span class="mi">5</span><span class="p">]);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="c1">// Callback Function for sort()</span>
+    <span class="kd">function</span> <span class="nx">cmptime</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span><span class="p">(</span> <span class="nx">a</span><span class="p">[</span><span class="s2">"fdate"</span><span class="p">]</span> <span class="o">==</span> <span class="nx">b</span><span class="p">[</span><span class="s2">"fdate"</span><span class="p">]</span> <span class="p">)</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="nx">a</span><span class="p">[</span><span class="s2">"ftime"</span><span class="p">]</span> <span class="o">-</span> <span class="nx">b</span><span class="p">[</span><span class="s2">"ftime"</span><span class="p">];</span>
+        <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+            <span class="k">return</span> <span class="nx">a</span><span class="p">[</span><span class="s2">"fdate"</span><span class="p">]</span> <span class="o">-</span> <span class="nx">b</span><span class="p">[</span><span class="s2">"fdate"</span><span class="p">];</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="c1">// Show file list</span>
+    <span class="kd">function</span> <span class="nx">showFileList</span><span class="p">(</span><span class="nx">path</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Clear box.</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s2">"#list"</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="s1">''</span><span class="p">);</span>
+        <span class="c1">// Output a link to the parent directory if it is not the root directory.</span>
+        <span class="k">if</span> <span class="p">(</span> <span class="nx">path</span> <span class="o">!=</span> <span class="s2">"/"</span> <span class="p">)</span> <span class="p">{</span>
+            <span class="c1">// Make parent path</span>
+            <span class="kd">var</span> <span class="nx">parentPath</span> <span class="o">=</span> <span class="nx">path</span><span class="p">;</span>
+            <span class="k">if</span> <span class="p">(</span> <span class="nx">parentPath</span><span class="p">[</span><span class="nx">parentPath</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">'/'</span> <span class="p">)</span> <span class="p">{</span>
+                <span class="nx">parentPath</span> <span class="o">+=</span> <span class="s1">'/'</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nx">parentPath</span> <span class="o">+=</span> <span class="s1">'..'</span><span class="p">;</span>
+            <span class="c1">// Make a link to the parent path.</span>
+            <span class="nx">$</span><span class="p">(</span><span class="s2">"#list"</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span>
+                <span class="nx">$</span><span class="p">(</span><span class="s1">'&lt;li class="span2"&gt;&lt;/li&gt;'</span><span class="p">)</span>
+                    <span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">'&lt;a href="'</span> <span class="o">+</span> <span class="nx">parentPath</span> <span class="o">+</span> <span class="s1">'" class="thumbnail"&gt;&lt;/a&gt;'</span><span class="p">)</span>
+                        <span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">'&lt;img class="img-rounded" src="/SD_WLAN/img/folder.png"&gt;'</span><span class="p">))</span>
+                        <span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">'&lt;div class="img-caption"&gt;..&lt;/div&gt;'</span><span class="p">)))</span>
+            <span class="p">);</span>
+        <span class="p">}</span>
+        <span class="nx">$</span><span class="p">.</span><span class="nx">each</span><span class="p">(</span><span class="nx">wlansd</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+            <span class="kd">var</span> <span class="nx">file</span> <span class="o">=</span> <span class="k">this</span><span class="p">;</span>
+            <span class="c1">// Skip hidden file</span>
+            <span class="k">if</span> <span class="p">(</span> <span class="nx">file</span><span class="p">[</span><span class="s2">"attr"</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x02</span> <span class="p">)</span> <span class="p">{</span>
+                <span class="k">return</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="c1">// Make a link to directories and files.</span>
+            <span class="kd">var</span> <span class="nx">filelink</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">'&lt;a class="thumbnail"&gt;&lt;/a&gt;'</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s1">'href'</span><span class="p">,</span> <span class="nx">file</span><span class="p">[</span><span class="s2">"r_uri"</span><span class="p">]</span> <span class="o">+</span> <span class="s1">'/'</span> <span class="o">+</span> <span class="nx">file</span><span class="p">[</span><span class="s2">"fname"</span><span class="p">]);</span>
+            <span class="kd">var</span> <span class="nx">caption</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">'&lt;div class="img-caption" style="text-align: center;"&gt;&lt;/div&gt;'</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="nx">file</span><span class="p">[</span><span class="s2">"fname"</span><span class="p">]);</span>
+            <span class="kd">var</span> <span class="nx">fileobj</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">'&lt;li class="span2"&gt;&lt;/li&gt;'</span><span class="p">);</span>
+            <span class="kd">var</span> <span class="nx">img</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">'&lt;img class="img-rounded"&gt;'</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span> <span class="nx">file</span><span class="p">[</span><span class="s2">"attr"</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x10</span> <span class="p">)</span> <span class="p">{</span>
+                <span class="nx">img</span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"src"</span><span class="p">,</span> <span class="s2">"/SD_WLAN/img/folder.png"</span><span class="p">);</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="kd">var</span> <span class="nx">array</span> <span class="o">=</span> <span class="nx">file</span><span class="p">[</span><span class="s2">"fname"</span><span class="p">].</span><span class="nx">split</span><span class="p">(</span><span class="s2">"."</span><span class="p">);</span>
+                <span class="kd">var</span> <span class="nx">ext</span> <span class="o">=</span> <span class="nx">array</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;=</span> <span class="mi">2</span> <span class="p">?</span> <span class="nx">array</span><span class="p">[</span><span class="nx">array</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="p">:</span> <span class="s1">''</span><span class="p">;</span>
+                <span class="k">if</span> <span class="p">(</span> <span class="nx">ext</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">()</span> <span class="o">==</span> <span class="s2">"JPG"</span> <span class="p">)</span> <span class="p">{</span>
+                    <span class="nx">img</span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"src"</span><span class="p">,</span> <span class="s2">"/thumbnail.cgi?"</span> <span class="o">+</span> <span class="nx">file</span><span class="p">[</span><span class="s2">"r_uri"</span><span class="p">]</span> <span class="o">+</span> <span class="s1">'/'</span> <span class="o">+</span> <span class="nx">file</span><span class="p">[</span><span class="s2">"fname"</span><span class="p">]);</span>
+                <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                    <span class="nx">img</span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"src"</span><span class="p">,</span> <span class="s2">"/SD_WLAN/img/other.png"</span><span class="p">);</span>
+                <span class="p">}</span>
+                <span class="nx">filelink</span><span class="p">.</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">"file"</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"target"</span><span class="p">,</span><span class="s2">"_blank"</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="c1">// Append a file entry or directory to the end of the list.</span>
+            <span class="nx">$</span><span class="p">(</span><span class="s2">"#list"</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span>
+                <span class="nx">fileobj</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span>
+                    <span class="nx">filelink</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span>
+                        <span class="nx">img</span>
+                    <span class="p">).</span><span class="nx">append</span><span class="p">(</span>
+                        <span class="nx">caption</span>
+                    <span class="p">)</span>
+                <span class="p">)</span>
+            <span class="p">);</span>
+        <span class="p">});</span>     
+    <span class="p">}</span>
+    <span class="c1">//Document Ready</span>
+    <span class="nx">$</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span> <span class="nx">isV1</span><span class="p">(</span><span class="nx">wlansd</span><span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+            <span class="nx">convertFileList</span><span class="p">(</span><span class="nx">wlansd</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="nx">wlansd</span><span class="p">.</span><span class="nx">sort</span><span class="p">(</span><span class="nx">cmptime</span><span class="p">);</span>
+        <span class="nx">showFileList</span><span class="p">(</span><span class="nx">location</span><span class="p">.</span><span class="nx">pathname</span><span class="p">);</span>
+    <span class="p">});</span>
+</code></pre></div></div>
+<hr />
+<h2 id="実行結果">実行結果</h2>
+
+<p>FlashAirに無線LAN接続したPCまたはスマートフォンのブラウザで確認してみましょう。
+左はPCの画面です。サムネイル画像が画面に大きく表示されています。角も丸くなっています。
+右はスマートフォンです。サムネイルが一列になり、メニューはアイコンに変わりました。 アイコンをタップすると、メニューの一覧が表示されます。</p>
+
+<p><img src="/assets/images/tutorials/web_tutorial_07_1.png" alt="Browser Utility Tutorial 7 Result" class="d-block" /></p>
+
+<hr />
+<h2 id="もっと">もっと</h2>
+
+<p>今回のような単純なタイル表示ではなく、コラージュ風に表示してもよいでしょう。 JavaScriptを駆使して、画像処理を行ったりすることもできるかもしれません。</p>
+
+<p>皆さんのアイデアとテクニックで、様々なユーティリティを作ってみましょう。</p>
+
+<p><img src="/assets/images/tutorials/web_tutorial_07_2.png" alt="Browser Utility Tutorial 7 Example" class="d-block" /></p>
+
+<hr />
+<h2 id="サンプルコード">サンプルコード</h2>
+
+<p><a href="/files/samplecode/web/web_tutorial_07.zip" class="btn btn-primary">web_tutorial_07.zip</a> (5KB)</p>
+
+<p>このサイトのサンプルコードは<a href="../../license">二条項BSDライセンス</a>で提供されています。</p>
+
+
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

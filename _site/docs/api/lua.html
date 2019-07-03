@@ -1,0 +1,3225 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  
+    <title>Lua機能 - website</title>
+
+    
+  
+
+  <link rel="shortcut icon" href="http://localhost:4000/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/just-the-docs.css">
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/customstyles.css">
+  
+
+  
+    <script type="text/javascript" src="http://localhost:4000/assets/js/vendor/lunr.min.js"></script>
+  
+  <script type="text/javascript" src="http://localhost:4000/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Lua機能 | website</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Lua機能" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/docs/api/lua.html" />
+<meta property="og:url" content="http://localhost:4000/docs/api/lua.html" />
+<meta property="og:site_name" content="website" />
+<script type="application/ld+json">
+{"@type":"WebPage","headline":"Lua機能","url":"http://localhost:4000/docs/api/lua.html","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+
+  <div class="page-wrap">
+    <div class="side-bar">
+      <a href="http://localhost:4000" class="site-title fs-6 lh-tight">website</a>
+      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+      <div class="navigation main-nav js-main-nav">
+        <nav role="navigation" aria-label="Main navigation">
+    <ul class="navigation-list">
+      
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/api/command.cgi.html" class="navigation-list-link">command.cgi</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/api/config.cgi.html" class="navigation-list-link">config.cgi</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/api/thumbnail.cgi.html" class="navigation-list-link">thumbnail.cgi</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/api/upload.cgi.html" class="navigation-list-link">upload.cgi</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/api/config.html" class="navigation-list-link">CONFIG</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/api/utility.html" class="navigation-list-link">ブラウザユーティリティ</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item active">
+              
+              <a href="http://localhost:4000/docs/api/lua.html" class="navigation-list-link active">Lua機能</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/api/isdio.html" class="navigation-list-link">iSDIO</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+
+      <li>
+        <br>
+        <a href="./">目次に戻る</a>
+      </li>
+    </ul>
+  </nav>
+      </div>
+      <footer role="contentinfo" class="site-footer">
+        <p class="text-small text-grey-dk-000 mb-0">This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.</p>
+      </footer>
+    </div>
+    <div class="main-content-wrap js-main-content" tabindex="0">
+      <div class="page-header">
+        <div class="main-content">
+          
+          <div class="search js-search">
+            <div class="search-input-wrap">
+              <input type="text" class="js-search-input search-input" tabindex="0" placeholder="Search website" aria-label="Search website" autocomplete="off">
+              <svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z"/><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z"/></g></svg>
+            </div>
+            <div class="js-search-results search-results-wrap"></div>
+          </div>
+          
+          
+        </div>
+      </div>
+      <div class="main-content">
+        
+          
+            <nav class="breadcrumb-nav">
+              <ol class="breadcrumb-nav-list">
+                
+                  <li class="breadcrumb-nav-list-item"><span>APIガイド</span></li>
+                
+                <li class="breadcrumb-nav-list-item"><span>Lua機能</span></li>
+              </ol>
+            </nav>
+          
+        
+        <div id="main-content" class="page-content" role="main">
+          <h1 id="lua機能">Lua機能</h1>
+
+<div class="alert alert-warning" role="alert">量販店等で購入されたFlashAirに本サイトの記載内容を適用してソフトウェアの書き込みや設定変更を行った場合は、保証規定に基づく無償交換の対象外になります。<br />ご了承の上、お客様の責任において開発を行ってください。</div>
+
+<p>Lua言語で書かれたスクリプトファイルをFlashAirに保存することで、 下記のような簡易なバッチ処理が行えます。</p>
+
+<ul>
+  <li>FlashAirに保存されたファイルを、任意のサーバー等にアップロード。（ダイレクトアップロード）</li>
+  <li>FlashAirにファイルを生成する。</li>
+  <li>動的にHTMLファイルを生成する。</li>
+</ul>
+
+<p>本機能は、FlashAir W-03以上で利用できます。</p>
+
+<ul>
+  <li><a href="#lua言語について">Lua言語について</a></li>
+  <li><a href="#利用できる機能">利用できる機能</a></li>
+  <li><a href="#制約事項">制約事項</a></li>
+  <li><a href="#lua関数リファレンス">Lua関数リファレンス</a></li>
+</ul>
+
+<hr />
+<h2 id="lua言語について">Lua言語について</h2>
+
+<blockquote>
+  <p>Luaは、パワフルで、高速で、軽量で、埋め込み可能な、スクリプト言語です。</p>
+
+  <p>Luaは、シンプルな手続き型構文をと強力なデータ記述構造を、連想配列と拡張可能なセマンティクスを用いて組み合わせています。
+Luaは動的型付けであり、レジスタベースの仮想マシン向けのバイトコードを解釈することによって実行されます。
+また、インクリメンタルガベッジコレクションによる自動メモリ管理を備えており、 設定、スクリプティング、ラピッドプロトタイピングに最適です。</p>
+
+  <footer class="blockquote-footer">原文:
+<cite title="Lua">
+<a href="http://www.lua.org/about.html" target="_blank">Lua: about - http://www.lua.org/</a>
+</cite>
+</footer>
+</blockquote>
+
+<p>Lua言語の詳細は、関連情報をご覧ください。</p>
+
+<ul>
+  <li><a href="http://ja.wikipedia.org/wiki/Lua" target="_blank">Wikipedia</a></li>
+  <li><a href="http://www.amazon.co.jp/gp/product/4048677977/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;camp=247&amp;creative=1211&amp;creativeASIN=4048677977&amp;linkCode=as2&amp;tag=flashjapan0a-22" target="_blank">Programming in Lua プログラミング言語Lua公式解説書</a>(Amazon.co.jp)</li>
+</ul>
+
+<hr />
+<h2 id="利用できる機能">利用できる機能</h2>
+
+<p>FlashAirのLua機能では、下記のライブラリ関数が利用できます。</p>
+
+<ul>
+  <li>Lua基本ライブラリ
+    <ul>
+      <li>Version: 5.2.1（<a href="http://www.lua.org/" target="_blank">http://www.lua.org/</a>）</li>
+      <li>LuaFileSystem
+        <ul>
+          <li>Version: 1.61（<a href="http://keplerproject.github.io/luafilesystem/" target="_blank">http://keplerproject.github.io/luafilesystem/</a>）</li>
+        </ul>
+      </li>
+      <li>CJSON
+        <ul>
+          <li>Version: 1.0.3（<a href="http://www.kyne.com.au/~mark/software/lua-cjson.php" target="_blank">http://www.kyne.com.au/~mark/software/lua-cjson.php</a>）</li>
+        </ul>
+      </li>
+      <li>FlashAir独自機能
+        <ul>
+          <li><a href="#lua関数リファレンス">Lua関数リファレンス</a></li>
+          <li><a href="#パーティション操作">パーティション操作</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+<h2 id="制約事項">制約事項</h2>
+
+<p>メモリ制約のため、標準ライブラリの以下の機能は使用できません。</p>
+
+<div class="alert alert-success" role="alert">数学関数は、FlashAir W-04から使用可能になりました。</div>
+
+<ul>
+  <li>コルーチン操作</li>
+  <li>OS機能</li>
+  <li>デバッグライブラリ</li>
+</ul>
+
+<hr />
+<h2 id="lua関数リファレンス">Lua関数リファレンス</h2>
+
+<div class="alert alert-warning" role="alert">内容は予告なく変更される可能性があります。</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>関数名</th>
+      <th>機能</th>
+      <th>ファームウェアバージョン</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="#bridge">Bridge</a></td>
+      <td>インターネット同時接続モードで無線LANの有効化</td>
+      <td>3.00.00+</td>
+    </tr>
+    <tr>
+      <td><a href="#connect">Connect</a></td>
+      <td>STAモードで無線LANの有効化</td>
+      <td>3.00.00+</td>
+    </tr>
+    <tr>
+      <td><a href="#connectedsta">ConnectedSTA</a></td>
+      <td>AP接続時の接続ステーション数</td>
+      <td>4.00.00+</td>
+    </tr>
+    <tr>
+      <td><a href="#controlfioget">control(“fioget”)</a></td>
+      <td>無線LAN On/Off状態の取得</td>
+      <td>4.00.00+</td>
+    </tr>
+    <tr>
+      <td><a href="#controlfioset">control(“fioset”)</a></td>
+      <td>無線LAN On/Off</td>
+      <td>4.00.00+</td>
+    </tr>
+    <tr>
+      <td><a href="#controlhid_change_pass">control(“hid_change_pass”)</a></td>
+      <td>秘匿領域に設定したパスワードの変更</td>
+      <td>4.00.03+</td>
+    </tr>
+    <tr>
+      <td><a href="#controlhid_clear">control(“hid_clear”)</a></td>
+      <td>パスワード、APIで保存したスクリプトファイルを全て削除</td>
+      <td>4.00.03+</td>
+    </tr>
+    <tr>
+      <td><a href="#controlhid_get">control(“hid_get”)</a></td>
+      <td>秘匿領域に保存したスクリプトを取得</td>
+      <td>4.00.03+</td>
+    </tr>
+    <tr>
+      <td><a href="#controlhid_hash">control(“hid_hash”)</a></td>
+      <td>設定したパスワードと指定する文字列からハッシュ文字列を作成</td>
+      <td>4.00.03+</td>
+    </tr>
+    <tr>
+      <td><a href="#controlhid_set_pass">control(“hid_set_pass”)</a></td>
+      <td>秘匿領域への保存のためのパスワードを設定</td>
+      <td>4.00.03+</td>
+    </tr>
+    <tr>
+      <td><a href="#controlhid_store">control(“hid_store”)</a></td>
+      <td>スクリプトを秘匿領域へ保存</td>
+      <td>4.00.03+</td>
+    </tr>
+    <tr>
+      <td><a href="#controltime">control(“time”)</a></td>
+      <td>日時メモ保存</td>
+      <td>4.00.00+</td>
+    </tr>
+    <tr>
+      <td><a href="#disconnect">Disconnect</a></td>
+      <td>無線LANの停止</td>
+      <td>3.00.00+</td>
+    </tr>
+    <tr>
+      <td><a href="#establish">Establish</a></td>
+      <td>APモードで無線LANの有効化</td>
+      <td>3.00.00+</td>
+    </tr>
+    <tr>
+      <td><a href="#ftp">ftp</a></td>
+      <td>FTPを使用したファイルのアップロード、ダウンロード</td>
+      <td>3.00.00+</td>
+    </tr>
+    <tr>
+      <td><a href="#getscaninfo">GetScanInfo</a></td>
+      <td>SSIDスキャン結果の取得</td>
+      <td>3.00.00+</td>
+    </tr>
+    <tr>
+      <td><a href="#hash">hash</a></td>
+      <td>ハッシュの計算</td>
+      <td>3.00.00+</td>
+    </tr>
+    <tr>
+      <td><a href="#httpgetfile">HTTPGetFile</a></td>
+      <td>HTTPを使用したファイルのダウンロード</td>
+      <td>3.00.00+</td>
+    </tr>
+    <tr>
+      <td><a href="#i2c">i2c</a></td>
+      <td>I<sup>2</sup>C操作</td>
+      <td>4.00.00+</td>
+    </tr>
+    <tr>
+      <td><a href="#ip">ip</a></td>
+      <td>IPアドレスを取得または設定</td>
+      <td>3.00.00+</td>
+    </tr>
+    <tr>
+      <td><a href="#mailsend">MailSend</a></td>
+      <td>メールの送信</td>
+      <td>3.00.01+</td>
+    </tr>
+    <tr>
+      <td><span class="badge label-gray mr-1">deleted</span><a href="#md5">md5</a></td>
+      <td>MD5ハッシュの計算</td>
+      <td>3.00.00</td>
+    </tr>
+    <tr>
+      <td><a href="#ping">ping</a></td>
+      <td>指定IPへPINGを発行</td>
+      <td>3.00.00+</td>
+    </tr>
+    <tr>
+      <td><a href="#pio">pio</a></td>
+      <td>SDインターフェースのGPIO制御</td>
+      <td>3.00.00+</td>
+    </tr>
+    <tr>
+      <td><a href="#pwmduty">pwm(“duty”)</a></td>
+      <td>pwm操作時の周波数とデューティ比を設定</td>
+      <td>4.00.03+</td>
+    </tr>
+    <tr>
+      <td><a href="#pwminit">pwm(“init”)</a></td>
+      <td>pwmの有効化、チャンネル数の設定</td>
+      <td>4.00.03+</td>
+    </tr>
+    <tr>
+      <td><a href="#pwmstart">pwm(“start”)</a></td>
+      <td>pwm操作時の指定チャンネルを動作</td>
+      <td>4.00.03+</td>
+    </tr>
+    <tr>
+      <td><a href="#pwmstop">pwm(“stop”)</a></td>
+      <td>pwm操作時の指定チャンネルを停止</td>
+      <td>4.00.03+</td>
+    </tr>
+    <tr>
+      <td><a href="#readstatusreg">ReadStatusReg</a></td>
+      <td>FlashAir自身のステータスレジスタを取得</td>
+      <td>3.00.00+</td>
+    </tr>
+    <tr>
+      <td><a href="#remove">remove</a></td>
+      <td>ファイルの削除</td>
+      <td>3.00.00+</td>
+    </tr>
+    <tr>
+      <td><a href="#rename">rename</a></td>
+      <td>ファイル名の変更</td>
+      <td>3.00.00+</td>
+    </tr>
+    <tr>
+      <td><a href="#request">request</a></td>
+      <td>HTTPリクエストの発行</td>
+      <td>3.00.00+</td>
+    </tr>
+    <tr>
+      <td><a href="#scan">Scan</a></td>
+      <td>SSIDスキャンの実行</td>
+      <td>3.00.00+</td>
+    </tr>
+    <tr>
+      <td><a href="#search">search</a></td>
+      <td>ファイルサーチ機能</td>
+      <td>4.00.00+</td>
+    </tr>
+    <tr>
+      <td><a href="#serialinit">serial(“init”)</a></td>
+      <td>シリアルの有効化、ボーレートの設定</td>
+      <td>4.00.03+</td>
+    </tr>
+    <tr>
+      <td><a href="#serialread">serial(“read”)</a></td>
+      <td>シリアル操作時のデータの受信</td>
+      <td>4.00.03+</td>
+    </tr>
+    <tr>
+      <td><a href="#serialwrite">serial(“write”)</a></td>
+      <td>シリアル操作時のデータの送信</td>
+      <td>4.00.03+</td>
+    </tr>
+    <tr>
+      <td><a href="#setcert">SetCert</a></td>
+      <td>ルート証明登録</td>
+      <td>3.00.00+</td>
+    </tr>
+    <tr>
+      <td><a href="#setchannel">SetChannel</a></td>
+      <td>無線チャネルを設定する</td>
+      <td>3.00.01+</td>
+    </tr>
+    <tr>
+      <td><a href="#sharedmemory">sharedmemory</a></td>
+      <td>共有メモリのデータを読み込み或いは書き込み</td>
+      <td>3.00.00+</td>
+    </tr>
+    <tr>
+      <td><a href="#sleep">sleep</a></td>
+      <td>指定時間だけスクリプトの実行を停止</td>
+      <td>3.00.00+</td>
+    </tr>
+    <tr>
+      <td><a href="#spi">spi</a></td>
+      <td>SPI操作を行う</td>
+      <td>3.00.01+</td>
+    </tr>
+    <tr>
+      <td><a href="#spibit">spi(“bit”)</a></td>
+      <td>転送ビット数の指定</td>
+      <td>4.00.03+</td>
+    </tr>
+    <tr>
+      <td><a href="#spics">spi(“cs”)</a></td>
+      <td>チップセレクト信号の制御</td>
+      <td>4.00.03+</td>
+    </tr>
+    <tr>
+      <td><a href="#spiinit">spi(“init”)</a></td>
+      <td>インターフェースを初期化し、クロック周期の変更を行う</td>
+      <td>4.00.03+</td>
+    </tr>
+    <tr>
+      <td><a href="#spimode">spi(“mode”)</a></td>
+      <td>SPIモードの指定</td>
+      <td>4.00.03+</td>
+    </tr>
+    <tr>
+      <td><a href="#spiread">spi(“read”)</a></td>
+      <td>ライトおよびリード</td>
+      <td>4.00.03+</td>
+    </tr>
+    <tr>
+      <td><a href="#spiwrite">spi(“write”)</a></td>
+      <td>ライトおよびリード</td>
+      <td>4.00.03+</td>
+    </tr>
+    <tr>
+      <td><a href="#strconvert">strconvert</a></td>
+      <td>文字列変換</td>
+      <td>3.00.00+</td>
+    </tr>
+    <tr>
+      <td><a href="#watchdogevent">watchdog(“event”)</a></td>
+      <td>WatchDogのタイマーリセット</td>
+      <td>4.00.03+</td>
+    </tr>
+    <tr>
+      <td><a href="#watchdogstart">watchdog(“start”)</a></td>
+      <td>WatchDogのタイマースタート</td>
+      <td>4.00.03+</td>
+    </tr>
+    <tr>
+      <td><a href="#watchdogstatus">watchdog(“status”)</a></td>
+      <td>WatchDogの状態取得</td>
+      <td>4.00.03+</td>
+    </tr>
+    <tr>
+      <td><a href="#watchdogstop">watchdog(“stop”)</a></td>
+      <td>WatchDogのタイマー停止</td>
+      <td>4.00.03+</td>
+    </tr>
+    <tr>
+      <td><a href="#websocket">websocket</a></td>
+      <td>WebSocket機能</td>
+      <td>4.00.00+</td>
+    </tr>
+    <tr>
+      <td><a href="#wlanlink">WlanLink</a></td>
+      <td>接続確認</td>
+      <td>3.00.00+</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+<h2 id="bridge">Bridge</h2>
+
+<p>インターネット同時接続モードで無線LANを有効化します。</p>
+
+<h3 id="書式">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fa</span><span class="p">.</span><span class="n">Bridge</span><span class="p">(</span><span class="n">ssid</span><span class="p">,</span> <span class="n">networkkey</span><span class="p">,</span> <span class="n">encmode</span><span class="p">,</span> <span class="n">brgssid</span><span class="p">,</span> <span class="n">brgnetworkkey</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数">引数</h3>
+
+<h5 id="ssid"><strong>ssid</strong></h5>
+<p><em>string</em>。 FlashAirのSSID。</p>
+<h5 id="networkkey"><strong>networkkey</strong></h5>
+<p><em>string</em>。 FlashAirのセキュリティキー。</p>
+<h5 id="encmode"><strong>encmode</strong></h5>
+<p><em>string</em>。 FlashAirのセキュリティモード。 指定可能な値については<a href="#establish">Establish</a>を参照して下さい。</p>
+<h5 id="brgssid"><strong>brgssid</strong></h5>
+<p><em>string</em>。 接続先無線LAN APのSSID。</p>
+<h5 id="brgnetworkkey"><strong>brgnetworkkey</strong></h5>
+<p><em>string</em>。 接続先無線LAN APのセキュリティキー。</p>
+
+<h3 id="戻り値">戻り値</h3>
+
+<p>なし</p>
+
+<hr />
+<h2 id="connect">Connect</h2>
+
+<p>STAモードで無線LANを有効化します。</p>
+
+<h3 id="書式-1">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fa</span><span class="p">.</span><span class="n">Connect</span><span class="p">(</span><span class="n">ssid</span><span class="p">,</span> <span class="n">networkkey</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-1">引数</h3>
+
+<h5 id="ssid-1"><strong>ssid</strong></h5>
+<p><em>string</em>。 接続先無線LAN APのSSID名。</p>
+<h5 id="networkkey-1"><strong>networkkey</strong></h5>
+<p><em>string</em>。 接続先無線LAN APのセキュリティキー。</p>
+
+<h3 id="戻り値-1">戻り値</h3>
+
+<p>なし</p>
+
+<hr />
+<h2 id="connectedsta">ConnectedSTA</h2>
+
+<p>AP接続時の接続されているステーション数、ip、macを返します。</p>
+
+<h3 id="書式-2">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cnt</span><span class="p">,</span><span class="n">tbl</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">ConnectedSTA</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h3 id="戻り値-2">戻り値</h3>
+
+<h5 id="cnt"><strong>cnt</strong></h5>
+<p>接続しているステーションの個数を返却する。</p>
+<h5 id="tbl"><strong>Tbl</strong></h5>
+<p>取得したクライアントのテーブルを返却する。cntが0に場合nilを返却する。</p>
+
+<h3 id="例">例</h3>
+
+<h5 id="ap起動時に何台接続しているか確認する">AP起動時に何台接続しているか確認する。</h5>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">local</span> <span class="n">cnt</span><span class="p">,</span> <span class="n">tbl</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">ConnectedSTA</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cnt</span><span class="p">,</span><span class="n">tbl</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">t</span> <span class="k">in</span> <span class="nb">ipairs</span><span class="p">(</span><span class="n">tbl</span><span class="p">)</span> <span class="k">do</span> 
+  <span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="k">in</span> <span class="nb">pairs</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="k">do</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">v</span><span class="p">)</span>
+   <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<h5 id="結果">結果</h5>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1       table: 856B1C
+mac     40:48:0f:7b:37:92
+ip      192.168.0.11
+</code></pre></div></div>
+
+<hr />
+<h2 id="controlfioget">control(“fioget”)</h2>
+
+<p>無線LANのOn/Off状態を取得します。</p>
+
+<h3 id="書式-3">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">result</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">control</span><span class="p">(</span><span class="s2">"fioget"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-2">引数</h3>
+
+<p>第1引数は”fioget”固定。</p>
+
+<h3 id="戻り値-3">戻り値</h3>
+
+<h5 id="result"><strong>result</strong></h5>
+
+<p><em>number</em>。現在の無線LANの状態。</p>
+
+<ul class="ml-4">
+  <li>1：無線LANはOn。</li>
+  <li>0：無線LANはOff。</li>
+</ul>
+
+<hr />
+<h2 id="controlfioset">control(“fioset”)</h2>
+
+<p>無線LANのOn/Offを行います。</p>
+
+<h3 id="書式-4">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">result</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">control</span><span class="p">(</span><span class="s2">"fioset"</span><span class="p">,</span> <span class="n">enable</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-3">引数</h3>
+
+<p>第1引数は”fioset”固定。&lt;/dd&gt;</p>
+
+<h5 id="enable"><strong>enable</strong></h5>
+<p><em>number</em>。1 または 0を指定。</p>
+
+<ul class="ml-4">
+  <li>1：無線LANをOnにする。モードやSSIDなどの設定はCONFIGファイルの内容が適用される。</li>
+  <li>0：無線LANをOffにする。</li>
+</ul>
+
+<h3 id="戻り値-4">戻り値</h3>
+
+<h5 id="result-1"><strong>result</strong></h5>
+<p><em>number</em>。現在の無線LANの状態。</p>
+
+<ul class="ml-4">
+  <li>1：無線LANはOn。</li>
+  <li>0：無線LANはOff。</li>
+</ul>
+
+<hr />
+<h2 id="controlhid_change_pass">control(“hid_change_pass”)</h2>
+
+<p>秘匿領域に設定したパスワードを変更します。</p>
+
+<h3 id="書式-5">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ret</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">control</span><span class="p">(</span><span class="s2">"hid_change_pass"</span><span class="p">,</span> <span class="n">old_password</span><span class="p">,</span> <span class="n">new_password</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-4">引数</h3>
+
+<p>第1引数は”hid_change_pass”固定。</p>
+
+<h5 id="old_password"><strong>old_password</strong></h5>
+<p><em>string</em>。設定済みパスワード。</p>
+
+<h5 id="new_password"><strong>new_password</strong></h5>
+<p><em>string</em>。新規パスワード。</p>
+
+<h3 id="戻り値-5">戻り値</h3>
+
+<h5 id="ret"><strong>ret</strong></h5>
+<p><em>number</em>。</p>
+
+<dl class="ml-4">
+  <dt>
+      0
+  </dt>
+  <dd>
+      成功。
+  </dd>
+  <dt>
+      1
+  </dt>
+  <dd>
+      設定エラー。
+  </dd>
+  <dt>
+      -1
+  </dt>
+  <dd>
+      パスワード長エラー。
+  </dd>
+</dl>
+
+<hr />
+<h2 id="controlhid_clear">control(“hid_clear”)</h2>
+
+<p>パスワード、APIで保存したスクリプトファイルを全て削除します。</p>
+
+<h3 id="書式-6">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fa</span><span class="p">.</span><span class="n">control</span><span class="p">(</span><span class="s2">"hid_clear"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-5">引数</h3>
+
+<p>第1引数は”hid_clear”固定。</p>
+
+<h3 id="戻り値-6">戻り値</h3>
+
+<p>なし</p>
+
+<hr />
+<h2 id="controlhid_get">control(“hid_get”)</h2>
+
+<p>秘匿領域に保存したスクリプトを取得します。</p>
+
+<h3 id="書式-7">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fa</span><span class="p">.</span><span class="n">control</span><span class="p">(</span><span class="s2">"hid_get"</span><span class="p">,</span> <span class="n">filename</span> <span class="p">,</span> <span class="n">dstfilename</span><span class="p">,</span> <span class="n">password</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-6">引数</h3>
+
+<p>第1引数は”hid_get”固定。</p>
+
+<h5 id="filename"><strong>filename</strong></h5>
+<p><em>string</em>。保存しているスクリプト。</p>
+
+<h5 id="dstfilename"><strong>dstfilename</strong></h5>
+<p><em>string</em>。コピー先ファイル名。</p>
+<h5 id="password"><strong>password</strong></h5>
+<p><em>string</em>。パスワード。</p>
+
+<h3 id="戻り値-7">戻り値</h3>
+
+<p>なし</p>
+
+<h3 id="例-1">例</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fa</span><span class="p">.</span><span class="n">control</span><span class="p">(</span><span class="s2">"hid_get"</span><span class="p">,</span> <span class="s2">"h:sys.lua"</span><span class="p">,</span> <span class="s2">"tmp/option.lua"</span><span class="p">,</span> <span class="s2">"mysecret"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="注意事項">注意事項</h3>
+
+<p>ホストからアクセス可能な領域で実行されたLuaスクリプトから、秘匿領域へ保存されたファイルへアクセスは出来ません。</p>
+
+<hr />
+<h2 id="controlhid_hash">control(“hid_hash”)</h2>
+
+<p>秘匿領域に設定したパスワードと指定する文字列からハッシュ文字列を作成します。</p>
+
+<h3 id="書式-8">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ret</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">control</span><span class="p">(</span><span class="s2">"hid_hash"</span><span class="p">,</span> <span class="n">string</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-7">引数</h3>
+
+<p>第1引数は”hid_change_pass”固定。</p>
+<h5 id="string"><strong>string</strong></h5>
+<p><em>string</em>。設定文字列。</p>
+
+<h3 id="戻り値-8">戻り値</h3>
+
+<h5 id="ret-1"><strong>ret</strong></h5>
+<p><em>string</em>。ハッシュ値。</p>
+
+<hr />
+<h2 id="controlhid_set_pass">control(“hid_set_pass”)</h2>
+
+<p>秘匿領域への保存のためのパスワードを設定します。</p>
+
+<h3 id="書式-9">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fa</span><span class="p">.</span><span class="n">control</span><span class="p">(</span><span class="s2">"hid_set_pass"</span><span class="p">,</span> <span class="n">password</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-8">引数</h3>
+
+<p>第1引数は”hid_set_pass”固定。</p>
+<h5 id="password-1"><strong>password</strong></h5>
+<p><em>string</em>。パスワード。</p>
+
+<h3 id="戻り値-9">戻り値</h3>
+
+<p>なし</p>
+
+<hr />
+<h2 id="controlhid_store">control(“hid_store”)</h2>
+
+<p>スクリプトを秘匿領域へ保存します。</p>
+
+<h3 id="書式-10">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span><span class="p">.</span><span class="n">control</span><span class="p">(</span><span class="s2">"hid_store"</span><span class="p">,</span><span class="err">　</span><span class="n">filename</span><span class="p">,</span><span class="err">　</span><span class="n">password</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-9">引数</h3>
+
+<p>第1引数は”hid_store”固定。</p>
+<h5 id="filename-1"><strong>filename</strong></h5>
+<p><em>string</em>。保存するスクリプト。</p>
+<h5 id="password-2"><strong>password</strong></h5>
+<p><em>string</em>。パスワード。</p>
+
+<h3 id="戻り値-10">戻り値</h3>
+
+<p>なし</p>
+
+<h3 id="例-2">例</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fa</span><span class="p">.</span><span class="n">control</span><span class="p">(</span><span class="s2">"hid_store"</span><span class="p">,</span> <span class="s2">"test.lua"</span><span class="p">,</span> <span class="s2">"12345678"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>保存したファイルをCONFIGで指定する</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>LUA_RUN_SCRIPT=H:filename
+LUA_SD_EVNET=H:filename
+</code></pre></div></div>
+
+<hr />
+<h2 id="controltime">control(“time”)</h2>
+
+<p>日時メモの保存または取得を行います。</p>
+
+<h3 id="書式-11">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">result</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">control</span><span class="p">(</span><span class="s2">"time"</span><span class="p">[,</span> <span class="n">savetime</span><span class="p">])</span>
+</code></pre></div></div>
+
+<h3 id="引数-10">引数</h3>
+
+<p>第1引数は”time”固定。</p>
+<h5 id="savetime"><strong>savetime</strong></h5>
+<p><em>number</em>。保存する日時。FAT形式で指定する。</p>
+
+<ul>
+  <li>savetime引数ありの場合、指定された日時を保存する。</li>
+  <li>savetime引数なしの場合、保存された日時を取得する。</li>
+  <li>FAT形式の日時について
+    <ul>
+      <li>32ビットの整数値で、上位16ビットが日付、下位16ビットが時刻。</li>
+      <li>日付と時刻は、<a href="command.cgi/#ファイルリストの取得">command.cgiのop=100</a>を実行した際に取得できる値と同じフォーマット。</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="戻り値-11">戻り値</h3>
+
+<h5 id="result-2"><strong>result</strong></h5>
+<p><em>number</em>。取得した日時。</p>
+
+<ul>
+  <li>savetime引数ありの場合、指定された日時そのものを返す。</li>
+  <li>savetime引数なしの場合、保存された日時を返す。
+    <ul>
+      <li>日時が保存されていない場合は、-1を返す。</li>
+    </ul>
+  </li>
+  <li>エラーの場合は nil を返す。</li>
+</ul>
+
+<h3 id="例-3">例</h3>
+
+<h5 id="20170601-123456-を保存する">“2017/06/01 12:34:56” を保存する。</h5>
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">result</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">control</span><span class="p">(</span><span class="s2">"time"</span><span class="p">,</span> <span class="mh">0x4ac1645c</span><span class="p">)</span>
+</code></pre></div></div>
+<h5 id="保存された日時を取得する">保存された日時を取得する。</h5>
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">result</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">control</span><span class="p">(</span><span class="s2">"time"</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">result</span> <span class="o">~=</span> <span class="kc">nil</span> <span class="k">then</span>
+  <span class="nb">print</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span><span class="s2">"time: 0x%08x"</span><span class="p">,</span> <span class="n">result</span><span class="p">))</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<hr />
+<h2 id="disconnect">Disconnect</h2>
+
+<p>無線LANを停止します。</p>
+
+<h3 id="書式-12">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fa</span><span class="p">.</span><span class="n">Disconnect</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h3 id="引数-11">引数</h3>
+
+<p>なし</p>
+
+<h3 id="戻り値-12">戻り値</h3>
+
+<p>なし</p>
+
+<hr />
+<h2 id="establish">Establish</h2>
+
+<p>APモードで無線LANを有効化します。</p>
+
+<h3 id="書式-13">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fa</span><span class="p">.</span><span class="n">Establish</span><span class="p">(</span><span class="n">ssid</span><span class="p">,</span> <span class="n">networkkey</span><span class="p">,</span> <span class="n">encmode</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-12">引数</h3>
+
+<h5 id="ssid-2"><strong>ssid</strong></h5>
+<p><em>string</em>。 FlashAirのSSID。</p>
+<h5 id="networkkey-2"><strong>networkkey</strong></h5>
+<p><em>string</em>。 FlashAirのセキュリティキー。</p>
+<h5 id="encmode-1"><strong>encmode</strong></h5>
+<p><em>number</em>。 FlashAirのセキュリティモード。</p>
+
+<h3 id="戻り値-13">戻り値</h3>
+
+<p>なし</p>
+
+<h3 id="備考">備考</h3>
+
+<p>FlashAirセキュリティモードには、下記のうち一つを指定します。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>値</th>
+      <th>意味</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">0</code></td>
+      <td>オープンシステム、暗号化なし</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">1</code></td>
+      <td>オープンシステム、WEP</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">3</code></td>
+      <td>WPA-PSK、TKIP</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">4</code></td>
+      <td>WPA-PSK、AES</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">5</code></td>
+      <td>WPA2-PSK、TKIP</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">6</code></td>
+      <td>WPA2-PSK、AES</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+<h2 id="ftp">ftp</h2>
+
+<p>FTP (File Transfer Protocol) によるファイルのダウンロードまたはアップロードを実行します。</p>
+
+<h3 id="書式-14">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">result</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">ftp</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">uri</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-13">引数</h3>
+
+<h5 id="cmd"><strong>cmd</strong></h5>
+<p><em>string</em>。 FTPコマンド。</p>
+<dl class="ml-4">
+  <dt>
+  	"get"
+  </dt>
+  <dd>
+		ファイルのダウンロード。
+	</dd>
+  <dt>
+		"put"
+  </dt>
+  <dd>
+		ファイルのアップロード。
+	</dd>
+</dl>
+
+<h5 id="url"><strong>url</strong></h5>
+<p><em>string</em>。 FTPサーバーのURI。</p>
+<h5 id="filename-2"><strong>filename</strong></h5>
+<p><em>string</em>。 FlashAirカード内のファイルパス。</p>
+
+<h3 id="戻り値-14">戻り値</h3>
+
+<h5 id="result-3"><strong>result</strong></h5>
+<p><em>number</em>。</p>
+
+<dl class="ml-4">
+	<dt>
+			1
+	</dt>
+	<dd>
+		正常動作。
+	</dd>
+	<dt>
+		nil
+	</dt>
+	<dd>
+	  エラー。
+	</dd>
+</dl>
+
+<h3 id="備考-1">備考</h3>
+
+<ul>
+  <li>FlashAirの対応しているデータ転送モードはパッシブ（PASV）モードのみとなります。</li>
+  <li>FTPS接続を使用する場合はURLを<code class="highlighter-rouge">ftps://</code>とすると実行可能です。implicit, explicitモード両方とも利用可能です。</li>
+  <li>ポート指定はホスト名の後ろにポート番号を付けてください。</li>
+</ul>
+
+<h3 id="動作例">動作例</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="n">result</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">ftp</span><span class="p">(</span><span class="s2">"get"</span><span class="p">,</span> <span class="s2">"ftp://user:pass@ftp.test.com:21/test.txt"</span><span class="p">,</span> <span class="s2">"test.txt"</span><span class="p">);</span>
+ <span class="n">result</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">ftp</span><span class="p">(</span><span class="s2">"put"</span><span class="p">,</span> <span class="s2">"ftps://user:pass@ftp.test.com:990/test.txt;implicit"</span><span class="p">,</span> <span class="s2">"test.txt"</span><span class="p">);</span>
+ <span class="n">result</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">ftp</span><span class="p">(</span><span class="s2">"put"</span><span class="p">,</span> <span class="s2">"ftps://user:pass@ftp.test.com:990/test.txt;explicit"</span><span class="p">,</span> <span class="s2">"test.txt"</span><span class="p">);</span>
+</code></pre></div></div>
+
+<hr />
+<h2 id="getscaninfo">GetScanInfo</h2>
+
+<p>Scan関数で得られた情報を取得します。</p>
+
+<h3 id="書式-15">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ssid</span><span class="p">,</span> <span class="n">other</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">GetScanInfo</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-14">引数</h3>
+
+<h5 id="num"><strong>num</strong></h5>
+<p><em>number</em>。 Scanリストの番号を指定。</p>
+
+<h3 id="戻り値-15">戻り値</h3>
+
+<h5 id="ssid-3"><strong>ssid</strong></h5>
+<p><em>string</em>。 SSID。</p>
+
+<h5 id="other"><strong>other</strong></h5>
+<p><em>table</em>。 Scan結果情報。</p>
+
+<h3 id="備考-2">備考</h3>
+
+<p>Connect, Establish, または Bridge コマンドにより無線LANが有効になっていると利用できません。</p>
+
+<h3 id="例-4">例</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">count</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">Scan</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">count</span><span class="o">-</span><span class="mi">1</span> <span class="k">do</span>
+  <span class="n">ssid</span><span class="p">,</span><span class="n">other</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">GetScanInfo</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+  <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">val</span> <span class="k">in</span> <span class="nb">pairs</span><span class="p">(</span><span class="n">other</span><span class="p">)</span> <span class="k">do</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">val</span><span class="p">)</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<hr />
+<h2 id="hash">hash</h2>
+
+<p>ハッシュ値を計算します。</p>
+
+<h3 id="書式-16">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">hash</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">hash</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-15">引数</h3>
+
+<h5 id="name"><strong>name</strong></h5>
+<p><em>string</em>。 hashの種類選択(md5,sha1,sha256,hmac-sha256)。</p>
+<h5 id="data"><strong>data</strong></h5>
+<p><em>string</em>。 データ。</p>
+<h5 id="key"><strong>key</strong></h5>
+<p><em>string</em>。 秘密鍵（nameがhmac-sha256時利用）。</p>
+
+<h3 id="戻り値-16">戻り値</h3>
+
+<h5 id="hash-1"><strong>hash</strong></h5>
+<p><em>string</em>。 16進数で表したハッシュ値。</p>
+
+<hr />
+<h2 id="httpgetfile">HTTPGetFile</h2>
+
+<p>HTTPを使用してファイルをダウンロードします。</p>
+
+<h3 id="書式-17">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">result</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">HTTPGetFile</span><span class="p">(</span><span class="n">uri</span><span class="p">,</span> <span class="n">filepath</span> <span class="p">[,</span> <span class="n">user</span><span class="p">,</span> <span class="n">pass</span><span class="p">])</span>
+</code></pre></div></div>
+
+<h3 id="引数-16">引数</h3>
+
+<h5 id="uri"><strong>uri</strong></h5>
+<p><em>string</em>。 取得元のURI。</p>
+<h5 id="filepath"><strong>filepath</strong></h5>
+<p><em>string</em>。 保存先ファイル名。</p>
+<h5 id="user"><strong>user</strong></h5>
+<p><em>string</em>。 Basic認証におけるUser文字列。</p>
+<h5 id="pass"><strong>pass</strong></h5>
+<p><em>string</em>。 Basic認証におけるPass文字列。</p>
+
+<h3 id="戻り値-17">戻り値</h3>
+
+<h5 id="result-4"><strong>result</strong></h5>
+<p><em>number</em>。</p>
+
+<dl class="ml-4">
+  <dt>
+    1
+  </dt>
+  <dd>
+		正常動作。
+	</dd>
+  <dt>
+    nil
+  </dt>
+  <dd>
+		エラー。
+	</dd>
+</dl>
+
+<h3 id="注意事項-1">注意事項</h3>
+
+<ul>
+  <li>この関数でHTTPS通信を実行する場合、実行前に<a href="#setcert">fa.SetCert</a>関数でルート証明書を設定することが推奨されています。ルート証明書を設定せずにHTTPS通信を実行した場合、ルート証明書を用いたサーバ証明書の検証が行われないまま、通信が行われます。</li>
+  <li>ルート証明書を用いてサーバ証明書を検証した結果、検証が失敗した場合、この関数の実行は失敗となります。</li>
+</ul>
+
+<hr />
+<h2 id="i2c">i2c</h2>
+
+<p>FlashAirよりI<sup>2</sup>C操作を行います。i2cはMasterとして動作します。</p>
+
+<h3 id="書式-18">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">res</span><span class="p">,</span> <span class="n">data1</span><span class="p">,</span> <span class="n">data2</span><span class="p">,</span> <span class="n">data3</span><span class="p">,</span> <span class="o">...</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">i2c</span><span class="p">(</span><span class="n">table</span><span class="p">)</span>
+<span class="n">res</span><span class="p">,</span> <span class="n">string</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">i2c</span><span class="p">(</span><span class="n">table</span><span class="p">)</span>
+<span class="n">res</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">ctrl</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">i2c</span><span class="p">{</span><span class="n">mode</span> <span class="o">=</span> <span class="s2">"getpio"</span><span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="引数-17">引数</h3>
+
+<h5 id="table"><strong>table</strong></h5>
+<p>以下のフィールドがあります。</p>
+
+<dl class="ml-4">
+  <dt>mode</dt>
+  <dd>_string_。I<sup>2</sup>C操作の属性。</dd>
+  <dt>freq</dt>
+  <dd>_number_。I<sup>2</sup>Cクロック周波数（単位：kHz）。設定可能な値は、`45`、`100`、`189`、`400`の4つ。省略時は`100`が設定されます。</dd>
+  <dt>timeout</dt>
+  <dd>_number_。スレーブ応答のタイムアウト時間（単位：msec）。省略時は`10`が設定されます。</dd>
+  <dt>address</dt>
+  <dd>_number_。接続デバイスのスレーブアドレスを指定します。</dd>
+  <dt>direction</dt>
+  <dd>_string_。データの方向を指定します。設定可能な値は`"read"`と`"write"`です。`"read"`を指定した場合、接続デバイスからデータを読み出します。`"write"`を指定した場合、接続デバイスへデータを送ります。</dd>
+  <dt>data</dt>
+  <dd>_string_ or _number_。送信データを設定します。string形式で指定した場合は、設定したデータを全て送ります。number形式で指定した場合は`0`～`255`までの値を設定できます。`"setpio"` の場合、0または1でPIOの出力を指定します。<br />
+  <span class="badge label-green">4.00.03</span> Null文字のサポートしました。</dd>
+  <dt>bytes</dt>
+  <dd>_number_。受信データサイズを指定します。typeが`"binary"`のとき、`1`～`16`までの値を指定できます。typeが`"string"`のとき、最小値は`1`、最大値はメモリ依存となります。省時には`1`が設定されます。</dd>
+  <dt>type</dt>
+  <dd>_string_。受信データ形式を指定します。設定可能な値は`"binary"`、`"string"`です。省略時には、`"binary"`が設定されます。</dd>
+  <dt>ctrl<span class="badge label-green ml-1">4.00.03</span></dt>
+  <dd>_number_。PIOの方向を指定します。0のとき入力、1のとき出力となります。</dd>
+</dl>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>デバイス初期化</th>
+      <th>スタートコンディションの送信</th>
+      <th>リスタートコンディションの送信</th>
+      <th>接続デバイスからデータ読み出し</th>
+      <th>接続デバイスへデータ書き込み</th>
+      <th>ストップコンディションを送信し、コネクションを閉じる</th>
+      <th><span class="badge label-green">4.00.03</span><br />PIO設定</th>
+      <th><span class="badge label-green">4.00.03</span><br />PIO取得</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>mode</td>
+      <td><code class="highlighter-rouge">"init"</code></td>
+      <td><code class="highlighter-rouge">"start"</code></td>
+      <td><code class="highlighter-rouge">"restart"</code></td>
+      <td><code class="highlighter-rouge">"read"</code></td>
+      <td><code class="highlighter-rouge">"write"</code></td>
+      <td><code class="highlighter-rouge">"stop"</code></td>
+      <td><code class="highlighter-rouge">"setpio"</code></td>
+      <td><code class="highlighter-rouge">"getpio"</code></td>
+    </tr>
+    <tr>
+      <td>freq</td>
+      <td>省略可</td>
+      <td>不要</td>
+      <td>不要</td>
+      <td>不要</td>
+      <td>不要</td>
+      <td>不要</td>
+      <td>不要</td>
+      <td>不要</td>
+    </tr>
+    <tr>
+      <td>timeout</td>
+      <td>省略可</td>
+      <td>不要</td>
+      <td>不要</td>
+      <td>不要</td>
+      <td>不要</td>
+      <td>不要</td>
+      <td>不要</td>
+      <td>不要</td>
+    </tr>
+    <tr>
+      <td>address</td>
+      <td>不要</td>
+      <td>必須</td>
+      <td>必須</td>
+      <td>不要</td>
+      <td>不要</td>
+      <td>不要</td>
+      <td>不要</td>
+      <td>不要</td>
+    </tr>
+    <tr>
+      <td>direction</td>
+      <td>不要</td>
+      <td>必須</td>
+      <td>必須</td>
+      <td>不要</td>
+      <td>不要</td>
+      <td>不要</td>
+      <td>不要</td>
+      <td>不要</td>
+    </tr>
+    <tr>
+      <td>data</td>
+      <td>不要</td>
+      <td>不要</td>
+      <td>不要</td>
+      <td>不要</td>
+      <td>必須</td>
+      <td>不要</td>
+      <td>必須</td>
+      <td>不要</td>
+    </tr>
+    <tr>
+      <td>bytes</td>
+      <td>不要</td>
+      <td>不要</td>
+      <td>不要</td>
+      <td>省略可</td>
+      <td>省略可</td>
+      <td>不要</td>
+      <td>不要</td>
+      <td>不要</td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td>不要</td>
+      <td>不要</td>
+      <td>不要</td>
+      <td>省略可</td>
+      <td>不要</td>
+      <td>不要</td>
+      <td>不要</td>
+      <td>不要</td>
+    </tr>
+    <tr>
+      <td>ctrl</td>
+      <td>不要</td>
+      <td>不要</td>
+      <td>不要</td>
+      <td>不要</td>
+      <td>不要</td>
+      <td>不要</td>
+      <td>必須</td>
+      <td>不要</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="備考-3">備考</h3>
+
+<h5 id="ビット割当"><strong>ビット割当</strong></h5>
+<ul>
+  <li>CMD: SCL</li>
+  <li>D0: SDA</li>
+</ul>
+
+<p>SCL/SDAはプルアップしてください。<br />
+CLKはプルダウンしてください。<br />
+<span class="badge label-green mr-1">4.00.03</span><code class="highlighter-rouge">"setpio"</code> /<code class="highlighter-rouge">"getpio"</code> ではD1が使用できます。</p>
+
+<h5 id="複数バイト送信"><strong>複数バイト送信</strong></h5>
+<p>バイナリデータを複数バイト送信したい場合は、データ書き込みを続けて実行することで、複数バイト送信することができます。</p>
+
+<h3 id="戻り値-18">戻り値</h3>
+
+<h5 id="res"><strong>res</strong></h5>
+<p><em>string</em>。成功時は<code class="highlighter-rouge">"OK"</code>を返します。失敗時はそれ以外の文字列を返します。</p>
+<h5 id="data1-data2-data3-"><strong>data1, data2, data3, …</strong></h5>
+<p><em>number</em>。<code class="highlighter-rouge">0</code>～<code class="highlighter-rouge">255</code>までの値が格納されます。接続デバイスからデータ読み出し、<code class="highlighter-rouge">type = "binary"</code>指定時のみ使用します。</p>
+<h5 id="string-1"><strong>string</strong></h5>
+<p><em>string</em>。受信データが格納されます。接続デバイスからデータ読み出し、<code class="highlighter-rouge">type = "string"</code>指定時のみ使用します。</p>
+<h5 id="data-1"><strong>data</strong></h5>
+<p><span class="badge label-green">4.00.03</span>
+<em>number</em>。PIOの取得値が格納されます。<code class="highlighter-rouge">type = "getpio"</code>指定時のみ使用します。</p>
+<h5 id="control"><strong>control</strong></h5>
+<p><span class="badge label-green">4.00.03</span>
+<em>number</em>。PIOの方向設定値が格納されます。<code class="highlighter-rouge">0</code> のとき入力、<code class="highlighter-rouge">1</code> のとき出力となります。<code class="highlighter-rouge">type = "getpio"</code>指定時のみ使用します。</p>
+
+<h3 id="例-5">例</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">i2c</span><span class="p">{</span><span class="n">mode</span> <span class="o">=</span> <span class="s2">"init"</span><span class="p">,</span> <span class="n">freq</span> <span class="o">=</span> <span class="mi">100</span><span class="p">}</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">i2c</span><span class="p">{</span><span class="n">mode</span> <span class="o">=</span> <span class="s2">"start"</span><span class="p">,</span> <span class="n">address</span> <span class="o">=</span> <span class="mi">50</span><span class="p">,</span> <span class="n">direction</span> <span class="o">=</span> <span class="s2">"write"</span><span class="p">}</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">i2c</span><span class="p">{</span><span class="n">mode</span> <span class="o">=</span> <span class="s2">"restart"</span><span class="p">,</span> <span class="n">address</span> <span class="o">=</span> <span class="mi">50</span><span class="p">,</span> <span class="n">direction</span> <span class="o">=</span> <span class="s2">"read"</span><span class="p">}</span>
+<span class="n">res</span><span class="p">,</span> <span class="n">data1</span><span class="p">,</span> <span class="n">data2</span><span class="p">,</span> <span class="n">data3</span><span class="p">,</span> <span class="o">...</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">i2c</span><span class="p">{</span><span class="n">mode</span> <span class="o">=</span> <span class="s2">"read"</span><span class="p">,</span> <span class="nb">type</span> <span class="o">=</span> <span class="s2">"binary"</span><span class="p">}</span>
+<span class="n">res</span><span class="p">,</span> <span class="n">string</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">i2c</span><span class="p">{</span><span class="n">mode</span> <span class="o">=</span> <span class="s2">"read"</span><span class="p">,</span> <span class="nb">type</span> <span class="o">=</span> <span class="s2">"string"</span><span class="p">}</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">i2c</span><span class="p">{</span><span class="n">mode</span> <span class="o">=</span> <span class="s2">"write"</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="mi">0</span><span class="p">}</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">i2c</span><span class="p">{</span><span class="n">mode</span> <span class="o">=</span> <span class="s2">"stop"</span><span class="p">}</span>
+</code></pre></div></div>
+
+<h5 id="アドレス50のスレーブから5バイト読み出す">アドレス50のスレーブから5バイト読み出す</h5>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">i2c</span><span class="p">{</span><span class="n">mode</span> <span class="o">=</span> <span class="s2">"init"</span><span class="p">,</span> <span class="n">freq</span> <span class="o">=</span> <span class="mi">100</span><span class="p">}</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">i2c</span><span class="p">{</span><span class="n">mode</span> <span class="o">=</span> <span class="s2">"start"</span><span class="p">,</span> <span class="n">address</span> <span class="o">=</span> <span class="mi">50</span><span class="p">,</span> <span class="n">direction</span> <span class="o">=</span> <span class="s2">"read"</span><span class="p">}</span>
+<span class="n">res</span><span class="p">,</span> <span class="n">r1</span><span class="p">,</span> <span class="n">r2</span><span class="p">,</span> <span class="n">r3</span><span class="p">,</span> <span class="n">r4</span><span class="p">,</span> <span class="n">r5</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">i2c</span><span class="p">{</span><span class="n">mode</span> <span class="o">=</span> <span class="s2">"read"</span><span class="p">,</span> <span class="n">bytes</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="nb">type</span> <span class="o">=</span> <span class="s2">"binary"</span><span class="p">}</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">i2c</span><span class="p">{</span><span class="n">mode</span> <span class="o">=</span> <span class="s2">"stop"</span><span class="p">}</span>
+</code></pre></div></div>
+
+<h5 id="アドレス50のスレーブに0を書き込んでから1バイト読み出す">アドレス50のスレーブに0を書き込んでから1バイト読み出す</h5>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">i2c</span><span class="p">{</span><span class="n">mode</span> <span class="o">=</span> <span class="s2">"init"</span><span class="p">,</span> <span class="n">freq</span> <span class="o">=</span> <span class="mi">100</span><span class="p">}</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">i2c</span><span class="p">{</span><span class="n">mode</span> <span class="o">=</span> <span class="s2">"start"</span><span class="p">,</span> <span class="n">address</span> <span class="o">=</span> <span class="mi">50</span><span class="p">,</span> <span class="n">direction</span> <span class="o">=</span> <span class="s2">"write"</span><span class="p">}</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">i2c</span><span class="p">{</span><span class="n">mode</span> <span class="o">=</span> <span class="s2">"write"</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="mi">0</span><span class="p">}</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">i2c</span><span class="p">{</span><span class="n">mode</span> <span class="o">=</span> <span class="s2">"restart"</span><span class="p">,</span> <span class="n">address</span> <span class="o">=</span> <span class="mi">50</span><span class="p">,</span> <span class="n">direction</span> <span class="o">=</span> <span class="s2">"read"</span><span class="p">}</span>
+<span class="n">res</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">i2c</span><span class="p">{</span><span class="n">mode</span> <span class="o">=</span> <span class="s2">"read"</span><span class="p">,</span> <span class="n">bytes</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">type</span> <span class="o">=</span> <span class="s2">"binary"</span><span class="p">}</span>
+<span class="n">fa</span><span class="p">.</span><span class="n">i2c</span><span class="p">{</span><span class="n">mode</span> <span class="o">=</span> <span class="s2">"stop"</span><span class="p">}</span>
+</code></pre></div></div>
+
+<h5 id="pioの操作">PIOの操作</h5>
+<p><span class="badge label-green">4.00.03</span></p>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">i2c</span> <span class="p">{</span><span class="n">mode</span> <span class="o">=</span><span class="s2">"init"</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="mi">100</span><span class="p">}</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">i2c</span> <span class="p">{</span><span class="n">mode</span> <span class="o">=</span><span class="s2">"setpio"</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ctrl</span><span class="o">=</span><span class="mi">1</span><span class="p">}</span> <span class="c1">-- 出力High</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">i2c</span> <span class="p">{</span><span class="n">mode</span> <span class="o">=</span><span class="s2">"setpio"</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">ctrl</span><span class="o">=</span><span class="mi">1</span><span class="p">}</span> <span class="c1">-- 出力Low</span>
+
+<span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">i2c</span> <span class="p">{</span><span class="n">mode</span> <span class="o">=</span><span class="s2">"setpio"</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">ctrl</span><span class="o">=</span><span class="mi">0</span><span class="p">}</span> <span class="c1">-- 入力</span>
+<span class="n">res</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">ctrl</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">i2c</span> <span class="p">{</span><span class="n">mode</span><span class="o">=</span><span class="s2">"getpio"</span><span class="p">}</span>
+</code></pre></div></div>
+
+<hr />
+<h2 id="ip">ip</h2>
+
+<p>FlashAir自身のIPアドレスを取得または設定します。</p>
+
+<h3 id="書式-19">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ip</span><span class="p">,</span> <span class="n">mask</span><span class="p">,</span> <span class="n">gw</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">ip</span><span class="p">(</span><span class="n">ipaddress</span><span class="p">,</span> <span class="n">subnetmask</span><span class="p">,</span> <span class="n">gateway</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-18">引数</h3>
+
+<h5 id="ipaddress"><strong>ipaddress</strong></h5>
+<p><em>string</em>。 FlashAirに設定するIPアドレス。</p>
+<h5 id="subnetmask"><strong>subnetmask</strong></h5>
+<p><em>string</em>。 サブネットマスク値。</p>
+<h5 id="gateway"><strong>gateway</strong></h5>
+<p><em>string</em>。 ゲートウェイのIPアドレス。</p>
+
+<h3 id="戻り値-19">戻り値</h3>
+
+<h5 id="ip-1"><strong>ip</strong></h5>
+<p><em>string</em>。 IPアドレス。</p>
+<h5 id="mask"><strong>mask</strong></h5>
+<p><em>string</em>。 サブネットマスク。</p>
+<h5 id="gw"><strong>gw</strong></h5>
+<p><em>string</em>。 ゲートウェイ。</p>
+
+<h3 id="例-6">例</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- 値取得時</span>
+<span class="n">ip</span><span class="p">,</span> <span class="n">mask</span><span class="p">,</span> <span class="n">gw</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">ip</span><span class="p">()</span>
+<span class="c1">-- 値設定時</span>
+<span class="n">fa</span><span class="p">.</span><span class="n">ip</span><span class="p">(</span><span class="s2">"192.168.11.2"</span><span class="p">,</span> <span class="s2">"255.255.255.0"</span><span class="p">,</span> <span class="s2">"192.168.11.1"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<hr />
+<h2 id="mailsend">MailSend</h2>
+
+<p>FlashAirよりメール送信を行う（ファイルの添付も可能）。</p>
+
+<h3 id="書式-20">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fa</span><span class="p">.</span><span class="n">MailSend</span><span class="p">(</span><span class="n">table</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-19">引数</h3>
+
+<h5 id="table-1"><strong>table</strong></h5>
+<p>以下のフィールドがあります。</p>
+
+<dl class="ml-4">
+  <dt>from</dt>
+  <dd>_string_。 送信元メールアドレス。</dd>
+  <dt>headers</dt>
+  <dd>_string_。 メールヘッダ。</dd>
+  <dt>body</dt>
+  <dd>_string_。 メール本文。</dd>
+  <dt>server</dt>
+  <dd>_string_。 メールサーバ(smtp)。</dd>
+  <dt>user</dt>
+  <dd>_string_。 ユーザーID。</dd>
+  <dt>password</dt>
+  <dd>_string_。 パスワード。</dd>
+  <dt>attachment</dt>
+  <dd>_string_。 添付ファイル指定（任意）。</dd>
+  <dt>ContentType</dt>
+  <dd>_string_。 コンテンツタイプ指定（attachment指定時に有効で必須）。</dd>
+  <dt>port <span class="badge label-green mr-1">4.00.03</span></dt>
+  <dd>_number_。ポート番号を指定します。デフォルトは465。</dd>
+</dl>
+
+<h3 id="レスポンス">レスポンス</h3>
+
+<p>成功： MailSend is success.<br />
+失敗： Error: It failed to send.</p>
+
+<h3 id="動作例-1">動作例</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">from</span> <span class="o">=</span> <span class="s2">"fromaddr@yahoo.co.jp"</span>
+<span class="n">rcpt</span> <span class="o">=</span> <span class="s2">"toaddr@gmail.com"</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">MailSend</span> <span class="p">{</span>
+  <span class="n">from</span> <span class="o">=</span> <span class="n">from</span><span class="p">,</span>
+  <span class="n">headers</span> <span class="o">=</span> <span class="s2">"To: "</span><span class="o">..</span><span class="n">rcpt</span><span class="o">..</span><span class="s2">"</span><span class="se">\r\n</span><span class="s2">From: "</span><span class="o">..</span><span class="n">from</span><span class="o">..</span><span class="s2">"</span><span class="se">\r\n</span><span class="s2">Subject: test"</span><span class="p">,</span>
+  <span class="n">body</span> <span class="o">=</span> <span class="s2">"HELLO HELLO"</span><span class="p">,</span>
+  <span class="n">server</span> <span class="o">=</span> <span class="s2">"smtp.mail.yahoo.co.jp"</span><span class="p">,</span>
+  <span class="n">user</span> <span class="o">=</span> <span class="s2">"flashair"</span><span class="p">,</span>
+  <span class="n">password</span> <span class="o">=</span><span class="s2">"1234567890"</span><span class="p">,</span>
+  <span class="n">attachment</span> <span class="o">=</span> <span class="s2">"FBYF.jpg"</span><span class="p">,</span>
+  <span class="n">ContentType</span> <span class="o">=</span> <span class="s2">"image/jpg"</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<hr />
+<h2 id="md5">md5</h2>
+
+<p><a href="#hash">hash</a>（ハッシュの計算）へ統合されました。</p>
+
+<hr />
+<h2 id="ping">ping</h2>
+
+<p>指定IPへPINGを発行します。</p>
+
+<h3 id="書式-21">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">result</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">ping</span><span class="p">(</span><span class="n">ip</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-20">引数</h3>
+
+<h5 id="ip-2"><strong>ip</strong></h5>
+<p><em>string</em>。 ipアドレス。</p>
+
+<h3 id="戻り値-20">戻り値</h3>
+
+<h5 id="result-5"><strong>result</strong></h5>
+<p><em>number</em>。</p>
+
+<dl class="ml-4">
+  <dt>1</dt>
+  <dd>正常動作。</dd>
+  <dt>nil</dt>
+  <dd>エラー。</dd>
+</dl>
+
+<h3 id="動作例-2">動作例</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">result</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">ping</span><span class="p">(</span><span class="s2">"192.168.130.1"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<hr />
+<h2 id="pio">pio</h2>
+
+<p>SDインターフェースのPIO (Programmed Input/Output) 制御を行います。</p>
+
+<h3 id="書式-22">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">s</span><span class="p">,</span> <span class="n">indata</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">pio</span><span class="p">(</span><span class="n">ctrl</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-21">引数</h3>
+
+<h5 id="ctrl"><strong>ctrl</strong></h5>
+<p><em>number</em>。 ピンの入出力指定。 読み込みたい端子に対応するビットに<code class="highlighter-rouge">0</code> を、 書き込みたい端子に対応するビットに<code class="highlighter-rouge">1</code> を指定します。</p>
+<h5 id="data-2"><strong>data</strong></h5>
+<p><em>number</em>。 出力ピン状態の指定。 書き込みたい端子に対応する各ビットに、<code class="highlighter-rouge">0</code> を設定するとLow、<code class="highlighter-rouge">1</code> を設定するとHighを出力します。</p>
+
+<h3 id="戻り値-21">戻り値</h3>
+
+<h5 id="s"><strong>s</strong></h5>
+<p><em>number</em>。 インターフェース制御の状態。</p>
+
+<dl class="ml-4">
+  <dt>1</dt>
+  <dd>成功。</dd>
+  <dt>0</dt>
+  <dd>失敗。</dd>
+</dl>
+
+<h5 id="indata"><strong>indata</strong></h5>
+<p><em>number</em>。 入力ピン情報。</p>
+
+<h3 id="備考-4">備考</h3>
+
+<h5 id="ビット割当-1"><strong>ビット割当</strong></h5>
+
+<ul>
+  <li>CMD : 0x01</li>
+  <li>D0 : 0x02</li>
+  <li>D1 : 0x04</li>
+  <li>D2 : 0x08</li>
+  <li>D3 : 0x10</li>
+</ul>
+
+<hr />
+<h2 id="pwmduty">pwm(“duty”)</h2>
+
+<p>FlashAirでpwm操作を行う際、周波数とデューティ比を設定します。</p>
+
+<h3 id="書式-23">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">pwm</span><span class="p">(</span><span class="s2">"duty"</span><span class="p">,</span> <span class="n">ch</span><span class="p">,</span> <span class="n">freq</span><span class="p">,</span> <span class="n">duty</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-22">引数</h3>
+
+<h5 id="ch"><strong>ch</strong></h5>
+<p><em>number</em>。動作指定するPin情報です。<code class="highlighter-rouge">0</code>～<code class="highlighter-rouge">4</code>のチャンネルを指定できます。</p>
+<h5 id="freq"><strong>freq</strong></h5>
+<p><em>number</em>。周波数(Hz単位)。浮動小数点で指定可能。</p>
+<h5 id="duty"><strong>duty</strong></h5>
+<p><em>number</em>。デューティ比(0～100%)。浮動小数点で指定可能。</p>
+
+<h3 id="戻り値-22">戻り値</h3>
+
+<h5 id="res-1"><strong>res</strong></h5>
+<p><em>number</em>。</p>
+
+<dl class="ml-4">
+  <dt>1</dt>
+  <dd>成功。</dd>
+  <dt>nil</dt>
+  <dd>失敗。</dd>
+</dl>
+
+<hr />
+<h2 id="pwminit">pwm(“init”)</h2>
+
+<p>FlashAirでpwm操作を行う際、pwmの有効化、チャンネル数の設定を行います。</p>
+
+<h3 id="書式-24">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ret</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">pwm</span><span class="p">(</span><span class="s2">"init"</span><span class="p">,</span> <span class="n">ch</span><span class="p">,</span> <span class="n">enable</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-23">引数</h3>
+
+<h5 id="ch-1"><strong>ch</strong></h5>
+<p><em>number</em>。pwmモードを設定するチャンネルを1つ指定します。<code class="highlighter-rouge">0</code>～<code class="highlighter-rouge">4</code>のチャンネルを指定できます。</p>
+<h5 id="enable-1"><strong>enable</strong></h5>
+<p><em>number</em>。1 または 0を指定。</p>
+<dl class="ml-4">
+  <dt>1</dt>
+  <dd>pwmモードを有効にする。</dd>
+  <dt>0</dt>
+  <dd>pwmモードを無効にする。</dd>
+</dl>
+
+<h3 id="戻り値-23">戻り値</h3>
+
+<h5 id="res-2"><strong>res</strong></h5>
+<p><em>number</em>。</p>
+
+<dl class="ml-4">
+    <dt>1</dt>
+    <dd>成功。</dd>
+    <dt>nil</dt>
+    <dd>失敗。</dd>
+</dl>
+
+<h3 id="注意事項-2">注意事項</h3>
+
+<ul>
+  <li>CONFIGに<code class="highlighter-rouge">IFMODE=1</code>を設定する必要があります。</li>
+  <li>ビット割当
+    <ul>
+      <li>CMD: 0ch</li>
+      <li>D0: 1ch</li>
+      <li>D1: 2ch</li>
+      <li>D2: 3ch</li>
+      <li>D3: 4ch</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+<h2 id="pwmstart">pwm(“start”)</h2>
+
+<p>FlashAirでpwm操作を行う際、指定したチャンネルを動作させます。0～4のチャンネルを指定できます。</p>
+
+<h3 id="書式-25">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">pwm</span><span class="p">(</span><span class="s2">"start"</span><span class="p">,</span> <span class="n">ch</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-24">引数</h3>
+
+<h5 id="ch-2"><strong>ch</strong></h5>
+<p><em>number</em>。動作指定するPin情報です。<code class="highlighter-rouge">0</code>～<code class="highlighter-rouge">4</code>のチャンネルを指定できます。</p>
+
+<h3 id="戻り値-24">戻り値</h3>
+
+<h5 id="res-3"><strong>res</strong></h5>
+<p><em>number</em>。</p>
+
+<dl class="ml-4">
+  <dt>1</dt>
+  <dd>成功。</dd>
+  <dt>nil</dt>
+  <dd>失敗。</dd>
+</dl>
+
+<hr />
+<h2 id="pwmstop">pwm(“stop”)</h2>
+
+<p>FlashAirでpwm操作を行う際、指定したチャンネルを停止させます。0～4のチャンネルを指定できます。</p>
+
+<h3 id="書式-26">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">pwm</span><span class="p">(</span><span class="s2">"stop"</span><span class="p">,</span> <span class="n">ch</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-25">引数</h3>
+
+<h5 id="ch-3"><strong>ch</strong></h5>
+<p><em>number</em>。停止指定するPin情報です。<code class="highlighter-rouge">0</code>～<code class="highlighter-rouge">4</code>のチャンネルを指定できます。</p>
+
+<h3 id="戻り値-25">戻り値</h3>
+
+<h5 id="res-4"><strong>res</strong></h5>
+<p><em>number</em>。</p>
+
+<dl class="ml-4">
+  <dt>1</dt>
+  <dd>成功。</dd>
+  <dt>nil</dt>
+  <dd>失敗。</dd>
+</dl>
+
+<hr />
+<h2 id="readstatusreg">ReadStatusReg</h2>
+
+<p>FlashAir自身のステータスレジスタを取得する。</p>
+
+<h3 id="書式-27">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">reg</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">ReadStatusReg</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h3 id="引数-26">引数</h3>
+
+<p>なし</p>
+
+<h3 id="戻り値-26">戻り値</h3>
+
+<p>無線LAN機能ステータスレジスタの内容を、文字列として返します。内容は<a href="isdio/register/status/#WLANStatusRegister">無線LAN機能ステータスレジスタ（ApplicationStatus for Wireless LAN）</a>を参照してください。</p>
+
+<h3 id="動作例-3">動作例</h3>
+
+<p>IPアドレスを取得する場合</p>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">local</span> <span class="n">ipaddress</span> <span class="o">=</span> <span class="nb">string.sub</span><span class="p">(</span><span class="n">fa</span><span class="p">.</span><span class="n">ReadStatusReg</span><span class="p">(),</span><span class="mi">160</span><span class="p">,</span><span class="mi">168</span><span class="p">)</span>
+</code></pre></div></div>
+
+<hr />
+<h2 id="remove">remove</h2>
+
+<p>指定されたファイルを削除します。</p>
+
+<h3 id="書式-28">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fa</span><span class="p">.</span><span class="n">remove</span><span class="p">(</span><span class="n">filepath</span><span class="p">)</span>
+</code></pre></div></div>
+<h3 id="引数-27">引数</h3>
+
+<h5 id="filepath-1"><strong>filepath</strong></h5>
+<p><em>string</em>。 削除対象のファイル名。</p>
+
+<h3 id="戻り値-27">戻り値</h3>
+
+<p>なし</p>
+
+<h3 id="動作例-4">動作例</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fa</span><span class="p">.</span><span class="n">remove</span><span class="p">(</span><span class="s2">"/DCIM/100__TSB/DSC_100.JPG"</span><span class="p">)</span><span class="o">&gt;</span>
+</code></pre></div></div>
+
+<hr />
+<h2 id="rename">rename</h2>
+
+<p>指定されたファイルのパスを変更します。</p>
+
+<h3 id="書式-29">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fa</span><span class="p">.</span><span class="n">rename</span><span class="p">(</span><span class="n">oldfile</span><span class="p">,</span> <span class="n">newfile</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-28">引数</h3>
+
+<h5 id="oldfile"><strong>oldfile</strong></h5>
+<p><em>string</em>。 元ファイル名。</p>
+<h5 id="newfile"><strong>newfile</strong></h5>
+<p><em>string</em>。 新ファイル名。</p>
+
+<h3 id="戻り値-28">戻り値</h3>
+
+<p>なし</p>
+
+<h3 id="動作例-5">動作例</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fa</span><span class="p">.</span><span class="n">rename</span><span class="p">(</span><span class="s2">"/DCIM/100__TSB/DSC_100.JPG"</span><span class="p">,</span><span class="s2">"/DCIM/100__TSB/DSC_101.JPG"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<hr />
+<h2 id="request">request</h2>
+
+<p>HTTP (Hyper Text Transfer Protocol) リクエストを発行します。</p>
+
+<h3 id="書式-30">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">h</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">request</span><span class="p">(</span><span class="n">url</span> <span class="p">[,</span> <span class="n">method</span> <span class="p">[,</span> <span class="n">headers</span> <span class="p">[,</span> <span class="n">file</span> <span class="p">[,</span> <span class="n">body</span> <span class="p">[,</span> <span class="n">bufsize</span> <span class="p">[,</span> <span class="n">redirect</span> <span class="p">[,</span> <span class="n">rcvbuff</span> <span class="p">[,</span> <span class="n">rcvfile</span><span class="p">]]]]]]]])</span>
+</code></pre></div></div>
+
+<h3 id="引数-29">引数</h3>
+
+<h5 id="url-1"><strong>url</strong></h5>
+<p><em>string</em>。 URLの文字列。（ポート指定可能:8080）</p>
+<h5 id="method"><strong>method</strong></h5>
+<p><em>string</em>。 HTTPリクエストメソッド。省略すると<code class="highlighter-rouge">"GET"</code> とみなします。</p>
+<h5 id="headers"><strong>headers</strong></h5>
+<p><em>table</em>。 HTTPリクエストのヘッダーフィールド情報を追加できます。</p>
+<h5 id="file"><strong>file</strong></h5>
+<p><em>string</em>。 HTTPリクエストのボディに指定されたファイルを追加して送信します。</p>
+<h5 id="body"><strong>body</strong></h5>
+<p><em>string</em>。 HTTPリクエストのボディに指定された文字列を追加して送信します。 fileオプションと併用するとbody内部の文字列<code class="highlighter-rouge">&lt;!--WLANSDFILE--&gt;</code> をファイルに置換して送信します。bodyが指定されていない場合は、単にfileが送信されます。</p>
+<h5 id="bufsize"><strong>bufsize</strong></h5>
+<p><em>number</em>。 HTTPリクエストの送信バッファ・サイズ。flickrサーバーへ送信する場合はこの値を1460*10とします。</p>
+<h5 id="redirect"><strong>redirect</strong></h5>
+<p><em>boolean</em>。 HTTPのリダイレクト動作の有効無効を制御する。省略すると<code class="highlighter-rouge">true</code> を指定したものとみなします。</p>
+<h5 id="rcvbuff"><strong>rcvbuff</strong></h5>
+<p><span class="badge label-green">4.00.03</span>
+<em>string</em>。Luaのスタック上にメモリを確保し、受信データを確保したメモリに保存します。</p>
+<h5 id="rcvfile"><strong>rcvfile</strong></h5>
+<p><span class="badge label-green">4.00.03</span>
+<em>string</em>。受信したHTTPレスポンスのデータを指定したファイルへの保存を行います。</p>
+
+<h3 id="戻り値-29">戻り値</h3>
+
+<h5 id="b"><strong>b</strong></h5>
+<p><em>string</em>。 HTTP response bodyの文字列。</p>
+<h5 id="c"><strong>c</strong></h5>
+<p><em>number</em>。 HTTPステータスコード。</p>
+<h5 id="h"><strong>h</strong></h5>
+<p><em>string</em>。 HTTP response headerの文字列。</p>
+
+<h3 id="例-7">例</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">boundary</span> <span class="o">=</span> <span class="s2">"--61141483716826"</span>
+<span class="n">contenttype</span> <span class="o">=</span> <span class="s2">"multipart/form-data; boundary="</span> <span class="o">..</span> <span class="n">boundary</span>
+<span class="n">filepath</span> <span class="o">=</span> <span class="s2">"sample.txt"</span>
+<span class="n">mes</span> <span class="o">=</span> <span class="s2">"--"</span><span class="o">..</span> <span class="n">boundary</span> <span class="o">..</span> <span class="s2">"¥r¥n"</span>
+ <span class="o">..</span><span class="s2">"Content-Disposition: form-data; name=¥"</span><span class="n">file</span><span class="err">¥</span><span class="s2">"; filename=¥""..file .."</span><span class="err">¥</span><span class="s2">"¥r¥n"</span>
+ <span class="o">..</span><span class="s2">"Content-Type: text/plain¥r¥n"</span>
+ <span class="o">..</span><span class="s2">"¥r¥n"</span>
+ <span class="o">..</span><span class="s2">"&lt;!--WLANSDFILE--&gt;¥r¥n"</span>
+ <span class="o">..</span><span class="s2">"--"</span> <span class="o">..</span> <span class="n">boundary</span> <span class="o">..</span> <span class="s2">"--¥r¥n"</span>
+
+<span class="n">blen</span> <span class="o">=</span> <span class="n">lfs</span><span class="p">.</span><span class="n">attributes</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="s2">"size"</span><span class="p">)</span> <span class="o">+</span> <span class="nb">string.len</span><span class="p">(</span><span class="n">mes</span><span class="p">)</span> <span class="o">-</span> <span class="mi">17</span>
+<span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">h</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">request</span><span class="p">{</span><span class="n">url</span> <span class="o">=</span> <span class="s2">"http://192.168.0.1/upload.cgi:8080"</span><span class="p">,</span>
+ <span class="n">method</span> <span class="o">=</span> <span class="s2">"POST"</span><span class="p">,</span>
+ <span class="n">headers</span> <span class="o">=</span> <span class="p">{[</span><span class="s2">"Content-Length"</span><span class="p">]</span> <span class="o">=</span> <span class="nb">tostring</span><span class="p">(</span><span class="n">blen</span><span class="p">),</span>
+ <span class="p">[</span><span class="s2">"Content-Type"</span><span class="p">]</span> <span class="o">=</span> <span class="n">contenttype</span><span class="p">},</span>
+ <span class="n">file</span> <span class="o">=</span> <span class="n">filepath</span><span class="p">,</span>
+ <span class="n">body</span> <span class="o">=</span> <span class="n">mes</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="備考-5">備考</h3>
+
+<ul>
+  <li>HTTP Responseの転送サイズは、3KBまで対応。</li>
+  <li>Flickrへの送信においてTCPリセットが行われることがあります。bufsizeオプションで送信バッファサイズを1460*10程度に小さくすると回避できる場合があります。</li>
+</ul>
+
+<h3 id="注意事項-3">注意事項</h3>
+
+<ul>
+  <li>この関数でHTTPS通信を実行する場合、実行前に<a href="#setcert">fa.SetCert関数</a>でルート証明書を設定することが推奨されています。ルート証明書を設定せずにHTTPS通信を実行した場合、ルート証明書を用いたサーバ証明書の検証が行われないまま、通信が行われます。</li>
+  <li>ルート証明書を用いてサーバ証明書を検証した結果、検証が失敗した場合、この関数の実行は失敗となります。</li>
+</ul>
+
+<hr />
+<h2 id="scan">Scan</h2>
+
+<p>Scan開始コマンド。結果はGetScanInfo()で取得します。</p>
+
+<h3 id="書式-31">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">count</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">Scan</span><span class="p">([</span><span class="n">ssid</span><span class="p">])</span>
+</code></pre></div></div>
+
+<h3 id="引数-30">引数</h3>
+
+<h5 id="ssid-4"><strong>ssid</strong></h5>
+<p><em>string</em>。 指定したSSIDについてスキャンを行います。 省略した場合は近傍のSSIDをスキャンします。</p>
+
+<h3 id="戻り値-30">戻り値</h3>
+
+<h5 id="count"><strong>count</strong></h5>
+<p><em>number</em>。 スキャンで見つかったAP数。</p>
+
+<h3 id="備考-6">備考</h3>
+
+<p>Connect, Establish, または Bridge コマンドにより無線LANが有効になっていると利用できません。</p>
+
+<hr />
+<h2 id="search">search</h2>
+
+<p>指定したディレクトリ内で、更新日時によるファイル検索を行います。更新日時が最新であるファイルの検索、または引数で指定した更新日時によるファイルの検索が可能です。</p>
+
+<h3 id="書式-32">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">result</span><span class="p">,</span> <span class="n">filelist</span><span class="p">,</span> <span class="n">time</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">search</span><span class="p">(</span><span class="nb">type</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="n">searchtime</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-31">引数</h3>
+
+<h5 id="type"><strong>type</strong></h5>
+<p><em>string</em>。検索タイプ。file固定。</p>
+<ul>
+  <li>file：ファイルの検索
+    <h5 id="path"><strong>path</strong></h5>
+    <p><em>string</em>。検索対象のディレクトリ。</p>
+    <h5 id="searchtime"><strong>searchtime</strong></h5>
+    <p><em>number</em>。検索対象更新日時。-1またはFAT形式の日時を指定する。</p>
+  </li>
+  <li>-1を指定した場合、更新日時が最新のファイルを検索する。</li>
+  <li>-1以外を指定した場合、以下の両方を検索する。
+    <ul>
+      <li>指定された更新日時と一致するファイル</li>
+      <li>指定された更新日時より新しいファイルのうち最も古いファイル（指定された日時の次に新しいファイル）</li>
+    </ul>
+  </li>
+  <li>FAT形式の日時について
+    <ul>
+      <li>32ビットの整数値で、上位16ビットが日付、下位16ビットが時刻。</li>
+      <li>日付と時刻は、<a href="command.cgi/#ファイルリストの取得">command.cgiのop=100</a>を実行した際に取得できる値と同じフォーマット。</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="戻り値-31">戻り値</h3>
+
+<h5 id="result-6"><strong>result</strong></h5>
+<p><em>number</em>。ステータス。</p>
+
+<table class="ml-4">
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>正常終了</td>
+    </tr>
+    <tr>
+      <td>-1</td>
+      <td>ファイルリストの作成時にオーバーフロー
+        <ul class="ml-4">
+          <li>
+            searchtimeに-1を指定した場合、「更新日時が最新のファイル」のリスト作成で文字列バッファのオーバーフロー
+          </li>
+          <li>
+            searchtimeに-1以外を指定した場合、「指定された更新日時より新しいファイルのうち最も古いファイル」のリスト作成で文字列バッファのオーバーフロー
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>-2</td>
+      <td>ファイルリストの作成時にオーバーフロー(searchtimeに-1以外を指定した場合のみ返す可能性がある)
+        <ul class="ml-4">
+          <li>
+            「指定された更新日時と一致するファイル」のリスト作成で文字列バッファのオーバーフロー
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>-3</td>
+      <td>ディレクトリオープンエラー</td>
+    </tr>
+    <tr>
+      <td>-4</td>
+      <td>ディレクトリリードエラー</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="filelist"><strong>filelist</strong></h5>
+<p><em>string</em>。カンマ区切りのファイルリスト。</p>
+<ul class="ml-4">
+  <li>条件に一致するファイルのリストをカンマ区切りの文字列で返す。</li>
+  <li>searchtimeに-1以外を指定した場合、「指定された更新日時と一致するファイル」のリストと「指定された更新日時より新しいファイルのうち最も古いファイル」のリストを連結した文字列を返す。</li>
+  <li>該当ファイルがない場合は、”“(空文字列)を返す。</li>
+  <li>オーバーフロー以外のエラーの場合はnilを返す。</li>
+</ul>
+<h5 id="time"><strong>time</strong></h5>
+<p><em>number</em>。検索結果日時。</p>
+<ul class="ml-4">
+  <li>searchtimeに-1を指定した場合、「更新日時が最新のファイル」の更新日時を返す。</li>
+  <li>searchtimeに-1以外を指定した場合、 「指定された更新日時より新しいファイルのうち最も古いファイル」の更新日時を返す。</li>
+  <li>条件に一致するファイルがない場合は0を返す。</li>
+  <li>オーバーフロー以外のエラーの場合はnilを返す。</li>
+</ul>
+
+<h4 id="備考-7">備考</h4>
+<ul>
+  <li>ファイルリストの作成時に512文字を超えた場合はバッファオーバーフローとなり、リストは途中で打ち切られる。</li>
+  <li>検索するディレクトリの深さは3階層まで。</li>
+</ul>
+
+<h3 id="例-8">例</h3>
+
+<h5 id="dcim-から最新のファイルを検索する">“/DCIM” から最新のファイルを検索する。</h5>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">local</span> <span class="n">result</span><span class="p">,</span> <span class="n">filelist</span><span class="p">,</span> <span class="n">time</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">search</span><span class="p">(</span><span class="s2">"file"</span><span class="p">,</span> <span class="s2">"/DCIM"</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">result</span> <span class="o">~=</span> <span class="mi">1</span> <span class="k">then</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">"error: "</span><span class="p">,</span> <span class="n">result</span><span class="p">)</span>
+<span class="k">end</span>
+<span class="k">if</span> <span class="n">filelist</span> <span class="o">~=</span> <span class="kc">nil</span> <span class="k">then</span>
+  <span class="k">for</span> <span class="n">f</span> <span class="k">in</span> <span class="nb">string.gmatch</span><span class="p">(</span><span class="n">filelist</span><span class="p">,</span> <span class="s1">'(.-),'</span><span class="p">)</span> <span class="k">do</span>
+      <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+<span class="k">if</span> <span class="n">time</span> <span class="o">~=</span> <span class="kc">nil</span> <span class="k">then</span>
+  <span class="nb">print</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span><span class="s2">"time: 0x%08x"</span><span class="p">,</span> <span class="n">time</span><span class="p">))</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<h5 id="dcimから更新日時が-20170601-123456-であるファイルとその日時より新しいファイルのうち最も古いファイルを検索する">“DCIM”から更新日時が 2017/06/01 12:34:56 であるファイルと、その日時より新しいファイルのうち最も古いファイルを検索する。</h5>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">local</span> <span class="n">result</span><span class="p">,</span> <span class="n">filelist</span><span class="p">,</span> <span class="n">time</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">search</span><span class="p">(</span><span class="s2">"file"</span><span class="p">,</span> <span class="s2">"/DCIM"</span><span class="p">,</span> <span class="mh">0x4ac1645c</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">result</span> <span class="o">~=</span> <span class="mi">1</span> <span class="k">then</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">"error: "</span><span class="p">,</span> <span class="n">result</span><span class="p">)</span>
+<span class="k">end</span>
+<span class="k">if</span> <span class="n">filelist</span> <span class="o">~=</span> <span class="kc">nil</span> <span class="k">then</span>
+  <span class="k">for</span> <span class="n">f</span> <span class="k">in</span> <span class="nb">string.gmatch</span><span class="p">(</span><span class="n">filelist</span><span class="p">,</span> <span class="s1">'(.-),'</span><span class="p">)</span> <span class="k">do</span>
+      <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+<span class="k">if</span> <span class="n">time</span> <span class="o">~=</span> <span class="kc">nil</span> <span class="k">then</span>
+  <span class="nb">print</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span><span class="s2">"time: 0x%08x"</span><span class="p">,</span> <span class="n">time</span><span class="p">))</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<h3 id="参考">参考</h3>
+
+<h4 id="fat形式の日時変換例">FAT形式の日時変換例</h4>
+<p>文字列の日時をFAT形式に変換する</p>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">local</span> <span class="k">function</span> <span class="nf">StringToFatDateTime</span><span class="p">(</span><span class="n">datetime_str</span><span class="p">)</span>
+  <span class="kd">local</span> <span class="n">pattern</span> <span class="o">=</span> <span class="s1">'(%d+)/(%d+)/(%d+)%s+(%d+):(%d+):(%d+)'</span>
+  <span class="kd">local</span> <span class="n">year</span><span class="p">,</span><span class="n">month</span><span class="p">,</span><span class="n">day</span><span class="p">,</span><span class="n">hour</span><span class="p">,</span><span class="n">min</span><span class="p">,</span><span class="n">sec</span> <span class="o">=</span> <span class="nb">string.match</span><span class="p">(</span><span class="n">datetime_str</span><span class="p">,</span> <span class="n">pattern</span><span class="p">)</span>
+  <span class="n">year</span> <span class="o">=</span> <span class="n">year</span> <span class="o">-</span> <span class="mi">1980</span>
+  <span class="n">sec</span> <span class="o">=</span> <span class="nb">bit32.rshift</span><span class="p">(</span><span class="n">sec</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+  <span class="kd">local</span> <span class="n">date_fat</span> <span class="o">=</span> <span class="nb">bit32.bor</span><span class="p">(</span><span class="nb">bit32.lshift</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="mi">9</span><span class="p">),</span>
+                             <span class="nb">bit32.lshift</span><span class="p">(</span><span class="n">month</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>
+                             <span class="n">day</span><span class="p">)</span>
+  <span class="kd">local</span> <span class="n">time_fat</span> <span class="o">=</span> <span class="nb">bit32.bor</span><span class="p">(</span><span class="nb">bit32.lshift</span><span class="p">(</span><span class="n">hour</span><span class="p">,</span> <span class="mi">11</span><span class="p">),</span>
+                             <span class="nb">bit32.lshift</span><span class="p">(</span><span class="n">min</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>
+                             <span class="n">sec</span><span class="p">)</span>
+  <span class="kd">local</span> <span class="n">datetime_fat</span> <span class="o">=</span> <span class="nb">bit32.bor</span><span class="p">(</span><span class="nb">bit32.lshift</span><span class="p">(</span><span class="n">date_fat</span><span class="p">,</span> <span class="mi">16</span><span class="p">),</span>
+                                 <span class="n">time_fat</span><span class="p">)</span>
+  <span class="k">return</span> <span class="n">datetime_fat</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<h5 id="fat形式の日時を文字列に変換する">FAT形式の日時を文字列に変換する</h5>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">local</span> <span class="k">function</span> <span class="nf">FatDateTimeToString</span><span class="p">(</span><span class="n">datetime_fat</span><span class="p">)</span>
+  <span class="kd">local</span> <span class="k">function</span> <span class="nf">getbits</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">from</span><span class="p">,</span> <span class="n">to</span><span class="p">)</span>
+      <span class="kd">local</span> <span class="n">mask</span> <span class="o">=</span> <span class="nb">bit32.lshift</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">to</span> <span class="o">-</span> <span class="n">from</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+      <span class="kd">local</span> <span class="n">shifted</span> <span class="o">=</span> <span class="nb">bit32.rshift</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">from</span><span class="p">)</span>
+      <span class="k">return</span> <span class="nb">bit32.band</span><span class="p">(</span><span class="n">shifted</span><span class="p">,</span> <span class="n">mask</span><span class="p">)</span>
+  <span class="k">end</span>
+  <span class="kd">local</span> <span class="n">fatdate</span> <span class="o">=</span> <span class="nb">bit32.rshift</span><span class="p">(</span><span class="n">datetime_fat</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span>
+  <span class="kd">local</span> <span class="n">day</span> <span class="o">=</span> <span class="n">getbits</span><span class="p">(</span><span class="n">fatdate</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+  <span class="kd">local</span> <span class="n">month</span> <span class="o">=</span> <span class="n">getbits</span><span class="p">(</span><span class="n">fatdate</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span>
+  <span class="kd">local</span> <span class="n">year</span> <span class="o">=</span> <span class="n">getbits</span><span class="p">(</span><span class="n">fatdate</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1980</span>
+
+  <span class="kd">local</span> <span class="n">fattime</span> <span class="o">=</span> <span class="n">getbits</span><span class="p">(</span><span class="n">datetime_fat</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span>
+  <span class="kd">local</span> <span class="n">sec</span> <span class="o">=</span> <span class="n">getbits</span><span class="p">(</span><span class="n">fattime</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span>
+  <span class="kd">local</span> <span class="n">min</span> <span class="o">=</span> <span class="n">getbits</span><span class="p">(</span><span class="n">fattime</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+  <span class="kd">local</span> <span class="n">hour</span> <span class="o">=</span> <span class="n">getbits</span><span class="p">(</span><span class="n">fattime</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span>
+
+  <span class="k">return</span> <span class="nb">string.format</span><span class="p">(</span><span class="s1">'%02d/%02d/%02d %02d:%02d:%02d'</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="n">month</span><span class="p">,</span> <span class="n">day</span><span class="p">,</span> <span class="n">hour</span><span class="p">,</span> <span class="n">min</span><span class="p">,</span> <span class="n">sec</span><span class="p">)</span>
+<span class="k">end</span>
+</code></pre></div></div>
+<hr />
+<h2 id="serialinit">serial(“init”)</h2>
+
+<p>FlashAirでシリアル操作を行う際、シリアルの有効化、ボーレートの設定を行います。</p>
+
+<h3 id="書式-33">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fa</span><span class="p">.</span><span class="n">serial</span><span class="p">(</span><span class="s2">"init"</span><span class="p">,</span> <span class="p">[</span><span class="n">boudrate</span><span class="p">])</span>
+</code></pre></div></div>
+
+<h3 id="引数-32">引数</h3>
+
+<h5 id="boudrate"><strong>boudrate</strong></h5>
+<p><em>number</em>。ボーレート（未設定時は115200ボー）。</p>
+
+<h3 id="戻り値-32">戻り値</h3>
+
+<p>なし</p>
+
+<h3 id="注意事項-4">注意事項</h3>
+
+<ul>
+  <li>CONFIGに<code class="highlighter-rouge">IFMODE=1</code>を設定する必要があります。</li>
+  <li>ビット割当
+    <ul>
+      <li>CMD: RX</li>
+      <li>D0: TX</li>
+      <li>GND: GND</li>
+    </ul>
+  </li>
+  <li>フロー制御機能はありません。</li>
+</ul>
+
+<hr />
+<h2 id="serialread">serial(“read”)</h2>
+
+<p>FlashAirでシリアル操作を行う際、データの受信を行います。</p>
+
+<h3 id="書式-34">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">data</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">serial</span><span class="p">(</span><span class="s2">"read"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-33">引数</h3>
+
+<p>なし</p>
+
+<h3 id="戻り値-33">戻り値</h3>
+
+<h5 id="data-3"><strong>data</strong></h5>
+<p><em>number</em>。取得したデータ。データは1byte, number形式で取得します。受信バッファが空のときは、<code class="highlighter-rouge">nil</code>が返ります。</p>
+
+<hr />
+<h2 id="serialwrite">serial(“write”)</h2>
+
+<p>FlashAirでシリアル操作を行う際、データの送信を行います。</p>
+
+<h3 id="書式-35">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fa</span><span class="p">.</span><span class="n">serial</span><span class="p">(</span><span class="s2">"write"</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-34">引数</h3>
+
+<h5 id="data-4"><strong>data</strong></h5>
+<p><em>string</em> or <em>number</em>(0～255) or <em>table</em>。送信するデータ。</p>
+
+<h3 id="戻り値-34">戻り値</h3>
+
+<p>なし</p>
+
+<hr />
+<h2 id="setcert">SetCert</h2>
+
+<p>証明書のクリアor登録（X.509 binary encode with DER)を行います。</p>
+
+<h3 id="書式-36">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fa</span><span class="p">.</span><span class="n">SetCert</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-35">引数</h3>
+
+<h5 id="filename-3"><strong>filename</strong></h5>
+<p><em>string</em>。 DERファイルのパス、ファイル名を指定する。空文字列指定時は証明書をクリアする。</p>
+
+<h3 id="戻り値-35">戻り値</h3>
+
+<h5 id="result-7"><strong>result</strong></h5>
+<p><em>number</em>。</p>
+
+<dl class="ml-4">
+  <dt>1</dt>
+  <dd>正常動作。</dd>
+  <dt>nil</dt>
+  <dd>失敗。</dd>
+</dl>
+
+<h3 id="動作例-6">動作例</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- 証明書の登録</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">SetCert</span><span class="p">(</span><span class="s2">"DerSha256.cer"</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">res</span> <span class="o">==</span> <span class="kc">nil</span> <span class="k">then</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"certificate registration error"</span><span class="p">)</span>
+<span class="k">end</span>
+
+<span class="c1">-- 証明書のクリア</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">SetCert</span><span class="p">(</span><span class="s2">""</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">res</span> <span class="o">==</span> <span class="kc">nil</span> <span class="k">then</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"certificate clear error"</span><span class="p">)</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<hr />
+<h2 id="setchannel">SetChannel</h2>
+
+<p>無線チャネルを設定する。</p>
+
+<h3 id="書式-37">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fa</span><span class="p">.</span><span class="n">SetChannel</span><span class="p">(</span><span class="n">channelNo</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-36">引数</h3>
+
+<h5 id="channelno"><strong>channelNo</strong></h5>
+<p><em>number</em>。 チャネル（0～11 or 0x0～0xb　0指定はAUTO）。</p>
+
+<h3 id="戻り値-36">戻り値</h3>
+
+<p>なし</p>
+
+<h3 id="動作例-7">動作例</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fa</span><span class="p">.</span><span class="n">Disconnect</span><span class="p">()</span>
+<span class="n">fa</span><span class="p">.</span><span class="n">SetChannel</span><span class="p">(</span><span class="s2">"0xB"</span><span class="p">)</span>
+<span class="n">fa</span><span class="p">.</span><span class="n">Establish</span><span class="p">(</span><span class="s2">"flashair3"</span><span class="p">,</span> <span class="s2">"12345678"</span><span class="p">,</span> <span class="s2">"6"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<hr />
+<h2 id="sharedmemory">sharedmemory</h2>
+
+<p>共有メモリからデータを読み込み或いは書き込みを行います。<br />
+<span class="badge label-green mr-1">4.00.03</span>Null文字のwrite, readをサポートしました。</p>
+
+<h3 id="書式-38">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fa</span><span class="p">.</span><span class="n">sharedmemory</span><span class="p">(</span><span class="n">command</span><span class="p">,</span> <span class="n">addr</span><span class="p">,</span> <span class="n">len</span><span class="p">,</span> <span class="n">wdata</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-37">引数</h3>
+
+<h5 id="command"><strong>command</strong></h5>
+<p><em>string</em>。 動作コマンド(write, read)。</p>
+<h5 id="addr"><strong>addr</strong></h5>
+<p><em>number</em>。 アドレス（0～511）（0～2047）。</p>
+<h5 id="len"><strong>len</strong></h5>
+<p><em>number</em>。 データ長（0～512）（1～2048）。</p>
+<h5 id="wdata"><strong>wdata</strong></h5>
+<p><em>string</em>。 書込み文字列（コマンドでwrite指定時有効）。</p>
+
+<h3 id="レスポンス-1">レスポンス</h3>
+
+<dl>
+<dt>write時</dt>
+<dd>成功：1<br />失敗：nil</dd>
+<dt>read時</dt>
+<dd>成功：読み出し文字列<br />失敗：nil</dd>
+</dl>
+
+<h3 id="動作例-8">動作例</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">res1</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">sharedmemory</span><span class="p">(</span><span class="s2">"write"</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="s2">"12345678"</span><span class="p">)</span>
+<span class="n">res2</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">sharedmemory</span><span class="p">(</span><span class="s2">"read"</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"res="</span><span class="p">,</span><span class="n">res2</span><span class="p">)</span>
+        <span class="err">　　</span>
+<span class="err">　結果：</span><span class="n">res</span><span class="o">=</span><span class="mi">2345</span>
+</code></pre></div></div>
+
+<hr />
+<h2 id="sleep">sleep</h2>
+
+<p>指定時間だけスクリプトの実行を停止します。</p>
+
+<h3 id="書式-39">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sleep</span><span class="p">(</span><span class="n">msec</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-38">引数</h3>
+
+<h5 id="msec"><strong>msec</strong></h5>
+<p><em>number</em>。 停止時間を0～(2<sup>32</sup> - 1)の範囲のミリ秒単位で指定します。</p>
+
+<h3 id="戻り値-37">戻り値</h3>
+
+<p>なし</p>
+
+<hr />
+<h2 id="spi">spi</h2>
+
+<p>FlashAirよりSPI操作を行う。</p>
+
+<h3 id="書式-40">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">result</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">spi</span><span class="p">(</span><span class="n">command</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-39">引数</h3>
+<h5 id="command-1"><strong>command</strong></h5>
+<dl class="ml-4">
+    <dt>init</dt>
+    <dd>クロック周期の変更を行う（デフォルト値：1000）。<br />
+    ビット割当
+    * D0 : CLK
+    * D1 : CS
+    * D2 : MISO
+    * CMD : MOSI
+		{: .ml-4 }
+		</dd>
+    <dt>mode</dt>
+    <dd>SPIモードの指定（引数：０～３。デフォルト値：３）。</dd>
+    <dt>bit</dt>
+    <dd>転送ビット数（デフォルト値：８）。</dd>
+    <dt>write</dt>
+    <dd>ライト。</dd>
+    <dt>read</dt>
+    <dd>リード。</dd>
+    <dt>cs</dt>
+    <dd>チップセレクト信号の制御（引数１でCS＝ON、０でCS=OFF）。</dd>
+</dl>
+
+<h5 id="data-5"><strong>data</strong></h5>
+<p><em>string</em>。 データ。</p>
+
+<h3 id="レスポンス-2">レスポンス</h3>
+
+<dl>
+	<dt>write</dt>
+	<dd>ライトコマンド発行時の受信データ。</dd>
+	<dt>read</dt>
+	<dd>リードコマンド発行時の受信データ。</dd>
+	<dt>otherwise</dt>
+	<dd>ステータス</dd>
+</dl>
+
+<h3 id="動作例-9">動作例</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fa</span><span class="p">.</span><span class="n">spi</span><span class="p">(</span><span class="s2">"init"</span><span class="p">,</span> <span class="mi">1001</span><span class="p">)</span>
+</code></pre></div></div>
+
+<hr />
+<h2 id="spibit">spi(“bit”)</h2>
+
+<p>転送ビット数を指定します。（デフォルト値：8）</p>
+
+<h3 id="書式-41">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">spi</span><span class="p">(</span><span class="s2">"bit"</span><span class="p">,</span> <span class="n">bit</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-40">引数</h3>
+
+<h5 id="bit"><strong>bit</strong></h5>
+<p><em>number</em>。範囲<code class="highlighter-rouge">1</code> ～<code class="highlighter-rouge">32</code> 。転送ビット数。</p>
+
+<h3 id="戻り値-38">戻り値</h3>
+
+<h5 id="res-5"><strong>res</strong></h5>
+<p><em>number</em>。</p>
+
+<dl class="ml-4">
+  <dt>1</dt>
+  <dd>成功。</dd>
+  <dt>0</dt>
+  <dd>失敗。</dd>
+</dl>
+
+<h3 id="注意事項-5">注意事項</h3>
+
+<p>spi(“write”) で文字列を指定する場合、bit指定との併用は不可となります。</p>
+
+<hr />
+<h2 id="spics">spi(“cs”)</h2>
+
+<p>チップセレクト信号を制御します。</p>
+
+<h3 id="書式-42">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fa</span><span class="p">.</span><span class="n">spi</span><span class="p">(</span><span class="s2">"cs"</span><span class="p">,</span> <span class="n">cs_level</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-41">引数</h3>
+
+<h5 id="cs_level"><strong>cs_level</strong></h5>
+<p><em>number</em>。</p>
+
+<dl class="ml-4">
+	<dt>1</dt>
+	<dd>High</dd>
+	<dt>0</dt>
+	<dd>Low</dd>
+</dl>
+
+<h3 id="例-9">例</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">local</span> <span class="n">CS_ASSERT</span><span class="o">=</span><span class="mi">0</span>
+<span class="kd">local</span> <span class="n">CS_NEGATE</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">fa</span><span class="p">.</span><span class="n">spi</span><span class="p">(</span><span class="s2">"mode"</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">fa</span><span class="p">.</span><span class="n">spi</span><span class="p">(</span><span class="s2">"init"</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+<span class="n">fa</span><span class="p">.</span><span class="n">spi</span><span class="p">(</span><span class="s2">"cs"</span><span class="p">,</span> <span class="n">CS_ASSERT</span><span class="p">)</span>
+<span class="n">fa</span><span class="p">.</span><span class="n">spi</span><span class="p">(</span><span class="s2">"write"</span><span class="p">,</span> <span class="s2">"hello"</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="n">fa</span><span class="p">.</span><span class="n">spi</span><span class="p">(</span><span class="s2">"cs"</span><span class="p">,</span> <span class="n">CS_NEGATE</span><span class="p">)</span>
+</code></pre></div></div>
+
+<hr />
+<h2 id="spiinit">spi(“init”)</h2>
+
+<p>インターフェースを初期化し、クロック周期の変更を行う（デフォルト値：1000）。CSはHighとなる。</p>
+
+<h3 id="書式-43">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">spi</span><span class="p">(</span><span class="s2">"init"</span><span class="p">[,</span> <span class="n">period</span><span class="p">])</span>
+</code></pre></div></div>
+
+<h3 id="引数-42">引数</h3>
+
+<h6 id="period"><strong>period</strong></h6>
+<p><em>number</em>。 省略可。クロック周期。</p>
+
+<h3 id="戻り値-39">戻り値</h3>
+
+<h5 id="res-6"><strong>res</strong></h5>
+<p><em>number</em>。</p>
+
+<dl class="ml-4">
+  <dt>1</dt>
+  <dd>成功。</dd>
+  <dt>0</dt>
+  <dd>失敗。</dd>
+</dl>
+
+<hr />
+<h2 id="spimode">spi(“mode”)</h2>
+
+<p>SPIモードを指定します。（デフォルト値：3）</p>
+
+<h3 id="書式-44">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">spi</span><span class="p">(</span><span class="s2">"mode"</span><span class="p">,</span> <span class="n">mode</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-43">引数</h3>
+
+<h5 id="mode"><strong>mode</strong></h5>
+<p><em>number</em>。範囲<code class="highlighter-rouge">0</code> ～<code class="highlighter-rouge">3</code> 。SPIモード。</p>
+
+<h3 id="戻り値-40">戻り値</h3>
+
+<h5 id="res-7"><strong>res</strong></h5>
+<p><em>number</em>。</p>
+
+<dl class="ml-4">
+  <dt>1</dt>
+  <dd>成功。</dd>
+  <dt>0</dt>
+  <dd>失敗。</dd>
+</dl>
+
+<h3 id="注意事項-6">注意事項</h3>
+
+<p>spi(“init”) の実行前にspi(“mode”)を実行してください。</p>
+
+<hr />
+<h2 id="spiread">spi(“read”)</h2>
+
+<p>ライトおよびリード。複数回転送でき、全てのリード結果を取得できます。送信データは固定値を繰り返し送信します。</p>
+
+<h3 id="書式-45">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">res_num</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">spi</span><span class="p">(</span><span class="s2">"read"</span><span class="p">)</span>
+<span class="n">res_tbl</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">spi</span><span class="p">(</span><span class="s2">"read"</span><span class="p">,</span> <span class="n">xfer_num</span><span class="p">,</span> <span class="n">data_num</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-44">引数</h3>
+
+<h5 id="xfer_num"><strong>xfer_num</strong></h5>
+<p><em>number</em>。転送回数。</p>
+<h5 id="data_num"><strong>data_num</strong></h5>
+<p><em>number</em>。送信データ。</p>
+
+<h3 id="戻り値-41">戻り値</h3>
+
+<h5 id="res_num"><strong>res_num</strong></h5>
+<p><em>number</em>。リードした値。</p>
+<h5 id="res_tbl"><strong>res_tbl</strong></h5>
+<p><em>table</em>。リードした値の配列。</p>
+
+<h3 id="送信データについて">送信データについて</h3>
+
+<p>fa.spi(“read”) の書式では、全ビット0が送信されます。</p>
+
+<p>fa.spi(“read”, xfer_num, data_num) の書式では、data_numが繰り返し送信されます。</p>
+
+<h3 id="例-10">例</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">res_num</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">spi</span><span class="p">(</span><span class="s2">"read"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">res_num</span><span class="p">)</span>
+<span class="n">res_tbl</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">spi</span><span class="p">(</span><span class="s2">"read"</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mh">0xff</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">v</span> <span class="k">in</span> <span class="nb">ipairs</span><span class="p">(</span><span class="n">res_tbl</span><span class="p">)</span> <span class="k">do</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<hr />
+<h2 id="spiwrite">spi(“write”)</h2>
+
+<p>ライトおよびリード。複数回転送できますが、リード結果は最後の1回のみ取得できます。</p>
+
+<h3 id="書式-46">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">spi</span><span class="p">(</span><span class="s2">"write"</span><span class="p">,</span> <span class="n">data_num</span><span class="p">)</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">spi</span><span class="p">(</span><span class="s2">"write"</span><span class="p">,</span> <span class="n">data_str</span><span class="p">,</span> <span class="n">xfer_num</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-45">引数</h3>
+
+<h5 id="data_num-1"><strong>data_num</strong></h5>
+<p><em>number</em>。送信データ。</p>
+<h5 id="data_str"><strong>data_str</strong></h5>
+<p><em>string</em>。送信データを文字列で指定。1バイトずつ複数回に分けて転送される。</p>
+<h5 id="xfer_num-1"><strong>xfer_num</strong></h5>
+<p><em>number</em>。送信バイト数。data_strの文字列長を超えた場合には送信データは0x00となる。</p>
+
+<h3 id="戻り値-42">戻り値</h3>
+
+<h5 id="res-8"><strong>res</strong></h5>
+<p><em>number</em>。リードした値。（1度の関数呼び出しで複数回転送した場合は、最後にリードした値）</p>
+
+<h3 id="例-11">例</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">spi</span><span class="p">(</span><span class="s2">"write"</span><span class="p">,</span> <span class="mh">0x12</span><span class="p">)</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">spi</span><span class="p">(</span><span class="s2">"write"</span><span class="p">,</span> <span class="s2">"hello"</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="注意事項-7">注意事項</h3>
+
+<p>data_strを使用する場合、bit指定との併用は不可となります。</p>
+
+<hr />
+<h2 id="strconvert">strconvert</h2>
+
+<p>SJIS文字をUTF-8文字へ変換とutf8文字をSJIS文字へ変換する。</p>
+
+<h3 id="書式-47">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fa</span><span class="p">.</span><span class="n">strconvert</span><span class="p">(</span><span class="n">format</span><span class="p">,</span> <span class="n">orgstr</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-46">引数</h3>
+
+<h5 id="format"><strong>format</strong></h5>
+<p><em>string</em>。 「sjis2utf8」を指定するとsjis文字をutf8文字へ変換する、「utf82sjis」を指定するとutf8文字をsjis文字へ変換する。</p>
+<h5 id="orgstr"><strong>orgstr</strong></h5>
+<p><em>string</em>。 変換元文字列。</p>
+
+<h3 id="レスポンス-3">レスポンス</h3>
+
+<p>成功：変換文字列<br />
+失敗：nil</p>
+
+<h3 id="動作例-10">動作例</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">str</span> <span class="o">=</span> <span class="s2">"あかさたなはまやらわ"</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"testStr="</span><span class="p">,</span> <span class="n">str</span><span class="p">)</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">strconvert</span><span class="p">(</span><span class="s2">"sjis2utf8"</span><span class="p">,</span> <span class="n">str</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"toUTF8="</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">strconvert</span><span class="p">(</span><span class="s2">"utf82sjis"</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"toSJIS="</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+</code></pre></div></div>
+
+<hr />
+<h2 id="watchdogevent">watchdog(“event”)</h2>
+
+<p>WatchDogのタイマーをリセットします。</p>
+
+<h3 id="書式-48">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">result</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">watchdog</span><span class="p">(</span><span class="s2">"event"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-47">引数</h3>
+
+<p>第1引数は”event”固定。</p>
+
+<h3 id="戻り値-43">戻り値</h3>
+
+<h5 id="result-8"><strong>result</strong></h5>
+<p><em>number</em>。</p>
+
+<dl class="ml-4">
+  <dt>1</dt>
+  <dd>タイマー再始動。</dd>
+  <dt>0</dt>
+  <dd>watchdogをスタートしていない（タイマー待ち時間未設定）。</dd>
+</dl>
+
+<hr />
+<h2 id="watchdogstart">watchdog(“start”)</h2>
+
+<p>WatchDogのタイマーをスタートさせます。タイムアウトするとFlashAirが再起動します。</p>
+
+<h3 id="書式-49">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">result</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">watchdog</span><span class="p">(</span><span class="s2">"start"</span><span class="p">,</span> <span class="n">cycle</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-48">引数</h3>
+
+<p>第1引数は”start”固定。</p>
+<h5 id="cycle"><strong>cycle</strong></h5>
+<p><em>number</em>。 watchdogを発行を秒単位で指定します。</p>
+
+<h3 id="戻り値-44">戻り値</h3>
+
+<h5 id="result-9"><strong>result</strong></h5>
+<p><em>number</em>。</p>
+
+<dl class="ml-4">
+  <dt>1</dt>
+  <dd>タイマー開始。</dd>
+  <dt>0</dt>
+  <dd>タイマー待ち時間未設定。</dd>
+</dl>
+
+<h3 id="備考-8">備考</h3>
+
+<p><strong>WatchDog</strong>とは、システムが機能し続けていることを確認するためのタイマーのことです。WatchDogのタイマーをスタートした後システムに異常事態が起こり、WatchDogのタイマーをリセットできなかった場合FlashAirを再起動させます。</p>
+
+<h3 id="使用例">使用例</h3>
+
+<div class="code-example">
+
+  <ol>
+    <li>
+      <p>CONFIGに<code class="highlighter-rouge">LUA_RUN_SCRIPT=/HelloWorld.lua</code>を追加します。<a href="../tutorials/lua/2/">こちら</a>のチュートリアルで使用した<code class="highlighter-rouge">HelloWorld.lua</code>をFlashAirルート上に保存します。すでにHello.txtがルート上にある場合はリネームまたは削除してください。</p>
+    </li>
+    <li>
+      <p>FlashAirルート上に以下のコードを保存します。</p>
+
+      <p><em>/WatchDog.lua</em></p>
+      <div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fa</span><span class="p">.</span><span class="n">watchdog</span><span class="p">(</span><span class="s2">"start"</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"watchdog start"</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">30</span> <span class="k">do</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">watchdog</span><span class="p">(</span><span class="s2">"status"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"watchdog status:"</span><span class="o">..</span><span class="n">result</span><span class="p">)</span>
+<span class="k">end</span>
+<span class="n">result</span><span class="p">,</span> <span class="n">filelist</span><span class="p">,</span> <span class="n">time</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">search</span><span class="p">(</span><span class="s2">"file"</span><span class="p">,</span> <span class="s2">"/DCIM"</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">filelist</span> <span class="o">~=</span> <span class="n">nill</span> <span class="k">then</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">watchdog</span><span class="p">(</span><span class="s2">"event"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"watchdog restart"</span><span class="p">)</span>
+<span class="k">else</span>
+    <span class="n">fa</span><span class="p">.</span><span class="n">watchdog</span><span class="p">(</span><span class="s2">"stop"</span><span class="p">)</span>    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"watchdog stop"</span><span class="p">)</span>                    
+<span class="k">end</span>
+<span class="k">while</span> <span class="mi">0</span> <span class="o">~=</span> <span class="n">fa</span><span class="p">.</span><span class="n">watchdog</span><span class="p">(</span><span class="s2">"status"</span><span class="p">)</span> <span class="k">do</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">watchdog</span><span class="p">(</span><span class="s2">"status"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"watchdog status:"</span><span class="o">..</span><span class="n">result</span><span class="p">)</span>
+<span class="k">end</span>
+</code></pre></div>      </div>
+      <p>このスクリプトはWatchdogタイマーを10秒間隔でスタートさせ、Watchdogステータスを数回確認、<code class="highlighter-rouge">/DCIM</code>上にファイルが存在したらWatchdogタイマーを再起動させ、Watchdogステータスが0になるまでprintし続けます。</p>
+    </li>
+    <li>FlashAirを抜き差します。</li>
+    <li><code class="highlighter-rouge">HelloWorld.lua</code>により作成されたHello.txtを確認します。（Hello There!が1行表示されている状態です）</li>
+    <li>ブラウザから<code class="highlighter-rouge">WatchDog.lua</code>を実行します。</li>
+    <li>ブラウザ上にprint文で出力した内容が表示されたら<strong>抜き差しせず</strong>にHello.txtを確認します。（Hello There!が2行表示されている状態です）<br />FlashAirが再起動され、<code class="highlighter-rouge">LUA_RUN_SCRIPT</code>が実行されていることが確認できます。</li>
+  </ol>
+</div>
+
+<hr />
+<h2 id="watchdogstatus">watchdog(“status”)</h2>
+
+<p>WatchDogの状態を取得します。</p>
+
+<h3 id="書式-50">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">result</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">watchdog</span><span class="p">(</span><span class="s2">"status"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-49">引数</h3>
+
+<p>第1引数は”status”固定。</p>
+
+<h3 id="戻り値-45">戻り値</h3>
+
+<h5 id="result-10"><strong>result</strong></h5>
+<p><em>number</em>。</p>
+
+<dl class="ml-4">
+  <dt>0以上</dt>
+  <dd>watchdogタイマー発動までの残り時間。</dd>
+  <dt>0</dt>
+  <dd>発動までの残り時間が１秒未満。</dd>
+  <dt>-1</dt>
+  <dd>watchdogタイマー待機中。</dd>
+</dl>
+
+<hr />
+<h2 id="watchdogstop">watchdog(“stop”)</h2>
+
+<p>WatchDogのタイマーを停止します。</p>
+
+<h3 id="書式-51">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">result</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">watchdog</span><span class="p">(</span><span class="s2">"stop"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-50">引数</h3>
+
+<p>第1引数は”stop”固定。</p>
+
+<h3 id="戻り値-46">戻り値</h3>
+
+<h5 id="result-11"><strong>result</strong></h5>
+<p><em>number</em>。</p>
+
+<dl class="ml-4">
+  <dt>0</dt>
+  <dd>タイマー停止。</dd>
+</dl>
+
+<hr />
+<h2 id="websocket">websocket</h2>
+
+<p>WebSocket通信をします。</p>
+
+<h3 id="書式-52">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">res</span><span class="p">,</span> <span class="nb">type</span><span class="p">,</span> <span class="n">payload</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">websocket</span><span class="p">(</span><span class="n">table</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-51">引数</h3>
+
+<h5 id="table-2"><strong>table</strong></h5>
+<p>以下のフィールドがあります。</p>
+
+<dl class="ml-4">
+  <dt>mode</dt>
+  <dd><em>string</em>。WebSocket接続の属性。</dd>
+  <dt>address</dt>
+  <dd><em>string</em>。接続先のサーバアドレス。</dd>
+  <dt>payload</dt>
+  <dd><em>string</em> or <em>table</em>。メッセージ内容（文字列、配列）。</dd>
+  <dt>type</dt>
+  <dd><em>number</em>。メッセージタイプ（テキスト＝<code>1</code>、バイナリ＝<code>2</code>、PING＝<code>9</code>、 省略時＝自動判別）。</dd>
+  <dt>length</dt>
+  <dd><em>number</em>。メッセージの長さ（省略時＝payloadのオブジェクト長）。</dd>
+  <dt> tout</dt>
+  <dd><em>number</em>。タイムアウト時間（単位：msec）。</dd>
+</dl>
+
+<table>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td>オープン</td>
+      <td>メッセージ送信</td>
+      <td>メッセージ受信</td>
+      <td>クローズ</td>
+    </tr>
+    <tr>
+      <td>mode</td>
+      <td><code class="highlighter-rouge">"open"</code></td>
+      <td><code class="highlighter-rouge">"send"</code></td>
+      <td><code class="highlighter-rouge">"recv"</code></td>
+      <td><code class="highlighter-rouge">"close"</code></td>
+    </tr>
+    <tr>
+      <td>address</td>
+      <td>必須</td>
+      <td>不要</td>
+      <td>不要</td>
+      <td>不要</td>
+    </tr>
+    <tr>
+      <td>payload</td>
+      <td>不要</td>
+      <td>必須</td>
+      <td>不要</td>
+      <td>不要</td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td>不要</td>
+      <td>省略可</td>
+      <td>不要</td>
+      <td>不要</td>
+    </tr>
+    <tr>
+      <td>length</td>
+      <td>不要</td>
+      <td>省略可</td>
+      <td>不要</td>
+      <td>不要</td>
+    </tr>
+    <tr>
+      <td>tout</td>
+      <td>不要</td>
+      <td>不要</td>
+      <td>省略可</td>
+      <td>不要</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="戻り値-47">戻り値</h3>
+
+<h5 id="res-9"><strong>res</strong></h5>
+<p><em>number</em>。受信成功時は<code class="highlighter-rouge">0</code>もしくは正数を返します。受信失敗時は負数を返します。</p>
+<h5 id="type-1"><strong>type</strong></h5>
+<p><em>number</em>。メッセージタイプ（テキスト＝<code class="highlighter-rouge">1</code>、バイナリ＝<code class="highlighter-rouge">2</code>）。メッセージ受信のときのみ使用します。</p>
+<h5 id="payload"><strong>payload</strong></h5>
+<p><em>string</em> or <em>table</em>。受信メッセージ。受信失敗時は<code class="highlighter-rouge">nil</code>を返します。メッセージ受信のときのみ使用します。</p>
+
+<h3 id="例-12">例</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">websocket</span><span class="p">{</span><span class="n">mode</span> <span class="o">=</span> <span class="s2">"open"</span><span class="p">,</span> <span class="n">address</span> <span class="o">=</span> <span class="s2">"ws://localhost/socket"</span><span class="p">}</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">websocket</span><span class="p">{</span><span class="n">mode</span> <span class="o">=</span> <span class="s2">"send"</span><span class="p">,</span> <span class="n">payload</span> <span class="o">=</span> <span class="s2">"hello!"</span><span class="p">,</span> <span class="nb">type</span> <span class="o">=</span> <span class="mi">1</span><span class="p">}</span>
+<span class="n">res</span><span class="p">,</span> <span class="nb">type</span><span class="p">,</span> <span class="n">payload</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">websocket</span><span class="p">{</span><span class="n">mode</span> <span class="o">=</span> <span class="s2">"recv"</span><span class="p">,</span> <span class="n">tout</span> <span class="o">=</span> <span class="mi">5000</span><span class="p">}</span>
+<span class="n">fa</span><span class="p">.</span><span class="n">websocket</span><span class="p">{</span><span class="n">mode</span> <span class="o">=</span> <span class="s2">"close"</span><span class="p">}</span>
+</code></pre></div></div>
+
+<hr />
+<h2 id="wlanlink">WlanLink</h2>
+
+<p>ネットワークに無線接続されているかを確認します。</p>
+
+<h3 id="書式-53">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">result</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">WlanLink</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h3 id="引数-52">引数</h3>
+
+<p>なし</p>
+
+<h3 id="戻り値-48">戻り値</h3>
+
+<h5 id="result-12"><strong>result</strong></h5>
+<p><em>number</em>。</p>
+
+<dl class="ml-4">
+  <dt>1</dt>
+  <dd>接続状態。</dd>
+  <dt>0</dt>
+  <dd>未接続。</dd>
+</dl>
+
+<hr />
+<h2 id="パーティション操作">パーティション操作</h2>
+
+<p>第２パーティションへアクセスを行うことが出来ます。第２パーティションはLuaの内部ログなどを保存し、ホスト機器からのファイルアクセスによる影響がない領域のことです。ドライブレターにより、パーティションを指定することが可能です。</p>
+
+<h3 id="書式-54">書式</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"p" --1stパーティション（省略化）
+"s" --2ndパーティション
+"h" --秘匿領域
+</code></pre></div></div>
+
+<h3 id="その他">その他</h3>
+
+<p>パーティションの作成は、Linux、Win10などのホスト機器を使用して分割することが可能です。</p>
+
+<h3 id="例-13">例</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">local</span> <span class="n">file</span> <span class="o">=</span> <span class="nb">io.open</span><span class="p">(</span><span class="s2">"s:\flashair.log"</span><span class="p">,</span> <span class="s2">"a"</span><span class="p">)</span>
+</code></pre></div></div>
+
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

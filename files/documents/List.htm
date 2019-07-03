@@ -1,0 +1,66 @@
+﻿<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>flashair sample</title>
+    <script language="javascript" type="text/javascript">
+        <!--
+            //関数：FlashAirに対してHTTP通信 GETをする
+            function flashair_get( param ){
+                var request = new XMLHttpRequest();
+                request.open("GET", param, false);
+                request.send(null);
+                //通信結果
+                document.getElementById('RESULT').value += request.responseText;
+            }
+            //関数：GPIOポートをすべてLow
+            function gpio_off(){
+                var url = "http://flashair/command.cgi?op=190&CTRL=0x1f&DATA=0x00";
+                flashair_get(url);
+            }
+            //関数：任意のポートをHighにする
+            function gpio_on(port){
+                switch( port ){
+                    case 1:
+                        var url = "http://flashair/command.cgi?op=190&CTRL=0x1f&DATA=0x02";
+                        flashair_get(url);
+                        break;
+                    case 2:
+                        var url = "http://flashair/command.cgi?op=190&CTRL=0x1f&DATA=0x01";
+                        flashair_get(url);
+                        break;
+                    case 3:
+                        var url = "http://flashair/command.cgi?op=190&CTRL=0x1f&DATA=0x10";
+                        flashair_get(url);
+                        break;
+                    case 4:
+                        var url = "http://flashair/command.cgi?op=190&CTRL=0x1f&DATA=0x04";
+                        flashair_get(url);
+                        break;
+                    case 5:
+                        var url = "http://flashair/command.cgi?op=190&CTRL=0x1f&DATA=0x08";
+                        flashair_get(url);
+                        break;
+                    case 6:
+                        var url = "http://flashair/command.cgi?op=190&CTRL=0x1f&DATA=0x00";
+                        flashair_get(url);
+                        break;
+                }
+                //リロードしてLowに戻す
+                //window.location.reload();
+            }
+        // -->
+    </script>
+    </head>
+    <body onLoad="gpio_off()">
+        <P>FlashAir GPIO スイッチ</P>
+        <form>
+            <input type="button" value="CMD(DI)" onclick="gpio_on(1)">
+            <input type="button" value="DAT0(DO)" onclick="gpio_on(2)">
+            <input type="button" value="CS" onclick="gpio_on(3)">
+            <input type="button" value="DAT1" onclick="gpio_on(4)">
+            <input type="button" value="DAT2" onclick="gpio_on(5)">
+            <input type="button" value="clear" onclick="gpio_on(6)">
+        </form>
+        <input type="text" id="RESULT" value="結果＝">
+    </body>
+</html>

@@ -1,0 +1,1808 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  
+    <title>APモードでの起動 - website</title>
+
+    
+  
+
+  <link rel="shortcut icon" href="http://localhost:4000/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/just-the-docs.css">
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/customstyles.css">
+  
+
+  
+    <script type="text/javascript" src="http://localhost:4000/assets/js/vendor/lunr.min.js"></script>
+  
+  <script type="text/javascript" src="http://localhost:4000/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>APモードでの起動 | website</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="APモードでの起動" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/docs/tutorials/arduino/4.html" />
+<meta property="og:url" content="http://localhost:4000/docs/tutorials/arduino/4.html" />
+<meta property="og:site_name" content="website" />
+<script type="application/ld+json">
+{"@type":"WebPage","headline":"APモードでの起動","url":"http://localhost:4000/docs/tutorials/arduino/4.html","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+
+  <div class="page-wrap">
+    <div class="side-bar">
+      <a href="http://localhost:4000" class="site-title fs-6 lh-tight">website</a>
+      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+      <div class="navigation main-nav js-main-nav">
+        <nav role="navigation" aria-label="Main navigation">
+    <ul class="navigation-list">
+      
+      <li>
+        <h3>Arduino向けチュートリアル</h3>
+      </li>
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/arduino/1.html" class="navigation-list-link">ArduinoでFlashAir制御の概要</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/arduino/2.html" class="navigation-list-link">iSDIO拡張コマンドの作成</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/arduino/3.html" class="navigation-list-link">カードステータスの読み取り</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item active">
+              
+              <a href="http://localhost:4000/docs/tutorials/arduino/4.html" class="navigation-list-link active">APモードでの起動</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/arduino/5.html" class="navigation-list-link">STAモードでの起動</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/arduino/6.html" class="navigation-list-link">Webページの取得</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+      <li>
+        <h3>Raspberry Pi向けチュートリアル</h3>
+      </li>
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/raspberrypi/1.html" class="navigation-list-link">インターネット同時接続モードの設定</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/raspberrypi/2.html" class="navigation-list-link">APIリファレンス</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+      <li>
+        <h3>Mbed™向けチュートリアル</h3>
+      </li>
+      
+        
+      
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/mbed/1.html" class="navigation-list-link">MbedでAPモード起動</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/mbed/2.html" class="navigation-list-link">APIリファレンス</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+      <li>
+        <br>
+        <a href="../../tutorials/isdio">目次に戻る</a>
+      </li>
+    </ul>
+  </nav>
+      </div>
+      <footer role="contentinfo" class="site-footer">
+        <p class="text-small text-grey-dk-000 mb-0">This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.</p>
+      </footer>
+    </div>
+    <div class="main-content-wrap js-main-content" tabindex="0">
+      <div class="page-header">
+        <div class="main-content">
+          
+          <div class="search js-search">
+            <div class="search-input-wrap">
+              <input type="text" class="js-search-input search-input" tabindex="0" placeholder="Search website" aria-label="Search website" autocomplete="off">
+              <svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z"/><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z"/></g></svg>
+            </div>
+            <div class="js-search-results search-results-wrap"></div>
+          </div>
+          
+          
+        </div>
+      </div>
+      <div class="main-content">
+        
+          
+            <nav class="breadcrumb-nav">
+              <ol class="breadcrumb-nav-list">
+                
+                  <li class="breadcrumb-nav-list-item"><span>チュートリアル</span></li>
+                  <li class="breadcrumb-nav-list-item"><span>Arduino向けチュートリアル</span></li>
+                
+                <li class="breadcrumb-nav-list-item"><span>APモードでの起動</span></li>
+              </ol>
+            </nav>
+          
+        
+        <div id="main-content" class="page-content" role="main">
+          <h1 id="apモードでの起動">APモードでの起動</h1>
+
+<p>本チュートリアルでは、iSDIOコマンドを使って、FlashAirの無線LANをAPモードで起動してみます。</p>
+
+<hr />
+<h2 id="概要">概要</h2>
+
+<p>APモードの起動には、iSDIOで規定されているEstablishコマンドを使用します。</p>
+
+<p>Establishコマンドの発行が完了した後、 FlashAirが実際に無線LAN APとして動作開始するまでには、 数秒～20秒程度の時間がかかります。
+動作開始を確認するためには、ステータスレジスタを利用します。</p>
+
+<p><a href="3">チュートリアル３</a>で ステータスレジスタの読み出し方を解説しましたが、 全部のステータスは必要ありませんので、
+本チュートリアルでは、コマンド発行後の処理ステータスを確認する方法だけを切り出してみます。</p>
+
+<p>また、Establishコマンドが正しく動作するためには、 FlashAirの無線LANが未接続状態になっていなければなりません。
+そこで、このチュートリアルでは、無線LANを切断するためのDisconnectコマンドも実行してみましょう。</p>
+
+<p>以下、
+<a href="3">チュートリアル３</a>のソースコードを元に追加・変更していきます。</p>
+
+<hr />
+<h2 id="シーケンスidについて">シーケンスIDについて</h2>
+
+<p>前述のとおり、コマンドは発行してから処理が完了するまで時間がかかります。 最後に発行されたコマンドを識別するために、シーケンスIDという仕組みが取り入れられています。</p>
+
+<p>iSDIOのシーケンスIDは、0以上の4バイトの符号なし数値です。 コマンドを新しく発行するたびに、シーケンスIDを新しい値（通常は以前の値に１加えたもの）に更新します。</p>
+
+<div class="alert alert-warning" role="alert">注意点：シーケンスIDは、ホストプログラムだけが変更するとは限りません。</div>
+
+<p>FlashAirの起動時あるいはCGIでの指示により、FlashAir自身が無線LAN状態を変更した場合も、 iSDIOコマンドが発行されてシーケンスIDが変更される可能性があることに注意が必要です。</p>
+
+<p>そのため、厳密にはコマンド発行の都度最新のシーケンスIDを取得して、 新しいシーケンスIDを作成するのが正しいでしょう。
+ただし、本チュートリアルシリーズでは説明の簡略化のため、起動直後のシーケンスIDを読み取り、 それ以降は自分で管理したIDのみを使います。</p>
+
+<p>自分が発行した最後のシーケンスIDを覚えておくため、変数を一つ用意します。</p>
+
+<h5 id="arduino_tutorial_04ino-一部抜粋"><em>arduino_tutorial_04.ino (一部抜粋)</em></h5>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kt">uint32_t</span> <span class="n">nextSequenceId</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</code></pre></div></div>
+
+<hr />
+<h2 id="establishコマンドの発行">Establishコマンドの発行</h2>
+
+<p>Establishは、無線LAN機能をAPモードで立ち上げるためのコマンドです。 同時に、HTTPサーバー機能とDHCPサーバー機能も立ち上がります。</p>
+
+<p>詳細は、
+<strong>SD Specifications Part E7 Wireless LAN Simplified Addendum Version 1.10 4.2.3 Estalibsh(ssid,
+networkKey, encMode)</strong>
+に規定されています。</p>
+
+<p>コマンドデータを作るためには、下記の情報が必要です。</p>
+
+<ul>
+  <li>コマンドID (<code class="highlighter-rouge">3</code>)</li>
+  <li>シーケンスID</li>
+  <li>引数個数 (<code class="highlighter-rouge">3</code>)</li>
+  <li>引数
+    <ul>
+      <li>SSID</li>
+      <li>ネットワークキー (パスワード)</li>
+      <li>セキュリティモード</li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="arduino_tutorial_04ino-一部抜粋-1"><em>arduino_tutorial_04.ino (一部抜粋)</em></h5>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="n">boolean</span> <span class="nf">iSDIO_establish</span><span class="p">(</span><span class="kt">uint32_t</span> <span class="n">sequenceId</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Establish command: </span><span class="se">\n</span><span class="s">"</span><span class="p">));</span>
+      <span class="n">memset</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">512</span><span class="p">);</span>
+      <span class="kt">uint8_t</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="n">buffer</span><span class="p">;</span>
+      <span class="n">p</span> <span class="o">=</span> <span class="n">put_command_header</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+      <span class="n">p</span> <span class="o">=</span> <span class="n">put_command_info_header</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="mh">0x03</span><span class="p">,</span> <span class="n">sequenceId</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
+      <span class="n">p</span> <span class="o">=</span> <span class="n">put_str_arg</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="s">"sdiotest"</span><span class="p">);</span>
+      <span class="n">p</span> <span class="o">=</span> <span class="n">put_str_arg</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="s">"12345678"</span><span class="p">);</span>
+      <span class="n">p</span> <span class="o">=</span> <span class="n">put_u8_arg</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="mh">0x06</span><span class="p">);</span>
+      <span class="n">put_command_header</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="p">(</span><span class="n">p</span> <span class="o">-</span> <span class="n">buffer</span><span class="p">));</span>
+      <span class="n">printHex</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="p">(</span><span class="n">p</span> <span class="o">-</span> <span class="n">buffer</span><span class="p">));</span>
+      <span class="k">return</span> <span class="n">card</span><span class="p">.</span><span class="n">writeExtDataPort</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mh">0x000</span><span class="p">,</span> <span class="n">buffer</span><span class="p">)</span> <span class="o">?</span> <span class="nb">true</span> <span class="o">:</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<ul>
+  <li>3行目～10行目<br />
+   FlashAirに発行するコマンドのデータをArduinoのメモリ上に作っています。</li>
+  <li>5行目<br />
+   ヘルパー関数を利用して、コマンドのヘッダを作っています。 最後の引数にはコマンドデータの長さ(バイト数)を入れますが、 可変長の引数があるため、引数を含んでいるため、後で計算します。</li>
+  <li>6行目<br />
+   ヘルパー関数を利用して、コマンド情報のヘッダを作っています。 establishのコマンドID<code class="highlighter-rouge">0x03</code>、シーケンスID<code class="highlighter-rouge">sequenceID</code>、引数の個数<code class="highlighter-rouge">3</code>を指定しています。</li>
+  <li>7行目<br />
+   1番目の引数SSIDを書き込んでいます。 文字列引数を書き込むヘルパー関数を利用しています。</li>
+  <li>8行目<br />
+   同様に、2番目の引数ネットワークキーを書き込んでいます。</li>
+  <li>9行目<br />
+   3番目の引数セキュリティモードを書き込んでいます。 ここでは、WPA2-PSK and AESを表す<code class="highlighter-rouge">0x06</code>を指定しています。他の値については仕様書をご覧ください。 １バイトデータを書き込むヘルパー関数を利用しています。</li>
+  <li>10行目<br />
+   全データが書き込まれ、バイト数が確定したので、コマンドヘッダを改めて書き込んでいます。</li>
+  <li>11行目<br />
+   正しく作成されたかを確認する目的で、コマンドデータをダンプしています。<code class="highlighter-rouge">printHex()</code>関数についてはサンプルコードを参照ください。</li>
+  <li>12行目<br />
+   FlashAirに対してデータを書き込んでいます。</li>
+</ul>
+
+<hr />
+<h2 id="コマンド処理状況の確認">コマンド処理状況の確認</h2>
+
+<p>コマンド処理状況を確認するには、iSDIOのコマンドレスポンスステータスを読み取ります。</p>
+
+<h4 id="コマンドレスポンスステータス-sd-specifications-part-e7-isdio-simplifed-specification-version-110より抜粋"><em>コマンドレスポンスステータス (SD Specifications Part E7 iSDIO Simplifed Specification Version 1.10より抜粋)</em></h4>
+
+<p><img src="/assets/images/tutorials/arduino_tutorial_04_1.png" alt="コマンドレスポンスステータス" class="d-block" /></p>
+
+<p>特に重要なのは、
+_iSDIO command sequence id_と、
+_Response Status_の2つです。 iSDIO command sequence idが、いま確認したいシーケンスIDと一致しているか確認します。
+一致していることが確認できたら、Response
+Statusで処理状況を確認します。</p>
+
+<p>なお、iSDIO規格では最大8つまでのコマンドを同時に発行できることになっており、 コマンドレスポンスステータスレジスタも8個ありますが、 FlashAirは1つまでの対応となっていますので、アドレス
+<code class="highlighter-rouge">0x440</code>のステータスを常に読み取ります。</p>
+
+<p>以下に、指定したシーケンスIDのコマンドの終了を待機する関数を作成します。</p>
+
+<h5 id="arduino_tutorial_04ino-一部抜粋-2"><em>arduino_tutorial_04.ino (一部抜粋)</em></h5>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="n">boolean</span> <span class="nf">iSDIO_waitResponse</span><span class="p">(</span><span class="kt">uint32_t</span> <span class="n">sequenceId</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Waiting response "</span><span class="p">));</span>
+      <span class="kt">uint8_t</span> <span class="n">prev</span> <span class="o">=</span> <span class="mh">0xFF</span><span class="p">;</span>
+      <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">20</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">memset</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mh">0x14</span><span class="p">);</span>
+
+        <span class="c1">// Read command response status.
+</span>        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">card</span><span class="p">.</span><span class="n">readExtMemory</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mh">0x440</span><span class="p">,</span> <span class="mh">0x14</span><span class="p">,</span> <span class="n">buffer</span><span class="p">))</span> <span class="p">{</span>
+          <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="kt">uint8_t</span> <span class="n">resp</span> <span class="o">=</span> <span class="n">get_u8</span><span class="p">(</span><span class="n">buffer</span> <span class="o">+</span> <span class="mi">8</span><span class="p">);</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">sequenceId</span> <span class="o">==</span> <span class="n">get_u32</span><span class="p">(</span><span class="n">buffer</span> <span class="o">+</span> <span class="mi">4</span><span class="p">))</span> <span class="p">{</span>
+         <span class="k">if</span> <span class="p">(</span><span class="n">prev</span> <span class="o">!=</span> <span class="n">resp</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">switch</span> <span class="p">(</span><span class="n">resp</span><span class="p">)</span> <span class="p">{</span>
+              <span class="k">case</span> <span class="mh">0x00</span><span class="p">:</span>
+                <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">  Initial"</span><span class="p">));</span>
+                <span class="k">break</span><span class="p">;</span>
+              <span class="k">case</span> <span class="mh">0x01</span><span class="p">:</span>
+                <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">  Command Processing"</span><span class="p">));</span>
+                <span class="k">break</span><span class="p">;</span>
+              <span class="k">case</span> <span class="mh">0x02</span><span class="p">:</span>
+                <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">  Command Rejected"</span><span class="p">));</span>
+                <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+              <span class="k">case</span> <span class="mh">0x03</span><span class="p">:</span>
+                <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">  Process Succeeded"</span><span class="p">));</span>
+                <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+              <span class="k">case</span> <span class="mh">0x04</span><span class="p">:</span>
+                <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">  Process Terminated"</span><span class="p">));</span>
+                <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+              <span class="nl">default:</span>
+                <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">  Process Failed "</span><span class="p">));</span>
+                <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">resp</span><span class="p">,</span> <span class="n">HEX</span><span class="p">);</span>
+                <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="n">prev</span> <span class="o">=</span> <span class="n">resp</span><span class="p">;</span>
+          <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"."</span><span class="p">));</span>
+        <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+      <span class="p">}</span>
+      <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<ul>
+  <li>8行目<br />
+   コマンドレスポンスステータスレジスタを読み取っています。</li>
+  <li>13行目<br />
+   シーケンスIDが一致することを確認しています。</li>
+  <li>15行目～35行目<br />
+   レスポンスステータスを確認してます。処理が完了すると、Process Succeededになります。</li>
+  <li>39行目<br />
+   1秒ごとにこの確認を実行しています。</li>
+</ul>
+
+<hr />
+<h2 id="disconnectコマンドの発行">Disconnectコマンドの発行</h2>
+
+<p>Disconnectは、無線LANを切断するためのコマンドです。 同時に、HTTPサーバー機能とDHCPサーバー機能も停止します。</p>
+
+<p>詳細は、
+**SD Specifications Part E7 Wireless LAN Simplified Addendum Version 1.10 4.2.7 Disconnect(ssid,
+networkKey,
+encMode)
+**
+に規定されています。</p>
+
+<p>コマンドデータを作るためには、下記の情報が必要です。</p>
+
+<ul>
+  <li>コマンドID (<code class="highlighter-rouge">7</code>)</li>
+  <li>シーケンスID</li>
+  <li>引数個数 (<code class="highlighter-rouge">0</code>)</li>
+  <li>引数はありません。</li>
+</ul>
+
+<h5 id="arduino_tutorial_04ino-一部抜粋-3"><em>arduino_tutorial_04.ino (一部抜粋)</em></h5>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="n">boolean</span> <span class="nf">iSDIO_disconnect</span><span class="p">(</span><span class="kt">uint32_t</span> <span class="n">sequenceId</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Disconnect command: </span><span class="se">\n</span><span class="s">"</span><span class="p">));</span>
+      <span class="n">memset</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">512</span><span class="p">);</span>
+      <span class="kt">uint8_t</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="n">buffer</span><span class="p">;</span>
+      <span class="n">p</span> <span class="o">=</span> <span class="n">put_command_header</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+      <span class="n">p</span> <span class="o">=</span> <span class="n">put_command_info_header</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="mh">0x07</span><span class="p">,</span> <span class="n">sequenceId</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+      <span class="n">put_command_header</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="p">(</span><span class="n">p</span> <span class="o">-</span> <span class="n">buffer</span><span class="p">));</span>
+      <span class="n">printHex</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="p">(</span><span class="n">p</span> <span class="o">-</span> <span class="n">buffer</span><span class="p">));</span>
+      <span class="k">return</span> <span class="n">card</span><span class="p">.</span><span class="n">writeExtDataPort</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mh">0x000</span><span class="p">,</span> <span class="n">buffer</span><span class="p">)</span> <span class="o">?</span> <span class="nb">true</span> <span class="o">:</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+
+<hr />
+<h2 id="メインプログラム">メインプログラム</h2>
+
+<p>メインプログラムは、対話式のプログラムとしてみましょう。</p>
+
+<p>Arduinoのシリアルターミナルで入力されたコマンド番号に従って、ステータス表示、Disconnect、Establish の各コマンドを実行します。</p>
+
+<h5 id="arduino_tutorial_04ino-一部抜粋-4"><em>arduino_tutorial_04.ino (一部抜粋)</em></h5>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">iSDIO_status</span><span class="p">())</span> <span class="p">{</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Failed to read status."</span><span class="p">));</span>
+      <span class="p">}</span>
+
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">0. Show status"</span><span class="p">));</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">1. Disconnect"</span><span class="p">));</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">2. Establish"</span><span class="p">));</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n\n</span><span class="s">Command? (next sequence id = "</span><span class="p">));</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">nextSequenceId</span><span class="p">,</span> <span class="n">DEC</span><span class="p">);</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">")"</span><span class="p">));</span>
+
+      <span class="k">while</span> <span class="p">(</span><span class="n">Serial</span><span class="p">.</span><span class="n">available</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span><span class="p">);</span>
+      <span class="kt">char</span> <span class="n">command</span> <span class="o">=</span> <span class="n">Serial</span><span class="p">.</span><span class="n">read</span><span class="p">();</span>
+
+      <span class="k">switch</span> <span class="p">(</span><span class="n">command</span> <span class="o">-</span> <span class="sc">'0'</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">case</span> <span class="mi">0</span> <span class="p">:</span>
+          <span class="k">break</span><span class="p">;</span>
+        <span class="k">case</span> <span class="mi">1</span> <span class="p">:</span>
+          <span class="k">if</span> <span class="p">(</span><span class="n">iSDIO_disconnect</span><span class="p">(</span><span class="n">nextSequenceId</span><span class="p">)</span> <span class="o">&amp;&amp;</span>
+              <span class="n">iSDIO_waitResponse</span><span class="p">(</span><span class="n">nextSequenceId</span><span class="p">))</span> <span class="p">{</span>
+            <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Success."</span><span class="p">));</span>
+          <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Failed or waiting. errorCode="</span><span class="p">));</span>
+            <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">card</span><span class="p">.</span><span class="n">errorCode</span><span class="p">(),</span> <span class="n">HEX</span><span class="p">);</span>
+          <span class="p">}</span>
+          <span class="n">nextSequenceId</span><span class="o">++</span><span class="p">;</span>
+          <span class="k">break</span><span class="p">;</span>
+        <span class="k">case</span> <span class="mi">2</span> <span class="p">:</span>
+          <span class="k">if</span> <span class="p">(</span><span class="n">iSDIO_establish</span><span class="p">(</span><span class="n">nextSequenceId</span><span class="p">)</span> <span class="o">&amp;&amp;</span>
+              <span class="n">iSDIO_waitResponse</span><span class="p">(</span><span class="n">nextSequenceId</span><span class="p">))</span> <span class="p">{</span>
+            <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Success."</span><span class="p">));</span>
+          <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Failed or waiting. errorCode="</span><span class="p">));</span>
+            <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">card</span><span class="p">.</span><span class="n">errorCode</span><span class="p">(),</span> <span class="n">HEX</span><span class="p">);</span>
+          <span class="p">}</span>
+          <span class="n">nextSequenceId</span><span class="o">++</span><span class="p">;</span>
+          <span class="k">break</span><span class="p">;</span>
+        <span class="k">default</span> <span class="o">:</span>
+          <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Unknown command."</span><span class="p">));</span>
+          <span class="k">break</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<ul>
+  <li>2行目<br />
+   ステータス表示です。</li>
+  <li>6行目～11行目<br />
+   実行できるコマンドおよび次のシーケンスIDを表示しています。</li>
+  <li>13行目～14行目<br />
+   番号の入力を待っています。</li>
+  <li>16行目～42行目<br />
+   入力された番号に従ってコマンドを実行します。</li>
+</ul>
+
+<p>ステータス表示を
+<code class="highlighter-rouge">loop()</code>関数に含めましたので、
+<code class="highlighter-rouge">setup()</code>関数からは削除しましょう。</p>
+
+<h5 id="arduino_tutorial_04ino-一部抜粋-5"><em>arduino_tutorial_04.ino (一部抜粋)</em></h5>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
+      <span class="c1">// Initialize UART for message print.
+</span>      <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+      <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="n">Serial</span><span class="p">)</span> <span class="p">{</span>
+        <span class="p">;</span>
+      <span class="p">}</span>
+
+      <span class="c1">// Initialize SD card.
+</span>      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Initializing SD card..."</span><span class="p">));</span>  
+      <span class="k">if</span> <span class="p">(</span><span class="n">card</span><span class="p">.</span><span class="n">init</span><span class="p">(</span><span class="n">SPI_HALF_SPEED</span><span class="p">,</span> <span class="n">chipSelectPin</span><span class="p">))</span> <span class="p">{</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"OK"</span><span class="p">));</span>
+      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"NG"</span><span class="p">));</span>
+        <span class="n">abort</span><span class="p">();</span>
+      <span class="p">}</span>
+
+      <span class="c1">// Read the previous sequence ID.
+</span>      <span class="k">if</span> <span class="p">(</span><span class="n">card</span><span class="p">.</span><span class="n">readExtMemory</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mh">0x420</span><span class="p">,</span> <span class="mh">0x34</span><span class="p">,</span> <span class="n">buffer</span><span class="p">))</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mh">0x20</span><span class="p">]</span> <span class="o">==</span> <span class="mh">0x01</span><span class="p">)</span> <span class="p">{</span>
+          <span class="n">nextSequenceId</span> <span class="o">=</span> <span class="n">get_u32</span><span class="p">(</span><span class="n">buffer</span> <span class="o">+</span> <span class="mh">0x24</span><span class="p">);</span>
+          <span class="n">iSDIO_waitResponse</span><span class="p">(</span><span class="n">nextSequenceId</span><span class="p">);</span>
+          <span class="n">nextSequenceId</span><span class="o">++</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+          <span class="n">nextSequenceId</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> 
+        <span class="p">}</span>
+      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Failed to read status."</span><span class="p">));</span>
+        <span class="n">nextSequenceId</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> 
+      <span class="p">}</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<ul>
+  <li>17行目～29行目<br />
+   最後に使われたシーケンスIDを読み取っています。 さらに、直前のコマンドが実行中の場合は完了を待機しています。</li>
+</ul>
+
+<hr />
+<h2 id="実行結果">実行結果</h2>
+
+<p>実行すると、例えば次のようになります。</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    Initializing SD card...OK
+    Wait for response 
+      Process Succeeded
+
+    Read iSDIO Status Register
+     == iSDIO Status Registers == 
+     [0400h] Command Write Status: 
+    ... (snip) ...
+     [0440h] Command Response Status #1: id = 3, sequence id = 1, status = Process Succeeded
+    ... (snip) ...
+     [0506h] WLAN: No Scan, No WPS, Group Client, AP, Infrastructure, No Connection, 
+    ... (snip) ...
+     [0550h] IP Address: 192.168.0.1
+    ... (snip) ...
+
+    0. Show status
+    1. Disconnect
+    2. Establish
+
+    Command? (next sequence id = 2)
+</code></pre></div></div>
+
+<p>起動後の状態と、コマンドオプションを表示します。 この例では、起動時にFlashAirがAPモードで起動したことを表しています。</p>
+
+<p>コマンドは、Arduino IDEのシリアルターミナル上部にあるボックスに入力します。</p>
+
+<p><code class="highlighter-rouge">1</code>、Enterと入力してみましょう。</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Disconnect command: 
+
+00: 01010000180000000000000000000700
+01: 0700000000000000
+
+Wait for response 
+  Command Processing.
+  Process Succeeded
+
+Success.
+
+Read iSDIO Status Register
+... (snip) ...
+ [0440h] Command Response Status #1: id = 7, sequence id = 2, status = Process Succeeded
+... (snip) ...
+ [0506h] WLAN: No Scan, No WPS, Group Client, STA, Initial, No Connection, 
+... (snip) ...
+ [0550h] IP Address: 0.0.0.0
+... (snip) ...
+
+Command? (next sequence id = 3)
+</code></pre></div></div>
+
+<p><strong>14行目</strong>が、DisconnectのコマンドID
+<code class="highlighter-rouge">7</code>、指定したシーケンスID、ステータス
+<code class="highlighter-rouge">Process Succeeded</code>になっていることから、 Disconnectコマンドが発行され、完了したことがわかります。 また、WLANステータスが
+<code class="highlighter-rouge">STA</code>でIP Addressの
+<code class="highlighter-rouge">0.0.0.0</code>であることから、無線LANが切断されていると判断できます。</p>
+
+<p><strong>3行目～4行目</strong>は、コマンドデータです。うまく動かないときは内容を確認してみてください。</p>
+
+<p>引き続き、APモードの起動を行ってみましょう。</p>
+
+<p>シリアルターミナルのボックスに、
+<code class="highlighter-rouge">2</code>、Enterと入力します。</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Establish command: 
+
+00: 01010000380000000000000000000300
+01: 0800000003000000080000007364696F
+02: 74657374080000003132333435363738
+03: 0100000006000000
+
+Wait for response 
+  Command Processing.....
+  Process Succeeded
+
+Success.
+
+Read iSDIO Status Register
+... (snip) ...
+ [0440h] Command Response Status #1: id = 3, sequence id = 3, status = Process Succeeded
+... (snip) ...
+ [0506h] WLAN: No Scan, No WPS, Group Client, AP, Infrastructure, No Connection, 
+ [0508h] SSID: sdiotest
+ [0528h] Encryption Mode: WPA2-PSK and AES
+ [0529h] Signal Strength: 0
+ [052Ah] Channel: 11
+ [0530h] MAC Address: E8E0B758A7FB
+ [0540h] ID: 
+ [0550h] IP Address: 192.168.0.1
+ [0554h] Subnet Mask: 255.255.255.0
+ [0558h] Default Gateway: 192.168.0.1
+ [055Ch] Preferred DNS Server: 192.168.0.1
+ [0560h] Alternate DNS Server: 0.0.0.0
+... (snip) ...
+</code></pre></div></div>
+
+<p>EstablishのコマンドID
+<code class="highlighter-rouge">3</code>が実行されています。（<strong>16行目</strong>)</p>
+
+<p>WLANステータスが
+<code class="highlighter-rouge">AP</code>およびIP Addressが
+<code class="highlighter-rouge">192.168.0.1</code>となっていることから、 FlashAirがAPモードで立ち上がっていることが確認できます。</p>
+
+<hr />
+<h2 id="サンプルコード">サンプルコード</h2>
+
+<p><a href="/files/samplecode/arduino/arduino_tutorial_04.zip" class="btn btn-primary">arduino_tutorial_04.zip</a> (24KB)</p>
+
+<p>本チュートリアルのサンプルコードはGPLv3および<a href="../../license">二条項BSDライセンス</a>で提供されています。 詳細はダウンロードした各ファイルを参照してください。</p>
+
+
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  
+    <title>コンテンツリストの取得 - website</title>
+
+    
+  
+
+  <link rel="shortcut icon" href="http://localhost:4000/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/just-the-docs.css">
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/customstyles.css">
+  
+
+  
+    <script type="text/javascript" src="http://localhost:4000/assets/js/vendor/lunr.min.js"></script>
+  
+  <script type="text/javascript" src="http://localhost:4000/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>コンテンツリストの取得 | website</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="コンテンツリストの取得" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/docs/tutorials/cordova/2.html" />
+<meta property="og:url" content="http://localhost:4000/docs/tutorials/cordova/2.html" />
+<meta property="og:site_name" content="website" />
+<script type="application/ld+json">
+{"@type":"WebPage","headline":"コンテンツリストの取得","url":"http://localhost:4000/docs/tutorials/cordova/2.html","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+
+  <div class="page-wrap">
+    <div class="side-bar">
+      <a href="http://localhost:4000" class="site-title fs-6 lh-tight">website</a>
+      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+      <div class="navigation main-nav js-main-nav">
+        <nav role="navigation" aria-label="Main navigation">
+    <ul class="navigation-list">
+      
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/cordova/1.html" class="navigation-list-link">Cordova向けFlashAirアプリ開発の概要</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item active">
+              
+              <a href="http://localhost:4000/docs/tutorials/cordova/2.html" class="navigation-list-link active">コンテンツリストの取得</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/cordova/3.html" class="navigation-list-link">コンテンツのダウンロード</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/cordova/4.html" class="navigation-list-link">サムネイルの表示</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/cordova/5.html" class="navigation-list-link">FlashAirへのアップロード</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+
+      <li>
+        <br>
+        <a href="./">目次に戻る</a>
+      </li>
+    </ul>
+  </nav>
+      </div>
+      <footer role="contentinfo" class="site-footer">
+        <p class="text-small text-grey-dk-000 mb-0">This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.</p>
+      </footer>
+    </div>
+    <div class="main-content-wrap js-main-content" tabindex="0">
+      <div class="page-header">
+        <div class="main-content">
+          
+          <div class="search js-search">
+            <div class="search-input-wrap">
+              <input type="text" class="js-search-input search-input" tabindex="0" placeholder="Search website" aria-label="Search website" autocomplete="off">
+              <svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z"/><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z"/></g></svg>
+            </div>
+            <div class="js-search-results search-results-wrap"></div>
+          </div>
+          
+          
+        </div>
+      </div>
+      <div class="main-content">
+        
+          
+            <nav class="breadcrumb-nav">
+              <ol class="breadcrumb-nav-list">
+                
+                  <li class="breadcrumb-nav-list-item"><span>チュートリアル</span></li>
+                  <li class="breadcrumb-nav-list-item"><span>Cordova向けチュートリアル</span></li>
+                
+                <li class="breadcrumb-nav-list-item"><span>コンテンツリストの取得</span></li>
+              </ol>
+            </nav>
+          
+        
+        <div id="main-content" class="page-content" role="main">
+          <h1 id="コンテンツリストの取得">コンテンツリストの取得</h1>
+
+<p>第2回では、FlashAirのコンテンツリストを取得するアプリを作成します。<a href="../../api/command.cgi">command.cgi</a>を使用します。</p>
+
+<hr />
+<h2 id="事前準備">事前準備</h2>
+
+<h3 id="1-プロジェクトを作成する">1. プロジェクトを作成する</h3>
+<p>まずは作成するアプリのプロジェクトを作成します。 第1回の
+<a href="1/#helloworldアプリの作成と確認">HelloWorldアプリのプロジェクト作成</a>のように、プロジェクトを作成したいディレクトリへ移動し、以下のコマンドを実行します。</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; cordova create cordovatutorial2 com.fixstars.flashair.tutorial CordovaTutorial2
+</code></pre></div></div>
+
+<p>またプロジェクト作成後、<a href="1/#2-browserプラットフォームを追加してローカル上のブラウザでアプリの動作確認を行う">browserプラットフォームの追加</a>も行います。</p>
+
+<h3 id="2-jqueryを追加する">2. jQueryを追加する</h3>
+
+<p>開発時のJavaScriptのコード量を減らす目的で、jQueryを導入します。 jQueryは<a href="http://jquery.com/" target="_blank">公式ページ</a>からダウンロードできます。 最新版のjQueryファイルをダウンロードして、先程作成した<a href="1/#helloworldアプリの作成と確認">プロジェクト内の/www/js</a>以下に保存しましょう。<br />
+※ このチュートリアルでは<code class="highlighter-rouge">jquery-3.1.1.min.js</code>ファイルをjQueryファイルとして利用しています。</p>
+
+<hr />
+<h2 id="アプリのトップ画面作成">アプリのトップ画面作成</h2>
+
+<h3 id="1-indexhtmlを編集する">1. index.htmlを編集する</h3>
+
+<p>プロジェクト内の<code class="highlighter-rouge">www</code>ディレクトリ以下にある<code class="highlighter-rouge">index.html</code>ファイルは、アプリの起動後最初に表示される画面になります。 まずはこの画面の内容について以下のように編集します。</p>
+
+<h5 id="wwwindexhtml"><em>/www/index.html</em></h5>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"Content-Security-Policy"</span> <span class="na">content=</span><span class="s">"default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; edia-src *; script-src 'self' 'unsafe-inline'"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"format-detection"</span> <span class="na">content=</span><span class="s">"telephone=no"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"msapplication-tap-highlight"</span> <span class="na">content=</span><span class="s">"no"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;title&gt;</span>Cordova Tutorial<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="na">href=</span><span class="s">"css/load.css"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body</span> <span class="na">onload=</span><span class="s">"onLoad()"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"header"</span> <span class="na">class=</span><span class="s">"pos-center"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"head-left"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;h1</span> <span class="na">id=</span><span class="s">"head-center"</span><span class="nt">&gt;</span>Cordova Tutorial<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"head-right"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"pos-center"</span><span class="nt">&gt;&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">onclick=</span><span class="s">"location.href='tutorial2.html'"</span><span class="nt">&gt;</span>２．コンテンツリストの取得<span class="nt">&lt;/button&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"cordova.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"js/load.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>22行目<br />
+   Cordovaのデフォルトで設定されているCSPに対し、<code class="highlighter-rouge">script-src 'self' 'unsafe-inline'</code>を追加しています。 追加することで18行目にある<code class="highlighter-rouge">&lt;button&gt;</code>タグの<code class="highlighter-rouge">onclick</code>属性などのインラインスクリプトが有効になります。</li>
+  <li>26行目<br />
+   文字コードでUTF-8を使用することを記述しています。</li>
+  <li>28行目<br />
+   トップ画面でロードするCSSを記述しています。デフォルトで設定されている<code class="highlighter-rouge">index.css</code>の代わりに<code class="highlighter-rouge">load.css</code>をロードしています。<code class="highlighter-rouge">load.css</code>の内容は後述します。</li>
+  <li>30行目<br />
+   画面読み込み時に処理する<code class="highlighter-rouge">onLoad()</code>関数を追加しています。<code class="highlighter-rouge">onLoad()</code>関数の内容は後述します。</li>
+  <li>31-35行目<br />
+   画面のヘッダー部について記述しています。</li>
+  <li>36行目<br />
+   タップされたら<code class="highlighter-rouge">tutorial2.html</code>の画面へ遷移するボタンを追加しています。コンテンツリストの取得は<code class="highlighter-rouge">tutorial2.html</code>の画面で行います。</li>
+  <li>37-38行目<br />
+   トップ画面でロードするJavaScriptを記述しています。 デフォルトで設定されている<code class="highlighter-rouge">index.js</code>の代わりに<code class="highlighter-rouge">load.js</code>をロードしています。<code class="highlighter-rouge">load.js</code>の内容は後述します。（同じくデフォルトで設定されている<code class="highlighter-rouge">cordova.js</code>は変更ありません）</li>
+</ul>
+
+<h3 id="2-loadcssを作成する">2. load.cssを作成する</h3>
+
+<p>トップ画面のデザインを以下の<code class="highlighter-rouge">load.css</code>で設定します。作成したCSSファイルは、プロジェクトの<code class="highlighter-rouge">/www/css</code>ディレクトリ以下に配置してください。</p>
+
+<h5 id="wwwcssloadcss"><em>/www/css/load.css</em></h5>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">*</span> <span class="p">{</span>
+  <span class="nl">-webkit-tap-highlight-color</span><span class="p">:</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">-webkit-touch-callout</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">-webkit-text-size-adjust</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">-webkit-user-select</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">background-attachment</span><span class="p">:</span> <span class="nb">fixed</span><span class="p">;</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'HelveticaNeue-Light'</span><span class="p">,</span> <span class="s2">'HelveticaNeue'</span><span class="p">,</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="n">Arial</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">4vw</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0px</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">0px</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.pos-center</span><span class="p">{</span>
+  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+  <span class="nl">vertical-align</span><span class="p">:</span> <span class="nb">middle</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">button</span><span class="p">{</span>
+  <span class="nl">outline</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">4vw</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#header</span><span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">-webkit-box</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#head-left</span><span class="p">{</span>
+  <span class="nl">-webkit-box-ordinal-group</span><span class="p">:</span> <span class="m">1</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">15%</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">border-top</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;</span>
+  <span class="nl">border-bottom</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;</span>
+  <span class="nl">border-right</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;</span>
+  <span class="nl">border-width</span><span class="p">:</span> <span class="m">0.1vw</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#head-center</span> <span class="p">{</span>
+  <span class="nl">-webkit-box-ordinal-group</span><span class="p">:</span> <span class="m">2</span><span class="p">;</span>
+  <span class="nl">-webkit-box-flex</span><span class="p">:</span> <span class="m">1</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">70%</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">border-top</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;</span>
+  <span class="nl">border-bottom</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;</span>
+  <span class="nl">border-right</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;</span>
+  <span class="nl">border-width</span><span class="p">:</span> <span class="m">0.1vw</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#head-right</span><span class="p">{</span>
+  <span class="nl">-webkit-box-ordinal-group</span><span class="p">:</span> <span class="m">3</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">15%</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">border-top</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;</span>
+  <span class="nl">border-bottom</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;</span>
+  <span class="nl">border-width</span><span class="p">:</span> <span class="m">0.1vw</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#lof</span><span class="p">{</span>
+  <span class="nl">overflow-wrap</span><span class="p">:</span><span class="n">break-word</span><span class="p">;</span>
+  <span class="nl">word-wrap</span><span class="p">:</span><span class="n">break-word</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<h3 id="3-loadjsを作成する">3. load.jsを作成する</h3>
+
+<p>トップ画面でロードする<code class="highlighter-rouge">load.js</code>を以下の内容で作成します。作成したJSファイルは、プロジェクトの<code class="highlighter-rouge">/www/js</code>ディレクトリ以下に配置してください。</p>
+
+<h5 id="wwwjsloadjs"><em>/www/js/load.js</em></h5>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">onLoad</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"deviceready"</span><span class="p">,</span> <span class="nx">onDeviceReady</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">onDeviceReady</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"backbutton"</span><span class="p">,</span> <span class="nx">onBackKeyDown</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">onBackKeyDown</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nb">navigator</span><span class="p">.</span><span class="nx">app</span><span class="p">.</span><span class="nx">exitApp</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<ul>
+  <li>1-3行目<br />
+   Cordovaが完全にロードされた後に発火する<code class="highlighter-rouge">deviceready</code>イベントについて記述しています。コールバック関数は<code class="highlighter-rouge">onDeviceReady</code>です。<code class="highlighter-rouge">deviceready</code>イベントの詳細はCordova公式ページの<a href="http://cordova.apache.org/docs/en/6.x/cordova/events/events.html#deviceready" target="_blank">deviceready</a>をご覧ください。</li>
+  <li>5-7行目<br />
+   バックボタンを押したときに発火する<code class="highlighter-rouge">backbutton</code>イベントについて記述しています。 コールバック関数は<code class="highlighter-rouge">onBackKeyDown</code>です。このイベントはバックボタンが存在するAndroidプラットフォームでは有効ですが、バックボタンが存在しないiOSプラットフォームでは無効となります。<code class="highlighter-rouge">backbutton</code>イベントの詳細はCordova公式ページの<a href="http://cordova.apache.org/docs/en/6.x/cordova/events/events.html#backbutton" target="_blank">backbutton</a>をご覧ください。</li>
+  <li>9-11行目<br />
+  <code class="highlighter-rouge">onBackKeyDown</code>関数が呼び出されたら、アプリを終了するようにしています。</li>
+</ul>
+
+<h3 id="4-statusbarプラグインを使用してステータスバーを調整する">4. Statusbarプラグインを使用してステータスバーを調整する</h3>
+
+<p>トップ画面の作成は完了しましたが、この状態でビルドを行うと、デバイスのOSバージョンによっては画面上部のステータスバー（時間やバッテリー残量などを表示）と
+<code class="highlighter-rouge">index.html</code>で記述したWebViewのコンテンツが被る場合があります。 このステータスバーの設定は、Cordovaで用意されている<a href="http://cordova.apache.org/docs/en/6.x/reference/cordova-plugin-statusbar/index.html" target="_blank">Statusbarプラグイン</a>で変更できます。方法については、まずプロジェクト内で以下のコマンドを実行して、Statusbarプラグインを追加します。</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; cordova plugin add cordova-plugin-statusbar -save
+</code></pre></div></div>
+
+<p>すると、以下のように<code class="highlighter-rouge">config.xml</code>ファイルの<code class="highlighter-rouge">&lt;widget&gt;</code>タグ内の最後に、Statusbarプラグインが追加したことを示すコード<code class="highlighter-rouge">&lt;plugin name="cordova-plugin-statusbar" spec="~2.2.1" /&gt;</code>
+が記述されるので、続けて以下のコードを追記します。</p>
+
+<h5 id="configxml"><em>/config.xml</em></h5>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="nt">&lt;plugin</span> <span class="na">name=</span><span class="s">"cordova-plugin-statusbar"</span> <span class="na">spec=</span><span class="s">"~2.2.2"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;preference</span> <span class="na">name=</span><span class="s">"StatusBarOverlaysWebView"</span> <span class="na">value=</span><span class="s">"false"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;preference</span> <span class="na">name=</span><span class="s">"StatusBarStyle"</span> <span class="na">value=</span><span class="s">"default"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/widget&gt;</span>
+</code></pre></div></div>
+<ul>
+  <li>StatusBarOverlaysWebView<br />
+   WebView上にステータスバーを置く（<code class="highlighter-rouge">true</code>）か否（<code class="highlighter-rouge">false</code>）かを設定します。今回は置かない（被せない）ので<code class="highlighter-rouge">false</code>を設定します。</li>
+  <li>StatusBarStyle<br />
+   ステータスバーのスタイルを設定します。今回は<code class="highlighter-rouge">default</code>を設定します。</li>
+</ul>
+
+<h3 id="5-実行結果">5. 実行結果</h3>
+
+<p>ビルドを行うと、以下のようにトップ画面が表示されるようになります。</p>
+
+<div class="row">
+  <div class="col-md-6">
+    <h5>Androidデバイスの場合</h5>
+    <div class="m-3">
+      <img src="/assets/images/tutorials/cordova_tutorial_02_android_top.png" alt="Androidデバイスのトップ画面" class="d-block img-thumbnail" />
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <h5>iOSデバイスの場合</h5>
+    <div class="m-3">
+      <img src="/assets/images/tutorials/cordova_tutorial_02_ios_top.png" alt="iOSデバイスのトップ画面" class="d-block img-thumbnail" />
+    </div>
+  </div>
+</div>
+
+<hr />
+<h2 id="コンテンツリストの取得画面の作成">コンテンツリストの取得画面の作成</h2>
+
+<h3 id="1-tutorial2htmlの作成">1. tutorial2.htmlの作成</h3>
+
+<p>続いて、コンテンツリストの取得画面を作成します。デザインはトップ画面を引き継いでいます。</p>
+
+<h5 id="wwwtutorial2html"><em>/www/tutorial2.html</em></h5>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"Content-Security-Policy"</span> <span class="na">content=</span><span class="s">"default-src 'self' data: gap: http://flashair https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' unsafe-inline'; media-src *; script-src 'self' 'unsafe-inline'"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"format-detection"</span> <span class="na">content=</span><span class="s">"telephone=no"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"msapplication-tap-highlight"</span> <span class="na">content=</span><span class="s">"no"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;title&gt;</span>Tutorial2<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="na">href=</span><span class="s">"css/load.css"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body</span> <span class="na">onload=</span><span class="s">"onLoad()"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"header"</span> <span class="na">class=</span><span class="s">"pos-center"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"head-left"</span><span class="nt">&gt;</span><span class="ni">&amp;lt;</span><span class="nt">&lt;br&gt;</span>Back<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;h1</span> <span class="na">id=</span><span class="s">"head-center"</span><span class="nt">&gt;</span>GetList<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"head-right"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"pos-center"</span><span class="nt">&gt;&lt;button</span> <span class="na">onclick=</span><span class="s">"getFlashAirInfo()"</span><span class="nt">&gt;</span>FlashAirのファイル情報をGET<span class="nt">&lt;/button&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"pos-center"</span><span class="nt">&gt;</span><span class="ni">&amp;lt;</span>ファイル数<span class="ni">&amp;gt;</span><span class="nt">&lt;br&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">"nof"</span><span class="nt">&gt;</span>0<span class="nt">&lt;/span&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"pos-center"</span><span class="nt">&gt;</span><span class="ni">&amp;lt;</span>コンテンツリスト<span class="ni">&amp;gt;</span><span class="nt">&lt;br&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">"lof"</span><span class="nt">&gt;</span>WLANSD_FILELIST<span class="nt">&lt;/span&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"cordova.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"js/jquery-3.1.1.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"js/tutorial2.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+<ul>
+  <li>4行目<br />
+   CSPの<code class="highlighter-rouge">default-src</code>に対し、<code class="highlighter-rouge">http://flashair</code>を追加し、FlashAirへのアクセスを有効にしています。</li>
+  <li>12行目<br />
+   トップ画面同様、画面読み込み時に処理する<code class="highlighter-rouge">onLoad()</code>関数を追加しています。<code class="highlighter-rouge">onLoad()</code>関数の内容は後述します。</li>
+  <li>13-17行目<br />
+   画面のヘッダー部について記述しています。 トップ画面との違いは左側にバックボタンを設置しています。</li>
+  <li>18行目<br />
+   タップされたらFlashAirのファイル数とコンテンツリストの情報（共にルート階層）を取得するボタンを追加しています。取得した情報はそれぞれ20行目と22行目の部分に表示します。</li>
+  <li>23-25行目<br />
+   コンテンツリストの取得画面でロードするJavaScriptを記述しています。<code class="highlighter-rouge">tutorial2.js</code>については後述します。 また、事前準備で追加したjQueryファイルも使用します。</li>
+</ul>
+
+<h3 id="2-tutorial2jsの作成">2. tutorial2.jsの作成</h3>
+
+<p>コンテンツリストの取得画面でロードする<code class="highlighter-rouge">tutorial2.js</code>を以下の内容で作成します。作成したJSファイルは、プロジェクトの<code class="highlighter-rouge">/www/js</code>ディレクトリ以下に配置してください。</p>
+
+<h5 id="wwwjstutorial2js"><em>/www/js/tutorial2.js</em></h5>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">onLoad</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"deviceready"</span><span class="p">,</span> <span class="nx">onDeviceReady</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">onDeviceReady</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"backbutton"</span><span class="p">,</span> <span class="nx">onBackKeyDown</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s2">"#head-left"</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">onBackKeyDown</span><span class="p">();</span>
+  <span class="p">});</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">onBackKeyDown</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">location</span><span class="p">.</span><span class="nx">href</span> <span class="o">=</span> <span class="s2">"index.html"</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">getFlashAirInfo</span><span class="p">(){</span>
+  <span class="kd">var</span> <span class="nx">wlansd</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">();</span>
+
+  <span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
+    <span class="na">type</span><span class="p">:</span> <span class="s2">"GET"</span><span class="p">,</span>
+    <span class="na">url</span><span class="p">:</span> <span class="s2">"http://flashair/command.cgi?op=101&amp;DIR=/"</span><span class="p">,</span>
+    <span class="na">success</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">res</span><span class="p">){</span>
+      <span class="nx">$</span><span class="p">(</span><span class="s2">"#nof"</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="nx">res</span><span class="p">);</span>
+    <span class="p">},</span>
+    <span class="na">error</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">xhr</span><span class="p">){</span>
+      <span class="nx">alert</span><span class="p">(</span><span class="s2">"Status: "</span> <span class="o">+</span> <span class="nx">xhr</span><span class="p">.</span><span class="nx">status</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">});</span>
+
+  <span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
+    <span class="na">type</span><span class="p">:</span> <span class="s2">"GET"</span><span class="p">,</span>
+    <span class="na">url</span><span class="p">:</span> <span class="s2">"http://flashair/command.cgi?op=100&amp;DIR=/"</span><span class="p">,</span>
+    <span class="na">success</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">res</span><span class="p">){</span>
+      <span class="nx">wlansd</span> <span class="o">=</span> <span class="nx">res</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="sr">/</span><span class="se">\n</span><span class="sr">/g</span><span class="p">);</span>
+      <span class="nx">wlansd</span><span class="p">.</span><span class="nx">shift</span><span class="p">();</span>
+      <span class="nx">wlansd</span><span class="p">.</span><span class="nx">pop</span><span class="p">();</span>
+      <span class="nx">$</span><span class="p">(</span><span class="s2">"#lof"</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="s2">""</span><span class="p">);</span>
+      <span class="nx">$</span><span class="p">.</span><span class="nx">each</span><span class="p">(</span><span class="nx">wlansd</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+        <span class="kd">var</span> <span class="nx">file</span> <span class="o">=</span> <span class="k">this</span><span class="p">;</span>
+        <span class="kd">var</span> <span class="nx">fileobj</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">"&lt;div&gt;&lt;/div&gt;"</span><span class="p">);</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s2">"#lof"</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span>
+          <span class="nx">fileobj</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span>
+            <span class="nx">file</span>
+          <span class="p">)</span>
+        <span class="p">);</span>
+      <span class="p">});</span>
+    <span class="p">},</span>
+    <span class="na">error</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">xhr</span><span class="p">){</span>
+      <span class="nx">alert</span><span class="p">(</span><span class="s2">"Status: "</span> <span class="o">+</span> <span class="nx">xhr</span><span class="p">.</span><span class="nx">status</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">});</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<ul>
+  <li>5-10行目<br />
+   画面のヘッダー左部に設置したバックボタンをタップした場合も<code class="highlighter-rouge">onBackKeyDown</code>関数が呼び出されるように設定しています。</li>
+  <li>12-14行目<br />
+  <code class="highlighter-rouge">load.js</code>と異なり、トップ画面へ戻るように設定しています。</li>
+  <li>16-52行目<br />
+   FlashAirのファイル数とコンテンツリストの情報を取得して表示します。 それぞれ<a href="../../api/commandcgi/#101">command.cgi?op=101</a>と<a href="../../api/commandcgi/#100">command.cgi?op=100</a>をAjaxでGETリクエストすることで、情報を取得します。
+※ 補足: Ajaxを使用したアプリのbrowserプラットフォームでの確認について</li>
+</ul>
+
+<h3 id="3-実行結果">3. 実行結果</h3>
+
+<p>ビルドを行うと、以下のようにコンテンツリストの取得画面が表示されます。
+またFlashAirへ無線LAN接続していれば、「FlashAirのファイル情報をGET」ボタンをタップすることで、接続しているFlashAirのファイル情報が表示されます。</p>
+
+<h5 id="androidデバイスの場合">Androidデバイスの場合</h5>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="m-3">
+      <img src="/assets/images/tutorials/cordova_tutorial_02_android_getlist.png" alt="androidデバイスのコンテンツリストの取得画面" class="d-block img-thumbnail" />
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="m-3">
+      <img src="/assets/images/tutorials/cordova_tutorial_02_android_tap.png" alt="androidデバイスのタップ後の画面" class="d-block img-thumbnail" />
+    </div>
+  </div>
+</div>
+
+<h5 id="iosデバイスの場合">iOSデバイスの場合</h5>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="m-3">
+      <img src="/assets/images/tutorials/cordova_tutorial_02_ios_getlist.png" alt="iOSデバイスのコンテンツリストの取得画面" class="d-block img-thumbnail" />
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="m-3">
+      <img src="/assets/images/tutorials/cordova_tutorial_02_ios_tap.png" alt="iOSデバイスのタップ後の画面" class="d-block img-thumbnail" />
+    </div>
+  </div>
+</div>
+
+<h3 id="補足-ajaxを使用したアプリのbrowserプラットフォームでの確認について"><span class="badge label-green">補足</span> Ajaxを使用したアプリのbrowserプラットフォームでの確認について</h3>
+
+<p>今回のチュートリアルのようにAjaxを使用したアプリをbrowserプラットフォームで確認しようとした場合、同一生成元ポリシー（Same-Origin Policy）の制限に引っかかり、エラーが出力されます。こちらについてはGoogle Chromeの「–disable-web-security」オプションを利用することで回避することができます。</p>
+
+<p>設定方法はプロジェクト内の<code class="highlighter-rouge">/platforms/browser/cordova/node_modules/cordova-serve/src/browser.js</code>を開き、OSによってそれぞれ以下の場所に「–disable-web-security」オプションを追加します。</p>
+
+<p><span class="badge label-red">注意</span>
+「–disable-web-security」オプションはブラウザのウェブセキュリティをオフにするものですので、今回のようにアクセス先が決まっていて、アクセスしても問題ないと分かっている時以外は使用しないでください。</p>
+
+<h5 id="platformsbrowsercordovanode_modulescordova-servesrcbrowserjs"><em>/platforms/browser/cordova/node_modules/cordova-serve/src/browser.js</em></h5>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">getBrowser</span><span class="p">(</span><span class="nx">target</span><span class="p">,</span> <span class="nx">dataDir</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">dataDir</span> <span class="o">=</span> <span class="nx">dataDir</span> <span class="o">||</span> <span class="s1">'temp_chrome_user_data_dir_for_cordova'</span><span class="p">;</span>
+
+  <span class="kd">var</span> <span class="nx">chromeArgs</span> <span class="o">=</span> <span class="s1">' --user-data-dir=/tmp/'</span> <span class="o">+</span> <span class="nx">dataDir</span> <span class="o">+</span> <span class="s1">' --disable-web-security'</span><span class="p">;</span>  <span class="c1">// Darwin（Mac）やLinuxの場合はここに追加</span>
+  <span class="kd">var</span> <span class="nx">browsers</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">'win32'</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s1">'ie'</span><span class="p">:</span> <span class="s1">'iexplore'</span><span class="p">,</span>
+      <span class="s1">'chrome'</span><span class="p">:</span> <span class="s1">'chrome --user-data-dir=%TEMP%</span><span class="err">\</span><span class="se">\'</span><span class="s1"> + dataDir + '</span> <span class="o">--</span><span class="nx">disable</span><span class="o">-</span><span class="nx">web</span><span class="o">-</span><span class="nx">security</span><span class="s1">',  // Windowsの場合はここに追加
+      '</span><span class="nx">safari</span><span class="s1">': '</span><span class="nx">safari</span><span class="s1">',
+</span></code></pre></div></div>
+<hr />
+<h2 id="サンプルコード">サンプルコード</h2>
+
+<p><a href="https://github.com/FlashAirDevelopers/CordovaTutorial/tree/master/cordova_tutorial_02" target="_blank" class="btn btn-primary">リポジトリを見る（GitHub）</a></p>
+
+<ul>
+  <li>このサンプルコードは<a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License, Version 2.0</a>で提供されています。</li>
+  <li>「cordova_tutorial_02」ディレクトリは、zipファイルで圧縮して<a href="https://build.phonegap.com/" target="_blank">PhoneGap Build</a>へアップロードすることでビルドできます。 ビルド方法は<a href="1/#helloworldアプリの作成と確認">HelloWorldアプリをビルドする</a>をご確認ください。</li>
+  <li>Cordovaプロジェクトで確認する場合は、「cordova_tutorial_02」ディレクトリ内のデータをプロジェクト内へ上書きコピーしてください。</li>
+</ul>
+
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

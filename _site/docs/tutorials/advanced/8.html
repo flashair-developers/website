@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  
+    <title>FlashAirからAmazon AWSに接続する2（実行編） - website</title>
+
+    
+  
+
+  <link rel="shortcut icon" href="http://localhost:4000/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/just-the-docs.css">
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/customstyles.css">
+  
+
+  
+    <script type="text/javascript" src="http://localhost:4000/assets/js/vendor/lunr.min.js"></script>
+  
+  <script type="text/javascript" src="http://localhost:4000/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>FlashAirからAmazon AWSに接続する2（実行編） | website</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="FlashAirからAmazon AWSに接続する2（実行編）" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/docs/tutorials/advanced/8.html" />
+<meta property="og:url" content="http://localhost:4000/docs/tutorials/advanced/8.html" />
+<meta property="og:site_name" content="website" />
+<script type="application/ld+json">
+{"@type":"WebPage","headline":"FlashAirからAmazon AWSに接続する2（実行編）","url":"http://localhost:4000/docs/tutorials/advanced/8.html","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+
+  <div class="page-wrap">
+    <div class="side-bar">
+      <a href="http://localhost:4000" class="site-title fs-6 lh-tight">website</a>
+      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+      <div class="navigation main-nav js-main-nav">
+        <nav role="navigation" aria-label="Main navigation">
+    <ul class="navigation-list">
+      
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/advanced/1.html" class="navigation-list-link">ステーションモードの利用</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/advanced/2.html" class="navigation-list-link">FlashAirへのアップロード</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/advanced/3.html" class="navigation-list-link">インターネット同時接続モードの利用</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/advanced/4.html" class="navigation-list-link">FlashAirを使ったセンサーデータの無線モニタリング</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/advanced/5.html" class="navigation-list-link">複数のFlashAirを同じ無線LANへ接続して利用する</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/advanced/6.html" class="navigation-list-link">FlashAirを再読み込みする</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/advanced/7.html" class="navigation-list-link">FlashAirからAmazon AWSに接続する1（準備編）</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item active">
+              
+              <a href="http://localhost:4000/docs/tutorials/advanced/8.html" class="navigation-list-link active">FlashAirからAmazon AWSに接続する2（実行編）</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+
+      <li>
+        <br>
+        <a href="./">目次に戻る</a>
+      </li>
+    </ul>
+  </nav>
+      </div>
+      <footer role="contentinfo" class="site-footer">
+        <p class="text-small text-grey-dk-000 mb-0">This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.</p>
+      </footer>
+    </div>
+    <div class="main-content-wrap js-main-content" tabindex="0">
+      <div class="page-header">
+        <div class="main-content">
+          
+          <div class="search js-search">
+            <div class="search-input-wrap">
+              <input type="text" class="js-search-input search-input" tabindex="0" placeholder="Search website" aria-label="Search website" autocomplete="off">
+              <svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z"/><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z"/></g></svg>
+            </div>
+            <div class="js-search-results search-results-wrap"></div>
+          </div>
+          
+          
+        </div>
+      </div>
+      <div class="main-content">
+        
+          
+            <nav class="breadcrumb-nav">
+              <ol class="breadcrumb-nav-list">
+                
+                  <li class="breadcrumb-nav-list-item"><span>チュートリアル</span></li>
+                  <li class="breadcrumb-nav-list-item"><span>上級者向けチュートリアル</span></li>
+                
+                <li class="breadcrumb-nav-list-item"><span>FlashAirからAmazon AWSに接続する2（実行編）</span></li>
+              </ol>
+            </nav>
+          
+        
+        <div id="main-content" class="page-content" role="main">
+          <h1 class="no_toc" id="flashairからamazon-awsに接続する2実行編">FlashAirからAmazon AWSに接続する2（実行編）</h1>
+
+<p>このチュートリアルではFlashAirに保存されたデータを、インターネット経由で直接AWSに送信する方法を解説します。準備編は<a href="7">こちら</a>をご覧下さい。</p>
+
+<ul id="markdown-toc">
+  <li><a href="#awsの設定" id="markdown-toc-awsの設定">AWSの設定</a></li>
+  <li><a href="#flashairの設定" id="markdown-toc-flashairの設定">FlashAirの設定</a></li>
+  <li><a href="#保存するファイルについて" id="markdown-toc-保存するファイルについて">保存するファイルについて</a></li>
+  <li><a href="#実行結果" id="markdown-toc-実行結果">実行、結果</a></li>
+  <li><a href="#応用" id="markdown-toc-応用">応用</a></li>
+  <li><a href="#サンプルコード" id="markdown-toc-サンプルコード">サンプルコード</a></li>
+</ul>
+
+<hr />
+<h2 id="awsの設定">AWSの設定</h2>
+
+<p>実際にAWSアカウント作成からバケット作成、FlashAirから画像をアップロードするところまで実行してみましょう。AWS内での設定のほとんどは公式サイトに詳しい説明があるので、本チュートリアルでは簡易的にまとめています。</p>
+
+<p>既にアカウント作成済み、S3に他アプリからアップロードを行ったことがある場合はFlashAirの設定に進んでください。</p>
+
+<h3 class="no_toc" id="awsアカウントを作成">AWSアカウントを作成</h3>
+
+<p><a href="https://portal.aws.amazon.com/billing/signup#/start" target="_blank">AWS アカウントの作成</a>からアカウントを作成を行います。</p>
+
+<p>連絡先情報、クレジットカード情報登録、アカウント認証、AWSサポートプランの選択を行いアカウントを作成します。詳細は<a href="https://aws.amazon.com/jp/register-flow/" target="_blank">AWS アカウント作成の流れ</a>をご覧ください。<br />
+必要に応じて<a href="https://docs.aws.amazon.com/ja_jp/general/latest/gr/aws-security-credentials.html">AWS
+セキュリティの認証情報
+__</a>等を設定してください。</p>
+
+<h3 class="no_toc" id="s3にバケットを作成する">S3にバケットを作成する</h3>
+<p><a href="https://aws.amazon.com/s3/" target="_blank">Amazon S3</a>にログインし、「Amazon S3 の使用を開始する」を選択します。画面の指示通りに進みます。</p>
+
+<p>「バケットを作成する」ボタンをクリックします。</p>
+
+<p><img src="/assets/images/tutorials/advanced_tutorial_08_01.png" alt="バケットを作成する" class="d-block" /></p>
+
+<p>ダイアログからバケットを作成します。任意のバケット名、リージョンを入力し「作成」ボタンをクリックします。</p>
+
+<ul>
+  <li>例
+    <ul>
+      <li>flashair-bkt</li>
+      <li>アジアパシフィック（東京）</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="/assets/images/tutorials/advanced_tutorial_08_02.png" alt="バケットを作成する" class="d-block" /></p>
+
+<p>S3へファイルをアップロードするために必要なアクセスキーとシークレットキーを取得します。<br />
+AWSメニューバーからアカウント名をクリックし、「セキュリティ認証情報」をクリックします。</p>
+
+<p><img src="/assets/images/tutorials/advanced_tutorial_08_03.png" alt="バケットを作成する" class="d-block" /></p>
+
+<p><a href="https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/id_credentials_access-keys.html" target="_blank">IAM ユーザーのアクセスキーの管理</a>を参考に、アクセスキー、シークレットキーを取得、控えておきます。これらの情報は取扱に注意し、他人と共有しないようにしてください。</p>
+
+<p>これでS3の準備が完了しました。</p>
+
+<hr />
+<h2 id="flashairの設定">FlashAirの設定</h2>
+
+<p>FlashAirの設定を行います。FlashAirをステーションモードにして無線LAN子機として使用します。ステーションモードの詳細は<a href="1">ステーションモードの利用</a>をご覧ください。</p>
+
+<h3 class="no_toc" id="configの設定">CONFIGの設定</h3>
+<p>CONFIGを編集するには、<code class="highlighter-rouge">/SD_WLAN/CONFIG</code>をエディタ等で開き、前述のパラメータを編集します。
+このフォルダは隠しフォルダとなっていますので、隠しフォルダを扱う事が出来るツールを使いましょう。
+(Macの場合は<code class="highlighter-rouge">/Volumes/(ボリュームラベル名)/SD_WLAN/CONFIG</code>です。)</p>
+
+<p>CONFIG内で以下の3つの情報を変更する必要があります。 括弧内は
+<a href="../../api/config/">CONFIG</a>の対応するパラメータ名です。
+パラメータが存在しない場合は新しく行を追加してください。 パラメータの順序は問いません。</p>
+
+<h4 class="no_toc" id="動作モード-appmode">動作モード (APPMODE)</h4>
+<p>パラメータに<code class="highlighter-rouge">5</code>を指定し、インフラストラクチャ・モードのステーション動作に変更します。</p>
+<h4 class="no_toc" id="無線lan-ssid-appssid">無線LAN SSID (APPSSID)</h4>
+<p>接続先無線LANのSSIDを指定します。</p>
+<h4 class="no_toc" id="無線lan-ネットワークパスワード-appnetworkkey">無線LAN ネットワークパスワード (APPNETWORKKEY)</h4>
+<p>接続先無線LANのネットワークキーを指定します。</p>
+
+<p>編集後は、たとえば下記のようになります。</p>
+
+<pre>
+APPMODE=5
+APPNAME=flashair
+APPSSID=FOOSSID
+APPNETWORKKEY=password0123
+CIPATH=/DCIM/100__TSB/FA000001.JPG
+VERSION=F15DBW3BW4.00.03
+CID=02544d535730384708c00b7d7800d201
+PRODUCT=FlashAir
+VENDOR=TOSHIBA
+MASTERCODE=18002d4ff0a2
+LOCK=1
+</pre>
+
+<h3 class="no_toc" id="ファイルの設置設定">ファイルの設置、設定</h3>
+<p>ページ下部のサンプルコードをダウンロードし、FlashAirのルートフォルダ内に展開します。</p>
+
+<p><code class="highlighter-rouge">s3-put.lua</code>をテキストエディタで開きます。<br />
+3-6行目をバケット作成時のリージョン、バケット名、「S3にバケットを作成する」で取得したアクセスキー、シークレットキーで上書きします。</p>
+
+<h5 class="no_toc" id="s3-putlua"><em>s3-put.lua</em></h5>
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kd">local</span> <span class="n">s3Util</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">"s3-util"</span><span class="p">)</span>
+
+    <span class="kd">local</span> <span class="n">REGION</span> <span class="o">=</span> <span class="s2">"ap-northeast-1"</span>					<span class="c1">--リージョン名</span>
+    <span class="kd">local</span> <span class="n">ACCESS_KEY</span> <span class="o">=</span> <span class="s2">"AKIAIXXXXXXXXXXXXXXX"</span>			<span class="c1">--アクセスキー</span>
+    <span class="kd">local</span> <span class="n">SECRET_KEY</span> <span class="o">=</span> <span class="s2">"/id3EXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX+"</span>	<span class="c1">--シークレットキー</span>
+    <span class="kd">local</span> <span class="n">BACKET</span> <span class="o">=</span> <span class="s2">"flashair-bkt"</span>					<span class="c1">--バケット名</span>
+</code></pre></div></div>
+<hr />
+<h2 id="保存するファイルについて">保存するファイルについて</h2>
+
+<ul>
+  <li>DATAフォルダ<br />
+  アップロードするファイルを格納するフォルダです。</li>
+  <li>s3-exec.lua<br />
+  <code class="highlighter-rouge">sendtime.dat</code>ファイルに保存されている日付以降に作成されたファイルがDATAフォルダ内に見つかった場合、<code class="highlighter-rouge">s3-put.lua</code>ファイルのS3Putクラスにファイルパスとファイル名を引渡します。10秒ごとにフォルダ内をチェックします。</li>
+  <li>s3-put.lua<br />
+  S3のバケットにファイルをアップロードします。</li>
+  <li>s3-util.lua<br />
+  ユーティリティクラスです。現在時刻、ハッシュ値等を、計算・取得します。</li>
+  <li>sendtime.dat<br />
+  <code class="highlighter-rouge">s3-exec.lua</code>でファイルを検索した後に現在日付を保存します。<br />
+  <span class="badge label-red">注意</span> ファイルがアップロードされない場合は、ファイル内に<code class="highlighter-rouge">1</code>を記入（ファイル検索用日時の初期化）し上書き保存してから再度DATAフォルダにファイルを作成、コピーしてください。</li>
+</ul>
+
+<p>それでは、サンプルプログラムがどのように動作するかをみていきます。</p>
+
+<h3 class="no_toc" id="s3-execlua">s3-exec.lua</h3>
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kd">local</span> <span class="n">s3Put</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">"s3-put"</span><span class="p">)</span>
+
+    <span class="kd">local</span> <span class="n">dir</span> <span class="o">=</span> <span class="s2">"/DATA"</span>
+</code></pre></div></div>
+<ul>
+  <li>3行目<br />
+  s3-put.luaをインクルードします。</li>
+  <li>5行目<br />
+  アップロードするファイルの格納フォルダを指定します。変更する場合は<code class="highlighter-rouge">"/DATA"</code>を任意の場所に修正してください。
+    <div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">function</span> <span class="nf">readSendTime</span><span class="p">()</span>
+      <span class="kd">local</span> <span class="n">sendtime</span> <span class="o">=</span> <span class="mi">0</span>
+      <span class="kd">local</span> <span class="n">file</span> <span class="o">=</span> <span class="nb">io.open</span><span class="p">(</span><span class="n">timefile</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">)</span>
+      <span class="k">if</span> <span class="n">file</span> <span class="o">~=</span> <span class="kc">nil</span> <span class="k">then</span>
+          <span class="n">sendtime</span> <span class="o">=</span> <span class="n">file</span><span class="p">:</span><span class="n">read</span><span class="p">()</span>
+          <span class="n">file</span><span class="p">.</span><span class="n">close</span><span class="p">()</span>
+      <span class="k">else</span>
+  	<span class="n">debug</span><span class="p">(</span><span class="s2">"file == nil"</span><span class="p">)</span>
+      <span class="k">end</span>
+      <span class="k">if</span> <span class="n">sendtime</span> <span class="o">==</span> <span class="kc">nil</span> <span class="k">then</span>
+  	<span class="n">debug</span><span class="p">(</span><span class="s2">"sendtime == nil"</span><span class="p">)</span>
+          <span class="n">sendtime</span> <span class="o">=</span> <span class="mi">0</span>
+      <span class="k">end</span> 
+      <span class="n">debug</span><span class="p">(</span><span class="s2">"r = "</span> <span class="o">..</span> <span class="n">sendtime</span><span class="p">)</span>
+      <span class="k">return</span> <span class="n">sendtime</span>
+  <span class="k">end</span>
+</code></pre></div>    </div>
+    <p>sendtime.datファイルの内容を読み込み、内容を返します。</p>
+    <div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">function</span> <span class="nf">writeSendTime</span><span class="p">(</span><span class="n">sendtime</span><span class="p">)</span>
+      <span class="kd">local</span> <span class="n">file</span> <span class="o">=</span> <span class="nb">io.open</span><span class="p">(</span><span class="n">timefile</span><span class="p">,</span> <span class="s2">"w+"</span><span class="p">)</span>
+      <span class="k">if</span> <span class="n">file</span> <span class="o">~=</span> <span class="kc">nil</span> <span class="k">then</span>
+          <span class="n">file</span><span class="p">:</span><span class="n">write</span><span class="p">(</span><span class="n">sendtime</span><span class="p">)</span>
+          <span class="n">file</span><span class="p">:</span><span class="n">close</span><span class="p">()</span>
+          <span class="n">debug</span><span class="p">(</span><span class="s2">"w = "</span> <span class="o">..</span> <span class="n">sendtime</span><span class="p">)</span>
+      <span class="k">end</span>
+  <span class="k">end</span>
+</code></pre></div>    </div>
+    <p>sendtime.datファイルにファイル検索を行った日時を書き込みます。</p>
+    <div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">function</span> <span class="nf">getFilePath</span><span class="p">(</span><span class="n">sendtime</span><span class="p">)</span>
+  	<span class="kd">local</span> <span class="n">filepath</span><span class="p">,</span> <span class="n">filename</span> <span class="o">=</span> <span class="kc">nil</span>
+  	<span class="kd">local</span> <span class="n">result</span><span class="p">,</span> <span class="n">filelist</span><span class="p">,</span> <span class="n">sendtime</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">search</span><span class="p">(</span><span class="s2">"file"</span><span class="p">,</span> <span class="n">dir</span><span class="p">,</span> <span class="n">sendtime</span><span class="p">)</span>
+  	<span class="k">if</span> <span class="n">result</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">or</span> <span class="n">filelist</span> <span class="o">~=</span> <span class="kc">nil</span> <span class="k">then</span>
+  		<span class="n">filepath</span> <span class="o">=</span> <span class="nb">string.match</span><span class="p">(</span><span class="n">filelist</span><span class="p">,</span> <span class="s2">"(.-),"</span><span class="p">)</span>
+  		<span class="k">if</span> <span class="n">filepath</span> <span class="o">~=</span> <span class="kc">nil</span> <span class="k">then</span>
+  			<span class="n">filename</span> <span class="o">=</span> <span class="nb">string.match</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span> <span class="s2">"[^/]*$"</span><span class="p">)</span>
+  		<span class="k">end</span>
+  	<span class="k">end</span>
+  	<span class="k">return</span> <span class="n">filepath</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">sendtime</span> 
+  <span class="k">end</span>
+</code></pre></div>    </div>
+    <p><a href="../../api/lua/#search">fa.search</a>で、引数sendtimeと更新日時が一致するファイル、若しくは引数sendtimeより新しいファイルのうち最も古いファイル（指定された日時の次に新しいファイル）のファイルを取得し、返します。</p>
+    <div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">function</span> <span class="nf">execute</span><span class="p">()</span>
+      <span class="kd">local</span> <span class="n">temptime</span> <span class="o">=</span> <span class="n">readSendTime</span><span class="p">()</span>
+      <span class="k">if</span> <span class="n">temptime</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">then</span>
+          <span class="nb">print</span><span class="p">(</span><span class="s2">"temptime == 0"</span><span class="p">)</span>
+          <span class="k">return</span>
+      <span class="k">end</span>
+      <span class="kd">local</span> <span class="n">sendtime</span> <span class="o">=</span> <span class="nb">tonumber</span><span class="p">(</span><span class="n">readSendTime</span><span class="p">())</span> <span class="o">+</span> <span class="mi">1</span>
+      <span class="kd">local</span> <span class="n">filepath</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">time</span> <span class="o">=</span> <span class="n">getFilePath</span><span class="p">(</span><span class="n">sendtime</span><span class="p">)</span>
+      <span class="k">if</span> <span class="n">filepath</span> <span class="o">==</span> <span class="kc">nil</span> <span class="k">then</span>
+          <span class="k">return</span>
+      <span class="k">end</span>
+      <span class="n">writeSendTime</span><span class="p">(</span><span class="n">time</span><span class="p">)</span>
+      <span class="n">debug</span><span class="p">(</span><span class="s2">"filepath = "</span> <span class="o">..</span> <span class="n">filepath</span> <span class="o">..</span> <span class="s2">", filename = "</span> <span class="o">..</span> <span class="n">filename</span><span class="p">)</span>
+      <span class="kd">local</span> <span class="n">s3</span> <span class="o">=</span> <span class="n">s3Put</span><span class="p">:</span><span class="n">new</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
+      <span class="n">s3</span><span class="p">:</span><span class="n">put</span><span class="p">()</span>
+  <span class="k">end</span>
+</code></pre></div>    </div>
+  </li>
+  <li>47行目<br />
+  sendtime.datファイルを読み込みます。日時が取得できなかった場合は終了します。</li>
+  <li>52-53行目<br />
+  sendtime.datに保存されている日時の0.5秒後以降のファイルを検索します。</li>
+  <li>57行目<br />
+  該当ファイルが見つかった場合、ファイルの更新日付をsendtime.datに書き込みます。</li>
+  <li>59行目<br />
+  S3Putクラスにファイルパスとファイル名を引き渡します。
+    <div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">function</span> <span class="nf">debug</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+  	<span class="c1">--print(msg)</span>
+  <span class="k">end</span>
+</code></pre></div>    </div>
+    <p>デバッグメッセージを表示します。必要な場合はコメントを削除してください。</p>
+    <div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="k">do</span>
+  	<span class="n">execute</span><span class="p">()</span>
+  	<span class="n">sleep</span><span class="p">(</span><span class="mi">10000</span><span class="p">)</span>
+  	<span class="nb">collectgarbage</span><span class="p">(</span><span class="s2">"collect"</span><span class="p">)</span>
+  <span class="k">end</span>
+</code></pre></div>    </div>
+    <p><a href="../../api/lua/#sleep">sleep</a>を使用し、10秒毎にファイル検索を行います。</p>
+  </li>
+</ul>
+
+<h3 class="no_toc" id="s3-putlua-1">s3-put.lua</h3>
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kd">local</span> <span class="n">s3Util</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">"s3-util"</span><span class="p">)</span>
+</code></pre></div></div>
+<p>s3-util.luaをインクルードします。</p>
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kd">local</span> <span class="n">S3Put</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="n">S3Put</span><span class="p">.</span><span class="n">new</span> <span class="o">=</span> <span class="k">function</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">fpath</span><span class="p">,</span> <span class="n">fname</span><span class="p">)</span>
+    	<span class="kd">local</span> <span class="n">this</span> <span class="o">=</span> <span class="p">{}</span>
+
+    	<span class="kd">local</span> <span class="n">SERVICE</span> <span class="o">=</span> <span class="s2">"s3"</span>
+    	<span class="kd">local</span> <span class="n">METHOD</span> <span class="o">=</span> <span class="s2">"PUT"</span>
+    	<span class="kd">local</span> <span class="n">PAYLOAD_HASH</span> <span class="o">=</span> <span class="s2">"UNSIGNED-PAYLOAD"</span>
+    	<span class="kd">local</span> <span class="n">ALGORITHM</span> <span class="o">=</span> <span class="s2">"AWS4-HMAC-SHA256"</span>
+    	<span class="kd">local</span> <span class="n">CONTENT_TYPE</span> <span class="o">=</span> <span class="s2">"image/jpeg"</span>
+
+    	<span class="kd">local</span> <span class="n">util</span> <span class="o">=</span> <span class="n">s3Util</span><span class="p">:</span><span class="n">new</span><span class="p">()</span>
+
+    	<span class="kd">local</span> <span class="n">filepath</span> <span class="o">=</span> <span class="n">fpath</span>
+    	<span class="kd">local</span> <span class="n">filename</span> <span class="o">=</span> <span class="n">fname</span>
+    	<span class="kd">local</span> <span class="n">nowtime</span> <span class="o">=</span> <span class="n">util</span><span class="p">:</span><span class="n">currentTime</span><span class="p">()</span>
+    	<span class="kd">local</span> <span class="n">date</span> <span class="o">=</span> <span class="nb">os.date</span><span class="p">(</span><span class="s1">'!%Y%m%d'</span><span class="p">,</span> <span class="n">nowtime</span><span class="p">)</span>
+    	<span class="kd">local</span> <span class="n">datetime</span> <span class="o">=</span> <span class="nb">os.date</span><span class="p">(</span><span class="s1">'!%Y%m%dT%H%M00Z'</span><span class="p">,</span> <span class="n">nowtime</span><span class="p">)</span>
+
+    	<span class="kd">local</span> <span class="n">dataPath</span> <span class="o">=</span> <span class="s2">"/"</span> <span class="o">..</span> <span class="n">filename</span>
+    	<span class="kd">local</span> <span class="n">host</span> <span class="o">=</span> <span class="n">SERVICE</span> <span class="o">..</span> <span class="s2">"-"</span> <span class="o">..</span> <span class="n">REGION</span> <span class="o">..</span> <span class="s2">".amazonaws.com"</span>
+    	<span class="kd">local</span> <span class="n">canonicalURI</span> <span class="o">=</span> <span class="s2">"/"</span> <span class="o">..</span> <span class="n">BACKET</span> <span class="o">..</span> <span class="n">dataPath</span>
+    	<span class="kd">local</span> <span class="n">endpoint</span> <span class="o">=</span> <span class="s2">"https://"</span> <span class="o">..</span> <span class="n">host</span>
+    	<span class="kd">local</span> <span class="n">canonicalQuery</span> <span class="o">=</span> <span class="s2">""</span>
+    	<span class="kd">local</span> <span class="n">signedHeader</span> <span class="o">=</span> <span class="s2">"content-type;host;x-amz-content-sha256;x-amz-date"</span>
+    	<span class="kd">local</span> <span class="n">credentialScope</span> <span class="o">=</span> <span class="n">date</span> <span class="o">..</span> <span class="s2">"/"</span> <span class="o">..</span> <span class="n">REGION</span> <span class="o">..</span> <span class="s2">"/"</span> <span class="o">..</span> <span class="n">SERVICE</span> <span class="o">..</span> <span class="s2">"/"</span> <span class="o">..</span> <span class="s2">"aws4_request"</span>
+
+    	<span class="k">function</span> <span class="nf">this</span><span class="p">:</span><span class="n">getSignatureKey</span><span class="p">()</span>
+    		<span class="kd">local</span> <span class="n">kDate</span> <span class="o">=</span> <span class="n">util</span><span class="p">:</span><span class="n">sha256Hmac</span><span class="p">(</span><span class="s2">"AWS4"</span> <span class="o">..</span> <span class="n">SECRET_KEY</span><span class="p">,</span> <span class="n">date</span><span class="p">)</span>
+    		<span class="n">debug</span><span class="p">(</span><span class="s2">"kDate="</span> <span class="o">..</span> <span class="n">kDate</span><span class="p">)</span>
+    		<span class="n">kDate</span> <span class="o">=</span> <span class="n">util</span><span class="p">:</span><span class="n">hex2Bytes</span><span class="p">(</span><span class="n">kDate</span><span class="p">)</span>
+    		<span class="kd">local</span> <span class="n">kRegion</span> <span class="o">=</span> <span class="n">util</span><span class="p">:</span><span class="n">sha256Hmac</span><span class="p">(</span><span class="n">kDate</span><span class="p">,</span> <span class="n">REGION</span><span class="p">)</span>
+    		<span class="n">debug</span><span class="p">(</span><span class="s2">"kRegion="</span> <span class="o">..</span> <span class="n">kRegion</span><span class="p">)</span>
+    		<span class="n">kRegion</span> <span class="o">=</span> <span class="n">util</span><span class="p">:</span><span class="n">hex2Bytes</span><span class="p">(</span><span class="n">kRegion</span><span class="p">)</span>
+    		<span class="kd">local</span> <span class="n">kService</span> <span class="o">=</span> <span class="n">util</span><span class="p">:</span><span class="n">sha256Hmac</span><span class="p">(</span><span class="n">kRegion</span><span class="p">,</span> <span class="n">SERVICE</span><span class="p">)</span>
+    		<span class="n">debug</span><span class="p">(</span><span class="s2">"kService="</span> <span class="o">..</span> <span class="n">kService</span><span class="p">)</span>
+    		<span class="n">kService</span> <span class="o">=</span> <span class="n">util</span><span class="p">:</span><span class="n">hex2Bytes</span><span class="p">(</span><span class="n">kService</span><span class="p">)</span>
+    		<span class="kd">local</span> <span class="n">kSigning</span> <span class="o">=</span> <span class="n">util</span><span class="p">:</span><span class="n">sha256Hmac</span><span class="p">(</span><span class="n">kService</span><span class="p">,</span> <span class="s2">"aws4_request"</span><span class="p">)</span>
+    		<span class="n">debug</span><span class="p">(</span><span class="s2">"kSigning="</span> <span class="o">..</span> <span class="n">kSigning</span><span class="p">)</span>
+    		<span class="n">kSigning</span> <span class="o">=</span> <span class="n">util</span><span class="p">:</span><span class="n">hex2Bytes</span><span class="p">(</span><span class="n">kSigning</span><span class="p">)</span>
+    		<span class="k">return</span> <span class="n">kSigning</span>
+    	<span class="k">end</span>
+
+    	<span class="k">function</span> <span class="nf">this</span><span class="p">:</span><span class="n">getStringToSign</span><span class="p">()</span>
+    		<span class="kd">local</span> <span class="n">canonicalHeader</span> <span class="o">=</span> <span class="s2">"content-type:"</span> <span class="o">..</span> <span class="n">CONTENT_TYPE</span> <span class="o">..</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">..</span> <span class="s2">"host:"</span> <span class="o">..</span> <span class="n">host</span> <span class="o">..</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">..</span> <span class="s2">"x-amz-content-sha256:"</span> <span class="o">..</span> <span class="n">PAYLOAD_HASH</span> <span class="o">..</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">..</span> <span class="s2">"x-amz-date:"</span> <span class="o">..</span> <span class="n">datetime</span> <span class="o">..</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span>
+    		<span class="kd">local</span> <span class="n">canonicalRequest</span> <span class="o">=</span> <span class="n">METHOD</span> <span class="o">..</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">..</span> <span class="n">canonicalURI</span> <span class="o">..</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">..</span> <span class="n">canonicalQuery</span> <span class="o">..</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">..</span> <span class="n">canonicalHeader</span> <span class="o">..</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">..</span> <span class="n">signedHeader</span> <span class="o">..</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">..</span> <span class="n">PAYLOAD_HASH</span>
+    		<span class="n">debug</span><span class="p">(</span><span class="s2">"canonicalRequest="</span> <span class="o">..</span> <span class="n">canonicalRequest</span><span class="p">)</span>
+    		<span class="kd">local</span> <span class="n">stringToSign</span> <span class="o">=</span> <span class="n">ALGORITHM</span> <span class="o">..</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">..</span> <span class="n">datetime</span> <span class="o">..</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">..</span> <span class="n">credentialScope</span> <span class="o">..</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">..</span> <span class="n">util</span><span class="p">:</span><span class="n">sha256</span><span class="p">(</span><span class="n">canonicalRequest</span><span class="p">)</span>
+    		<span class="n">debug</span><span class="p">(</span><span class="s2">"----stringToSign----"</span><span class="p">)</span>
+    		<span class="n">debug</span><span class="p">(</span><span class="n">stringToSign</span><span class="p">)</span>
+    		<span class="n">debug</span><span class="p">(</span><span class="s2">"----------"</span><span class="p">)</span>
+    		<span class="k">return</span> <span class="n">stringToSign</span>
+    	<span class="k">end</span>
+
+    	<span class="k">function</span> <span class="nf">this</span><span class="p">:</span><span class="n">getAuthorizationHeader</span><span class="p">()</span>
+    		<span class="kd">local</span> <span class="n">signingKey</span> <span class="o">=</span> <span class="n">this</span><span class="p">:</span><span class="n">getSignatureKey</span><span class="p">()</span>
+    		<span class="kd">local</span> <span class="n">signingSign</span> <span class="o">=</span> <span class="n">this</span><span class="p">:</span><span class="n">getStringToSign</span><span class="p">()</span>
+    		<span class="kd">local</span> <span class="n">signature</span> <span class="o">=</span> <span class="n">util</span><span class="p">:</span><span class="n">sha256Hmac</span><span class="p">(</span><span class="n">signingKey</span><span class="p">,</span> <span class="n">signingSign</span><span class="p">)</span>
+    		<span class="kd">local</span> <span class="n">authorizationHeader</span> <span class="o">=</span> <span class="n">ALGORITHM</span> <span class="o">..</span> <span class="s2">" "</span> <span class="o">..</span> <span class="s2">"Credential="</span> <span class="o">..</span> <span class="n">ACCESS_KEY</span> <span class="o">..</span> <span class="s2">"/"</span> <span class="o">..</span> <span class="n">credentialScope</span> <span class="o">..</span> <span class="s2">", "</span> <span class="o">..</span> <span class="s2">"SignedHeaders="</span> <span class="o">..</span> <span class="n">signedHeader</span> <span class="o">..</span> <span class="s2">", "</span> <span class="o">..</span> <span class="s2">"Signature="</span> <span class="o">..</span> <span class="n">signature</span>
+    		<span class="n">debug</span><span class="p">(</span><span class="s2">"----authorizationHeader----"</span><span class="p">)</span>
+    		<span class="n">debug</span><span class="p">(</span><span class="n">authorizationHeader</span><span class="p">)</span>
+    		<span class="n">debug</span><span class="p">(</span><span class="s2">"----------"</span><span class="p">)</span>
+    		<span class="k">return</span> <span class="n">authorizationHeader</span>
+    	<span class="k">end</span>
+
+    	<span class="k">function</span> <span class="nf">this</span><span class="p">:</span><span class="n">put</span><span class="p">()</span>
+    		<span class="kd">local</span> <span class="n">filesize</span> <span class="o">=</span> <span class="n">lfs</span><span class="p">.</span><span class="n">attributes</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span> <span class="s2">"size"</span><span class="p">)</span>
+    		<span class="kd">local</span> <span class="n">headers</span> <span class="o">=</span> <span class="p">{[</span><span class="s2">"content-type"</span><span class="p">]</span><span class="o">=</span><span class="n">CONTENT_TYPE</span><span class="p">,</span> <span class="p">[</span><span class="s2">"content-length"</span><span class="p">]</span><span class="o">=</span><span class="n">filesize</span><span class="p">,</span> <span class="p">[</span><span class="s2">"x-amz-date"</span><span class="p">]</span><span class="o">=</span><span class="n">datetime</span><span class="p">,</span> <span class="p">[</span><span class="s2">"x-amz-content-sha256"</span><span class="p">]</span><span class="o">=</span><span class="n">PAYLOAD_HASH</span><span class="p">,</span> <span class="p">[</span><span class="s2">"Authorization"</span><span class="p">]</span><span class="o">=</span><span class="n">this</span><span class="p">:</span><span class="n">getAuthorizationHeader</span><span class="p">()}</span>
+    		<span class="kd">local</span> <span class="n">requestURL</span> <span class="o">=</span> <span class="n">endpoint</span> <span class="o">..</span> <span class="n">canonicalURI</span>
+    		<span class="kd">local</span> <span class="n">body</span><span class="p">,</span> <span class="n">code</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">request</span><span class="p">{</span>
+    			<span class="n">url</span><span class="o">=</span><span class="n">requestURL</span><span class="p">,</span>
+    			<span class="n">method</span><span class="o">=</span><span class="s2">"PUT"</span><span class="p">,</span>
+    			<span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span>
+    			<span class="n">file</span><span class="o">=</span><span class="n">filepath</span><span class="p">,</span>
+    			<span class="n">body</span><span class="o">=</span><span class="s1">'&lt;!--WLANSDFILE--&gt;'</span><span class="p">,</span>
+    			<span class="n">bufsize</span><span class="o">=</span><span class="mi">1460</span><span class="o">*</span><span class="mi">10</span><span class="p">,</span>
+    		<span class="p">}</span>
+
+    		<span class="n">debug</span><span class="p">(</span><span class="s2">"resultCode="</span> <span class="o">..</span> <span class="n">code</span><span class="p">)</span>
+    		<span class="n">debug</span><span class="p">(</span><span class="s2">"headers="</span> <span class="o">..</span>  <span class="n">cjson</span><span class="p">.</span><span class="n">encode</span><span class="p">(</span><span class="n">header</span><span class="p">))</span>
+    		<span class="n">debug</span><span class="p">(</span><span class="s2">"body="</span> <span class="o">..</span> <span class="n">body</span><span class="p">)</span>
+    	<span class="k">end</span> 
+    	<span class="k">return</span> <span class="n">this</span>
+    <span class="k">end</span>
+</code></pre></div></div>
+<p>S3Putクラスを定義します。</p>
+
+<ul>
+  <li>35-49行目<br />
+  シークレットキー、リージョン等から署名を暗号化するためのキーを作成します。署名キーの詳細は<a href="https://docs.aws.amazon.com/ja_jp/general/latest/gr/sigv4-create-string-to-sign.html" target="_blank">こちら</a>をご覧ください。</li>
+  <li>51-60行目<br />
+  正規リクエストを作成します。正規リクエストの詳細は<a href="https://docs.aws.amazon.com/ja_jp/general/latest/gr/sigv4-create-canonical-request.html" target="_blank">こちら</a>をご覧ください。</li>
+  <li>62-71行目<br />
+  署名キーと正規リクエストを用いて、<strong>署名バージョン4</strong>の署名文字列を作成し、正規ヘッダーを作成します。</li>
+  <li>73-89行目<br />
+  <a href="../../api/lua/#request">fa.request</a>を使用してAWS APIへリクエストを送信します。</li>
+</ul>
+
+<hr />
+<h2 id="実行結果">実行、結果</h2>
+
+<p>FlashAirの設定が終わったら、FlashAirを抜き差しして修正を反映させます。</p>
+
+<div class="alert alert-warning" role="alert">書き込み後は必ずカードをいったん抜いて再挿入するなどしてSDメモリカードホスト機器に再認識させてください。<br />PCなどのSDメモリカードホスト側のOSがSDメモリカードの内容をキャッシュしていると、その変更をOSが認識する事が出来ません。<br />その為、SDメモリカードホスト機器とLuaやCGIから同時に変更を行うとFAT不整合が起きる可能性があります。</div>
+
+<p>ブラウザから <code class="highlighter-rouge">http://flashair/s3-exec.lua</code> を実行します。</p>
+
+<p>DATAフォルダにファイルを作成またはコピーします。</p>
+
+<p><img src="/assets/images/tutorials/advanced_tutorial_08_04.png" alt="実行" class="d-block" /></p>
+
+<p>アップロードが行われたか確認します。<br />
+「S3にバケットを作成する」で作成したバケット名をクリックします。</p>
+
+<p>DATAフォルダ内のファイルがアップロードされていることが確認できました。</p>
+
+<p><img src="/assets/images/tutorials/advanced_tutorial_08_05.png" alt="結果" class="d-block" /></p>
+
+<hr />
+<h2 id="応用">応用</h2>
+
+<p><a href="7">準備編</a>で解説したLambda、Rekognition、QuickSightを使用すると、取得したデータを加工、可視化、共有することが出来ます。</p>
+
+<p>今回は、動体検知カメラで撮影した顔写真から年齢や性別、笑顔の有無などをRekognitionにより判定し、QuickSightで可視化してみました。</p>
+
+<p>Lambda内でS3にファイルが追加されたらRekognitionの顔認識処理を呼び出す関数を作成します。関数の作成方法は<a href="https://docs.aws.amazon.com/ja_jp/lambda/latest/dg/tutorial-scheduled-events-create-function.html" target="_blank">Lambda 関数を作成する</a>をご覧ください。<br />
+あらかじめS3内に解析結果を格納するためのバケットを準備しておきます。Rekognitionの解析処理を取得したらS3に解析結果を解析バケットに格納する関数も用意します。</p>
+
+<p>QuickSightでは、上記で作成した解析バケットのデータを用いてグラフを作成することが出来ます。QuickSightの使用方法は<a href="https://docs.aws.amazon.com/ja_jp/quicksight/latest/user/welcome.html" target="_blank">Amazon QuickSight とは</a>をご覧ください。</p>
+
+<p><img src="/assets/images/tutorials/advanced_tutorial_08_06.png" alt="Lambda" class="d-block" />
+Lambda
+<br />
+<img src="/assets/images/tutorials/advanced_tutorial_08_07.png" alt="QuickSight" class="d-block" />
+QuickSight</p>
+
+<hr />
+<h2 id="サンプルコード">サンプルコード</h2>
+
+<p><a href="/files/samplecode/advanced/advanced_tutorial_08.zip" class="btn btn-primary">advanced_tutorial_08.zip</a> (4KB)</p>
+
+<p>このサイトのサンプルコードは<a href="../../license">二条項BSDライセンス</a>で提供されています。</p>
+
+
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

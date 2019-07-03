@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  
+    <title>コンテンツのダウンロード - website</title>
+
+    
+  
+
+  <link rel="shortcut icon" href="http://localhost:4000/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/just-the-docs.css">
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/customstyles.css">
+  
+
+  
+    <script type="text/javascript" src="http://localhost:4000/assets/js/vendor/lunr.min.js"></script>
+  
+  <script type="text/javascript" src="http://localhost:4000/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>コンテンツのダウンロード | website</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="コンテンツのダウンロード" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/docs/tutorials/ios/3.html" />
+<meta property="og:url" content="http://localhost:4000/docs/tutorials/ios/3.html" />
+<meta property="og:site_name" content="website" />
+<script type="application/ld+json">
+{"@type":"WebPage","headline":"コンテンツのダウンロード","url":"http://localhost:4000/docs/tutorials/ios/3.html","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+
+  <div class="page-wrap">
+    <div class="side-bar">
+      <a href="http://localhost:4000" class="site-title fs-6 lh-tight">website</a>
+      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+      <div class="navigation main-nav js-main-nav">
+        <nav role="navigation" aria-label="Main navigation">
+    <ul class="navigation-list">
+      
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/ios/1.html" class="navigation-list-link">iOS向けFlashAirアプリ開発の概要</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/ios/2.html" class="navigation-list-link">コンテンツリストの取得</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item active">
+              
+              <a href="http://localhost:4000/docs/tutorials/ios/3.html" class="navigation-list-link active">コンテンツのダウンロード</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/ios/4.html" class="navigation-list-link">サムネイルの表示</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/ios/5.html" class="navigation-list-link">コンテンツの自動更新</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/ios/6.html" class="navigation-list-link">SSIDとパスワードの変更</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/ios/7.html" class="navigation-list-link">FlashAirへのアップロード</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="navigation-list-item">
+              
+              <a href="http://localhost:4000/docs/tutorials/ios/8.html" class="navigation-list-link">フォトシェア</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+
+      <li>
+        <br>
+        <a href="./">目次に戻る</a>
+      </li>
+    </ul>
+  </nav>
+      </div>
+      <footer role="contentinfo" class="site-footer">
+        <p class="text-small text-grey-dk-000 mb-0">This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.</p>
+      </footer>
+    </div>
+    <div class="main-content-wrap js-main-content" tabindex="0">
+      <div class="page-header">
+        <div class="main-content">
+          
+          <div class="search js-search">
+            <div class="search-input-wrap">
+              <input type="text" class="js-search-input search-input" tabindex="0" placeholder="Search website" aria-label="Search website" autocomplete="off">
+              <svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z"/><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z"/></g></svg>
+            </div>
+            <div class="js-search-results search-results-wrap"></div>
+          </div>
+          
+          
+        </div>
+      </div>
+      <div class="main-content">
+        
+          
+            <nav class="breadcrumb-nav">
+              <ol class="breadcrumb-nav-list">
+                
+                  <li class="breadcrumb-nav-list-item"><span>チュートリアル</span></li>
+                  <li class="breadcrumb-nav-list-item"><span>iOS向けチュートリアル</span></li>
+                
+                <li class="breadcrumb-nav-list-item"><span>コンテンツのダウンロード</span></li>
+              </ol>
+            </nav>
+          
+        
+        <div id="main-content" class="page-content" role="main">
+          <h1 id="コンテンツのダウンロード">コンテンツのダウンロード</h1>
+
+<p>このチュートリアルではコンテンツのダウンロード方法について学びます。
+<a href="../../api/command.cgi">command.cgi</a>を使用して取得したコンテンツリストから、選択されたイメージファイルを表示するアプリケーションを作成します。</p>
+
+<p>このチュートリアルは別項の<a href="2">iOS Tutorial 2:コンテンツリストの取得</a>に基づいています。
+それではさっそく作ってみましょう。</p>
+
+<hr />
+<h2 id="画面レイアウトの作成">画面レイアウトの作成</h2>
+<p>今回作成するアプリケーションの画面レイアウトです。</p>
+
+<p><img src="/assets/images/tutorials/ios_tutorial_03_1.png" alt="画面レイアウトの作成" class="d-block" /></p>
+
+<p>アプリケーションが起動されると、labelCount にファイル数、labelDirectory に現在のフォルダ、Table View にコンテンツリストが表示されるように作ります。
+コンテンツリストのコンテンツがタップされると、該当のイメージファイルをダウンロードし、Image View に表示します。
+以下の部品を配置します。</p>
+
+<h3 id="コンテンツリスト画面">コンテンツリスト画面</h3>
+
+<ul>
+  <li>Round Rect Button(<code class="highlighter-rouge">UIButton</code>)
+    <ul>
+      <li>back : 一つ上の階層へ移動</li>
+    </ul>
+  </li>
+  <li>Label(<code class="highlighter-rouge">UILabel</code>)
+    <ul>
+      <li>labelCount : 現在のフォルダのファイル数を表示
+        <ul>
+          <li>labelDirectory : 現在のフォルダパスを表示</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Table View(<code class="highlighter-rouge">UITableView</code>)
+    <ul>
+      <li>コンテンツリスト</li>
+    </ul>
+  </li>
+  <li>Table View Cell(<code class="highlighter-rouge">UITableViewCell</code>)
+    <ul>
+      <li>コンテンツリスト上のセル</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="イメージ表示画面">イメージ表示画面</h3>
+
+<ul>
+  <li>View Controller(<code class="highlighter-rouge">UIViewController</code>)</li>
+  <li>Image View(<code class="highlighter-rouge">UIImageView</code>)
+    <ul>
+      <li>イメージファイルを表示</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="その他">その他</h3>
+
+<ul>
+  <li>Navigation Controller(<code class="highlighter-rouge">UINavigationController</code>)
+    <ul>
+      <li>イメージファイル表示画面から、コンテンツリスト画面へ戻るために使用</li>
+    </ul>
+  </li>
+</ul>
+
+<p>このように表示されるコンテンツリストを作ります。</p>
+
+<p><img src="/assets/images/tutorials/ios_tutorial_03_2.png" alt="コンテンツリスト" /></p>
+
+<p>フォルダがタップされた場合は、選択したフォルダの中身を表示します。
+back がタップされた場合は、ひとつ上のフォルダの中身を表示します。
+イメージファイルがタップされた場合は、以下のように画像を表示します。</p>
+
+<p><img src="/assets/images/tutorials/ios_tutorial_03_3.png" alt="イメージファイル" /></p>
+
+<hr />
+<h2 id="コードの作成">コードの作成</h2>
+
+<h3 id="イメージファイルの表示">イメージファイルの表示</h3>
+
+<p>イメージファイルの表示は、イメージファイル表示用の View Controller を用意し、そのサブクラス内で行います。
+サブクラスは以下のクラス名で用意します。</p>
+
+<dl>
+    <dt>FSImageViewController </dt>
+    <dd>イメージファイルの取得は、CGIは介さずに直接ファイルパスを指定することで実現します。
+     取得の際には、<a href="https://developer.apple.com/documentation/foundation/nsdata#//apple_ref/occ/clm/NSData/dataWithContentsOfURL:" target="_blank">NSData dataWithContentsOfURL</a>を使用してい ます。 この関数は、データオブジェクトを返します。</dd>
+</dl>
+
+<h5 id="fsimageviewcontrollerh"><em>FSImageViewController.h</em></h5>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@interface</span> <span class="nc">FSImageViewController</span> <span class="p">:</span> <span class="nc">UIViewController</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">IBOutlet</span> <span class="n">UIImageView</span> <span class="o">*</span><span class="n">imageView</span><span class="p">;</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">fileInfo</span><span class="p">;</span>
+<span class="k">@end</span>
+</code></pre></div></div>
+
+<ul>
+  <li>3行目<br /><code class="highlighter-rouge">fileInfo</code>:コンテンツリストの View Controller から、選択されたファイル情報を受け取るための property です。</li>
+</ul>
+
+<h5 id="fsimageviewcontrollerm"><em>FSImageViewController.m</em></h5>
+<div class="language-objc highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">viewDidLoad</span>
+    <span class="p">{</span>
+        <span class="p">[</span><span class="n">super</span> <span class="nf">viewDidLoad</span><span class="p">];</span>
+
+        <span class="c1">// Do any additional setup after loading the view.
+</span>        <span class="c1">// Make a file path
+</span>        <span class="n">NSString</span> <span class="o">*</span><span class="n">dir</span> <span class="o">=</span> 
+            <span class="p">[[</span><span class="n">self</span><span class="p">.</span><span class="n">fileInfo</span> <span class="nf">componentsSeparatedByString</span><span class="p">:</span><span class="s">@","</span><span class="p">]</span> <span class="nf">objectAtIndex</span><span class="p">:</span><span class="mi">0</span><span class="p">];</span>
+        <span class="n">NSString</span> <span class="o">*</span><span class="n">filename</span> <span class="o">=</span> 
+            <span class="p">[[</span><span class="n">self</span><span class="p">.</span><span class="n">fileInfo</span> <span class="nf">componentsSeparatedByString</span><span class="p">:</span><span class="s">@","</span><span class="p">]</span> <span class="nf">objectAtIndex</span><span class="p">:</span><span class="mi">1</span><span class="p">];</span>
+        <span class="n">NSString</span> <span class="o">*</span><span class="n">filePath</span> <span class="o">=</span> 
+            <span class="p">[[</span><span class="n">dir</span> <span class="nf">stringByAppendingString</span><span class="p">:</span><span class="s">@"/"</span><span class="p">]</span> <span class="nf">stringByAppendingString</span><span class="p">:</span><span class="n">filename</span><span class="p">];</span>
+        <span class="c1">// Run                    
+</span>        <span class="n">NSURL</span> <span class="o">*</span><span class="n">url</span> <span class="o">=</span> 
+            <span class="p">[</span><span class="n">NSURL</span> <span class="nf">URLWithString</span><span class="p">:[</span><span class="n">NSString</span> <span class="nf">stringWithFormat</span><span class="p">:</span><span class="s">@"http://flashair/%@"</span><span class="p">,</span> <span class="n">filePath</span><span class="p">]];</span>
+        <span class="c1">// Get image data
+</span>        <span class="k">if</span><span class="p">(</span><span class="nb">nil</span> <span class="o">==</span> <span class="n">url</span><span class="p">)</span><span class="k">return</span><span class="p">;</span>
+        <span class="n">NSData</span> <span class="o">*</span><span class="n">img_data</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSData</span> <span class="nf">dataWithContentsOfURL</span><span class="p">:</span><span class="n">url</span><span class="p">];</span>
+        <span class="n">UIImage</span> <span class="o">*</span><span class="n">img</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UIImage</span> <span class="nf">alloc</span><span class="p">]</span> <span class="nf">initWithData</span><span class="p">:</span><span class="n">img_data</span><span class="p">];</span>
+        <span class="c1">// Display results
+</span>        <span class="n">self</span><span class="p">.</span><span class="n">imageView</span><span class="p">.</span><span class="n">image</span> <span class="o">=</span> <span class="n">img</span><span class="p">;</span>
+
+    <span class="p">}</span>
+</code></pre></div></div>
+<ul>
+  <li>7-12行目<br />
+   コンテンツリストの View Controller から引き渡されたファイル情報をもとに、ファイルパスを作成しています。</li>
+  <li>14-15行目<br />
+   使用するURLです。</li>
+  <li>17-19行目<br />
+   URLを実行しイメージデータを取得しています。</li>
+  <li>21行目<br />
+   取得したイメージデータを、Image View に設定しています。</li>
+</ul>
+
+<h3 id="コンテンツリストの表示">コンテンツリストの表示</h3>
+
+<p>コンテンツリストの取得は、
+<code class="highlighter-rouge">command.cgi</code> の
+<code class="highlighter-rouge">op=100</code>、
+<code class="highlighter-rouge">op=101</code> を使用します。
+取得方法については、別項の
+<a href="2">iOS Tutorial 2:コンテンツリストの取得</a> を参照してください。
+今回は取得結果を、Table View に設定しています。</p>
+
+<h5 id="fsviewcontrollerh"><em>FSViewController.h</em></h5>
+<div class="language-objc highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="cp">#import &lt;UIKit/UIKit.h&gt;
+</span>    <span class="cp">#import "FSImageViewController.h"
+</span>
+    <span class="k">@interface</span> <span class="nc">FSViewController</span> <span class="p">:</span> <span class="nc">UIViewController</span><span class="p">{</span>
+    <span class="k">@private</span>
+        <span class="n">NSArray</span>  <span class="o">*</span><span class="n">files</span><span class="p">;</span>
+        <span class="n">NSString</span> <span class="o">*</span><span class="n">count</span><span class="p">;</span>
+        <span class="n">NSString</span> <span class="o">*</span><span class="n">rowdata</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">@property</span> <span class="p">(</span><span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">IBOutlet</span> <span class="n">UILabel</span> <span class="o">*</span><span class="n">labelCount</span><span class="p">;</span>
+    <span class="k">@property</span> <span class="p">(</span><span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">IBOutlet</span> <span class="n">UILabel</span> <span class="o">*</span><span class="n">labelDirectory</span><span class="p">;</span>
+    <span class="k">@property</span> <span class="p">(</span><span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">IBOutlet</span> <span class="n">UITableView</span> <span class="o">*</span><span class="n">tableViewFileList</span><span class="p">;</span>
+    <span class="k">-</span> <span class="p">(</span><span class="n">IBAction</span><span class="p">)</span><span class="nf">buttonPush</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">sender</span><span class="p">;</span>
+    <span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">getFileList</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="nv">path</span><span class="p">;</span>
+    <span class="k">@end</span>
+</code></pre></div></div>
+<ul>
+  <li>2行目<br />
+   イメージファイルを表示する側の View Controller の property に、選択されたファイル情報を渡す必要があるので、サブクラスを importしています。</li>
+  <li>6-8行目<br />
+  <code class="highlighter-rouge">files</code>, <code class="highlighter-rouge">count</code>： <code class="highlighter-rouge">command.cgi</code>の<code class="highlighter-rouge">op=100</code>,<code class="highlighter-rouge">op=101</code> で取得した結果をそれぞれ管理します。<br />
+  <code class="highlighter-rouge">rowdata</code>：選択中の行のファイル情報を管理します。</li>
+</ul>
+
+<h5 id="fsviewcontrollerm-コンテンツリスト取得"><em>FSViewController.m</em> コンテンツリスト取得</h5>
+<div class="language-objc highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">getFileList</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">path</span><span class="p">{</span>
+
+        <span class="n">NSError</span> <span class="o">*</span><span class="n">error</span> <span class="o">=</span> <span class="nb">nil</span><span class="p">;</span>
+
+        <span class="c1">// Get file list
+</span>        <span class="c1">// Make url
+</span>        <span class="n">NSURL</span> <span class="o">*</span><span class="n">url100</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSURL</span> <span class="nf">URLWithString</span><span class="p">:[</span><span class="s">@"http://flashair/command.cgi?op=100&amp;DIR="</span> 
+                                                                <span class="nf">stringByAppendingString</span><span class="p">:</span> <span class="n">path</span><span class="p">]];</span>
+        <span class="c1">// Run cgi
+</span>        <span class="n">NSString</span> <span class="o">*</span><span class="n">dirStr</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSString</span> <span class="nf">stringWithContentsOfURL</span><span class="p">:</span><span class="n">url100</span> 
+                                                    <span class="nf">encoding</span><span class="p">:</span><span class="n">NSUTF8StringEncoding</span> <span class="n">error</span><span class="o">:&amp;</span><span class="n">error</span><span class="p">];</span>
+        <span class="k">if</span> <span class="p">([</span><span class="n">error</span><span class="p">.</span><span class="n">domain</span> <span class="nf">isEqualToString</span><span class="p">:</span><span class="n">NSCocoaErrorDomain</span><span class="p">]){</span>
+            <span class="n">NSLog</span><span class="p">(</span><span class="s">@"error100 %@</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">error</span><span class="p">);</span>
+            <span class="k">return</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="n">files</span> <span class="o">=</span> <span class="p">[</span><span class="n">dirStr</span> <span class="nf">componentsSeparatedByString</span><span class="p">:</span><span class="s">@"</span><span class="se">\n</span><span class="s">"</span><span class="p">];</span>
+
+        <span class="c1">// Get the number of files
+</span>        <span class="c1">// Make url
+</span>        <span class="n">NSURL</span> <span class="o">*</span><span class="n">url101</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSURL</span> <span class="nf">URLWithString</span><span class="p">:[</span><span class="s">@"http://flashair/command.cgi?op=101&amp;DIR="</span> 
+                                                                <span class="nf">stringByAppendingString</span><span class="p">:</span> <span class="n">path</span><span class="p">]];</span>
+        <span class="c1">// Run cgi
+</span>        <span class="n">NSString</span> <span class="o">*</span><span class="n">cntStr</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSString</span> <span class="nf">stringWithContentsOfURL</span><span class="p">:</span><span class="n">url101</span> 
+                                                    <span class="nf">encoding</span><span class="p">:</span><span class="n">NSUTF8StringEncoding</span> <span class="n">error</span><span class="o">:&amp;</span><span class="n">error</span><span class="p">];</span>
+        <span class="k">if</span> <span class="p">([</span><span class="n">error</span><span class="p">.</span><span class="n">domain</span> <span class="nf">isEqualToString</span><span class="p">:</span><span class="n">NSCocoaErrorDomain</span><span class="p">])</span> <span class="p">{</span>
+            <span class="n">NSLog</span><span class="p">(</span><span class="s">@"error101 %@</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">error</span><span class="p">);</span>
+            <span class="k">return</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="n">count</span> <span class="o">=</span> <span class="n">cntStr</span><span class="p">;</span>
+
+        <span class="c1">// Display results
+</span>        <span class="n">self</span><span class="p">.</span><span class="n">labelCount</span><span class="p">.</span><span class="n">text</span> <span class="o">=</span> <span class="p">[</span><span class="s">@"Items Found:"</span> <span class="nf">stringByAppendingString</span><span class="p">:</span><span class="n">cntStr</span><span class="p">];</span>
+        <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="p">[</span><span class="n">path</span> <span class="nf">isEqualToString</span><span class="p">:</span><span class="s">@"/"</span><span class="p">]){</span>
+            <span class="n">self</span><span class="p">.</span><span class="n">labelDirectory</span><span class="p">.</span><span class="n">text</span> <span class="o">=</span> <span class="p">[</span><span class="n">path</span> <span class="nf">stringByAppendingString</span><span class="p">:</span><span class="s">@"/"</span> <span class="p">];</span>
+        <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+            <span class="n">self</span><span class="p">.</span><span class="n">labelDirectory</span><span class="p">.</span><span class="n">text</span> <span class="o">=</span> <span class="s">@"/"</span><span class="p">;</span>
+        <span class="p">}</span>
+
+    <span class="p">}</span>
+</code></pre></div></div>
+<ul>
+  <li>7-16行目<br />
+  <code class="highlighter-rouge">command.cgi</code>の<code class="highlighter-rouge">op=100</code>を実行し、結果をインスタンス変数に設定しています。</li>
+  <li>20-29行目<br />
+  <code class="highlighter-rouge">command.cgi</code>の<code class="highlighter-rouge">op=101</code>を実行し、結果をインスタンス変数に設定しています。</li>
+  <li>32-37行目<br />
+   各結果を<code class="highlighter-rouge">labelDirectory</code>に設定しています。</li>
+</ul>
+
+<h5 id="fsviewcontrollerm-tableview1-セルの列数行数を設定"><em>FSViewController.m</em> tableView(1) セルの列数、行数を設定</h5>
+<div class="language-objc highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="k">-</span> <span class="p">(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nf">numberOfSectionsInTableView</span><span class="p">:(</span><span class="n">UITableView</span> <span class="o">*</span><span class="p">)</span><span class="nv">tableView</span>
+    <span class="p">{</span>
+        <span class="c1">// Return the number of sections.
+</span>        <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">-</span> <span class="p">(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nf">tableView</span><span class="p">:(</span><span class="n">UITableView</span> <span class="o">*</span><span class="p">)</span><span class="nv">tableView</span> <span class="nf">numberOfRowsInSection</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">section</span>
+    <span class="p">{</span>
+        <span class="c1">// Return the number of rows in the section.    
+</span>        <span class="k">return</span> <span class="p">[</span><span class="n">count</span> <span class="nf">intValue</span><span class="p">];</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<ul>
+  <li>4,10行目<br />
+   Table View のセルの個数を設定しています。</li>
+</ul>
+
+<h5 id="fsviewcontrollerm-tableview2-セルのテキストを設定"><em>FSViewController.m</em> tableView(2) セルのテキストを設定</h5>
+<div class="language-objc highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="k">-</span> <span class="p">(</span><span class="n">UITableViewCell</span> <span class="o">*</span><span class="p">)</span><span class="nf">tableView</span><span class="p">:(</span><span class="n">UITableView</span> <span class="o">*</span><span class="p">)</span><span class="nv">tableView</span> <span class="nf">cellForRowAtIndexPath</span><span class="p">:(</span><span class="n">NSIndexPath</span> <span class="o">*</span><span class="p">)</span><span class="nv">indexPath</span>
+    <span class="p">{</span>
+        <span class="k">static</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">CellIdentifier</span> <span class="o">=</span> <span class="s">@"Cell"</span><span class="p">;</span>
+        <span class="n">UITableViewCell</span> <span class="o">*</span><span class="n">cell</span> <span class="o">=</span> <span class="p">[</span><span class="n">tableView</span> <span class="nf">dequeueReusableCellWithIdentifier</span><span class="p">:</span><span class="n">CellIdentifier</span> 
+                                                                        <span class="nf">forIndexPath</span><span class="p">:</span><span class="n">indexPath</span><span class="p">];</span>
+
+        <span class="c1">// Configure the cell...
+</span>        <span class="k">if</span> <span class="p">(</span><span class="n">cell</span> <span class="o">==</span> <span class="nb">nil</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">cell</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UITableViewCell</span> <span class="nf">alloc</span><span class="p">]</span> <span class="nf">initWithStyle</span><span class="p">:</span><span class="n">UITableViewCellStyleDefault</span> 
+                                                                <span class="nf">reuseIdentifier</span><span class="p">:</span><span class="n">CellIdentifier</span><span class="p">];</span>
+        <span class="p">}</span>
+
+        <span class="n">NSString</span> <span class="o">*</span><span class="n">filename</span> <span class="o">=</span> <span class="p">[[[</span><span class="n">files</span> <span class="nf">objectAtIndex</span><span class="p">:</span><span class="n">indexPath</span><span class="p">.</span><span class="n">row</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> 
+                                            <span class="nf">componentsSeparatedByString</span><span class="p">:</span><span class="s">@","</span><span class="p">]</span> <span class="nf">objectAtIndex</span><span class="p">:</span><span class="mi">1</span><span class="p">];</span>
+        <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">attribute</span> <span class="o">=</span> <span class="p">[[[[</span><span class="n">files</span> <span class="nf">objectAtIndex</span><span class="p">:</span><span class="n">indexPath</span><span class="p">.</span><span class="n">row</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> 
+                                    <span class="nf">componentsSeparatedByString</span><span class="p">:</span><span class="s">@","</span><span class="p">]</span> <span class="nf">objectAtIndex</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span> <span class="nf">intValue</span><span class="p">];</span>
+
+        <span class="c1">// If it is folder
+</span>        <span class="k">if</span> <span class="p">((</span><span class="n">attribute</span> <span class="o">&amp;</span> <span class="mh">0x10</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">filename</span> <span class="o">=</span> <span class="p">[</span><span class="n">filename</span> <span class="nf">stringByAppendingString</span><span class="p">:</span><span class="s">@"/"</span> <span class="p">];</span>
+        <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+            <span class="n">NSArray</span> <span class="o">*</span><span class="n">name_array</span> <span class="o">=</span> <span class="p">[</span><span class="n">filename</span> <span class="nf">componentsSeparatedByString</span><span class="p">:</span><span class="s">@"."</span><span class="p">];</span>
+            <span class="n">NSString</span> <span class="o">*</span><span class="n">ext</span> <span class="o">=</span> <span class="p">[[</span><span class="n">name_array</span> <span class="nf">objectAtIndex</span><span class="p">:[</span><span class="n">name_array</span> <span class="nf">count</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="nf">lowercaseString</span><span class="p">];</span>
+            <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="p">([</span><span class="n">ext</span> <span class="nf">isEqualToString</span><span class="p">:</span><span class="s">@"jpg"</span><span class="p">]</span> <span class="o">||</span> <span class="p">[</span><span class="n">ext</span> <span class="nf">isEqualToString</span><span class="p">:</span><span class="s">@"jpeg"</span><span class="p">]</span> <span class="o">||</span>
+                  <span class="p">[</span><span class="n">ext</span> <span class="nf">isEqualToString</span><span class="p">:</span><span class="s">@"png"</span><span class="p">]</span> <span class="o">||</span> <span class="p">[</span><span class="n">ext</span> <span class="nf">isEqualToString</span><span class="p">:</span><span class="s">@"jpe"</span><span class="p">]))</span> <span class="p">{</span>
+                <span class="p">[</span><span class="n">cell</span> <span class="nf">setUserInteractionEnabled</span><span class="p">:</span><span class="nb">NO</span><span class="p">];</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="n">cell</span><span class="p">.</span><span class="n">textLabel</span><span class="p">.</span><span class="n">text</span> <span class="o">=</span> <span class="n">filename</span><span class="p">;</span>
+
+        <span class="k">return</span> <span class="n">cell</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<ul>
+  <li>
+    <p>3-11行目<br />
+   処理対象のセルを取得しています。</p>
+  </li>
+  <li>
+    <p>13-28行目<br />
+   ファイル名、ファイルの属性を取得しています。 フォルダ、ファイル毎に表示用の調整を行っています。</p>
+  </li>
+  <li>
+    <p>29行目<br />
+   取得したファイル名を、<code class="highlighter-rouge">textLabel</code>に設定しています。</p>
+  </li>
+</ul>
+
+<h3 id="コンテンツリストの動作">コンテンツリストの動作</h3>
+
+<p>作成したコンテンツリストがタップされた際の動作です。
+イメージファイルが選択された際の処理と、フォルダまたは back がタップされた際の処理を実装します。</p>
+
+<p><img src="/assets/images/tutorials/ios_tutorial_03_5.png" alt="選択" /></p>
+
+<p>コンテンツリストがタップされた際の動作です。</p>
+
+<h5 id="fsviewcontrollerm-tableview-動作"><em>FSViewController.m</em> tableView 動作</h5>
+<div class="language-objc highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">tableView</span><span class="p">:(</span><span class="n">UITableView</span> <span class="o">*</span><span class="p">)</span><span class="nv">tableView</span> <span class="nf">didSelectRowAtIndexPath</span><span class="p">:(</span><span class="n">NSIndexPath</span> <span class="o">*</span><span class="p">)</span><span class="nv">indexPath</span>
+    <span class="p">{</span>
+        <span class="c1">// Navigation logic may go here. Create and push another view controller.    
+</span>        <span class="n">rowdata</span> <span class="o">=</span> <span class="p">[</span><span class="n">files</span> <span class="nf">objectAtIndex</span><span class="p">:</span><span class="n">indexPath</span><span class="p">.</span><span class="n">row</span> <span class="o">+</span> <span class="mi">1</span><span class="p">];</span>
+        <span class="n">NSString</span> <span class="o">*</span><span class="n">dir</span> <span class="o">=</span> <span class="p">[[</span><span class="n">rowdata</span> <span class="nf">componentsSeparatedByString</span><span class="p">:</span><span class="s">@","</span><span class="p">]</span> <span class="nf">objectAtIndex</span><span class="p">:</span><span class="mi">0</span><span class="p">];</span>
+        <span class="n">NSString</span> <span class="o">*</span><span class="n">filename</span> <span class="o">=</span> <span class="p">[[</span><span class="n">rowdata</span> <span class="nf">componentsSeparatedByString</span><span class="p">:</span><span class="s">@","</span><span class="p">]</span> <span class="nf">objectAtIndex</span><span class="p">:</span><span class="mi">1</span><span class="p">];</span>
+        <span class="n">NSString</span> <span class="o">*</span><span class="n">filePath</span> <span class="o">=</span> <span class="p">[[</span><span class="n">dir</span> <span class="nf">stringByAppendingString</span><span class="p">:</span><span class="s">@"/"</span><span class="p">]</span> <span class="nf">stringByAppendingString</span><span class="p">:</span><span class="n">filename</span><span class="p">];</span>
+
+        <span class="c1">// If it is folder
+</span>        <span class="k">if</span><span class="p">(([[[</span><span class="n">rowdata</span> <span class="nf">componentsSeparatedByString</span><span class="p">:</span><span class="s">@","</span><span class="p">]</span> <span class="nf">objectAtIndex</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span> <span class="nf">intValue</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x10</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">){</span>
+            <span class="p">[</span><span class="n">self</span> <span class="nf">getFileList</span><span class="p">:</span><span class="n">filePath</span><span class="p">];</span>
+            <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">tableViewFileList</span> <span class="nf">reloadData</span><span class="p">];</span>
+        <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+            <span class="p">[</span><span class="n">self</span> <span class="nf">performSegueWithIdentifier</span><span class="p">:</span><span class="s">@"imageView"</span> <span class="nf">sender</span><span class="p">:</span><span class="n">self</span><span class="p">];</span>
+        <span class="p">}</span>
+
+        <span class="p">[</span><span class="n">super</span> <span class="nf">viewDidLoad</span><span class="p">];</span>
+        <span class="c1">// Do any additional setup after loading the view, typically from a nib.
+</span>
+    <span class="p">}</span>
+
+    <span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="nf">prepareForSegue</span><span class="p">:(</span><span class="n">UIStoryboardSegue</span> <span class="o">*</span><span class="p">)</span><span class="nv">segue</span> <span class="nf">sender</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">sender</span> <span class="p">{</span>
+        <span class="c1">// Give next View the Data
+</span>        <span class="k">if</span> <span class="p">([</span><span class="n">segue</span><span class="p">.</span><span class="n">identifier</span> <span class="nf">isEqualToString</span><span class="p">:</span><span class="s">@"imageView"</span><span class="p">])</span> <span class="p">{</span>
+            <span class="n">FSImageViewController</span> <span class="o">*</span><span class="n">iamgeViewController</span> <span class="o">=</span> <span class="n">segue</span><span class="p">.</span><span class="n">destinationViewController</span><span class="p">;</span>
+            <span class="n">iamgeViewController</span><span class="p">.</span><span class="n">fileInfo</span> <span class="o">=</span> <span class="n">rowdata</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<ul>
+  <li>4-15行目<br />
+   フォルダが選択された場合は、再度<code class="highlighter-rouge">command.cgi</code>を使用してフォルダの中身を取得したのち、 Table View に設定しています。<br />
+   ファイルが選択された場合は、イメージファイル表示用の View Controller を呼び出しています。</li>
+  <li>24-26行目<br />
+   イメージファイル表示用の View Controller に、選択されたコンテンツの情報を引き渡しています。</li>
+</ul>
+
+<p>back がタップされた際の動作です。</p>
+
+<h5 id="fsviewcontrollerm-buttonpush動作"><em>FSViewController.m</em> buttonPush動作</h5>
+<div class="language-objc highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="k">-</span> <span class="p">(</span><span class="n">IBAction</span><span class="p">)</span><span class="nf">buttonPush</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">sender</span> <span class="p">{</span>
+        <span class="n">NSString</span> <span class="o">*</span><span class="n">path</span> <span class="o">=</span> <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">labelDirectory</span><span class="p">.</span><span class="n">text</span> 
+                                    <span class="nf">substringToIndex</span><span class="p">:[</span><span class="n">self</span><span class="p">.</span><span class="n">labelDirectory</span><span class="p">.</span><span class="n">text</span> <span class="nf">length</span><span class="p">]</span> <span class="o">-</span> <span class="mi">1</span><span class="p">];</span>
+        <span class="n">NSRange</span> <span class="n">found</span> <span class="o">=</span> <span class="p">[</span><span class="n">path</span> <span class="nf">rangeOfString</span><span class="p">:</span><span class="s">@"/"</span> <span class="nf">options</span><span class="p">:</span><span class="n">NSBackwardsSearch</span><span class="p">];</span>
+
+        <span class="k">if</span><span class="p">(</span><span class="n">found</span><span class="p">.</span><span class="n">location</span> <span class="o">!=</span> <span class="n">NSNotFound</span><span class="p">){</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">found</span><span class="p">.</span><span class="n">location</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">path</span> <span class="o">=</span> <span class="s">@"/"</span><span class="p">;</span>
+            <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+                <span class="n">path</span> <span class="o">=</span> <span class="p">[</span><span class="n">path</span> <span class="nf">substringToIndex</span><span class="p">:</span><span class="n">found</span><span class="p">.</span><span class="n">location</span><span class="p">];</span>
+            <span class="p">}</span>
+        <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+            <span class="n">path</span> <span class="o">=</span> <span class="s">@"/"</span><span class="p">;</span>       
+        <span class="p">}</span>
+
+        <span class="c1">// Reload tableview  
+</span>        <span class="p">[</span><span class="n">self</span> <span class="nf">getFileList</span><span class="p">:</span><span class="n">path</span><span class="p">];</span>
+        <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">tableViewFileList</span> <span class="nf">reloadData</span><span class="p">];</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<ul>
+  <li>1-14行目<br />
+   戻り先のパスを作成しています。</li>
+  <li>17-18行目<br />
+   作成したパスをもとに、再度<code class="highlighter-rouge">command.cgi</code>を使用してコンテンツを取得し、 Table View に設定しています。</li>
+</ul>
+
+<hr />
+<h2 id="実行結果">実行結果</h2>
+
+<p>プログラムが出来上がったら、確認をしてみましょう。
+Table View 上の、IMG_2340.JPG をタップしたのち、該当のイメージファイルが表示されました。</p>
+
+<p><img src="/assets/images/tutorials/ios_tutorial_03_6.png" alt="結果" /></p>
+
+<p>以上で、コンテンツのダウンロード に関する解説はおわりです。</p>
+
+<hr />
+<h2 id="サンプルコード">サンプルコード</h2>
+
+<p><a href="/files/samplecode/ios/ios_tutorial_03.zip" class="btn btn-primary">ios_tutorial_03.zip</a> (25KB)</p>
+
+<p>このサイトのサンプルコードは<a href="../../license">二条項BSDライセンス</a>で提供されています。</p>
+
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
