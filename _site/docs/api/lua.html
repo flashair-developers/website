@@ -274,14 +274,18 @@
       
         
           
-        
-      
-        
-          
             <li class="navigation-list-item">
               
               <a href="http://localhost:4000/docs/api/upload.cgi.html" class="navigation-list-link">upload.cgi</a>
             </li>
+          
+        
+      
+        
+          
+        
+      
+        
           
         
       
@@ -376,14 +380,6 @@
       
         
           
-        
-      
-        
-          
-        
-      
-        
-          
             <li class="navigation-list-item">
               
               <a href="http://localhost:4000/docs/api/utility.html" class="navigation-list-link">ブラウザユーティリティ</a>
@@ -429,30 +425,38 @@
       
         
           
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
             <li class="navigation-list-item active">
               
               <a href="http://localhost:4000/docs/api/lua.html" class="navigation-list-link active">Lua機能</a>
             </li>
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
           
         
       
@@ -663,32 +667,32 @@ Luaは動的型付けであり、レジスタベースの仮想マシン向け�
     <tr>
       <td><a href="#controlhid_change_pass">control(“hid_change_pass”)</a></td>
       <td>秘匿領域に設定したパスワードの変更</td>
-      <td>4.00.03+</td>
+      <td>4.00.04+</td>
     </tr>
     <tr>
       <td><a href="#controlhid_clear">control(“hid_clear”)</a></td>
       <td>パスワード、APIで保存したスクリプトファイルを全て削除</td>
-      <td>4.00.03+</td>
+      <td>4.00.04+</td>
     </tr>
     <tr>
       <td><a href="#controlhid_get">control(“hid_get”)</a></td>
       <td>秘匿領域に保存したスクリプトを取得</td>
-      <td>4.00.03+</td>
+      <td>4.00.04+</td>
     </tr>
     <tr>
       <td><a href="#controlhid_hash">control(“hid_hash”)</a></td>
       <td>設定したパスワードと指定する文字列からハッシュ文字列を作成</td>
-      <td>4.00.03+</td>
+      <td>4.00.04+</td>
     </tr>
     <tr>
       <td><a href="#controlhid_set_pass">control(“hid_set_pass”)</a></td>
       <td>秘匿領域への保存のためのパスワードを設定</td>
-      <td>4.00.03+</td>
+      <td>4.00.04+</td>
     </tr>
     <tr>
       <td><a href="#controlhid_store">control(“hid_store”)</a></td>
       <td>スクリプトを秘匿領域へ保存</td>
-      <td>4.00.03+</td>
+      <td>4.00.04+</td>
     </tr>
     <tr>
       <td><a href="#controltime">control(“time”)</a></td>
@@ -879,6 +883,36 @@ Luaは動的型付けであり、レジスタベースの仮想マシン向け�
       <td><a href="#strconvert">strconvert</a></td>
       <td>文字列変換</td>
       <td>3.00.00+</td>
+    </tr>
+    <tr>
+      <td><a href="#udp">udp</a></td>
+      <td>UDP送信</td>
+      <td>4.00.04+</td>
+    </tr>
+    <tr>
+      <td><a href="#udprecv">udp {mode=”recv”}</a></td>
+      <td>UDP受信</td>
+      <td>4.00.04+</td>
+    </tr>
+    <tr>
+      <td><a href="#udpsend">udp {mode=”send”}</a></td>
+      <td>UDP送信</td>
+      <td>4.00.04+</td>
+    </tr>
+    <tr>
+      <td><a href="#udpsendinterval">udp {mode=”send_interval”}</a></td>
+      <td>UDP指定間隔送信</td>
+      <td>4.00.04+</td>
+    </tr>
+    <tr>
+      <td><a href="#udpstop">udp {mode=”stop”}</a></td>
+      <td>UDP送受信停止</td>
+      <td>4.00.04+</td>
+    </tr>
+    <tr>
+      <td><a href="#udpstate">udp(“state”)</a></td>
+      <td>UDP送受信状態取得</td>
+      <td>4.00.04+</td>
     </tr>
     <tr>
       <td><a href="#watchdogevent">watchdog(“event”)</a></td>
@@ -2915,20 +2949,579 @@ CLKはプルダウンしてください。<br />
 </code></pre></div></div>
 
 <hr />
-<h2 id="watchdogevent">watchdog(“event”)</h2>
+<h2 id="udp">udp</h2>
 
-<p>WatchDogのタイマーをリセットします。</p>
+<p>UDPの送信を行います。</p>
 
 <h3 id="書式-48">書式</h3>
 
-<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">result</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">watchdog</span><span class="p">(</span><span class="s2">"event"</span><span class="p">)</span>
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">udp</span><span class="p">(</span><span class="n">address</span><span class="p">,</span> <span class="n">port</span><span class="p">,</span> <span class="nb">type</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
 </code></pre></div></div>
 
 <h3 id="引数-47">引数</h3>
 
-<p>第1引数は”event”固定。</p>
+<h5 id="address"><strong>address</strong></h5>
+<p><em>string</em>。 送信先アドレス。</p>
+<h5 id="port"><strong>port</strong></h5>
+<p><em>number</em>。 送信先ポート。</p>
+
+<h5 id="type-1"><strong>type</strong></h5>
+<p><em>string</em>。データタイプ。</p>
+
+<ul class="ml-4">
+  <li>“message”：文字列を送信する。</li>
+  <li>“file”: ファイルを送信する。</li>
+</ul>
+
+<h5 id="data-6"><strong>data</strong></h5>
+<p><em>string</em>。 type=”message”のときは送信データ、type=”file”のときは送信するファイル名。</p>
 
 <h3 id="戻り値-43">戻り値</h3>
+
+<h5 id="res-9"><strong>res</strong></h5>
+<p><em>number_または_nil</em>。</p>
+
+<dl class="ml-4">
+  <dt>1</dt>
+  <dd>成功。</dd>
+  <dt>nil</dt>
+  <dd>失敗。</dd>
+</dl>
+
+<h3 id="例-12">例</h3>
+
+<p>文字列を送信</p>
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">udp</span><span class="p">(</span><span class="s2">"192.168.0.11"</span><span class="p">,</span> <span class="mi">50000</span><span class="p">,</span> <span class="s2">"message"</span><span class="p">,</span> <span class="s2">"hello"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>ファイルを送信</p>
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">udp</span><span class="p">(</span><span class="s2">"192.168.0.11"</span><span class="p">,</span> <span class="mi">50000</span><span class="p">,</span> <span class="s2">"file"</span><span class="p">,</span> <span class="s2">"hello.txt"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="注意事項-8">注意事項</h3>
+
+<ul>
+  <li>非同期の関数呼び出しとなります。</li>
+  <li>既にUDP送受信が動作中の場合は実行が失敗します。</li>
+</ul>
+
+<hr />
+<h2 id="udp-1">udp</h2>
+
+<p>UDPの送信を行います。</p>
+
+<h3 id="書式-49">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">udp</span><span class="p">(</span><span class="n">address</span><span class="p">,</span> <span class="n">port</span><span class="p">,</span> <span class="nb">type</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-48">引数</h3>
+
+<h5 id="address-1"><strong>address</strong></h5>
+<p><em>string</em>。 送信先アドレス。</p>
+<h5 id="port-1"><strong>port</strong></h5>
+<p><em>number</em>。 送信先ポート。</p>
+
+<h5 id="type-2"><strong>type</strong></h5>
+<p><em>string</em>。データタイプ。</p>
+
+<ul class="ml-4">
+  <li>“message”：文字列を送信する。</li>
+  <li>“file”: ファイルを送信する。</li>
+</ul>
+
+<h5 id="data-7"><strong>data</strong></h5>
+<p><em>string</em>。 type=”message”のときは送信データ、type=”file”のときは送信するファイル名。</p>
+
+<h3 id="戻り値-44">戻り値</h3>
+
+<h5 id="res-10"><strong>res</strong></h5>
+<p><em>number_または_nil</em>。</p>
+
+<dl class="ml-4">
+  <dt>1</dt>
+  <dd>成功。</dd>
+  <dt>nil</dt>
+  <dd>失敗。</dd>
+</dl>
+
+<h3 id="例-13">例</h3>
+
+<p>文字列を送信</p>
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">udp</span><span class="p">(</span><span class="s2">"192.168.0.11"</span><span class="p">,</span> <span class="mi">50000</span><span class="p">,</span> <span class="s2">"message"</span><span class="p">,</span> <span class="s2">"hello"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>ファイルを送信</p>
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">udp</span><span class="p">(</span><span class="s2">"192.168.0.11"</span><span class="p">,</span> <span class="mi">50000</span><span class="p">,</span> <span class="s2">"file"</span><span class="p">,</span> <span class="s2">"hello.txt"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="注意事項-9">注意事項</h3>
+
+<ul>
+  <li>非同期の関数呼び出しとなります。</li>
+  <li>既にUDP送受信が動作中の場合は実行が失敗します。</li>
+</ul>
+
+<hr />
+<h2 id="udprecv">udp {mode="recv"}</h2>
+
+<p>UDPの受信を行います。</p>
+
+<h3 id="書式-50">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">udp</span><span class="p">(</span><span class="n">table</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-49">引数</h3>
+
+<h5 id="table-2"><strong>table</strong></h5>
+<p>以下のフィールドがあります。</p>
+<dl class="ml-4">
+  <dt>mode</dt>
+  <dd><em>string</em>。UDP操作の属性。"recv"を指定する。</dd>
+  <dt>address</dt>
+  <dd><em>string</em>。指定したアドレスからのみ受信する。省略可。省略した場合は全てのアドレスから受信する。</dd>
+  <dt>port</dt>
+  <dd><em>number</em>。受信待ちポート。</dd>
+  <dt>file</dt>
+  <dd><em>string</em>。受信したデータを保存するファイル名。"sharedmemory"を指定すると共有メモリに保存する。</dd>
+  <dt>offset</dt>
+  <dd><em>number</em>。sharedmemory内オフセット。fileに"sharedmemory"を指定した場合のみ指定可。省略可。省略時の値は0。</dd>
+  <dt>size</dt>
+  <dd><em>number</em>。受信サイズ。指定サイズ受信後に受信動作が停止する。省略可。ファイルに受信する場合でsize省略時は受信するサイズが無制限となる。共有メモリに受信する場合でsize省略時は、2048 - offsetがsize値となる。</dd>
+  <dt>timeout</dt>
+  <dd><em>number</em>。タイムアウト時間(秒)。指定時間後に受信動作が停止する。省略時はタイムアウト無しとなる。</dd>
+</dl>
+
+<p>各フィールドの必須/省略一覧</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>受信</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>mode</td>
+      <td><code class="highlighter-rouge">recv</code></td>
+    </tr>
+    <tr>
+      <td>address</td>
+      <td>省略可</td>
+    </tr>
+    <tr>
+      <td>port</td>
+      <td>必須</td>
+    </tr>
+    <tr>
+      <td>file</td>
+      <td>必須</td>
+    </tr>
+    <tr>
+      <td>offset</td>
+      <td>fileに”sharedmemory”を指定時のみ指定可（省略可）</td>
+    </tr>
+    <tr>
+      <td>size</td>
+      <td>省略可</td>
+    </tr>
+    <tr>
+      <td>timeout</td>
+      <td>省略可</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="戻り値-45">戻り値</h3>
+
+<h5 id="res-11"><strong>res</strong></h5>
+<p><em>number_または_nil</em>。</p>
+
+<dl class="ml-4">
+  <dt>1</dt>
+  <dd>成功。</dd>
+  <dt>nil</dt>
+  <dd>失敗。</dd>
+</dl>
+
+<h3 id="例-14">例</h3>
+
+<p>共有メモリに受信（アドレス100から10バイト）</p>
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">udp</span> <span class="p">{</span><span class="n">mode</span> <span class="o">=</span> <span class="s2">"recv"</span><span class="p">,</span>
+  <span class="n">port</span> <span class="o">=</span> <span class="mi">50000</span><span class="p">,</span>
+  <span class="n">file</span> <span class="o">=</span> <span class="s2">"sharedmemory"</span><span class="p">,</span>
+  <span class="n">offset</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span>
+  <span class="n">size</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>ファイルに受信(100バイト受信で終了、タイムアウト30秒)</p>
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">udp</span> <span class="p">{</span><span class="n">mode</span> <span class="o">=</span> <span class="s2">"recv"</span><span class="p">,</span>
+  <span class="n">port</span> <span class="o">=</span> <span class="mi">50000</span><span class="p">,</span>
+  <span class="n">file</span> <span class="o">=</span> <span class="s2">"recv.txt"</span><span class="p">,</span>
+  <span class="n">size</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span>
+  <span class="n">timeout</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="注意事項-10">注意事項</h3>
+
+<ul>
+  <li>非同期の関数呼び出しとなります。</li>
+  <li>既にUDP送受信が動作中の場合は実行が失敗します。</li>
+  <li>fileにファイル名を指定した場合は、受信したデータはファイルに追記されます。</li>
+  <li>fileにファイル名を指定した場合は、受信が終了するまでファイルに反映されません。</li>
+  <li>fileにファイル名を指定した場合は、1パケットで受信できるサイズの最大値は1460バイトとなります。</li>
+  <li>受信動作は、以下の条件により停止します。
+    <ul>
+      <li>受信バイト数がsizeで指定したサイズに達する(sizeを指定した場合)</li>
+      <li>timeoutで指定した時間が経過する(timeoutを指定した場合)</li>
+      <li>fa.udp {mode=”stop”}を実行する</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+<h2 id="udpsend">udp {mode="send"}</h2>
+
+<p>UDPの送信を行います。</p>
+
+<h3 id="書式-51">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">udp</span><span class="p">(</span><span class="n">table</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-50">引数</h3>
+
+<h5 id="table-3"><strong>table</strong></h5>
+<p>以下のフィールドがあります。</p>
+<dl class="ml-4">
+  <dt>mode</dt>
+  <dd><em>string</em>。UDP操作の属性。"send"を指定する。</dd>
+  <dt>address</dt>
+  <dd><em>string</em>。送信先アドレス。</dd>
+  <dt>port</dt>
+  <dd><em>number</em>。送信先ポート。</dd>
+  <dt>file</dt>
+  <dd><em>string</em>。送信データが格納されたファイル名。"sharedmemory"を指定すると共有メモリから送信する。message指定時は指定不可。</dd>
+  <dt>message</dt>
+  <dd><em>string</em>。送信する文字列。file指定時は指定不可。</dd>
+  <dt>offset</dt>
+  <dd><em>number</em>。sharedmemory内オフセット。fileに"sharedmemory"を指定した場合のみ指定可。省略可。省略時の値は0。</dd>
+  <dt>size</dt>
+  <dd><em>number</em>。送信サイズ。省略可。省略時は、fileまたはmessageで指定した内容全てを送信する。fileに"sharedmemory"を指定してsizeを省略した場合は、offsetの位置以降の内容を全て送信する。</dd>
+</dl>
+
+<p>各フィールドの必須/省略一覧</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>送信</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>mode</td>
+      <td><code class="highlighter-rouge">send</code></td>
+    </tr>
+    <tr>
+      <td>address</td>
+      <td>必須</td>
+    </tr>
+    <tr>
+      <td>port</td>
+      <td>必須</td>
+    </tr>
+    <tr>
+      <td>file</td>
+      <td>fileとmessageのどちらか一方のみ指定</td>
+    </tr>
+    <tr>
+      <td>message</td>
+      <td>fileとmessageのどちらか一方のみ指定</td>
+    </tr>
+    <tr>
+      <td>offset</td>
+      <td>fileに”sharedmemory”を指定時のみ指定可（省略可）</td>
+    </tr>
+    <tr>
+      <td>size</td>
+      <td>省略可</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="戻り値-46">戻り値</h3>
+
+<h5 id="res-12"><strong>res</strong></h5>
+<p><em>number_または_nil</em>。</p>
+
+<dl class="ml-4">
+  <dt>1</dt>
+  <dd>成功。</dd>
+  <dt>nil</dt>
+  <dd>失敗。</dd>
+</dl>
+
+<h3 id="例-15">例</h3>
+
+<p>文字列を送信</p>
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">udp</span> <span class="p">{</span><span class="n">mode</span> <span class="o">=</span> <span class="s2">"send"</span><span class="p">,</span>
+  <span class="n">address</span> <span class="o">=</span> <span class="s2">"192.168.0.11"</span><span class="p">,</span>
+  <span class="n">port</span> <span class="o">=</span> <span class="mi">50000</span><span class="p">,</span>
+  <span class="n">message</span> <span class="o">=</span> <span class="s2">"hello"</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>ファイルの内容を送信</p>
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">udp</span> <span class="p">{</span><span class="n">mode</span> <span class="o">=</span> <span class="s2">"send"</span><span class="p">,</span>
+  <span class="n">address</span> <span class="o">=</span> <span class="s2">"192.168.0.11"</span><span class="p">,</span>
+  <span class="n">port</span> <span class="o">=</span> <span class="mi">50000</span><span class="p">,</span>
+  <span class="n">file</span> <span class="o">=</span> <span class="s2">"hello.txt"</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>共有メモリの内容を送信</p>
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fa</span><span class="p">.</span><span class="n">sharedmemory</span><span class="p">(</span><span class="s2">"write"</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="s2">"from sharedmemory"</span><span class="p">)</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">udp</span> <span class="p">{</span><span class="n">mode</span> <span class="o">=</span> <span class="s2">"send"</span><span class="p">,</span>
+  <span class="n">address</span> <span class="o">=</span> <span class="s2">"192.168.0.11"</span><span class="p">,</span>
+  <span class="n">port</span> <span class="o">=</span> <span class="mi">50000</span><span class="p">,</span>
+  <span class="n">file</span> <span class="o">=</span> <span class="s2">"sharedmemory"</span><span class="p">,</span>
+  <span class="n">offset</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span>
+  <span class="n">size</span> <span class="o">=</span> <span class="mi">17</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="注意事項-11">注意事項</h3>
+
+<ul>
+  <li>非同期の関数呼び出しとなります。</li>
+  <li>既にUDP送受信が動作中の場合は実行が失敗します。</li>
+  <li>fileとmessageはどちらか一方を指定してください。</li>
+</ul>
+
+<hr />
+<h2 id="udpsendinterval">udp {mode="send_interval"}</h2>
+
+<p>UDPの送信を指定間隔で行います。</p>
+
+<h3 id="書式-52">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">udp</span><span class="p">(</span><span class="n">table</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-51">引数</h3>
+
+<h5 id="table-4"><strong>table</strong></h5>
+<p>以下のフィールドがあります。</p>
+<dl class="ml-4">
+  <dt>mode</dt>
+  <dd><em>string</em>。UDP操作の属性。"send_interval"を指定する。</dd>
+  <dt>address</dt>
+  <dd><em>string</em>。送信先アドレス。</dd>
+  <dt>port</dt>
+  <dd><em>number</em>。送信先ポート。</dd>
+  <dt>file</dt>
+  <dd><em>string</em>。送信データが格納されたファイル名。"sharedmemory"を指定すると共有メモリから送信する。message指定時は指定不可。</dd>
+  <dt>message</dt>
+  <dd><em>string</em>。送信する文字列。file指定時は指定不可。</dd>
+  <dt>offset</dt>
+  <dd><em>number</em>。sharedmemory内オフセット。fileに"sharedmemory"を指定した場合のみ指定可。省略可。省略時の値は0。</dd>
+  <dt>size</dt>
+  <dd><em>number</em>。送信サイズ。省略可。省略時は、fileまたはmessageで指定した内容全てを送信する。fileに"sharedmemory"を指定してsizeを省略した場合は、offsetの位置以降の内容を全て送信する。</dd>
+  <dt>interval</dt>
+  <dd><em>number</em>。送信間隔(秒)。省略可。省略時の値は5。</dd>
+  <dt>timeout</dt>
+  <dd><em>number</em>。タイムアウト時間(秒)。省略時はタイムアウト無しとなる。</dd>
+</dl>
+
+<p>各フィールドの必須/省略一覧</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>指定間隔送信</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>mode</td>
+      <td><code class="highlighter-rouge">send_interval</code></td>
+    </tr>
+    <tr>
+      <td>address</td>
+      <td>必須</td>
+    </tr>
+    <tr>
+      <td>port</td>
+      <td>必須</td>
+    </tr>
+    <tr>
+      <td>file</td>
+      <td>fileとmessageのどちらか一方のみ指定</td>
+    </tr>
+    <tr>
+      <td>message</td>
+      <td>fileとmessageのどちらか一方のみ指定</td>
+    </tr>
+    <tr>
+      <td>offset</td>
+      <td>fileに”sharedmemory”を指定時のみ指定可（省略可）</td>
+    </tr>
+    <tr>
+      <td>size</td>
+      <td>省略可</td>
+    </tr>
+    <tr>
+      <td>interval</td>
+      <td>省略可</td>
+    </tr>
+    <tr>
+      <td>timeout</td>
+      <td>省略可</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="戻り値-47">戻り値</h3>
+
+<h5 id="res-13"><strong>res</strong></h5>
+<p><em>number_または_nil</em>。</p>
+
+<dl class="ml-4">
+  <dt>1</dt>
+  <dd>成功。</dd>
+  <dt>nil</dt>
+  <dd>失敗。</dd>
+</dl>
+
+<h3 id="例-16">例</h3>
+
+<p>1秒間隔で10秒間送信</p>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">udp</span> <span class="p">{</span><span class="n">mode</span> <span class="o">=</span> <span class="s2">"send_interval"</span><span class="p">,</span>
+  <span class="n">address</span> <span class="o">=</span> <span class="s2">"192.168.0.11"</span><span class="p">,</span>
+  <span class="n">port</span> <span class="o">=</span> <span class="mi">50000</span><span class="p">,</span>
+  <span class="n">file</span> <span class="o">=</span> <span class="s2">"hello.txt"</span><span class="p">,</span>
+  <span class="n">interval</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+  <span class="n">timeout</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="注意事項-12">注意事項</h3>
+
+<ul>
+  <li>非同期の関数呼び出しとなります。</li>
+  <li>既にUDP送受信が動作中の場合は実行が失敗します。</li>
+  <li>fileとmessageはどちらか一方を指定してください。</li>
+  <li>指定間隔送信動作は、以下の条件により停止します。
+    <ul>
+      <li>timeoutで指定した時間が経過する(timeoutを指定した場合)</li>
+      <li>fa.udp {mode=”stop”}を実行する</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+<h2 id="udpstop">udp {mode="stop"}</h2>
+
+<p>UDPの受信動作または指定間隔送信動作を停止します。</p>
+
+<h3 id="書式-53">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">udp</span><span class="p">(</span><span class="n">table</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-52">引数</h3>
+
+<h5 id="table-5"><strong>table</strong></h5>
+<p>以下のフィールドがあります。</p>
+<dl class="ml-4">
+  <dt>mode</dt>
+  <dd><em>string</em>。UDP操作の属性。"stop"を指定する。</dd>
+</dl>
+
+<h3 id="戻り値-48">戻り値</h3>
+
+<h5 id="res-14"><strong>res</strong></h5>
+<p><em>number_または_nil</em>。</p>
+
+<dl class="ml-4">
+  <dt>1</dt>
+  <dd>成功。</dd>
+  <dt>nil</dt>
+  <dd>失敗。</dd>
+</dl>
+
+<hr />
+<h2 id="udpstate">udp(“state”)</h2>
+
+<p>UDPの送受信状態を取得します。</p>
+
+<h3 id="書式-54">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">state</span><span class="p">,</span> <span class="n">count</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">udp</span><span class="p">(</span><span class="s2">"state"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-53">引数</h3>
+
+<p>第1引数は”state”固定。</p>
+
+<h3 id="戻り値-49">戻り値</h3>
+
+<h5 id="state"><strong>state</strong></h5>
+<p><em>number</em>。</p>
+
+<dl class="ml-4">
+  <dt>1</dt>
+  <dd>UDP送受信が非同期で動作中。</dd>
+  <dt>nil</dt>
+  <dd>UDP送受信は動作していない。</dd>
+</dl>
+
+<h5 id="count-1"><strong>count</strong></h5>
+<p><em>number_または_string</em>。</p>
+
+<dl class="ml-4">
+  <dt>number</dt>
+  <dd>送受信開始時からの送受信バイト数。</dd>
+  <dt>string: "destination unreachable\n"</dt>
+  <dd>送信サイズが0で接続機器が見つからない場合の戻り値。</dd>
+</dl>
+
+<h3 id="例-17">例</h3>
+
+<p>UDPの送受信が終わるまで待機する</p>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1000</span> <span class="k">do</span>
+  <span class="kd">local</span> <span class="n">state</span><span class="p">,</span> <span class="n">count</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">udp</span><span class="p">(</span><span class="s2">"state"</span><span class="p">)</span>
+  <span class="k">if</span> <span class="n">state</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">then</span>
+    <span class="k">break</span>
+  <span class="k">end</span>
+  <span class="n">sleep</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<hr />
+<h2 id="watchdogevent">watchdog(“event”)</h2>
+
+<p>WatchDogのタイマーをリセットします。</p>
+
+<h3 id="書式-55">書式</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">result</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">watchdog</span><span class="p">(</span><span class="s2">"event"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="引数-54">引数</h3>
+
+<p>第1引数は”event”固定。</p>
+
+<h3 id="戻り値-50">戻り値</h3>
 
 <h5 id="result-8"><strong>result</strong></h5>
 <p><em>number</em>。</p>
@@ -2945,18 +3538,18 @@ CLKはプルダウンしてください。<br />
 
 <p>WatchDogのタイマーをスタートさせます。タイムアウトするとFlashAirが再起動します。</p>
 
-<h3 id="書式-49">書式</h3>
+<h3 id="書式-56">書式</h3>
 
 <div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">result</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">watchdog</span><span class="p">(</span><span class="s2">"start"</span><span class="p">,</span> <span class="n">cycle</span><span class="p">)</span>
 </code></pre></div></div>
 
-<h3 id="引数-48">引数</h3>
+<h3 id="引数-55">引数</h3>
 
 <p>第1引数は”start”固定。</p>
 <h5 id="cycle"><strong>cycle</strong></h5>
 <p><em>number</em>。 watchdogを発行を秒単位で指定します。</p>
 
-<h3 id="戻り値-44">戻り値</h3>
+<h3 id="戻り値-51">戻り値</h3>
 
 <h5 id="result-9"><strong>result</strong></h5>
 <p><em>number</em>。</p>
@@ -3017,16 +3610,16 @@ CLKはプルダウンしてください。<br />
 
 <p>WatchDogの状態を取得します。</p>
 
-<h3 id="書式-50">書式</h3>
+<h3 id="書式-57">書式</h3>
 
 <div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">result</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">watchdog</span><span class="p">(</span><span class="s2">"status"</span><span class="p">)</span>
 </code></pre></div></div>
 
-<h3 id="引数-49">引数</h3>
+<h3 id="引数-56">引数</h3>
 
 <p>第1引数は”status”固定。</p>
 
-<h3 id="戻り値-45">戻り値</h3>
+<h3 id="戻り値-52">戻り値</h3>
 
 <h5 id="result-10"><strong>result</strong></h5>
 <p><em>number</em>。</p>
@@ -3045,16 +3638,16 @@ CLKはプルダウンしてください。<br />
 
 <p>WatchDogのタイマーを停止します。</p>
 
-<h3 id="書式-51">書式</h3>
+<h3 id="書式-58">書式</h3>
 
 <div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">result</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">watchdog</span><span class="p">(</span><span class="s2">"stop"</span><span class="p">)</span>
 </code></pre></div></div>
 
-<h3 id="引数-50">引数</h3>
+<h3 id="引数-57">引数</h3>
 
 <p>第1引数は”stop”固定。</p>
 
-<h3 id="戻り値-46">戻り値</h3>
+<h3 id="戻り値-53">戻り値</h3>
 
 <h5 id="result-11"><strong>result</strong></h5>
 <p><em>number</em>。</p>
@@ -3069,14 +3662,14 @@ CLKはプルダウンしてください。<br />
 
 <p>WebSocket通信をします。</p>
 
-<h3 id="書式-52">書式</h3>
+<h3 id="書式-59">書式</h3>
 
 <div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">res</span><span class="p">,</span> <span class="nb">type</span><span class="p">,</span> <span class="n">payload</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">websocket</span><span class="p">(</span><span class="n">table</span><span class="p">)</span>
 </code></pre></div></div>
 
-<h3 id="引数-51">引数</h3>
+<h3 id="引数-58">引数</h3>
 
-<h5 id="table-2"><strong>table</strong></h5>
+<h5 id="table-6"><strong>table</strong></h5>
 <p>以下のフィールドがあります。</p>
 
 <dl class="ml-4">
@@ -3148,16 +3741,16 @@ CLKはプルダウンしてください。<br />
   </tbody>
 </table>
 
-<h3 id="戻り値-47">戻り値</h3>
+<h3 id="戻り値-54">戻り値</h3>
 
-<h5 id="res-9"><strong>res</strong></h5>
+<h5 id="res-15"><strong>res</strong></h5>
 <p><em>number</em>。受信成功時は<code class="highlighter-rouge">0</code>もしくは正数を返します。受信失敗時は負数を返します。</p>
-<h5 id="type-1"><strong>type</strong></h5>
+<h5 id="type-3"><strong>type</strong></h5>
 <p><em>number</em>。メッセージタイプ（テキスト＝<code class="highlighter-rouge">1</code>、バイナリ＝<code class="highlighter-rouge">2</code>）。メッセージ受信のときのみ使用します。</p>
 <h5 id="payload"><strong>payload</strong></h5>
 <p><em>string</em> or <em>table</em>。受信メッセージ。受信失敗時は<code class="highlighter-rouge">nil</code>を返します。メッセージ受信のときのみ使用します。</p>
 
-<h3 id="例-12">例</h3>
+<h3 id="例-18">例</h3>
 
 <div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">websocket</span><span class="p">{</span><span class="n">mode</span> <span class="o">=</span> <span class="s2">"open"</span><span class="p">,</span> <span class="n">address</span> <span class="o">=</span> <span class="s2">"ws://localhost/socket"</span><span class="p">}</span>
 <span class="n">res</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">websocket</span><span class="p">{</span><span class="n">mode</span> <span class="o">=</span> <span class="s2">"send"</span><span class="p">,</span> <span class="n">payload</span> <span class="o">=</span> <span class="s2">"hello!"</span><span class="p">,</span> <span class="nb">type</span> <span class="o">=</span> <span class="mi">1</span><span class="p">}</span>
@@ -3170,16 +3763,16 @@ CLKはプルダウンしてください。<br />
 
 <p>ネットワークに無線接続されているかを確認します。</p>
 
-<h3 id="書式-53">書式</h3>
+<h3 id="書式-60">書式</h3>
 
 <div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">result</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">WlanLink</span><span class="p">()</span>
 </code></pre></div></div>
 
-<h3 id="引数-52">引数</h3>
+<h3 id="引数-59">引数</h3>
 
 <p>なし</p>
 
-<h3 id="戻り値-48">戻り値</h3>
+<h3 id="戻り値-55">戻り値</h3>
 
 <h5 id="result-12"><strong>result</strong></h5>
 <p><em>number</em>。</p>
@@ -3196,7 +3789,7 @@ CLKはプルダウンしてください。<br />
 
 <p>第２パーティションへアクセスを行うことが出来ます。第２パーティションはLuaの内部ログなどを保存し、ホスト機器からのファイルアクセスによる影響がない領域のことです。ドライブレターにより、パーティションを指定することが可能です。</p>
 
-<h3 id="書式-54">書式</h3>
+<h3 id="書式-61">書式</h3>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"p" --1stパーティション（省略化）
 "s" --2ndパーティション
@@ -3207,7 +3800,7 @@ CLKはプルダウンしてください。<br />
 
 <p>パーティションの作成は、Linux、Win10などのホスト機器を使用して分割することが可能です。</p>
 
-<h3 id="例-13">例</h3>
+<h3 id="例-19">例</h3>
 
 <div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">local</span> <span class="n">file</span> <span class="o">=</span> <span class="nb">io.open</span><span class="p">(</span><span class="s2">"s:\flashair.log"</span><span class="p">,</span> <span class="s2">"a"</span><span class="p">)</span>
 </code></pre></div></div>

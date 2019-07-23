@@ -81,12 +81,12 @@ FlashAirのLua機能では、下記のライブラリ関数が利用できます
 [ConnectedSTA](#connectedsta)            |                       AP接続時の接続ステーション数                  |                       4.00.00+
 [control("fioget")](#controlfioget)      |                       無線LAN On/Off状態の取得                     |                       4.00.00+
 [control("fioset")](#controlfioset)      |                       無線LAN On/Off                              |                       4.00.00+
-[control("hid_change_pass")](#controlhid_change_pass) |          秘匿領域に設定したパスワードの変更             |                       4.00.03+
-[control("hid_clear")](#controlhid_clear) |                       パスワード、APIで保存したスクリプトファイルを全て削除 |                 4.00.03+
-[control("hid_get")](#controlhid_get)    |                       秘匿領域に保存したスクリプトを取得                   |                 4.00.03+
-[control("hid_hash")](#controlhid_hash)  |                       設定したパスワードと指定する文字列からハッシュ文字列を作成 |             4.00.03+
-[control("hid_set_pass")](#controlhid_set_pass) |                秘匿領域への保存のためのパスワードを設定        |                       4.00.03+
-[control("hid_store")](#controlhid_store) |                       スクリプトを秘匿領域へ保存                     |                      4.00.03+
+[control("hid_change_pass")](#controlhid_change_pass) |          秘匿領域に設定したパスワードの変更             |                       4.00.04+
+[control("hid_clear")](#controlhid_clear) |                       パスワード、APIで保存したスクリプトファイルを全て削除 |                 4.00.04+
+[control("hid_get")](#controlhid_get)    |                       秘匿領域に保存したスクリプトを取得                   |                 4.00.04+
+[control("hid_hash")](#controlhid_hash)  |                       設定したパスワードと指定する文字列からハッシュ文字列を作成 |             4.00.04+
+[control("hid_set_pass")](#controlhid_set_pass) |                秘匿領域への保存のためのパスワードを設定        |                       4.00.04+
+[control("hid_store")](#controlhid_store) |                       スクリプトを秘匿領域へ保存                     |                      4.00.04+
 [control("time")](#controltime)          |                       日時メモ保存                                 |                       4.00.00+
 [Disconnect](#disconnect)                |                       無線LANの停止                                |                       3.00.00+
 [Establish](#establish)                  |                       APモードで無線LANの有効化                     |                       3.00.00+
@@ -125,6 +125,12 @@ FlashAirのLua機能では、下記のライブラリ関数が利用できます
 [spi("read")](#spiread)                  |                       ライトおよびリード                            |                       4.00.03+
 [spi("write")](#spiwrite)                |                       ライトおよびリード                            |                       4.00.03+
 [strconvert](#strconvert)                |                       文字列変換                                   |                       3.00.00+
+[udp](#udp)                              |                       UDP送信                                      |                      4.00.04+
+[udp {mode="recv"}](#udprecv)            |                       UDP受信                                      |                      4.00.04+
+[udp {mode="send"}](#udpsend)            |                       UDP送信                                      |                      4.00.04+
+[udp {mode="send_interval"}](#udpsendinterval) |                 UDP指定間隔送信                               |                      4.00.04+
+[udp {mode="stop"}](#udpstop)            |                       UDP送受信停止                                |                      4.00.04+
+[udp("state")](#udpstate)                |                       UDP送受信状態取得                            |                      4.00.04+
 [watchdog("event")](#watchdogevent)      |                       WatchDogのタイマーリセット                    |                       4.00.03+
 [watchdog("start")](#watchdogstart)      |                       WatchDogのタイマースタート                    |                       4.00.03+
 [watchdog("status")](#watchdogstatus)    |                       WatchDogの状態取得                           |                       4.00.03+
@@ -2036,6 +2042,472 @@ a = fa.strconvert("sjis2utf8", str )
 print("toUTF8=", a)
 b = fa.strconvert("utf82sjis", a)
 print("toSJIS=", b)
+```
+
+---
+## udp
+
+UDPの送信を行います。
+
+### 書式
+
+```lua
+res = fa.udp(address, port, type, data)
+```
+
+### 引数
+
+##### **address**
+_string_。 送信先アドレス。
+##### **port**
+_number_。 送信先ポート。
+
+##### **type**
+_string_。データタイプ。
+
+* "message"：文字列を送信する。
+* "file": ファイルを送信する。
+{: .ml-4 }
+
+##### **data**
+_string_。 type="message"のときは送信データ、type="file"のときは送信するファイル名。
+
+### 戻り値
+
+##### **res**
+_number_または_nil_。
+
+<dl class="ml-4">
+  <dt>1</dt>
+  <dd>成功。</dd>
+  <dt>nil</dt>
+  <dd>失敗。</dd>
+</dl>
+
+### 例
+
+文字列を送信
+```lua
+res = fa.udp("192.168.0.11", 50000, "message", "hello")
+```
+
+ファイルを送信
+```lua
+res = fa.udp("192.168.0.11", 50000, "file", "hello.txt")
+```
+
+### 注意事項
+
+* 非同期の関数呼び出しとなります。
+* 既にUDP送受信が動作中の場合は実行が失敗します。
+
+---
+## udp
+
+UDPの送信を行います。
+
+### 書式
+
+```lua
+res = fa.udp(address, port, type, data)
+```
+
+### 引数
+
+##### **address**
+_string_。 送信先アドレス。
+##### **port**
+_number_。 送信先ポート。
+
+##### **type**
+_string_。データタイプ。
+
+* "message"：文字列を送信する。
+* "file": ファイルを送信する。
+{: .ml-4 }
+
+##### **data**
+_string_。 type="message"のときは送信データ、type="file"のときは送信するファイル名。
+
+### 戻り値
+
+##### **res**
+_number_または_nil_。
+
+<dl class="ml-4">
+  <dt>1</dt>
+  <dd>成功。</dd>
+  <dt>nil</dt>
+  <dd>失敗。</dd>
+</dl>
+
+### 例
+
+文字列を送信
+```lua
+res = fa.udp("192.168.0.11", 50000, "message", "hello")
+```
+
+ファイルを送信
+```lua
+res = fa.udp("192.168.0.11", 50000, "file", "hello.txt")
+```
+
+### 注意事項
+
+* 非同期の関数呼び出しとなります。
+* 既にUDP送受信が動作中の場合は実行が失敗します。
+
+---
+<h2 id="udprecv">udp {mode="recv"}</h2>
+
+UDPの受信を行います。
+
+### 書式
+
+```lua
+res = fa.udp(table)
+```
+
+### 引数
+
+##### **table**
+以下のフィールドがあります。
+<dl class="ml-4">
+  <dt>mode</dt>
+  <dd><em>string</em>。UDP操作の属性。"recv"を指定する。</dd>
+  <dt>address</dt>
+  <dd><em>string</em>。指定したアドレスからのみ受信する。省略可。省略した場合は全てのアドレスから受信する。</dd>
+  <dt>port</dt>
+  <dd><em>number</em>。受信待ちポート。</dd>
+  <dt>file</dt>
+  <dd><em>string</em>。受信したデータを保存するファイル名。"sharedmemory"を指定すると共有メモリに保存する。</dd>
+  <dt>offset</dt>
+  <dd><em>number</em>。sharedmemory内オフセット。fileに"sharedmemory"を指定した場合のみ指定可。省略可。省略時の値は0。</dd>
+  <dt>size</dt>
+  <dd><em>number</em>。受信サイズ。指定サイズ受信後に受信動作が停止する。省略可。ファイルに受信する場合でsize省略時は受信するサイズが無制限となる。共有メモリに受信する場合でsize省略時は、2048 - offsetがsize値となる。</dd>
+  <dt>timeout</dt>
+  <dd><em>number</em>。タイムアウト時間(秒)。指定時間後に受信動作が停止する。省略時はタイムアウト無しとなる。</dd>
+</dl>
+
+各フィールドの必須/省略一覧
+
+|         | 受信                                           |
+| ------- | ---------------------------------------------- |
+| mode    | `recv`                                         |
+| address | 省略可                                         |
+| port    | 必須                                           |
+| file    | 必須                                           |
+| offset  | fileに"sharedmemory"を指定時のみ指定可（省略可） |
+| size    | 省略可                                         |
+| timeout | 省略可                                         |
+
+### 戻り値
+
+##### **res**
+_number_または_nil_。
+
+<dl class="ml-4">
+  <dt>1</dt>
+  <dd>成功。</dd>
+  <dt>nil</dt>
+  <dd>失敗。</dd>
+</dl>
+
+### 例
+
+共有メモリに受信（アドレス100から10バイト）
+```lua
+res = fa.udp {mode = "recv",
+  port = 50000,
+  file = "sharedmemory",
+  offset = 100,
+  size = 10
+}
+```
+
+ファイルに受信(100バイト受信で終了、タイムアウト30秒)
+```lua
+res = fa.udp {mode = "recv",
+  port = 50000,
+  file = "recv.txt",
+  size = 100,
+  timeout = 30
+}
+```
+
+### 注意事項
+
+* 非同期の関数呼び出しとなります。
+* 既にUDP送受信が動作中の場合は実行が失敗します。
+* fileにファイル名を指定した場合は、受信したデータはファイルに追記されます。
+* fileにファイル名を指定した場合は、受信が終了するまでファイルに反映されません。
+* fileにファイル名を指定した場合は、1パケットで受信できるサイズの最大値は1460バイトとなります。
+* 受信動作は、以下の条件により停止します。
+	* 受信バイト数がsizeで指定したサイズに達する(sizeを指定した場合)
+  * timeoutで指定した時間が経過する(timeoutを指定した場合)
+  * fa.udp {mode="stop"}を実行する
+
+---
+<h2 id="udpsend">udp {mode="send"}</h2>
+
+UDPの送信を行います。
+
+### 書式
+
+```lua
+res = fa.udp(table)
+```
+
+### 引数
+
+##### **table**
+以下のフィールドがあります。
+<dl class="ml-4">
+  <dt>mode</dt>
+  <dd><em>string</em>。UDP操作の属性。"send"を指定する。</dd>
+  <dt>address</dt>
+  <dd><em>string</em>。送信先アドレス。</dd>
+  <dt>port</dt>
+  <dd><em>number</em>。送信先ポート。</dd>
+  <dt>file</dt>
+  <dd><em>string</em>。送信データが格納されたファイル名。"sharedmemory"を指定すると共有メモリから送信する。message指定時は指定不可。</dd>
+  <dt>message</dt>
+  <dd><em>string</em>。送信する文字列。file指定時は指定不可。</dd>
+  <dt>offset</dt>
+  <dd><em>number</em>。sharedmemory内オフセット。fileに"sharedmemory"を指定した場合のみ指定可。省略可。省略時の値は0。</dd>
+  <dt>size</dt>
+  <dd><em>number</em>。送信サイズ。省略可。省略時は、fileまたはmessageで指定した内容全てを送信する。fileに"sharedmemory"を指定してsizeを省略した場合は、offsetの位置以降の内容を全て送信する。</dd>
+</dl>
+
+各フィールドの必須/省略一覧
+
+|         | 送信                                           |
+| ------- | ---------------------------------------------- |
+| mode    | `send`                                         |
+| address | 必須                                           |
+| port    | 必須                                           |
+| file    | fileとmessageのどちらか一方のみ指定              |
+| message | fileとmessageのどちらか一方のみ指定              |
+| offset  | fileに"sharedmemory"を指定時のみ指定可（省略可） |
+| size    | 省略可                                         |
+
+### 戻り値
+
+##### **res**
+_number_または_nil_。
+
+<dl class="ml-4">
+  <dt>1</dt>
+  <dd>成功。</dd>
+  <dt>nil</dt>
+  <dd>失敗。</dd>
+</dl>
+
+### 例
+
+文字列を送信
+```lua
+res = fa.udp {mode = "send",
+  address = "192.168.0.11",
+  port = 50000,
+  message = "hello"
+}
+```
+
+ファイルの内容を送信
+```lua
+res = fa.udp {mode = "send",
+  address = "192.168.0.11",
+  port = 50000,
+  file = "hello.txt"
+}
+```
+
+共有メモリの内容を送信
+```lua
+fa.sharedmemory("write", 2, 17, "from sharedmemory")
+res = fa.udp {mode = "send",
+  address = "192.168.0.11",
+  port = 50000,
+  file = "sharedmemory",
+  offset = 2,
+  size = 17
+}
+```
+
+### 注意事項
+
+* 非同期の関数呼び出しとなります。
+* 既にUDP送受信が動作中の場合は実行が失敗します。
+* fileとmessageはどちらか一方を指定してください。
+
+---
+<h2 id="udpsendinterval">udp {mode="send_interval"}</h2>
+
+UDPの送信を指定間隔で行います。
+
+### 書式
+
+```lua
+res = fa.udp(table)
+```
+
+### 引数
+
+##### **table**
+以下のフィールドがあります。
+<dl class="ml-4">
+  <dt>mode</dt>
+  <dd><em>string</em>。UDP操作の属性。"send_interval"を指定する。</dd>
+  <dt>address</dt>
+  <dd><em>string</em>。送信先アドレス。</dd>
+  <dt>port</dt>
+  <dd><em>number</em>。送信先ポート。</dd>
+  <dt>file</dt>
+  <dd><em>string</em>。送信データが格納されたファイル名。"sharedmemory"を指定すると共有メモリから送信する。message指定時は指定不可。</dd>
+  <dt>message</dt>
+  <dd><em>string</em>。送信する文字列。file指定時は指定不可。</dd>
+  <dt>offset</dt>
+  <dd><em>number</em>。sharedmemory内オフセット。fileに"sharedmemory"を指定した場合のみ指定可。省略可。省略時の値は0。</dd>
+  <dt>size</dt>
+  <dd><em>number</em>。送信サイズ。省略可。省略時は、fileまたはmessageで指定した内容全てを送信する。fileに"sharedmemory"を指定してsizeを省略した場合は、offsetの位置以降の内容を全て送信する。</dd>
+  <dt>interval</dt>
+  <dd><em>number</em>。送信間隔(秒)。省略可。省略時の値は5。</dd>
+  <dt>timeout</dt>
+  <dd><em>number</em>。タイムアウト時間(秒)。省略時はタイムアウト無しとなる。</dd>
+</dl>
+
+各フィールドの必須/省略一覧
+
+|          | 指定間隔送信                                    |
+| -------- | ---------------------------------------------- |
+| mode     | `send_interval`                                |
+| address  | 必須                                           |
+| port     | 必須                                           |
+| file     | fileとmessageのどちらか一方のみ指定              |
+| message  | fileとmessageのどちらか一方のみ指定              |
+| offset   | fileに"sharedmemory"を指定時のみ指定可（省略可） |
+| size     | 省略可                                         |
+| interval | 省略可                                         |
+| timeout  | 省略可                                         |
+
+### 戻り値
+
+##### **res**
+_number_または_nil_。
+
+<dl class="ml-4">
+  <dt>1</dt>
+  <dd>成功。</dd>
+  <dt>nil</dt>
+  <dd>失敗。</dd>
+</dl>
+
+### 例
+
+1秒間隔で10秒間送信
+
+```lua
+res = fa.udp {mode = "send_interval",
+  address = "192.168.0.11",
+  port = 50000,
+  file = "hello.txt",
+  interval = 1,
+  timeout = 10
+}
+```
+
+### 注意事項
+
+* 非同期の関数呼び出しとなります。
+* 既にUDP送受信が動作中の場合は実行が失敗します。
+* fileとmessageはどちらか一方を指定してください。
+* 指定間隔送信動作は、以下の条件により停止します。
+  * timeoutで指定した時間が経過する(timeoutを指定した場合)
+  * fa.udp {mode="stop"}を実行する
+
+---
+<h2 id="udpstop">udp {mode="stop"}</h2>
+
+UDPの受信動作または指定間隔送信動作を停止します。
+
+### 書式
+
+```lua
+res = fa.udp(table)
+```
+
+### 引数
+
+##### **table**
+以下のフィールドがあります。
+<dl class="ml-4">
+  <dt>mode</dt>
+  <dd><em>string</em>。UDP操作の属性。"stop"を指定する。</dd>
+</dl>
+
+### 戻り値
+
+##### **res**
+_number_または_nil_。
+
+<dl class="ml-4">
+  <dt>1</dt>
+  <dd>成功。</dd>
+  <dt>nil</dt>
+  <dd>失敗。</dd>
+</dl>
+
+---
+## udp("state")
+
+UDPの送受信状態を取得します。
+
+### 書式
+
+```lua
+state, count = fa.udp("state")
+```
+
+### 引数
+
+第1引数は"state"固定。
+
+### 戻り値
+
+##### **state**
+_number_。
+
+<dl class="ml-4">
+  <dt>1</dt>
+  <dd>UDP送受信が非同期で動作中。</dd>
+  <dt>nil</dt>
+  <dd>UDP送受信は動作していない。</dd>
+</dl>
+
+##### **count**
+_number_または_string_。
+
+<dl class="ml-4">
+  <dt>number</dt>
+  <dd>送受信開始時からの送受信バイト数。</dd>
+  <dt>string: "destination unreachable\n"</dt>
+  <dd>送信サイズが0で接続機器が見つからない場合の戻り値。</dd>
+</dl>
+
+### 例
+
+UDPの送受信が終わるまで待機する
+
+```lua
+for i=1, 1000 do
+  local state, count = fa.udp("state")
+  if state == 0 then
+    break
+  end
+  sleep(20)
+end
 ```
 
 ---

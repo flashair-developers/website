@@ -274,14 +274,18 @@
       
         
           
-        
-      
-        
-          
             <li class="navigation-list-item">
               
               <a href="http://localhost:4000/docs/api/upload.cgi.html" class="navigation-list-link">upload.cgi</a>
             </li>
+          
+        
+      
+        
+          
+        
+      
+        
           
         
       
@@ -376,14 +380,6 @@
       
         
           
-        
-      
-        
-          
-        
-      
-        
-          
             <li class="navigation-list-item">
               
               <a href="http://localhost:4000/docs/api/utility.html" class="navigation-list-link">ブラウザユーティリティ</a>
@@ -429,30 +425,38 @@
       
         
           
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
             <li class="navigation-list-item">
               
               <a href="http://localhost:4000/docs/api/lua.html" class="navigation-list-link">Lua機能</a>
             </li>
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
           
         
       
@@ -643,6 +647,12 @@ CONFIG記載例 を参照してください。<br />
       <td>接続タイムアウト時間</td>
       <td><code class="highlighter-rouge">APPAUTOTIME=3000000</code></td>
       <td>1.00.00+</td>
+    </tr>
+    <tr>
+      <td><a href="#appch">APPCH</a></td>
+      <td>APモードで使用する無線チャネルの設定</td>
+      <td><code class="highlighter-rouge">APPCH=1</code></td>
+      <td>4.00.04+</td>
     </tr>
     <tr>
       <td><a href="#appinfo">APPINFO</a></td>
@@ -1053,12 +1063,26 @@ VENDOR=TOSHIBA
 <p><code class="highlighter-rouge">APPAUTOTIME=3000000</code></p>
 
 <hr />
+<h2 id="appch" class="mb-0">APモードで使用する無線チャネルの設定</h2>
+<p class="text-small">(APPCH)</p>
+
+<p>FlashAirが無線LAN親機となるモードの際に使用する無線チャネルを設定します。</p>
+
+<p>設定可能な値は、0 から 11 です。 1～11を指定した場合は、指定した値に無線チャネルが固定されます。0を指定した場合は、無線チャネルは固定されず、FlashAirが自動で決定します。デフォルト値は0となります。</p>
+
+<p>※インターネット同時接続モードにおけるAPモードで使用する無線チャネルには反映されません。</p>
+
+<h3 id="例-11">例:</h3>
+
+<p><code class="highlighter-rouge">APPCH=1</code></p>
+
+<hr />
 <h2 id="appinfo" class="mb-0">アプリケーション独自情報</h2>
 <p class="text-small">(APPINFO)</p>
 
 <p>アプリケーションが独自で使用する情報を、1-16ケタの英数字で保存することができます。</p>
 
-<h3 id="例-11">例:</h3>
+<h3 id="例-12">例:</h3>
 
 <p><code class="highlighter-rouge">APPINFO=0123ABCD4567EFGH</code></p>
 
@@ -1126,7 +1150,7 @@ STAモード機能で接続する他の無線LAN親機が存在しない場合�
 利用方法は<a href="../tutorials/advanced/3/">上級者向けチュートリアル - インターネット同時接続モードの利用</a>を参照してください。<br />
 なお、バージョン2.00.03以降のファームウェアにおいてこのモードを利用する場合、11nではなく11b/gによる動作となります。</p>
 
-<h3 id="例-12">例:</h3>
+<h3 id="例-13">例:</h3>
 
 <p><code class="highlighter-rouge">APPMODE=4</code></p>
 
@@ -1136,7 +1160,7 @@ STAモード機能で接続する他の無線LAN親機が存在しない場合�
 
 <p>NETBIOS, Bonjourで返される名前を、15文字以内の英数字小文字で設定します。 CONFIGファイルに設定がない場合、あるいはCONFIGファイルが存在しない場合は、<code class="highlighter-rouge">flashair</code>が使われます。</p>
 
-<h3 id="例-13">例:</h3>
+<h3 id="例-14">例:</h3>
 
 <p><code class="highlighter-rouge">APPNAME=myflashair</code></p>
 
@@ -1146,7 +1170,7 @@ STAモード機能で接続する他の無線LAN親機が存在しない場合�
 
 <p>0-63文字の英数字でのネットワークセキュリティキーを設定します。 無線LANのセキュリティ機能を有効にするためには最低8文字が必要です。</p>
 
-<h3 id="例-14">例:</h3>
+<h3 id="例-15">例:</h3>
 
 <p><code class="highlighter-rouge">APPNETWORKKEY=12345678</code></p>
 
@@ -1156,7 +1180,7 @@ STAモード機能で接続する他の無線LAN親機が存在しない場合�
 
 <p>無線LAN識別子(SSID)を、1-32文字の英数字で設定します。 CONFIGファイルに設定がない場合、あるいはCONFIGファイルが存在しない場合は、<code class="highlighter-rouge">flashair_&lt;MACADDRESS&gt;</code>が使われます。</p>
 
-<h3 id="例-15">例:</h3>
+<h3 id="例-16">例:</h3>
 
 <p><code class="highlighter-rouge">APPSSID=flashair</code></p>
 
@@ -1166,7 +1190,7 @@ STAモード機能で接続する他の無線LAN親機が存在しない場合�
 
 <p>インターネット同時接続モードで使用するインターネット側ネットワークの ネットワークセキュリティキーを0-63文字の英数字で設定します。</p>
 
-<h3 id="例-16">例:</h3>
+<h3 id="例-17">例:</h3>
 
 <p><code class="highlighter-rouge">BRGNETWORKKEY=12345678</code></p>
 
@@ -1176,7 +1200,7 @@ STAモード機能で接続する他の無線LAN親機が存在しない場合�
 
 <p>インターネット同時接続モードで使用するインターネット側ネットワークの無線LAN識別子(SSID)を、 1-32文字の英数字で設定します。</p>
 
-<h3 id="例-17">例:</h3>
+<h3 id="例-18">例:</h3>
 
 <p><code class="highlighter-rouge">BRGSSID=myhomelan</code></p>
 
@@ -1186,7 +1210,7 @@ STAモード機能で接続する他の無線LAN親機が存在しない場合�
 
 <p>SD規格で定められているCard Identifier (CID)です。 32ケタの16進数です。</p>
 
-<h3 id="例-18">例:</h3>
+<h3 id="例-19">例:</h3>
 
 <p><code class="highlighter-rouge">CID=02544d53573038470750002a0200c201</code></p>
 
@@ -1196,7 +1220,7 @@ STAモード機能で接続する他の無線LAN親機が存在しない場合�
 
 <p>無線起動画面として使う画像ファイルのフルパスを設定します。 無線起動画面とは、無線LANモード(APPMODE)が<code class="highlighter-rouge">0</code>,<code class="highlighter-rouge">2</code>,<code class="highlighter-rouge">3</code>のいずれかである場合に、無線LAN機能のON/OFFを制御するための画像ファイルです。</p>
 
-<h3 id="例-19">例:</h3>
+<h3 id="例-20">例:</h3>
 
 <p><code class="highlighter-rouge">CIPATH=/DCIM/100__TSB/FA000001.jpg</code></p>
 
@@ -1206,7 +1230,7 @@ STAモード機能で接続する他の無線LAN親機が存在しない場合�
 
 <p>command.cgiの有効opcodeを指定します。</p>
 
-<h3 id="例-20">例:</h3>
+<h3 id="例-21">例:</h3>
 
 <p><code class="highlighter-rouge">COMMANDCGI=100-103</code></p>
 
@@ -1246,7 +1270,7 @@ STAモード機能で接続する他の無線LAN親機が存在しない場合�
   </tbody>
 </table>
 
-<h3 id="例-21">例:</h3>
+<h3 id="例-22">例:</h3>
 
 <p><code class="highlighter-rouge">DELCGI=/,/thumbnail.cgi</code></p>
 
@@ -1256,7 +1280,7 @@ STAモード機能で接続する他の無線LAN親機が存在しない場合�
 
 <p>DHCPクライアントの再送回数を指定します。0を指定した場合には、無限に再送します。設定値は、<code class="highlighter-rouge">0</code>～<code class="highlighter-rouge">255</code>となります。</p>
 
-<h3 id="例-22">例:</h3>
+<h3 id="例-23">例:</h3>
 
 <p><code class="highlighter-rouge">DHCPC_RETRANS_MAX=5</code></p>
 
@@ -1278,7 +1302,7 @@ STAモード機能で接続する他の無線LAN親機が存在しない場合�
 
 <p>例えば、<code class="highlighter-rouge">APPNAME=myflashair</code> と設定されている場合、”http://flashair” でアクセスしてもカードのIPアドレスを返します。</p>
 
-<h3 id="例-23">例:</h3>
+<h3 id="例-24">例:</h3>
 
 <p><code class="highlighter-rouge">DNSMODE=1</code></p>
 
@@ -1288,7 +1312,7 @@ STAモード機能で接続する他の無線LAN親機が存在しない場合�
 
 <p>TLS証明書のファイルパスを指定します。指定可能な証明書は.pfxまたは.p12形式となります。</p>
 
-<h3 id="例-24">例:</h3>
+<h3 id="例-25">例:</h3>
 
 <p><code class="highlighter-rouge">EAPCERT=/cert.pfx</code></p>
 
@@ -1298,7 +1322,7 @@ STAモード機能で接続する他の無線LAN親機が存在しない場合�
 
 <p>PEAPパスワードまたはTLS秘密キーパスワードを設定します。</p>
 
-<h3 id="例-25">例:</h3>
+<h3 id="例-26">例:</h3>
 
 <p><code class="highlighter-rouge">EAPPASSWORD=12345678</code></p>
 
@@ -1308,7 +1332,7 @@ STAモード機能で接続する他の無線LAN親機が存在しない場合�
 
 <p>STAモード設定時にEAPTYPEが設定されている場合、8021Xモード(WPA2 Enterprise)で動作します。設定値は<code class="highlighter-rouge">PEAP</code> 、<code class="highlighter-rouge">TLS</code> となります。<code class="highlighter-rouge">PEAP</code> を設定した場合においては、EAPUSERとEAPPASSWORDのパラメータを用いて、接続を試みます。<code class="highlighter-rouge">TLS</code> を指定した場合はクライアント証明書を用いた接続を行います。この時、接続するアクセスポイントのSSIDは、APPSSIDにて指定します。</p>
 
-<h3 id="例-26">例:</h3>
+<h3 id="例-27">例:</h3>
 
 <p><code class="highlighter-rouge">EAPTYPE=TLS</code></p>
 
@@ -1349,7 +1373,7 @@ EAPUSER=flashair
 
 <p>EAPTYPEが指定された場合に利用するユーザーIDを指定します。</p>
 
-<h3 id="例-27">例:</h3>
+<h3 id="例-28">例:</h3>
 
 <p><code class="highlighter-rouge">EAPUSER=SMITH</code></p>
 
@@ -1359,7 +1383,7 @@ EAPUSER=flashair
 
 <p>HTTPサーバで使用するメモリ量を削減することで、Luaスクリプトが使用可能なメモリ量を増加することができます。 なおHTTPサーバのメモリを削減した場合には、ダウンロードのスループットが低下します。 設定可能範囲は<code class="highlighter-rouge">2920</code>から<code class="highlighter-rouge">23360</code>です。デフォルト値は<code class="highlighter-rouge">23360</code>です。</p>
 
-<h3 id="例-28">例:</h3>
+<h3 id="例-29">例:</h3>
 
 <p><code class="highlighter-rouge">HTTPDBUFF=2920</code></p>
 
@@ -1386,7 +1410,7 @@ EAPUSER=flashair
   </tbody>
 </table>
 
-<h3 id="例-29">例:</h3>
+<h3 id="例-30">例:</h3>
 
 <p><code class="highlighter-rouge">HTTPDMODE=1</code></p>
 
@@ -1413,7 +1437,7 @@ EAPUSER=flashair
 
 <p>Basic認証で使われるユーザ名を設定します。Digest認証時では使用されません。</p>
 
-<h3 id="例-30">例:</h3>
+<h3 id="例-31">例:</h3>
 
 <p><code class="highlighter-rouge">HTTPDUSER=flashair</code></p>
 
@@ -1437,7 +1461,7 @@ EAPUSER=flashair
   </tbody>
 </table>
 
-<h3 id="例-31">例:</h3>
+<h3 id="例-32">例:</h3>
 
 <p><code class="highlighter-rouge">IFMODE=1</code></p>
 
@@ -1447,7 +1471,7 @@ EAPUSER=flashair
 
 <p>初期設定が完了しているかを示すフラグです。初期設定が完了している場合は<code class="highlighter-rouge">1</code>が設定されます。 本パラメータがない場合は、ブラウザから接続すると初期設定としてSSIDとネットワークセキュリティキーの設定画面が表示されます。<code class="highlighter-rouge">1</code>以外の値は設定しないでください。</p>
 
-<h3 id="例-32">例:</h3>
+<h3 id="例-33">例:</h3>
 
 <p><code class="highlighter-rouge">LOCK=1</code></p>
 
@@ -1457,7 +1481,7 @@ EAPUSER=flashair
 
 <p>FlashAir起動時に実行するLuaスクリプトのファイルパスを絶対パスで指定します。起動５秒後に指定ファイルが実行されます。</p>
 
-<h3 id="例-33">例:</h3>
+<h3 id="例-34">例:</h3>
 
 <p><code class="highlighter-rouge">LUA_RUN_SCRIPT=/bootscript.lua</code></p>
 
@@ -1467,7 +1491,7 @@ EAPUSER=flashair
 
 <p>FlashAirへのファイル書き込み時に実行するLuaスクリプトのファイルパスを絶対パスで指定します。SDメモリカードの書き込みが発生した場合に指定ファイルが実行されます。最後のデータの書き込みから0.5秒後に実行されます。</p>
 
-<h3 id="例-34">例:</h3>
+<h3 id="例-35">例:</h3>
 
 <p><code class="highlighter-rouge">LUA_SD_EVENT=/writescript.lua</code></p>
 
@@ -1479,7 +1503,7 @@ EAPUSER=flashair
 未設定の場合は、config.cgiで各種設定を変更する前に必ず、マスターコードを設定する必要があります。<br />
 MASTERCODEを削除することで、マスタコードを初期状態に戻すことができます。</p>
 
-<h3 id="例-35">例:</h3>
+<h3 id="例-36">例:</h3>
 
 <p><code class="highlighter-rouge">MASTERCODE=0123456789AB</code></p>
 
@@ -1502,7 +1526,7 @@ MASTERCODEを削除することで、マスタコードを初期状態に戻す�
   </tbody>
 </table>
 
-<h3 id="例-36">例:</h3>
+<h3 id="例-37">例:</h3>
 
 <p><code class="highlighter-rouge">NOISE_CANCEL=2</code></p>
 
@@ -1512,7 +1536,7 @@ MASTERCODEを削除することで、マスタコードを初期状態に戻す�
 
 <p>FlashAirの製品名称です。<code class="highlighter-rouge">FlashAir</code>となります。</p>
 
-<h3 id="例-37">例:</h3>
+<h3 id="例-38">例:</h3>
 
 <p><code class="highlighter-rouge">PRODUCT=FlashAir</code></p>
 
@@ -1535,7 +1559,7 @@ MASTERCODEを削除することで、マスタコードを初期状態に戻す�
   </tbody>
 </table>
 
-<h3 id="例-38">例:</h3>
+<h3 id="例-39">例:</h3>
 
 <p><code class="highlighter-rouge">REDIRECT=1</code></p>
 
@@ -1545,7 +1569,7 @@ MASTERCODEを削除することで、マスタコードを初期状態に戻す�
 
 <p>STAモードでのアドレスフィルタリング機能を指定します。複数台登録する場合は、７台まで登録可能。その場合は、STAMACを複数行記載する必要があります。</p>
 
-<h3 id="例-39">例:</h3>
+<h3 id="例-40">例:</h3>
 
 <p><code class="highlighter-rouge">STAMAC=40b395A0851a</code></p>
 
@@ -1555,7 +1579,7 @@ MASTERCODEを削除することで、マスタコードを初期状態に戻す�
 
 <p>STAモードでの接続台数制限を指定します。記載しない場合は7台まで接続可能です。</p>
 
-<h3 id="例-40">例:</h3>
+<h3 id="例-41">例:</h3>
 
 <p><code class="highlighter-rouge">STANUM=2</code></p>
 
@@ -1565,7 +1589,7 @@ MASTERCODEを削除することで、マスタコードを初期状態に戻す�
 
 <p>STAモードでの無線LAN親機への接続リトライ回数を指定します。<code class="highlighter-rouge">0</code>は無限にリトライします。</p>
 
-<h3 id="例-41">例:</h3>
+<h3 id="例-42">例:</h3>
 
 <p><code class="highlighter-rouge">STA_RETRY_CT=3</code></p>
 
@@ -1575,7 +1599,7 @@ MASTERCODEを削除することで、マスタコードを初期状態に戻す�
 
 <p>FlashAirドライブ(WebDAV)動作時に、FATファイル時間からUTC時間へ変換するためのタイムゾーンを設定します。 15分単位を1として<code class="highlighter-rouge">-48</code>から<code class="highlighter-rouge">54</code>の数字で設定します。日本は、UTC標準時を<code class="highlighter-rouge">0</code>とし、9時間進めたUTC+9であるため、<code class="highlighter-rouge">36</code>(9(h)×4(15m)=36)を設定します。</p>
 
-<h3 id="例-42">例:</h3>
+<h3 id="例-43">例:</h3>
 
 <p><code class="highlighter-rouge">TIMEZONE=36</code></p>
 
@@ -1585,7 +1609,7 @@ MASTERCODEを削除することで、マスタコードを初期状態に戻す�
 
 <p>アップロード先ディレクトリを指定します。</p>
 
-<h3 id="例-43">例:</h3>
+<h3 id="例-44">例:</h3>
 
 <p><code class="highlighter-rouge">UPDIR=/DCIM</code></p>
 
@@ -1608,7 +1632,7 @@ MASTERCODEを削除することで、マスタコードを初期状態に戻す�
   </tbody>
 </table>
 
-<h3 id="例-44">例:</h3>
+<h3 id="例-45">例:</h3>
 
 <p><code class="highlighter-rouge">UPLOAD=1</code></p>
 
@@ -1618,7 +1642,7 @@ MASTERCODEを削除することで、マスタコードを初期状態に戻す�
 
 <p>FlashAirベンダーの名前です。<code class="highlighter-rouge">TOSHIBA</code>となります。</p>
 
-<h3 id="例-45">例:</h3>
+<h3 id="例-46">例:</h3>
 
 <p><code class="highlighter-rouge">VENDOR=TOSHIBA</code></p>
 
@@ -1628,7 +1652,7 @@ MASTERCODEを削除することで、マスタコードを初期状態に戻す�
 
 <p>ファームウェアのバージョンです。</p>
 
-<h3 id="例-46">例:</h3>
+<h3 id="例-47">例:</h3>
 
 <p><code class="highlighter-rouge">VERSION=F24A6W3AW1.00.03</code></p>
 
@@ -1655,7 +1679,7 @@ MASTERCODEを削除することで、マスタコードを初期状態に戻す�
   </tbody>
 </table>
 
-<h3 id="例-47">例:</h3>
+<h3 id="例-48">例:</h3>
 
 <p><code class="highlighter-rouge">WEBDAV=0</code></p>
 
@@ -1686,7 +1710,7 @@ MASTERCODEを削除することで、マスタコードを初期状態に戻す�
   </tbody>
 </table>
 
-<h3 id="例-48">例:</h3>
+<h3 id="例-49">例:</h3>
 
 <p><code class="highlighter-rouge">WLANAPMODE=0x03</code></p>
 
