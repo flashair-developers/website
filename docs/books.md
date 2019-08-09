@@ -13,6 +13,53 @@ FlashAir Doujinshiは、FlashAirの開発やマーケティングに関わる人
 {:toc}
 
 ---
+## FlashAir Doujinshi 6
+
+FlashAirの同人誌 6号
+
+![doujinshi]({{ site.baseurl }}/assets/images/doujinshi6.png){: .w-50 }
+
+* 発行日:
+    2019年8月3日 第1版第1刷発行
+* 著者:
+    高田/伊藤 晋朗/土居/Pochio/じむ/あおいさや/ながしま/余熱/GPS_NMEA_JP/いしかわゆうじ/めむ/寺田 賢司/綾瀬 ヒロ/こたまご a.k.a ひなたん/高橋 祐介/Takehiro Yamaguchi/長船 俊/福屋 新吾/ほげじゅん/高瀬 秀樹/上岡 裕一/エヌ氏/宮内
+* 表紙・本文イラスト: じむ
+* 表紙デザイン: 余熱/ じむ
+* 編集: 余熱 / Pochio / ながしま
+* 発行: FlashAir Developers
+
+### 目次
+{: .no_toc }
+
+1.  ありがとう、FlashAir Developers！
+2.  FlashAir Developers was here
+3.  大事なことはすべてDevelopers が教えてくれた
+4.  Maker Faire Tokyo の6年間の戦い
+5.  「マイクロSDでも負けません」の巻
+6.  帰ってきたFlashAir 活用テクニック
+7.  fa.pwmを使ってみよう
+8.  FlashAirが音源チップに? PWM で矩形波を演奏!
+9.  fa.serialを使ってPomera からプリンタに直接印刷
+10.  fa.udpで遊ぼう
+11.  FlashAirブラウザアプリのAndroid-9 対応
+12.  ファイルシステム不整合を回避するUSB-SD リーダの製作
+13.  FlashAir + LINEで簡単に写真をシェアしよう!!
+14.  FlashAirとAzure IoT Central で簡単IoT
+15.  FlashAirで写真をリアルタイムに表示する
+16.  世界初？FlashAir 羽ばたき飛行機！
+17.  FlashAirの電波強度レベルを確認しよう
+18.  FlashAirでFPGA を操れ！
+19.  Airio-BaseでMbed OS 5
+20.  Mbed de iSDIO
+21.  FlashAirの進化（AirLapse 編）
+22.  FlashAirとLuaと自作のツールと
+23.  煌めく空との九年史（ノンフィクションとフィクションの間に）
+24.  悲しみは思い出とともに
+25.  FlashAir同人誌の長い編集後記
+
+[PDF版をダウンロード (9.5MB)]({{ site.baseurl }}/files/books/FlashAir_Doujinshi_6_web_190809A.pdf){: target="_blank" .btn .btn-primary .no-icon } 
+
+---
 ## FlashAir Doujinshi 5 
 
 FlashAirの同人誌 5号
