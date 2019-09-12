@@ -485,7 +485,7 @@
 
       <li>
         <br>
-        <a href="./">目次に戻る</a>
+        <a href="/docs/tutorials/cordova">目次に戻る</a>
       </li>
     </ul>
   </nav>
@@ -527,7 +527,7 @@
           <h1 id="サムネイルの表示">サムネイルの表示</h1>
 
 <p>第4回では、FlashAirのコンテンツのサムネイルを表示するアプリを作成します。
-<a href="../../api/thumbnail.cgi">thumbnail.cgi</a>を使用します。</p>
+<a href="/docs/api/thumbnail.cgi">thumbnail.cgi</a>を使用します。</p>
 
 <hr />
 <h2 id="事前準備">事前準備</h2>
@@ -539,15 +539,15 @@
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; cordova create cordovatutorial4 com.fixstars.flashair.tutorial CordovaTutorial4
 </code></pre></div></div>
 
-<p>また、プロジェクト作成後、<a href="1/#2-browserプラットフォームを追加してローカル上のブラウザでアプリの動作確認を行う">browserプラットフォーム</a>及び以下のプラグインの追加を行ってください。</p>
+<p>また、プロジェクト作成後、<a href="/docs/tutorials/cordova/1.html#2-browserプラットフォームを追加してローカル上のブラウザでアプリの動作確認を行う">browserプラットフォーム</a>及び以下のプラグインの追加を行ってください。</p>
 
 <ul>
-  <li><a href="2/#4-statusbarプラグインを使用してステータスバーを調整する">第2回で使用したプラグイン</a>
+  <li><a href="/docs/tutorials/cordova/2.html#4-statusbarプラグインを使用してステータスバーを調整する">第2回で使用したプラグイン</a>
     <ul>
       <li>Statusbarプラグイン（<code class="highlighter-rouge">config.xml</code>へのコード追加作業含む）</li>
     </ul>
   </li>
-  <li><a href="3/#2-tutorial3jsで使用するプラグインを追加する">第3回で使用したプラグイン</a>
+  <li><a href="/docs/tutorials/cordova/3.html#2-tutorial3jsで使用するプラグインを追加する">第3回で使用したプラグイン</a>
     <ul>
       <li>Fileプラグイン</li>
       <li>FileTransferプラグイン</li>
@@ -586,7 +586,7 @@ cordovatutorial4
 
 <h3 id="1-indexhtmlを編集する">1. index.htmlを編集する</h3>
 
-<p>アプリのトップ画面である<code class="highlighter-rouge">index.html</code>を編集します。<a href="3/#アプリのトップ画面作成">第3回</a>の36～40行目を、以下のように変更してください。</p>
+<p>アプリのトップ画面である<code class="highlighter-rouge">index.html</code>を編集します。<a href="/docs/tutorials/cordova/3.html#アプリのトップ画面作成">第3回</a>の36～40行目を、以下のように変更してください。</p>
 
 <h5 id="wwwindexhtml"><em>/www/index.html</em></h5>
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"pos-center"</span><span class="nt">&gt;&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">onclick=</span><span class="s">"location.href='tutorial2.html'"</span><span class="nt">&gt;</span>２．コンテンツリストの取得<span class="nt">&lt;/button&gt;&lt;/p&gt;</span>
@@ -603,7 +603,7 @@ cordovatutorial4
 
 <h3 id="2-実行結果">2. 実行結果</h3>
 
-<p>上記の編集が完了したら、ビルドを行い、出来上がったアプリのインストールを行ってください。<a href="3/#2-実行結果">第3回</a>と比べて、「４．サムネイルの表示」ボタンを追加しています。</p>
+<p>上記の編集が完了したら、ビルドを行い、出来上がったアプリのインストールを行ってください。<a href="/docs/tutorials/cordova/3.html#2-実行結果">第3回</a>と比べて、「４．サムネイルの表示」ボタンを追加しています。</p>
 
 <div class="row">
   <div class="col-md-6">
@@ -626,7 +626,7 @@ cordovatutorial4
 
 <h3 id="1-tutorial4htmlを作成する">1. tutorial4.htmlを作成する</h3>
 
-<p>続いて、サムネイルの表示画面を作成します。<a href="3/#コンテンツのダウンロード画面の作成">tutorial3.html</a>との共通部分が多いので、コピーしたファイルを<code class="highlighter-rouge">tutorial4.html</code>として保存して、9～24行目を以下のように変更してください。</p>
+<p>続いて、サムネイルの表示画面を作成します。<a href="/docs/tutorials/cordova/3.html#コンテンツのダウンロード画面の作成">tutorial3.html</a>との共通部分が多いので、コピーしたファイルを<code class="highlighter-rouge">tutorial4.html</code>として保存して、9～24行目を以下のように変更してください。</p>
 
 <h5 id="wwwtutorial4html"><em>/www/tutorial4.html</em></h5>
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;title&gt;</span>Tutorial4<span class="nt">&lt;/title&gt;</span>
@@ -657,7 +657,7 @@ cordovatutorial4
 
 <h3 id="2-tutorial4jsを作成する">2. tutorial4.jsを作成する</h3>
 
-<p>コンテンツのダウンロード画面でロードする<code class="highlighter-rouge">tutorial4.js</code>を作成していきます。<a href="3/#3-tutorial3jsを作成する">tutorial3.js</a>との共通部分が多いので、コピーしたファイルを<code class="highlighter-rouge">tutorial4.js</code>として保存して、93～120行目を以下のように変更してください。</p>
+<p>コンテンツのダウンロード画面でロードする<code class="highlighter-rouge">tutorial4.js</code>を作成していきます。<a href="/docs/tutorials/cordova/3.html#3-tutorial3jsを作成する">tutorial3.js</a>との共通部分が多いので、コピーしたファイルを<code class="highlighter-rouge">tutorial4.js</code>として保存して、93～120行目を以下のように変更してください。</p>
 
 <h5 id="wwwjstutorial4js"><em>/www/js/tutorial4.js</em></h5>
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Show the content list.</span>
@@ -707,7 +707,7 @@ cordovatutorial4
   <li>109行目<br />
    コンテンツがディレクトリの場合、サムネイル画像の代わりに<code class="highlighter-rouge">img/folder.png</code>を指定して表示させます。</li>
   <li>112-119行目<br />
-   コンテンツがファイルで拡張子が<code class="highlighter-rouge">JPG</code>の場合は、サムネイル画像を<a href="../../api/thumbnail.cgi">thumbnail.cgi</a>で取得して表示させます。 また、拡張子が<code class="highlighter-rouge">JPG</code>以外の場合は、サムネイル画像の代わりに<code class="highlighter-rouge">img/flashair.png</code>を指定して表示させます。</li>
+   コンテンツがファイルで拡張子が<code class="highlighter-rouge">JPG</code>の場合は、サムネイル画像を<a href="/docs/api/thumbnail.cgi">thumbnail.cgi</a>で取得して表示させます。 また、拡張子が<code class="highlighter-rouge">JPG</code>以外の場合は、サムネイル画像の代わりに<code class="highlighter-rouge">img/flashair.png</code>を指定して表示させます。</li>
   <li>124-128行目<br />
    サムネイル画像をコンテンツ名（<code class="highlighter-rouge">caption</code>）の前に表示させます。</li>
 </ul>
@@ -775,7 +775,7 @@ cordovatutorial4
 
 <ul>
   <li>このサンプルコードは<a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License, Version 2.0</a>で提供されています。</li>
-  <li>「cordova_tutorial_04」ディレクトリは、zipファイルで圧縮して<a href="https://build.phonegap.com/" target="_blank">PhoneGap Build</a>へアップロードすることでビルドできます。 ビルド方法は<a href="1/#helloworldアプリの作成と確認">HelloWorldアプリをビルドする</a>をご確認ください。</li>
+  <li>「cordova_tutorial_04」ディレクトリは、zipファイルで圧縮して<a href="https://build.phonegap.com/" target="_blank">PhoneGap Build</a>へアップロードすることでビルドできます。 ビルド方法は<a href="/docs/tutorials/cordova/1.html#helloworldアプリの作成と確認">HelloWorldアプリをビルドする</a>をご確認ください。</li>
   <li>Cordovaプロジェクトで確認する場合は、「cordova_tutorial_04」ディレクトリ内のデータをプロジェクト内へ上書きコピーしてください。</li>
 </ul>
 

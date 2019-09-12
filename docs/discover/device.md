@@ -37,7 +37,7 @@ iSDIOによる制御では、以下のことができます。
 	<dd>SRAMの読み書きができます。</dd>
 </dl>
 
-詳しくは、 [iSDIO APIガイド](../api/isdio)をご覧ください。
+詳しくは、 [iSDIO APIガイド]({{ site.baseurl }}/docs/api/isdio)をご覧ください。
 
 ---
 ## Luaスクリプトによる制御
@@ -59,4 +59,4 @@ Luaスクリプトによる制御では、以下のことができます。
   <dd>内蔵フラッシュメモリのファイル読み書きができます。</dd>
 </dl>
 
-詳しくは、 [Lua機能](../api/lua)をご覧ください。
+詳しくは、 [Lua機能]({{ site.baseurl }}/docs/api/lua)をご覧ください。

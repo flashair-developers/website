@@ -500,7 +500,7 @@
 
       <li>
         <br>
-        <a href="../api">目次に戻る</a>
+        <a href="/docs/api">目次に戻る</a>
       </li>
     </ul>
   </nav>
@@ -556,7 +556,7 @@ FlashAirがHTTP通信コプロセッサになってしまうのです。</p>
   <li><a href="#isdioコマンド発行の方法">iSDIOコマンド発行の方法</a></li>
   <li><a href="#コマンドリファレンス">コマンドリファレンス</a></li>
   <li><a href="#レジスタマップ">レジスタマップ</a></li>
-  <li><a href="../tutorials/isdio/">Arduinoチュートリアル</a> (iSDIOを利用しています)</li>
+  <li><a href="/docs/tutorials/isdio/">Arduinoチュートリアル</a> (iSDIOを利用しています)</li>
 </ul>
 
 <hr />
@@ -598,9 +598,9 @@ FlashAirがHTTP通信コプロセッサになってしまうのです。</p>
       <li>データの内容はコマンドの種類によって異なります。<a href="#コマンドリファレンス">コマンドリファレンス</a>を参照してください。</li>
     </ul>
   </li>
-  <li>コマンドデータをCMD49を使って<a href="./register/request">Command Write Register Port</a>に書き込む。
+  <li>コマンドデータをCMD49を使って<a href="/docs/api/register/request">Command Write Register Port</a>に書き込む。
     <ul>
-      <li>システムで提供されているSD読み書きAPIを利用するとよいでしょう。<a href="../tutorials/isdio/">Arduinoチュートリアル</a>も参照ください。</li>
+      <li>システムで提供されているSD読み書きAPIを利用するとよいでしょう。<a href="/docs/tutorials/isdio">Arduinoチュートリアル</a>も参照ください。</li>
     </ul>
   </li>
 </ol>
@@ -611,9 +611,9 @@ FlashAirがHTTP通信コプロセッサになってしまうのです。</p>
 
 <p>すべてのiSDIOコマンドは非同期的に実行されます。 そのため、コマンドのステータスを監視し、 終了したら結果を読み取るという手順が必要になります。</p>
 
-<p>発行されたコマンドのステータス監視には、<a href="./register/status">Response Status Register</a>を読み取ります。</p>
+<p>発行されたコマンドのステータス監視には、<a href="/docs/api/register/status">Response Status Register</a>を読み取ります。</p>
 
-<p>コマンドが完了したら、<a href="./register/response">Response Data Register Port</a>を読み取ることで、結果を取得できます。</p>
+<p>コマンドが完了したら、<a href="/docs/api/register/response">Response Data Register Port</a>を読み取ることで、結果を取得できます。</p>
 
 <hr />
 <h2 id="コマンドリファレンス">コマンドリファレンス</h2>
@@ -621,21 +621,21 @@ FlashAirがHTTP通信コプロセッサになってしまうのです。</p>
 <p>iSDIO Wireless LAN Addendumのコマンドです。 FlashAirで利用できないものは省略しています。</p>
 
 <ul>
-  <li><a href="./reference/wlan">WLAN</a></li>
+  <li><a href="/docs/api/reference/wlan">WLAN</a></li>
   <li><a href="./reference/common/">共通</a></li>
-  <li><a href="./reference/upload/">サーバーアップロード</a></li>
-  <li><a href="./reference/ftp/">FTP/FTPS（FlashAir独自拡張）</a></li>
+  <li><a href="/docs/api/reference/upload">サーバーアップロード</a></li>
+  <li><a href="/docs/api/reference/ftp">FTP/FTPS（FlashAir独自拡張）</a></li>
 </ul>
 
 <hr />
 <h2 id="レジスタマップ">レジスタマップ</h2>
 
-<p>FlashAirのiSDIOのメモリマップは<a href="./register/register">レジスタマップ</a>を参照してください。</p>
+<p>FlashAirのiSDIOのメモリマップは<a href="/docs/api/register/register">レジスタマップ</a>を参照してください。</p>
 
 <ul>
-  <li><a href="./register/request/">00000h～00200h</a> Command Write Register</li>
-  <li><a href="./register/response/">00200h～00400h</a> Response Data Register Port</li>
-  <li><a href="./register/status/">00400h～00600h</a> Status Register</li>
+  <li><a href="/docs/api/register/request">00000h～00200h</a> Command Write Register</li>
+  <li><a href="/docs/api/register/response">00200h～00400h</a> Response Data Register Port</li>
+  <li><a href="/docs/api/register/status">00400h～00600h</a> Status Register</li>
 </ul>
 
 

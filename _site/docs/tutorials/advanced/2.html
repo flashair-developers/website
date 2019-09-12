@@ -507,7 +507,7 @@
       </li>
       <li>
         <br>
-        <a href="./">目次に戻る</a>
+        <a href="/docs/tutorials/advanced">目次に戻る</a>
       </li>
     </ul>
   </nav>
@@ -549,15 +549,15 @@
           <h1 id="flashairへのアップロード">FlashAirへのアップロード</h1>
 
 <p>本チュートリアルでは、
-<a href="../../api/upload.cgi">upload.cgi</a>を使用してCGI経由でFlashAirにファイルをアップロード（書き込み）する方法を解説します。</p>
+<a href="/docs/api/upload.cgi">upload.cgi</a>を使用してCGI経由でFlashAirにファイルをアップロード（書き込み）する方法を解説します。</p>
 
 <hr />
 <h2 id="概要">概要</h2>
 
 <p>画像などのファイルをFlashAirにアップロードするには
-<a href="../../api/upload.cgi">upload.cgi</a>を使用します。<br />
+<a href="/docs/api/upload.cgi">upload.cgi</a>を使用します。<br />
 このチュートリアルでは、
-<a href="../web/3/">ウェブ向けチュートリアル / コンテンツリストの取得2</a> をベースとして、 ファイルをアップロードする方法を解説します。
+<a href="/docs/tutorials/web/3">ウェブ向けチュートリアル / コンテンツリストの取得2</a> をベースとして、 ファイルをアップロードする方法を解説します。
 jQueryも引き続き利用しています。</p>
 
 <div class="alert alert-warning" role="alert"><h3 class="alert-heading">注意</h3>本機能を誤って使用すると、FlashAirのファイルシステムを破壊してデータを失う恐れがあります。 PCなどのSDメモリカードホスト機器はSDメモリカードの内容(FAT)をキャッシュしている場合がありますが、本CGIで行った変更をSDメモリカードホスト機器が認識する方法がありません。そのため、本CGIとSDメモリカードホスト機器から同時に変更を行うとFAT不整合が起こる可能性があります。<br />CGIからの書き込み後は必ずカードをいったん抜いて再挿入するなどしてSDメモリカードホスト機器に再認識させてください。</div>
@@ -568,7 +568,7 @@ jQueryも引き続き利用しています。</p>
 <p>まず、アップロード手順を復習しておきましょう。</p>
 
 <ol>
-  <li><a href="../../api/config">CONFIGファイル</a>に、<code class="highlighter-rouge">UPLOAD=1</code>を書き込む</li>
+  <li><a href="/docs/api/config">CONFIGファイル</a>に、<code class="highlighter-rouge">UPLOAD=1</code>を書き込む</li>
   <li>FlashAirを再起動する</li>
   <li>FlashAirに無線LAN接続する</li>
   <li><code class="highlighter-rouge">WRITEPROTECT</code>コマンドで、SDメモリカードホスト機器からの書き込みを禁止する</li>
@@ -583,7 +583,7 @@ jQueryも引き続き利用しています。</p>
 <h2 id="画面レイアウトの作成">画面レイアウトの作成</h2>
 
 <p>ブラウザユーティリティ本体となるHTMLファイルを作成します。
-<a href="../web/2">コンテンツリストの取得1</a>に、
+<a href="/docs/api/tutorials/web/2">コンテンツリストの取得1</a>に、
 アップロードするファイルを選択するためのテキストボックスおよびファイル選択画面を開くボタンと、 アップロード実行を指示するボタンを追加しています。</p>
 
 <h5 id="sd_wlanlisthtm-抜粋"><em>/SD_WLAN/List.htm (抜粋)</em></h5>
@@ -647,7 +647,7 @@ Level 2 (XHR2) のFormDataオブジェクトを利用します。</p>
 <ul>
   <li>
     <p>6行目-13行目<br />
-   ファイルの日付を作成しています。 日付、時刻をそれぞれ16ビットの16進数として作成し、合わせて32ビットの1つの値として渡します。 詳しくは<a href="../../api/upload.cgi/#ftime">APIガイド / upload.cgi</a>を参照してください。</p>
+   ファイルの日付を作成しています。 日付、時刻をそれぞれ16ビットの16進数として作成し、合わせて32ビットの1つの値として渡します。 詳しくは<a href="/docs/api/upload.cgi#ftime">APIガイド / upload.cgi</a>を参照してください。</p>
   </li>
   <li>
     <p>14行目<br />
@@ -688,7 +688,7 @@ Level 2 (XHR2) のFormDataオブジェクトを利用します。</p>
 
 <p><a href="/files/samplecode/advanced/advanced_tutorial_02.zip" class="btn btn-primary">advanced_tutorial_02.zip</a> (4KB)</p>
 
-<p>このサイトのサンプルコードは<a href="../../license">二条項BSDライセンス</a>で提供されています。</p>
+<p>このサイトのサンプルコードは<a href="/docs/license">二条項BSDライセンス</a>で提供されています。</p>
 
 <hr />
 <h2 id="使用上の注意">使用上の注意</h2>
@@ -700,12 +700,12 @@ Level 2 (XHR2) のFormDataオブジェクトを利用します。</p>
 <p>インターネット同時接続機能を同時に有効にする場合は、ウェブサーバへの接続時に認証を要求するよう、下記のCONFIGパラメータを設定してください。</p>
 
 <ul>
-  <li><a href="../../api/config/#httpdmode">HTTPDMODE</a> — 認証方法</li>
-  <li><a href="../../api/config/#httpduser">HTTPDUSER</a> — Basic認証のユーザ名</li>
-  <li><a href="../../api/config/#httpdpass">HTTPDPASS</a> — Basic認証のパスワード、Digest認証のハッシュ値</li>
+  <li><a href="/docs/api/config.html#httpdmode">HTTPDMODE</a> — 認証方法</li>
+  <li><a href="/docs/api/config.html#httpduser">HTTPDUSER</a> — Basic認証のユーザ名</li>
+  <li><a href="/docs/api/config.html#httpdpass">HTTPDPASS</a> — Basic認証のパスワード、Digest認証のハッシュ値</li>
 </ul>
 
-<p>脆弱性に関しては<a href="../../support/faq">FAQ</a>もあわせて参照ください。</p>
+<p>脆弱性に関しては<a href="/docs/support/faq">FAQ</a>もあわせて参照ください。</p>
 
 
           

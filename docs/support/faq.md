@@ -107,11 +107,11 @@ Default_Gateway=192.168.43.1
 ```
 fa.ip("192.168.11.2", "255.255.255.0", "192.168.11.1")
 ```
-それぞれの詳細については、[APIガイド - CONFIG](../api/config/) 及び[Lua関数リファレンス - ip](../api/lua/#ip) をご覧ください。
+それぞれの詳細については、[APIガイド - CONFIG]({{ site.baseurl }}/docs/api/config) 及び[Lua関数リファレンス - ip]({{ site.baseurl }}/docs/api/lua.html#ip) をご覧ください。
 
 ### FlashAirはEAP-TLS（PEAP-TLS）の認証方式で接続できますか？
 
-FW4.00.03以上で接続可能です。詳細は[APIガイド - CONFIG　EAPTYPE](../api/config/#eaptype)をご覧ください。
+FW4.00.03以上で接続可能です。詳細は[APIガイド - CONFIG　EAPTYPE]({{ site.baseurl }}/docs/api/config.html#eaptype)をご覧ください。
 
 ---
 ## CGI、CONFIG
@@ -122,15 +122,15 @@ FW4.00.03以上で接続可能です。詳細は[APIガイド - CONFIG　EAPTYPE
 
 ### command.cgi?op=100 と command.cgi?op=101 で返される数に違いがあります。
 
-[command.cgi?op=101](../api/command.cgi/#101)は隠しファイル（フォルダ）を除いたコンテンツ数を返します。<br>対して、[command.cgi?op=100](../api/command.cgi/#100)は、全てのファイル（フォルダ）を返すため、数に違いがでます。
+[command.cgi?op=101]({{ site.baseurl }}/docs/api/command.cgi.html#101)は隠しファイル（フォルダ）を除いたコンテンツ数を返します。<br>対して、[command.cgi?op=100]({{ site.baseurl }}/docs/api/command.cgi.html#100)は、全てのファイル（フォルダ）を返すため、数に違いがでます。
 
 ### command.cgi?op=105 を要求しても値が返ってきません。
 
-[command.cgi?op=105](../api/command.cgi/#105)は、FlashAirがアクセスポイントモードに設定されている場合にのみ使用することができます。<br>アクセスポイントモードについての説明は、[無線LANモードの設定](../api/config/#appmode) をご覧ください。
+[command.cgi?op=105]({{ site.baseurl }}/docs/api/command.cgi.html#105)は、FlashAirがアクセスポイントモードに設定されている場合にのみ使用することができます。<br>アクセスポイントモードについての説明は、[無線LANモードの設定]({{ site.baseurl }}/docs/api/config.html#appmode) をご覧ください。
 
 ### command.cgi?op=111 を要求しても値が返ってきません。
 
-[command.cgi?op=111](../api/command.cgi/#111)は、FlashAirがカード電源投入時に無線LAN機能を起動するモード（APPMODE=4）に設定されている場合にのみ使用することができます。<br>APPMODEについての説明は、[無線LANモードの設定](../api/config/#appmode) をご覧ください。
+[command.cgi?op=111]({{ site.baseurl }}/docs/api/command.cgi.html#111)は、FlashAirがカード電源投入時に無線LAN機能を起動するモード（APPMODE=4）に設定されている場合にのみ使用することができます。<br>APPMODEについての説明は、[無線LANモードの設定]({{ site.baseurl }}/docs/api/config.html#appmode) をご覧ください。
 
 ### config.cgiで変更したSSIDやパスワードはCONFIGファイルに保存されますか？
 
@@ -138,11 +138,11 @@ FW4.00.03以上で接続可能です。詳細は[APIガイド - CONFIG　EAPTYPE
 
 ### upload.cgi?DEL= でファイル（フォルダ）の削除を要求してもFileNotFoundExceptionのエラーが出ます。
 
-CONFIGファイルに「UPLOAD=1」が書き込まれているかご確認ください。こちらの設定がない場合、upload.cgiは使用できません。<br>詳細については[upload.cgi](../api/upload.cgi) をご覧ください。
+CONFIGファイルに「UPLOAD=1」が書き込まれているかご確認ください。こちらの設定がない場合、upload.cgiは使用できません。<br>詳細については[upload.cgi]({{ site.baseurl }}/docs/api/upload.cgi) をご覧ください。
 
 ### upload.cgi?DEL= を要求してSUCCESSの応答があってもファイル（フォルダ）の削除が反映されず、SDメモリカードホスト機器からFlashAirを外して再挿入すると反映されるのは何故ですか？
 
-upload.cgiで行った変更をSDメモリカードホスト機器が認識する方法が無い為、実際にはFlashAirからファイルが削除されているにも関わらず、SDメモリカードホスト機器のOSなどのファイル一覧が更新されていない可能性がございます。<br>詳細については、[upload.cgi](../api/upload.cgi) の「ご注意」をご覧ください。
+upload.cgiで行った変更をSDメモリカードホスト機器が認識する方法が無い為、実際にはFlashAirからファイルが削除されているにも関わらず、SDメモリカードホスト機器のOSなどのファイル一覧が更新されていない可能性がございます。<br>詳細については、[upload.cgi]({{ site.baseurl }}/docs/api/upload.cgi) の「ご注意」をご覧ください。
 
 ### CGIをHTTP GETリクエストで繰り返し発行する際に、ブラウザのキャッシュ機能を回避する方法はありますか？
 
@@ -157,30 +157,30 @@ http://flashair/command.cgi?op=...**&TIME=102**	// 三回目のGETリクエス�
 
 ### CONFIGファイルの確認、編集方法を教えてください。
 
-CONFIGファイルについての説明は、[APIガイド - CONFIG](../api/config) をご覧ください。
+CONFIGファイルについての説明は、[APIガイド - CONFIG]({{ site.baseurl }}/docs/api/config) をご覧ください。
 
 ### upload.cgiで追加（または削除）したはずのファイルがPC上で確認できません。
 
-SDメモリカードホスト側でOSが持つディスクキャッシュをクリアする処理を実行するか、ホスト機器を再起動してください。<br>FlashAirを刺したまま、再マウントし、OSに再読み込みさせる[チュートリアル](../tutorials/advanced/6)も参考にしてください。
+SDメモリカードホスト側でOSが持つディスクキャッシュをクリアする処理を実行するか、ホスト機器を再起動してください。<br>FlashAirを刺したまま、再マウントし、OSに再読み込みさせる[チュートリアル]({{ site.baseurl }}/docs/tutorials/advanced/6)も参考にしてください。
 
 ---
 ## Lua
 
 ### アクセスポイントモードに設定しているFlashAirを、Luaスクリプトでインターネット同時接続モードへ切り替えることはできますか？
 
-無線LAN起動中の場合、[Bridge](../api/lua/#bridge) では操作できません。<br>また、Luaでインターネット同時接続モードへ切り替えたい場合は、CONFIGファイルに「APPMODE=0」と設定し、起動時に無線LANを起動しない状態で操作することを推奨します。
+無線LAN起動中の場合、[Bridge]({{ site.baseurl }}/docs/api/lua.html#bridge) では操作できません。<br>また、Luaでインターネット同時接続モードへ切り替えたい場合は、CONFIGファイルに「APPMODE=0」と設定し、起動時に無線LANを起動しない状態で操作することを推奨します。
 
 ### アクセスポイントモードで接続中に、LuaスクリプトでScanの操作を行うことができますか？
 
-いいえ、できません。無線LAN起動の場合は一旦[Disconnect](../api/lua/#disconnect) で切断することで、[Scan](../api/lua/#scan) による操作が可能になります。
+いいえ、できません。無線LAN起動の場合は一旦[Disconnect]({{ site.baseurl }}/docs/api/lua.html#disconnect) で切断することで、[Scan]({{ site.baseurl }}/docs/api/lua.html#scan) による操作が可能になります。
 
 ### LuaスクリプトのScan使用時のSSID検索について、ワイルドカードでの指定検索は可能ですか？
 
-いいえ、[Scan](../api/lua/#scan) 使用時にSSIDの指定はできません。
+いいえ、[Scan]({{ site.baseurl }}/docs/api/lua.html#scan) 使用時にSSIDの指定はできません。
 
 ### FlashAirがGPIOを使用できないデバイスに接続されているか判断する方法を教えてください。
 
-[SDインターフェース端子のI/O利用](../api/command.cgi/#190)で確認可能です。Luaスクリプトで確認する場合は以下のようにしてください。
+[SDインターフェース端子のI/O利用]({{ site.baseurl }}/docs/api/command.cgi.html#190)で確認可能です。Luaスクリプトで確認する場合は以下のようにしてください。
 
 ```
 local response = fa.request("http://flashair/command.cgi?op=190&CTRL=0x00&DATA=0x00")
@@ -248,29 +248,29 @@ W-02シリーズのFlashAirをW-03のファームウェアにアップデート�
 2.  FlashAirに記録されているファイルやデータの改ざんや、任意のLuaスクリプトの実行ができてしまう
 
 1.の脆弱性は、下記の条件をすべて満たした場合に発生いたします。
-  * FlashAirのインターネット同時接続機能が有効である（参照：[APPMODE](../api/config/#APPMODE)）
+  * FlashAirのインターネット同時接続機能が有効である（参照：[APPMODE]({{ site.baseurl }}/docs/api/config.html#APPMODE)）
   * FlashAirとインターネット接続側ネットワークにあるデバイスが、同一アクセスポイントに接続されている
   * FlashAirのIPアドレスがわかっている
 
 2.の脆弱性は、上記３つに加えて、下記の条件が満たされた場合に発生いたします。
-  * 無線LAN経由での書き込み機能を有効にしている（参照：[UPLOAD](../api/config/#UPLOAD)
+  * 無線LAN経由での書き込み機能を有効にしている（参照：[UPLOAD]({{ site.baseurl }}/docs/api/config.html#UPLOAD)
   
 本脆弱性は、HTTPサーバの認証を設定することで回避できます。
-* [HTTPDMODE](../api/config/#httpmode) — 認証方法
-* [HTTPDUSER](../api/config/#httpduser) — Basic認証のユーザ名
-* [HTTPDPASS](../api/config/#httpdpass) — Basic認証のパスワード、Digest認証のハッシュ値
+* [HTTPDMODE]({{ site.baseurl }}/docs/api/config.html#httpmode) — 認証方法
+* [HTTPDUSER]({{ site.baseurl }}/docs/api/config.html#httpduser) — Basic認証のユーザ名
+* [HTTPDPASS]({{ site.baseurl }}/docs/api/config.html#httpdpass) — Basic認証のパスワード、Digest認証のハッシュ値
 
 なお、標準では、インターネット同時接続機能および無線LAN経由での書き込み機能はいずれも無効になっており、本脆弱性の影響はありません。<br>ご利用者がCONFIGファイルの直接変更またはアプリを利用して明示的に変更しない限り、これらの機能が有効になることはありません。
 
-これらの機能に関する詳しい設定方法は、[上級者向けチュートリアル - インターネット同時接続モード](../tutorials/advanced/3) および[上級者向けチュートリアル - FlashAirへのアップロード](../tutorials/advanced/2/) をご覧ください。
+これらの機能に関する詳しい設定方法は、[上級者向けチュートリアル - インターネット同時接続モード]({{ site.baseurl }}/docs/tutorials/advanced/3) および[上級者向けチュートリアル - FlashAirへのアップロード]({{ site.baseurl }}/docs/tutorials/advanced/2) をご覧ください。
 
 ### FlashAirのファイルを自動的にFTPサーバやクラウドサービスへアップロードする方法はありますか？
 
 ご自身でアップロード環境を構築する場合は、以下のチュートリアルページがご参考になります。
 
-* [Lua機能 - FTPサーバを使ったファイルのアップロード](../tutorials/lua/4)
-* [Lua機能 - Facebookへのアップロード](../tutorials/lua/5)
-* [Lua機能 - OAUTH2を使ったDropboxへのアップロード](../tutorials/lua/6)
+* [Lua機能 - FTPサーバを使ったファイルのアップロード]({{ site.baseurl }}/docs/tutorials/lua/4)
+* [Lua機能 - Facebookへのアップロード]({{ site.baseurl }}/docs/tutorials/lua/5)
+* [Lua機能 - OAUTH2を使ったDropboxへのアップロード]({{ site.baseurl }}/docs/tutorials/lua/6)
 
 ### Arduino Due用iSDIOに関するライブラリやチュートリアルはありませんか？
 

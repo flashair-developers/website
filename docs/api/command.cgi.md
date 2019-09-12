@@ -262,7 +262,7 @@ FlashAirのファームウェアのバージョンを返します。**F24**で�
 
 無線起動画面として使う画像ファイルのフルパス(CIPATH)を取得します。 無線起動画面とは、無線LANモードが0,2,3のいずれかである場合に、無線LAN機能のON/OFFを制御するための画像ファイルです。
 
-CIPATHについては、CONFIGの[CIPATHに関する記述](./config#cipath)を参照してください。
+CIPATHについては、CONFIGの[CIPATHに関する記述]({{ site.baseurl }}/docs/api/config#cipath)を参照してください。
 
 ### リクエスト例:
 
@@ -280,7 +280,7 @@ CIPATHについては、CONFIGの[CIPATHに関する記述](./config#cipath)を�
 (op=110)
 {: .text-small }
 
-デフォルトの無線LANモード(APPMODE)を返します。APPMODEについては、CONFIGの[APPMODEに関する記述](./config#APPMODE)を参照してください。
+デフォルトの無線LANモード(APPMODE)を返します。APPMODEについては、CONFIGの[APPMODEに関する記述]({{ site.baseurl }}/docs/api/config#APPMODE)を参照してください。
 
 ### リクエスト例:
 
@@ -298,7 +298,7 @@ CIPATHについては、CONFIGの[CIPATHに関する記述](./config#cipath)を�
 (op=111)
 {: .text-small }
 
-無線LANにアクセスがない場合に自動的に電源を切るまでのタイムアウト時間(APPAUTOTIME)をミリ秒単位で返します。 無線LANモードが自動起動APモードに設定されている場合のみ有効です。APPAUTOTIMEについては、CONFIGの[APPAUTOTIMEに関する記述](./config#appautotime)を参照してください。
+無線LANにアクセスがない場合に自動的に電源を切るまでのタイムアウト時間(APPAUTOTIME)をミリ秒単位で返します。 無線LANモードが自動起動APモードに設定されている場合のみ有効です。APPAUTOTIMEについては、CONFIGの[APPAUTOTIMEに関する記述]({{ site.baseurl }}/docs/api/config#appautotime)を参照してください。
 
 ### リクエスト例:
 
@@ -316,7 +316,7 @@ CIPATHについては、CONFIGの[CIPATHに関する記述](./config#cipath)を�
 (op=117)
 {: .text-small }
 
-アプリケーションが独自の目的で使用することができる16ケタの英数字(APPINFO)を取得します。APPINFOについては、CONFIGの[APPINFOに関する記述](./config#appinfo)を参照してください。
+アプリケーションが独自の目的で使用することができる16ケタの英数字(APPINFO)を取得します。APPINFOについては、CONFIGの[APPINFOに関する記述]({{ site.baseurl }}/docs/api/config#appinfo)を参照してください。
 
 ### リクエスト例:
 
@@ -341,7 +341,7 @@ CONFIGファイルの`UPLOAD`の値を返します。
 それ以外 |  アップロード機能は無効になっています。
 
 
-詳しくは、CONFIGの[UPLOADに関する記述](./config#upload)を参照してください。
+詳しくは、CONFIGの[UPLOADに関する記述]({{ site.baseurl }}/docs/api/config#upload)を参照してください。
 
 ### リクエスト例:
 
@@ -360,7 +360,7 @@ CONFIGファイルの`UPLOAD`の値を返します。
 {: .text-small }
 
 CID(Card Identification number register)を返します。CIDは32ケタの16進数で、SDメモリカード仕様により定められています。<br>
-APPINFOについては、CIDの[CIDに関する記述](./config#cid)を参照してください。
+APPINFOについては、CIDの[CIDに関する記述]({{ site.baseurl }}/docs/api/config#cid)を参照してください。
 
 ### リクエスト例:
 
@@ -478,7 +478,7 @@ SDインターフェイス端子を、汎用のI/O信号端子として利用し
 この機能を利用するためには以下の条件を満たしている必要があります。
 
 * CONFIGファイルに`IFMODE=1`と記載されている。
-* SDメモリカードスロットに挿入されていない（SDメモリカードホスト機器からのSD初期化が無い）。`IFMODE`については、CONFIGの[IFMODEに関する記述](./config#ifmode)を参照してください。
+* SDメモリカードスロットに挿入されていない（SDメモリカードホスト機器からのSD初期化が無い）。`IFMODE`については、CONFIGの[IFMODEに関する記述]({{ site.baseurl }}/docs/api/config#ifmode)を参照してください。
 
 ### リクエスト例:
 
@@ -532,9 +532,9 @@ SDインターフェイス端子を、汎用のI/O信号端子として利用し
 ### 注意:
 op=200を使用してフォトシェアモードを有効にした場合、SSIDとネットワークセキュリティキーは、既に設定してある内容から変更されません。
 
-ネットワークセキュリティキーを変更する場合には、config.cgiの[ネットワークセキュリティキーの設定]./configcgi/#appnetworkkey)を使用して、ネットワークセキュリティキーを変更してください。
+ネットワークセキュリティキーを変更する場合には、config.cgiの[ネットワークセキュリティキーの設定]({{ site.baseurl }}/docs/api/config.cgi#appnetworkkey)を使用して、ネットワークセキュリティキーを変更してください。
 
-また、SSIDを変更する場合は、config.cgiの[SSIDの設定](./configcgi/#appssid)を使用して、SSIDを変更してください。
+また、SSIDを変更する場合は、config.cgiの[SSIDの設定]({{ site.baseurl }}/docs/api/config.cgi#appssid)を使用して、SSIDを変更してください。
 
 ---
 <h2 id="201">フォトシェアモードの解除</h2>

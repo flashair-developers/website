@@ -495,7 +495,7 @@
 
       <li>
         <br>
-        <a href="./">目次に戻る</a>
+        <a href="/docs/tutorials/web">目次に戻る</a>
       </li>
     </ul>
   </nav>
@@ -539,7 +539,7 @@
 <p>FlashAirに保存されたコンテンツのリストを取得する方法について学びます。<br />
 <a href="2">コンテンツリストの取得1</a>では、HTMLへ埋め込まれるファイルリストを利用しましたが、
 CGIだけを使って同じことを実現することもできます。
-<a href="../../api/command.cgi">command.cgi</a>を使ってフォルダ一覧を取得してみましょう。</p>
+<a href="/docs/api/command.cgi">command.cgi</a>を使ってフォルダ一覧を取得してみましょう。</p>
 
 <hr />
 <h2 id="事前準備">事前準備</h2>
@@ -552,7 +552,7 @@ CGIだけを使って同じことを実現することもできます。
 <h2 id="画面レイアウトの作成">画面レイアウトの作成</h2>
 
 <p>ブラウザユーティリティ本体となるHTMLファイルを作成します。
-<a href="../web/2">コンテンツリストの取得1</a>で作成したものとよく似ていますが、
+<a href="/docs/tutorials/web/2">コンテンツリストの取得1</a>で作成したものとよく似ていますが、
 ファイルリストの差し込みをするためのスクリプト部分はありません。</p>
 
 <p>それ以外は、重要な２つの仕事、１つはJavaScriptをロードすること、 もう１つはそのJavaScriptが画面要素を書き込むための
@@ -603,7 +603,7 @@ CGIだけを使って同じことを実現することもできます。
 <p><code class="highlighter-rouge">getFileList(dir)</code>関数でCGIコマンドを発行してファイル一覧を取得し、
 <code class="highlighter-rouge">showFileList(path)</code>では取得した一覧を元に、HTMLの要素を作成するという流れになっています。</p>
 
-<p><a href="../web/2">コンテンツリストの取得1</a>で作成したヘルパー関数を再利用しましょう。 ただし、
+<p><a href="/docs/tutorials/web/2">コンテンツリストの取得1</a>で作成したヘルパー関数を再利用しましょう。 ただし、
 <code class="highlighter-rouge">isV1(wlansd)</code>は今回は使用していません。</p>
 
 <p>作成したファイルはFlashAirの
@@ -742,7 +742,7 @@ CGIだけを使って同じことを実現することもできます。
   <li>
     <p>38-73行目<br />
    得られたファイルリストの各行に対して、アンカー(<code class="highlighter-rouge">&lt;a&gt;</code>)とボックス(<code class="highlighter-rouge">&lt;div&gt;</code>)を生成し、 HTML中に用意した表示位置(<code class="highlighter-rouge">$("#list")</code>)に追加しています。
-                                  <a href="../web/2">コンテンツリストの取得1</a>とよく似ていますが、 フォルダの場合はハイパーリンクに
+                                  <a href="/docs/tutorials/web/2">コンテンツリストの取得1</a>とよく似ていますが、 フォルダの場合はハイパーリンクに
                                   <code class="highlighter-rouge">javascript:void(0)</code>を設定してクリックしても画面遷移しないようにしています。</p>
   </li>
   <li>
@@ -786,7 +786,7 @@ CGIだけを使って同じことを実現することもできます。
 
 <p><a href="/files/samplecode/web/web_tutorial_03.zip" class="btn btn-primary">web_tutorial_03.zip</a> (4KB)</p>
 
-<p>このサイトのサンプルコードは<a href="../../license">二条項BSDライセンス</a>で提供されています。</p>
+<p>このサイトのサンプルコードは<a href="/docs/license">二条項BSDライセンス</a>で提供されています。</p>
 
 
 

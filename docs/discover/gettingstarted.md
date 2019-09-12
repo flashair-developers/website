@@ -22,10 +22,10 @@ FlashAirデベロッパーズでは、FlashAir APIを使ったアプリ開発や
 ## FlashAir APIとは
 
 FlashAirは、外部デバイスから利用するための基本的なAPIを提供しています。 
-詳しくは、 [APIガイド](../api)をご覧ください。
+詳しくは、 [APIガイド]({{ site.baseurl }}/docs/api)をご覧ください。
 
 また、FlashAir APIを使った開発をサンプルコード付で詳しく解説したチュートリアルをご紹介しています。 
-詳しくは、 [チュートリアル](../tutorials)をご覧ください。
+詳しくは、 [チュートリアル]({{ site.baseurl }}/docs/tutorials)をご覧ください。
 
 ---
 ## APIポリシー

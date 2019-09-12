@@ -510,7 +510,7 @@
 
       <li>
         <br>
-        <a href="./">目次に戻る</a>
+        <a href="/docs/tutorials/lua">目次に戻る</a>
       </li>
     </ul>
   </nav>
@@ -558,7 +558,7 @@
 
 <ol>
   <li>FlashAirにUploadフォルダを作成し、アップロードするファイルを設置します。</li>
-  <li><a href="../../api/config/#upload">アップロード機能を有効</a>にするために、CONFIGファイルに<code class="highlighter-rouge">UPLOAD=1</code>を追加します。</li>
+  <li><a href="/docs/api/config.html#upload">アップロード機能を有効</a>にするために、CONFIGファイルに<code class="highlighter-rouge">UPLOAD=1</code>を追加します。</li>
   <li><a href="2">FlashAirでLuaを実行する</a>を参考に、Luaスクリプト実行方法をCONFIGファイルに指定します。</li>
 </ol>
 
@@ -611,7 +611,7 @@
     <span class="kd">local</span> <span class="n">auth_code</span> 	<span class="o">=</span> <span class="s2">"XrfRXkfTNcXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxX"</span> <span class="c1">-- authorization code</span>
 </code></pre></div></div>
 <p>次に、
-<a href="../../api/lua/#request">fa.request</a>を使用して、アクセストークンを取得しましょう。</p>
+<a href="/docs/api/lua.html#request">fa.request</a>を使用して、アクセストークンを取得しましょう。</p>
 <div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="cm">--[[
     requestToken(app key, app secret, authorization code)
     requests the oath2 token, using fa.request().
@@ -661,7 +661,7 @@
     <span class="k">end</span>
 </code></pre></div></div>
 <p>最後に、実際にファイルをアップロードする関数を書いてみましょう。ここでは、また
-<a href="../../api/lua/#request">fa.request</a>を使用して、PUTリクエストを実行します。</p>
+<a href="/docs/api/lua.html#request">fa.request</a>を使用して、PUTリクエストを実行します。</p>
 <div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">--[[
 	uploadFile(folder, file name, access token)
 	Attempts to upload a file to dropbox!
@@ -752,7 +752,7 @@
 
 <p><a href="https://github.com/FlashAirDevelopers/LuaTutorial/tree/master/lua_tutorial_6" target="_blank" class="btn btn-primary">リポジトリを見る（GitHub）</a></p>
 
-<p>このサイトのサンプルコードはLGPLv2または<a href="../../license">二条項BSDライセンス</a>で提供されています。</p>
+<p>このサイトのサンプルコードはLGPLv2または<a href="/docs/license">二条項BSDライセンス</a>で提供されています。</p>
 
 
 

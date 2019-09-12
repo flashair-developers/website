@@ -510,7 +510,7 @@
 
       <li>
         <br>
-        <a href="./">目次に戻る</a>
+        <a href="/docs/tutorials/lua">目次に戻る</a>
       </li>
     </ul>
   </nav>
@@ -558,7 +558,7 @@
 <h2 id="画像のダウンロードと表示">画像のダウンロードと表示</h2>
 
 <p>まず、
-<a href="../../api/lua/#httpgetfile">fa.HTTPGetFile</a>を使用して、画像をダウンロードしてみましょう。ダウンロードが成功すると、画像を表示します。それでは、FlashAirのロゴを表示してみましょう。</p>
+<a href="/docs/api/lua.html#httpgetfile">fa.HTTPGetFile</a>を使用して、画像をダウンロードしてみましょう。ダウンロードが成功すると、画像を表示します。それでは、FlashAirのロゴを表示してみましょう。</p>
 
 <h5 id="imagedownloadlua"><em>/ImageDownload.lua</em></h5>
 <div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">--HTTP request</span>
@@ -641,7 +641,7 @@
 	<span class="k">return</span> <span class="n">count</span>
 <span class="k">end</span>
 </code></pre></div></div>
-<p><a href="../../api/lua/#request">fa.request</a>を使ってcommand.cgiを呼び出すことで、これらの情報を得ることはできますが、LuaFileSystemを使用する方が高速に処理できます。</p>
+<p><a href="/docs/api/lua.html#request">fa.request</a>を使ってcommand.cgiを呼び出すことで、これらの情報を得ることはできますが、LuaFileSystemを使用する方が高速に処理できます。</p>
 
 <p>では、これらの2つの関数が準備できたので、残りのスクリプトを書いていきましょう。基本的なHTMLを使用し、ページを再読み込みするためにリフレッシュタグも使います。</p>
 <div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">reloadTime</span> <span class="o">=</span> <span class="s2">"60"</span> <span class="c1">--How often (in seconds) the status page should update.</span>
@@ -693,7 +693,7 @@
 
 <p><a href="https://github.com/FlashAirDevelopers/LuaTutorial/tree/master/lua_tutorial_8" target="_blank" class="btn btn-primary">リポジトリを見る（GitHub）</a></p>
 
-<p>このサイトのサンプルコードは<a href="../../license">二条項BSDライセンス</a>で提供されています。</p>
+<p>このサイトのサンプルコードは<a href="/docs/license">二条項BSDライセンス</a>で提供されています。</p>
 
 
 

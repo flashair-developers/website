@@ -14,7 +14,7 @@ upload.cgiは、ネットワーク越しにSDメモリカードの中身を変�
 
 ### アップロード手順 #1 -Webブラウザから行う場合-
 
-1.  [CONFIG ファイル](./config)に`UPLOAD=1` を書きこむ
+1.  [CONFIG ファイル]({{ site.baseurl }}/docs/api/config)に`UPLOAD=1` を書きこむ
 2.  FlashAirを再起動する
 3.  FlashAirに無線LANで接続する
 4.  Webブラウザで`http://flashair/upload.cgi` を開く
@@ -22,7 +22,7 @@ upload.cgiは、ネットワーク越しにSDメモリカードの中身を変�
 
 ### アップロード手順 #2 -CGIで行う場合-
 
-1.  [CONFIG ファイル](./config)に`UPLOAD=1` を書きこむ
+1.  [CONFIG ファイル]({{ site.baseurl }}/docs/api/config)に`UPLOAD=1` を書きこむ
 2.  FlashAirを再起動する
 3.  FlashAirに無線LANで接続する
 4.  `WRITEPROTECT` コマンドで、SDメモリカードホスト機器からの書き込みを禁止する

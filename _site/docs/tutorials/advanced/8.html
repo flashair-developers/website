@@ -507,7 +507,7 @@
       </li>
       <li>
         <br>
-        <a href="./">目次に戻る</a>
+        <a href="/docs/tutorials/advanced">目次に戻る</a>
       </li>
     </ul>
   </nav>
@@ -615,7 +615,7 @@ AWSメニューバーからアカウント名をクリックし、「セキュ�
 (Macの場合は<code class="highlighter-rouge">/Volumes/(ボリュームラベル名)/SD_WLAN/CONFIG</code>です。)</p>
 
 <p>CONFIG内で以下の3つの情報を変更する必要があります。 括弧内は
-<a href="../../api/config/">CONFIG</a>の対応するパラメータ名です。
+<a href="/docs/api/config">CONFIG</a>の対応するパラメータ名です。
 パラメータが存在しない場合は新しく行を追加してください。 パラメータの順序は問いません。</p>
 
 <h4 class="no_toc" id="動作モード-appmode">動作モード (APPMODE)</h4>
@@ -724,7 +724,7 @@ LOCK=1
   	<span class="k">return</span> <span class="n">filepath</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">sendtime</span> 
   <span class="k">end</span>
 </code></pre></div>    </div>
-    <p><a href="../../api/lua/#search">fa.search</a>で、引数sendtimeと更新日時が一致するファイル、若しくは引数sendtimeより新しいファイルのうち最も古いファイル（指定された日時の次に新しいファイル）のファイルを取得し、返します。</p>
+    <p><a href="/docs/api/lua.html#search">fa.search</a>で、引数sendtimeと更新日時が一致するファイル、若しくは引数sendtimeより新しいファイルのうち最も古いファイル（指定された日時の次に新しいファイル）のファイルを取得し、返します。</p>
     <div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">function</span> <span class="nf">execute</span><span class="p">()</span>
       <span class="kd">local</span> <span class="n">temptime</span> <span class="o">=</span> <span class="n">readSendTime</span><span class="p">()</span>
       <span class="k">if</span> <span class="n">temptime</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">then</span>
@@ -762,7 +762,7 @@ LOCK=1
   	<span class="nb">collectgarbage</span><span class="p">(</span><span class="s2">"collect"</span><span class="p">)</span>
   <span class="k">end</span>
 </code></pre></div>    </div>
-    <p><a href="../../api/lua/#sleep">sleep</a>を使用し、10秒毎にファイル検索を行います。</p>
+    <p><a href="/docs/api/lua.html#sleep">sleep</a>を使用し、10秒毎にファイル検索を行います。</p>
   </li>
 </ul>
 
@@ -865,7 +865,7 @@ LOCK=1
   <li>62-71行目<br />
   署名キーと正規リクエストを用いて、<strong>署名バージョン4</strong>の署名文字列を作成し、正規ヘッダーを作成します。</li>
   <li>73-89行目<br />
-  <a href="../../api/lua/#request">fa.request</a>を使用してAWS APIへリクエストを送信します。</li>
+  <a href="/docs/api/lua.html#request">fa.request</a>を使用してAWS APIへリクエストを送信します。</li>
 </ul>
 
 <hr />
@@ -911,7 +911,7 @@ QuickSight</p>
 
 <p><a href="/files/samplecode/advanced/advanced_tutorial_08.zip" class="btn btn-primary">advanced_tutorial_08.zip</a> (4KB)</p>
 
-<p>このサイトのサンプルコードは<a href="../../license">二条項BSDライセンス</a>で提供されています。</p>
+<p>このサイトのサンプルコードは<a href="/docs/license">二条項BSDライセンス</a>で提供されています。</p>
 
 
 

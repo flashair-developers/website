@@ -507,7 +507,7 @@
       </li>
       <li>
         <br>
-        <a href="./">目次に戻る</a>
+        <a href="/docs/tutorials/advanced">目次に戻る</a>
       </li>
     </ul>
   </nav>
@@ -577,7 +577,7 @@ FlashAirに接続中は、他の無線LAN親機とは接続できません。
 <h3 id="変更する項目">変更する項目</h3>
 
 <p>以下の4つの情報を変更する必要があります。 括弧内は
-<a href="../../api/config/">APIガイド / CONFIGファイル</a>の対応するパラメータ名です。</p>
+<a href="/docs/api/config/">APIガイド / CONFIGファイル</a>の対応するパラメータ名です。</p>
 
 <h5 id="動作モード-appmode"><strong>動作モード (APPMODE)</strong></h5>
 <p>パラメータに<code class="highlighter-rouge">5</code>を指定し、インフラストラクチャ・モードのステーション動作に変更します。</p>
@@ -612,7 +612,7 @@ MASTERCODE=18002d4ff0a2
 <h3 id="方法2-configcgiを利用する場合">方法2: config.cgiを利用する場合</h3>
 
 <p>FlashAir識別名(APPNAME)以外の項目については、
-<a href="../../api/config.cgi">config.cgi</a>を使用してネットワーク経由で変更することもできます。</p>
+<a href="/docs/api/config.cgi">config.cgi</a>を使用してネットワーク経由で変更することもできます。</p>
 
 <p>設定変更にはマスターコードが必要になります。未設定ならば、事前に設定しておきましょう。</p>
 
@@ -686,9 +686,9 @@ Bonjourのサービスアナウンスには対応していません。</p>
 <h5 id="有効チャネルで接続されていますか"><strong>有効チャネルで接続されていますか?</strong></h5>
 <p>有効チャネル：1ch （2,412MHz） から11ch （2,462MHz） の帯域を使用してください。</p>
 <h5 id="同じ名前のflashairが同一ネットワークに存在していませんか"><strong>同じ名前のFlashAirが同一ネットワークに存在していませんか?</strong></h5>
-<p>同一ネットワーク内で<code class="highlighter-rouge">APPNAME</code>は単一でなければなりません。複数のFlashAirを接続する場合は<a href="5/#appnameを利用して個別にflashairを認識してアクセスする方法">APPNAMEを利用して個別にFlashAirを認識してアクセスする方法</a>をご覧ください。</p>
+<p>同一ネットワーク内で<code class="highlighter-rouge">APPNAME</code>は単一でなければなりません。複数のFlashAirを接続する場合は<a href="/docs/tutorials/advanced/5.html#appnameを利用して個別にflashairを認識してアクセスする方法">APPNAMEを利用して個別にFlashAirを認識してアクセスする方法</a>をご覧ください。</p>
 <h5 id="isdio機器共通の無線lan設定を行う際configにwlansdが設定されていますか"><strong>iSDIO機器共通の無線LAN設定を行う際、CONFIGに[WLANSD]が設定されていますか?</strong></h5>
-<p>iSDIO機器共通の無線LAN設定を行う場合は、CONFIGに<code class="highlighter-rouge">[WLANSD]</code>を追加する必要があります。詳しくは<a href="../../api/config/#config記載例">CONFIG記載例</a>をご覧ください。</p>
+<p>iSDIO機器共通の無線LAN設定を行う場合は、CONFIGに<code class="highlighter-rouge">[WLANSD]</code>を追加する必要があります。詳しくは<a href="/docs/api/config.html#config記載例">CONFIG記載例</a>をご覧ください。</p>
 <h5 id="apモードで接続できますか"><strong>APモードで接続できますか?</strong></h5>
 <p><code class="highlighter-rouge">APPMODE=4</code>にし、FlashAirを無線LAN親機として動作させてください。動作しない場合はFlashAir自体に問題が発生している可能性があります。</p>
 <h5 id="flashairをスマートフォンのテザリング機能で接続できますか"><strong>FlashAirをスマートフォンのテザリング機能で接続できますか?</strong></h5>
@@ -696,12 +696,12 @@ Bonjourのサービスアナウンスには対応していません。</p>
 
 <p><span class="badge label-blue">参考</span>
 <code class="highlighter-rouge">http://flashair/</code>でFlashAirにアクセスするとリダイレクトループが発生することがあります。CONFIGでIPアドレスを設定してFlashAirへアクセスしてください。
-<a href="5/#ipアドレスを設定して個別にflashairを認識してアクセスする方法">IPアドレスを設定して個別にFlashAirを認識してアクセスする方法</a>を参考に設定を行ってください。</p>
+<a href="/docs/tutorials/advanced/5.html#ipアドレスを設定して個別にflashairを認識してアクセスする方法">IPアドレスを設定して個別にFlashAirを認識してアクセスする方法</a>を参考に設定を行ってください。</p>
 
 <p>FAQや東芝メモリのFAQも合わせてご確認ください。</p>
 
 <ul>
-  <li><a href="../../support/faq">FAQ</a></li>
+  <li><a href="/docs/support/faq">FAQ</a></li>
   <li><a href="https://jp.toshiba-memory.com/support/faq/flashair.htm#anc_10" target="_blank">無線LAN搭載 SDメモリカード FlashAir™ に関するよくあるご質問（FAQ）</a></li>
 </ul>
 

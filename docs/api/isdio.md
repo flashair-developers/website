@@ -22,7 +22,7 @@ SPIモードでのご利用方法については、後日公開予定です。
 * [iSDIOコマンド発行の方法](#isdioコマンド発行の方法)
 * [コマンドリファレンス](#コマンドリファレンス)
 * [レジスタマップ](#レジスタマップ)
-* [Arduinoチュートリアル](../tutorials/isdio/) (iSDIOを利用しています)
+* [Arduinoチュートリアル]({{ site.baseurl }}/docs/tutorials/isdio/) (iSDIOを利用しています)
 
 ---
 ## iSDIOとは
@@ -59,8 +59,8 @@ iSDIOコマンドを発行するには、 コマンドデータをCMD49を使っ
 
 1. コマンドデータを作る。ホストシステムのメモリ上で行います。
 	* データの内容はコマンドの種類によって異なります。[コマンドリファレンス](#コマンドリファレンス)を参照してください。
-2. コマンドデータをCMD49を使って[Command Write Register Port](./register/request)に書き込む。
-	* システムで提供されているSD読み書きAPIを利用するとよいでしょう。[Arduinoチュートリアル](../tutorials/isdio/)も参照ください。
+2. コマンドデータをCMD49を使って[Command Write Register Port]({{ site.baseurl }}/docs/api/register/request)に書き込む。
+	* システムで提供されているSD読み書きAPIを利用するとよいでしょう。[Arduinoチュートリアル]({{ site.baseurl }}/docs/tutorials/isdio)も参照ください。
 
 ファームウェアバージョン 4.00.01+でのSPIモードでのiSDIOは、CMD48, CMD49ではなく、CMD17, CMD24をお使いください。
 
@@ -68,25 +68,25 @@ iSDIOコマンドを発行するには、 コマンドデータをCMD49を使っ
 
 すべてのiSDIOコマンドは非同期的に実行されます。 そのため、コマンドのステータスを監視し、 終了したら結果を読み取るという手順が必要になります。
 
-発行されたコマンドのステータス監視には、[Response Status Register](./register/status)を読み取ります。
+発行されたコマンドのステータス監視には、[Response Status Register]({{ site.baseurl }}/docs/api/register/status)を読み取ります。
 
-コマンドが完了したら、[Response Data Register Port](./register/response)を読み取ることで、結果を取得できます。
+コマンドが完了したら、[Response Data Register Port]({{ site.baseurl }}/docs/api/register/response)を読み取ることで、結果を取得できます。
 
 ---
 ## コマンドリファレンス
 
 iSDIO Wireless LAN Addendumのコマンドです。 FlashAirで利用できないものは省略しています。
 
-* [WLAN](./reference/wlan)
+* [WLAN]({{ site.baseurl }}/docs/api/reference/wlan)
 * [共通](./reference/common/)
-* [サーバーアップロード](./reference/upload/)
-* [FTP/FTPS（FlashAir独自拡張）](./reference/ftp/)
+* [サーバーアップロード]({{ site.baseurl }}/docs/api/reference/upload)
+* [FTP/FTPS（FlashAir独自拡張）]({{ site.baseurl }}/docs/api/reference/ftp)
 
 ---
 ## レジスタマップ
 
-FlashAirのiSDIOのメモリマップは[レジスタマップ](./register/register)を参照してください。
+FlashAirのiSDIOのメモリマップは[レジスタマップ]({{ site.baseurl }}/docs/api/register/register)を参照してください。
 
-* [00000h～00200h](./register/request/) Command Write Register
-* [00200h～00400h](./register/response/) Response Data Register Port
-* [00400h～00600h](./register/status/) Status Register
+* [00000h～00200h]({{ site.baseurl }}/docs/api/register/request) Command Write Register
+* [00200h～00400h]({{ site.baseurl }}/docs/api/register/response) Response Data Register Port
+* [00400h～00600h]({{ site.baseurl }}/docs/api/register/status) Status Register

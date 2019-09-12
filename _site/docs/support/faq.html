@@ -3123,11 +3123,11 @@ Default_Gateway=192.168.43.1
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fa.ip("192.168.11.2", "255.255.255.0", "192.168.11.1")
 </code></pre></div></div>
-<p>それぞれの詳細については、<a href="../api/config/">APIガイド - CONFIG</a> 及び<a href="../api/lua/#ip">Lua関数リファレンス - ip</a> をご覧ください。</p>
+<p>それぞれの詳細については、<a href="/docs/api/config">APIガイド - CONFIG</a> 及び<a href="/docs/api/lua.html#ip">Lua関数リファレンス - ip</a> をご覧ください。</p>
 
 <h3 id="flashairはeap-tlspeap-tlsの認証方式で接続できますか">FlashAirはEAP-TLS（PEAP-TLS）の認証方式で接続できますか？</h3>
 
-<p>FW4.00.03以上で接続可能です。詳細は<a href="../api/config/#eaptype">APIガイド - CONFIG　EAPTYPE</a>をご覧ください。</p>
+<p>FW4.00.03以上で接続可能です。詳細は<a href="/docs/api/config.html#eaptype">APIガイド - CONFIG　EAPTYPE</a>をご覧ください。</p>
 
 <hr />
 <h2 id="cgiconfig">CGI、CONFIG</h2>
@@ -3138,15 +3138,15 @@ Default_Gateway=192.168.43.1
 
 <h3 id="commandcgiop100-と-commandcgiop101-で返される数に違いがあります">command.cgi?op=100 と command.cgi?op=101 で返される数に違いがあります。</h3>
 
-<p><a href="../api/command.cgi/#101">command.cgi?op=101</a>は隠しファイル（フォルダ）を除いたコンテンツ数を返します。<br />対して、<a href="../api/command.cgi/#100">command.cgi?op=100</a>は、全てのファイル（フォルダ）を返すため、数に違いがでます。</p>
+<p><a href="/docs/api/command.cgi.html#101">command.cgi?op=101</a>は隠しファイル（フォルダ）を除いたコンテンツ数を返します。<br />対して、<a href="/docs/api/command.cgi.html#100">command.cgi?op=100</a>は、全てのファイル（フォルダ）を返すため、数に違いがでます。</p>
 
 <h3 id="commandcgiop105-を要求しても値が返ってきません">command.cgi?op=105 を要求しても値が返ってきません。</h3>
 
-<p><a href="../api/command.cgi/#105">command.cgi?op=105</a>は、FlashAirがアクセスポイントモードに設定されている場合にのみ使用することができます。<br />アクセスポイントモードについての説明は、<a href="../api/config/#appmode">無線LANモードの設定</a> をご覧ください。</p>
+<p><a href="/docs/api/command.cgi.html#105">command.cgi?op=105</a>は、FlashAirがアクセスポイントモードに設定されている場合にのみ使用することができます。<br />アクセスポイントモードについての説明は、<a href="/docs/api/config.html#appmode">無線LANモードの設定</a> をご覧ください。</p>
 
 <h3 id="commandcgiop111-を要求しても値が返ってきません">command.cgi?op=111 を要求しても値が返ってきません。</h3>
 
-<p><a href="../api/command.cgi/#111">command.cgi?op=111</a>は、FlashAirがカード電源投入時に無線LAN機能を起動するモード（APPMODE=4）に設定されている場合にのみ使用することができます。<br />APPMODEについての説明は、<a href="../api/config/#appmode">無線LANモードの設定</a> をご覧ください。</p>
+<p><a href="/docs/api/command.cgi.html#111">command.cgi?op=111</a>は、FlashAirがカード電源投入時に無線LAN機能を起動するモード（APPMODE=4）に設定されている場合にのみ使用することができます。<br />APPMODEについての説明は、<a href="/docs/api/config.html#appmode">無線LANモードの設定</a> をご覧ください。</p>
 
 <h3 id="configcgiで変更したssidやパスワードはconfigファイルに保存されますか">config.cgiで変更したSSIDやパスワードはCONFIGファイルに保存されますか？</h3>
 
@@ -3154,11 +3154,11 @@ Default_Gateway=192.168.43.1
 
 <h3 id="uploadcgidel-でファイルフォルダの削除を要求してもfilenotfoundexceptionのエラーが出ます">upload.cgi?DEL= でファイル（フォルダ）の削除を要求してもFileNotFoundExceptionのエラーが出ます。</h3>
 
-<p>CONFIGファイルに「UPLOAD=1」が書き込まれているかご確認ください。こちらの設定がない場合、upload.cgiは使用できません。<br />詳細については<a href="../api/upload.cgi">upload.cgi</a> をご覧ください。</p>
+<p>CONFIGファイルに「UPLOAD=1」が書き込まれているかご確認ください。こちらの設定がない場合、upload.cgiは使用できません。<br />詳細については<a href="/docs/api/upload.cgi">upload.cgi</a> をご覧ください。</p>
 
 <h3 id="uploadcgidel-を要求してsuccessの応答があってもファイルフォルダの削除が反映されずsdメモリカードホスト機器からflashairを外して再挿入すると反映されるのは何故ですか">upload.cgi?DEL= を要求してSUCCESSの応答があってもファイル（フォルダ）の削除が反映されず、SDメモリカードホスト機器からFlashAirを外して再挿入すると反映されるのは何故ですか？</h3>
 
-<p>upload.cgiで行った変更をSDメモリカードホスト機器が認識する方法が無い為、実際にはFlashAirからファイルが削除されているにも関わらず、SDメモリカードホスト機器のOSなどのファイル一覧が更新されていない可能性がございます。<br />詳細については、<a href="../api/upload.cgi">upload.cgi</a> の「ご注意」をご覧ください。</p>
+<p>upload.cgiで行った変更をSDメモリカードホスト機器が認識する方法が無い為、実際にはFlashAirからファイルが削除されているにも関わらず、SDメモリカードホスト機器のOSなどのファイル一覧が更新されていない可能性がございます。<br />詳細については、<a href="/docs/api/upload.cgi">upload.cgi</a> の「ご注意」をご覧ください。</p>
 
 <h3 id="cgiをhttp-getリクエストで繰り返し発行する際にブラウザのキャッシュ機能を回避する方法はありますか">CGIをHTTP GETリクエストで繰り返し発行する際に、ブラウザのキャッシュ機能を回避する方法はありますか？</h3>
 
@@ -3172,30 +3172,30 @@ http://flashair/command.cgi?op=...**&amp;TIME=102**	// 三回目のGETリクエ�
 
 <h3 id="configファイルの確認編集方法を教えてください">CONFIGファイルの確認、編集方法を教えてください。</h3>
 
-<p>CONFIGファイルについての説明は、<a href="../api/config">APIガイド - CONFIG</a> をご覧ください。</p>
+<p>CONFIGファイルについての説明は、<a href="/docs/api/config">APIガイド - CONFIG</a> をご覧ください。</p>
 
 <h3 id="uploadcgiで追加または削除したはずのファイルがpc上で確認できません">upload.cgiで追加（または削除）したはずのファイルがPC上で確認できません。</h3>
 
-<p>SDメモリカードホスト側でOSが持つディスクキャッシュをクリアする処理を実行するか、ホスト機器を再起動してください。<br />FlashAirを刺したまま、再マウントし、OSに再読み込みさせる<a href="../tutorials/advanced/6">チュートリアル</a>も参考にしてください。</p>
+<p>SDメモリカードホスト側でOSが持つディスクキャッシュをクリアする処理を実行するか、ホスト機器を再起動してください。<br />FlashAirを刺したまま、再マウントし、OSに再読み込みさせる<a href="/docs/tutorials/advanced/6">チュートリアル</a>も参考にしてください。</p>
 
 <hr />
 <h2 id="lua">Lua</h2>
 
 <h3 id="アクセスポイントモードに設定しているflashairをluaスクリプトでインターネット同時接続モードへ切り替えることはできますか">アクセスポイントモードに設定しているFlashAirを、Luaスクリプトでインターネット同時接続モードへ切り替えることはできますか？</h3>
 
-<p>無線LAN起動中の場合、<a href="../api/lua/#bridge">Bridge</a> では操作できません。<br />また、Luaでインターネット同時接続モードへ切り替えたい場合は、CONFIGファイルに「APPMODE=0」と設定し、起動時に無線LANを起動しない状態で操作することを推奨します。</p>
+<p>無線LAN起動中の場合、<a href="/docs/api/lua.html#bridge">Bridge</a> では操作できません。<br />また、Luaでインターネット同時接続モードへ切り替えたい場合は、CONFIGファイルに「APPMODE=0」と設定し、起動時に無線LANを起動しない状態で操作することを推奨します。</p>
 
 <h3 id="アクセスポイントモードで接続中にluaスクリプトでscanの操作を行うことができますか">アクセスポイントモードで接続中に、LuaスクリプトでScanの操作を行うことができますか？</h3>
 
-<p>いいえ、できません。無線LAN起動の場合は一旦<a href="../api/lua/#disconnect">Disconnect</a> で切断することで、<a href="../api/lua/#scan">Scan</a> による操作が可能になります。</p>
+<p>いいえ、できません。無線LAN起動の場合は一旦<a href="/docs/api/lua.html#disconnect">Disconnect</a> で切断することで、<a href="/docs/api/lua.html#scan">Scan</a> による操作が可能になります。</p>
 
 <h3 id="luaスクリプトのscan使用時のssid検索についてワイルドカードでの指定検索は可能ですか">LuaスクリプトのScan使用時のSSID検索について、ワイルドカードでの指定検索は可能ですか？</h3>
 
-<p>いいえ、<a href="../api/lua/#scan">Scan</a> 使用時にSSIDの指定はできません。</p>
+<p>いいえ、<a href="/docs/api/lua.html#scan">Scan</a> 使用時にSSIDの指定はできません。</p>
 
 <h3 id="flashairがgpioを使用できないデバイスに接続されているか判断する方法を教えてください">FlashAirがGPIOを使用できないデバイスに接続されているか判断する方法を教えてください。</h3>
 
-<p><a href="../api/command.cgi/#190">SDインターフェース端子のI/O利用</a>で確認可能です。Luaスクリプトで確認する場合は以下のようにしてください。</p>
+<p><a href="/docs/api/command.cgi.html#190">SDインターフェース端子のI/O利用</a>で確認可能です。Luaスクリプトで確認する場合は以下のようにしてください。</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>local response = fa.request("http://flashair/command.cgi?op=190&amp;CTRL=0x00&amp;DATA=0x00")
 locl gpio = cjson.decode(response)
@@ -3266,35 +3266,35 @@ end
 
 <p>1.の脆弱性は、下記の条件をすべて満たした場合に発生いたします。</p>
 <ul>
-  <li>FlashAirのインターネット同時接続機能が有効である（参照：<a href="../api/config/#APPMODE">APPMODE</a>）</li>
+  <li>FlashAirのインターネット同時接続機能が有効である（参照：<a href="/docs/api/config.html#APPMODE">APPMODE</a>）</li>
   <li>FlashAirとインターネット接続側ネットワークにあるデバイスが、同一アクセスポイントに接続されている</li>
   <li>FlashAirのIPアドレスがわかっている</li>
 </ul>
 
 <p>2.の脆弱性は、上記３つに加えて、下記の条件が満たされた場合に発生いたします。</p>
 <ul>
-  <li>無線LAN経由での書き込み機能を有効にしている（参照：<a href="../api/config/#UPLOAD">UPLOAD</a></li>
+  <li>無線LAN経由での書き込み機能を有効にしている（参照：<a href="/docs/api/config.html#UPLOAD">UPLOAD</a></li>
 </ul>
 
 <p>本脆弱性は、HTTPサーバの認証を設定することで回避できます。</p>
 <ul>
-  <li><a href="../api/config/#httpmode">HTTPDMODE</a> — 認証方法</li>
-  <li><a href="../api/config/#httpduser">HTTPDUSER</a> — Basic認証のユーザ名</li>
-  <li><a href="../api/config/#httpdpass">HTTPDPASS</a> — Basic認証のパスワード、Digest認証のハッシュ値</li>
+  <li><a href="/docs/api/config.html#httpmode">HTTPDMODE</a> — 認証方法</li>
+  <li><a href="/docs/api/config.html#httpduser">HTTPDUSER</a> — Basic認証のユーザ名</li>
+  <li><a href="/docs/api/config.html#httpdpass">HTTPDPASS</a> — Basic認証のパスワード、Digest認証のハッシュ値</li>
 </ul>
 
 <p>なお、標準では、インターネット同時接続機能および無線LAN経由での書き込み機能はいずれも無効になっており、本脆弱性の影響はありません。<br />ご利用者がCONFIGファイルの直接変更またはアプリを利用して明示的に変更しない限り、これらの機能が有効になることはありません。</p>
 
-<p>これらの機能に関する詳しい設定方法は、<a href="../tutorials/advanced/3">上級者向けチュートリアル - インターネット同時接続モード</a> および<a href="../tutorials/advanced/2/">上級者向けチュートリアル - FlashAirへのアップロード</a> をご覧ください。</p>
+<p>これらの機能に関する詳しい設定方法は、<a href="/docs/tutorials/advanced/3">上級者向けチュートリアル - インターネット同時接続モード</a> および<a href="/docs/tutorials/advanced/2">上級者向けチュートリアル - FlashAirへのアップロード</a> をご覧ください。</p>
 
 <h3 id="flashairのファイルを自動的にftpサーバやクラウドサービスへアップロードする方法はありますか">FlashAirのファイルを自動的にFTPサーバやクラウドサービスへアップロードする方法はありますか？</h3>
 
 <p>ご自身でアップロード環境を構築する場合は、以下のチュートリアルページがご参考になります。</p>
 
 <ul>
-  <li><a href="../tutorials/lua/4">Lua機能 - FTPサーバを使ったファイルのアップロード</a></li>
-  <li><a href="../tutorials/lua/5">Lua機能 - Facebookへのアップロード</a></li>
-  <li><a href="../tutorials/lua/6">Lua機能 - OAUTH2を使ったDropboxへのアップロード</a></li>
+  <li><a href="/docs/tutorials/lua/4">Lua機能 - FTPサーバを使ったファイルのアップロード</a></li>
+  <li><a href="/docs/tutorials/lua/5">Lua機能 - Facebookへのアップロード</a></li>
+  <li><a href="/docs/tutorials/lua/6">Lua機能 - OAUTH2を使ったDropboxへのアップロード</a></li>
 </ul>
 
 <h3 id="arduino-due用isdioに関するライブラリやチュートリアルはありませんか">Arduino Due用iSDIOに関するライブラリやチュートリアルはありませんか？</h3>

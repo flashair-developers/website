@@ -23,6 +23,6 @@ FlashAirのiSDIOのメモリマップです。
 
 <sup>\*</sup>Shared Memory は iSDIO のメモリアクセスコマンドのほか、下記のAPIで利用できます。
 
-* command.cgi [共有メモリからのデータの取得 (op=130)](../command.cgi/#130)
-* command.cgi [共有メモリへのデータの書き込み (op=131)](../commandcgi/#131)
-* lua機能 [sharedmemory](lua/#sharedmemory)
+* command.cgi [共有メモリからのデータの取得 (op=130)]({{ site.baseurl }}/docs/api/command.cgi.html#130)
+* command.cgi [共有メモリへのデータの書き込み (op=131)]({{ site.baseurl }}/docs/api/command.cgi.html#131)
+* lua機能 [sharedmemory]({{ site.baseurl }}/docs/api/lua.html#sharedmemory)

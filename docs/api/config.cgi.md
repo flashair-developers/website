@@ -33,7 +33,7 @@ APPAUTOTIME
 無線LAN機能の自動タイムアウト時間を設定します。単位はミリ秒です。 設定可能な値は、`60000`から`4294967294`で、デフォルト値は`300000`です。<br>
 `0`を指定すると自動停止しない設定になります。ただし、SDメモリカードホスト機器のスリープでカードへの電源供給が遮断された場合などに、停止することがあります。
 
-設定された値は[CONFIGファイル](./config/)の**APPAUTOTIME** パラメータに保存されます。
+設定された値は[CONFIGファイル]({{ site.baseurl }}/docs/api/config)の**APPAUTOTIME** パラメータに保存されます。
 
 設定に成功すると`SUCCESS` 、失敗すると`ERROR` が返ります。
 
@@ -49,7 +49,7 @@ APPINFO
 
 アプリケーションが独自で使用する情報を、16ケタの英数字で保存することができます。
 
-一番新しく設定された値が[CONFIGファイル](./config/)の**APPINFO**パラメータに保存されます。
+一番新しく設定された値が[CONFIGファイル]({{ site.baseurl }}/docs/api/config)の**APPINFO**パラメータに保存されます。
 
 設定に成功すると`SUCCESS` 、失敗すると`ERROR` が返ります。
 
@@ -73,9 +73,9 @@ APPMODE
 6   |  カード電源投入時に無線LAN機能を起動します。無線LANモードはインターネット同時接続モードです。 (ファームウェア 2.00.02以上)             
 その他 | 未定義です。指定しないでください。                                                                  
 
-APモード、STAモード、インターネット同時接続モードについては、[CONFIGファイル](./config/#appmode)の説明をご覧ください。
+APモード、STAモード、インターネット同時接続モードについては、[CONFIGファイル]({{ site.baseurl }}/docs/api/config#appmode)の説明をご覧ください。
 
-一番新しく設定された値が[CONFIGファイル](./config/)の**APPMODE**パラメータに保存されます。
+一番新しく設定された値が[CONFIGファイル]({{ site.baseurl }}/docs/api/config)の**APPMODE**パラメータに保存されます。
 
 設定に成功すると`SUCCESS` 、失敗すると`ERROR` が返ります。
 
@@ -91,7 +91,7 @@ APPNETWORKKEY
 
 0-63文字の英数字でのネットワークセキュリティキーを設定します。 無線LANのセキュリティ機能を有効にするためには最低8文字が必要です。
 
-一番新しく設定された値が[CONFIGファイル](./config/)の**APPNETWORKKEY**パラメータに保存されます。
+一番新しく設定された値が[CONFIGファイル]({{ site.baseurl }}/docs/api/config)の**APPNETWORKKEY**パラメータに保存されます。
 
 設定に成功すると`SUCCESS` 、失敗すると`ERROR` が返ります。
 
@@ -107,7 +107,7 @@ APPSSID
 
 無線LAN識別子(SSID)を、1-32文字の英数字で設定します。
 
-一番新しく設定された値が[CONFIGファイル](./config/)の**APPSSID**パラメータに保存されます。
+一番新しく設定された値が[CONFIGファイル]({{ site.baseurl }}/docs/api/config)の**APPSSID**パラメータに保存されます。
 
 設定に成功すると`SUCCESS` 、失敗すると`ERROR` が返ります。
 
@@ -123,7 +123,7 @@ BRGNETWORKKEY
 
 インターネット同時接続モードで使用するインターネット側ネットワークの セキュリティキーを0-63文字の英数字で設定します。
 
-一番新しく設定された値が[CONFIGファイル](./config/)の**BRGNETWORKKEY**パラメータに保存されます。
+一番新しく設定された値が[CONFIGファイル]({{ site.baseurl }}/docs/api/config)の**BRGNETWORKKEY**パラメータに保存されます。
 
 設定に成功すると`SUCCESS` 、失敗すると`ERROR` が返ります。
 
@@ -139,7 +139,7 @@ BRGSSID
 
 インターネット同時接続モードで使用するインターネット側ネットワークの 無線LAN識別子(SSID)を、1-32文字の英数字で設定します。
 
-一番新しく設定された値が[CONFIGファイル](./config/)の**BRGSSID**パラメータに保存されます。
+一番新しく設定された値が[CONFIGファイル]({{ site.baseurl }}/docs/api/config)の**BRGSSID**パラメータに保存されます。
 
 設定に成功すると`SUCCESS` 、失敗すると`ERROR` が返ります。
 
@@ -155,7 +155,7 @@ CIPATH
 
 無線起動画面として使う画像ファイルのフルパスを設定します。 無線起動画面とは、無線LANモード(APPMODE)が0,2,3のいずれかである場合に、無線LAN機能のON/OFFを制御するための画像ファイルです。
 
-一番新しく設定された値が[CONFIGファイル](./config/)の**CIPATH**パラメータに保存されます。
+一番新しく設定された値が[CONFIGファイル]({{ site.baseurl }}/docs/api/config)の**CIPATH**パラメータに保存されます。
 
 設定に成功すると`SUCCESS` 、失敗すると`ERROR` が返ります。
 
@@ -169,7 +169,7 @@ CIPATH
 CLEARCODE
 {: .text-small }
 
-マスターコードをリセットします。[CONFIGファイル](./config/)の**MASTERCODE**が削除され、同時にLOCK=1も削除されます。
+マスターコードをリセットします。[CONFIGファイル]({{ site.baseurl }}/docs/api/config)の**MASTERCODE**が削除され、同時にLOCK=1も削除されます。
 
 設定に成功すると`SUCCESS` 、失敗すると`ERROR` が返ります。
 
@@ -183,7 +183,7 @@ CLEARCODE
 MASTERCODE
 {: .text-small }
 
-マスターコードは、SSID(APPSSID)やネットワークキー(APPNETWORKKEY)の設定の際のパスワードとして使われる12ケタの16進数の数字です。値が設定済みのマスターコードと一致した場合は、同時に指定されたその他の設定をCONFIGファイルの対応するパラメータに保存します。マスターコードが設定されていない場合は、設定された値が[CONFIGファイル](./config/)の**MASTERCODE**パラメータに保存され、同時にLOCK=1も設定されます。
+マスターコードは、SSID(APPSSID)やネットワークキー(APPNETWORKKEY)の設定の際のパスワードとして使われる12ケタの16進数の数字です。値が設定済みのマスターコードと一致した場合は、同時に指定されたその他の設定をCONFIGファイルの対応するパラメータに保存します。マスターコードが設定されていない場合は、設定された値が[CONFIGファイル]({{ site.baseurl }}/docs/api/config)の**MASTERCODE**パラメータに保存され、同時にLOCK=1も設定されます。
 
 設定に成功すると`SUCCESS` 、失敗すると`ERROR` が返ります。
 
@@ -200,7 +200,7 @@ TIMEZONE
 FlashAirドライブ(WebDAV)動作時に、FATファイル時間からUTC時間へ変換するためのタイムゾーンを設定します。 15分単位を1として`-48`から`54`の数字で設定します。<br>
 日本は、UTC標準時を`0`とし、9時間進めたUTC+9であるため、`36`(9(h)×4(15m)=36)を設定します。
 
-一番新しく設定された値が[CONFIGファイル](./config/)の**TIMEZONE**パラメータに保存されます。
+一番新しく設定された値が[CONFIGファイル]({{ site.baseurl }}/docs/api/config)の**TIMEZONE**パラメータに保存されます。
 
 設定に成功すると`SUCCESS` 、失敗すると`ERROR` が返ります。
 
@@ -220,7 +220,7 @@ FlashAirドライブ機能を有効にするかどうかを指定します。次
 1 | FlashAirドライブ機能有効（リードオンリーモード）                                               
 2 | FlashAirドライブ機能有効。書き込みを有効にするには、CONFIGファイルに`UPLOAD=1`を設定する必要があります。
 
-一番新しく設定された値が[CONFIGファイル](./config/)の**WEBDAV**パラメータに保存されます。
+一番新しく設定された値が[CONFIGファイル]({{ site.baseurl }}/docs/api/config)の**WEBDAV**パラメータに保存されます。
 
 設定に成功すると`SUCCESS` 、失敗すると`ERROR` が返ります。
 

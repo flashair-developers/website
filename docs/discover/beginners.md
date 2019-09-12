@@ -28,7 +28,7 @@ FlashAirはWebサーバーを内蔵していますので、無線LAN上でHTTP�
 
 HTTPによる制御については、こちらに紹介されています。
 
-- [FlashAirアプリ開発の概要](./app)
+- [FlashAirアプリ開発の概要]({{ site.baseurl }}/docs/discover/app)
 
 参考
 {: .label }
@@ -42,8 +42,8 @@ HTMLを編集することで、WebブラウザでFlashAirコンテンツを見�
 
 詳しくは、こちらに紹介されています。
 
-- [ブラウザユーティリティ](../api/utility)
-- [ウェブブラウザ向けFlashAirアプリ開発の概要](../tutorials/web/1)
+- [ブラウザユーティリティ]({{ site.baseurl }}/docs/api/utility)
+- [ウェブブラウザ向けFlashAirアプリ開発の概要]({{ site.baseurl }}/docs/tutorials/web/1)
 
 参考
 {: .label }
@@ -58,8 +58,8 @@ CSSを編集することで、WebブラウザでFlashAirコンテンツを見る
 
 詳しくは、こちらに紹介されています。
 
-- [ブラウザユーティリティ](../api/utility)
-- [ウェブブラウザ向けFlashAirアプリ開発の概要](../tutorials/web/1)
+- [ブラウザユーティリティ]({{ site.baseurl }}/docs/api/utility)
+- [ウェブブラウザ向けFlashAirアプリ開発の概要]({{ site.baseurl }}/docs/tutorials/web/1)
 
 参考
 {: .label }
@@ -80,7 +80,7 @@ JavaScriptとは、Webサイトにインタラクティブなデザインを作�
 
 使用例については、こちらに紹介されています。
 
-- [コンテンツリストの取得1](../tutorials/web/2)
+- [コンテンツリストの取得1]({{ site.baseurl }}/docs/tutorials/web/2)
 
 参考
 {: .label }
@@ -95,10 +95,10 @@ FlashAirでは、FlashAirの情報を読み取る、設定を変更するなど�
 
 詳しくは、こちらに紹介されています。
 
-- [command.cgi](../api/command.cgi)：無線LAN経由でFlashAirの情報を取得したり、設定を変更したりできます。
-- [config.cgi](../api/config.cgi)：FlashAirの設定を変更するために使います。
-- [thumbnail.cgi](../api/thumbnail.cgi)：画像のサムネイルを取得するために使います。
-- [upload.cgi](../api/upload.cgi)：ネットワーク越しにSDメモリカードの中身を変更するために使います。
+- [command.cgi]({{ site.baseurl }}/docs/api/command.cgi)：無線LAN経由でFlashAirの情報を取得したり、設定を変更したりできます。
+- [config.cgi]({{ site.baseurl }}/docs/api/config.cgi)：FlashAirの設定を変更するために使います。
+- [thumbnail.cgi]({{ site.baseurl }}/docs/api/thumbnail.cgi)：画像のサムネイルを取得するために使います。
+- [upload.cgi]({{ site.baseurl }}/docs/api/upload.cgi)：ネットワーク越しにSDメモリカードの中身を変更するために使います。
 
 参考
 {: .label }
@@ -112,8 +112,8 @@ FlashAirは、無線LAN機能を内蔵しており、ネットワークに接続
 
 詳しくは、こちらに紹介されています。
 
-- [ステーションモードの利用](../tutorials/advanced/1)：FlashAirを無線LAN子機として使うモードです。
-- [インターネット同時接続モードの利用](../tutorials/advanced/3)：PCやスマートフォンなどのデバイスからFlashAirを経由して、インターネットなどの別のネットワークと通信することができるモードです。
+- [ステーションモードの利用]({{ site.baseurl }}/docs/tutorials/advanced/1)：FlashAirを無線LAN子機として使うモードです。
+- [インターネット同時接続モードの利用]({{ site.baseurl }}/docs/tutorials/advanced/3)：PCやスマートフォンなどのデバイスからFlashAirを経由して、インターネットなどの別のネットワークと通信することができるモードです。
 
 参考
 {: .label }
@@ -125,7 +125,7 @@ FlashAirは、無線LAN機能を内蔵しており、ネットワークに接続
 Androidとは、グーグル社がライセンスフリーで提供する、携帯情報端末向けのオペレーティングシステムです。 
 FlashAirデベロッパーズでは、Androidアプリ開発向けのチュートリアルを紹介しています。
 
-- [Android向けチュートリアル](../tutorials/android/)
+- [Android向けチュートリアル]({{ site.baseurl }}/docs/tutorials/android/)
 
 参考
 {: .label }
@@ -137,7 +137,7 @@ FlashAirデベロッパーズでは、Androidアプリ開発向けのチュー�
 iOSとは、アップル社が提供する、iPhoneやiPad、iPod touch、Apple TVなどの携帯情報端末向けのオペレーティングシステムです。 
 FlashAirデベロッパーズでは、iOSアプリ開発向けのチュートリアルを紹介しています。
 
-- [iOS向けチュートリアル](../tutorials/ios/)
+- [iOS向けチュートリアル]({{ site.baseurl }}/docs/tutorials/ios/)
 
 参考
 {: .label }
@@ -155,7 +155,7 @@ Lua言語で書かれたスクリプトファイルをFlashAirに保存するこ
 
 詳しくは、こちらに紹介されています。
 
-- [Lua機能](../api/lua/)
+- [Lua機能]({{ site.baseurl }}/docs/api/lua/)
 
 参考
 {: .label }
@@ -169,7 +169,7 @@ FlashAirをSDメモリカードホスト機器から制御して、 無線LANの
 
 詳しくは、こちらに紹介されています。
 
-- [ArduinoでFlashAir制御の概要](../tutorials/arduino/1)
+- [ArduinoでFlashAir制御の概要]({{ site.baseurl }}/docs/tutorials/arduino/1)
 
 参考
 {: .label }

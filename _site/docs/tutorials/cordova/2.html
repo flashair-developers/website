@@ -485,7 +485,7 @@
 
       <li>
         <br>
-        <a href="./">目次に戻る</a>
+        <a href="/docs/tutorials/cordova">目次に戻る</a>
       </li>
     </ul>
   </nav>
@@ -526,23 +526,23 @@
         <div id="main-content" class="page-content" role="main">
           <h1 id="コンテンツリストの取得">コンテンツリストの取得</h1>
 
-<p>第2回では、FlashAirのコンテンツリストを取得するアプリを作成します。<a href="../../api/command.cgi">command.cgi</a>を使用します。</p>
+<p>第2回では、FlashAirのコンテンツリストを取得するアプリを作成します。<a href="/docs/api/command.cgi">command.cgi</a>を使用します。</p>
 
 <hr />
 <h2 id="事前準備">事前準備</h2>
 
 <h3 id="1-プロジェクトを作成する">1. プロジェクトを作成する</h3>
 <p>まずは作成するアプリのプロジェクトを作成します。 第1回の
-<a href="1/#helloworldアプリの作成と確認">HelloWorldアプリのプロジェクト作成</a>のように、プロジェクトを作成したいディレクトリへ移動し、以下のコマンドを実行します。</p>
+<a href="/docs/tutorials/cordova/1.html#helloworldアプリの作成と確認">HelloWorldアプリのプロジェクト作成</a>のように、プロジェクトを作成したいディレクトリへ移動し、以下のコマンドを実行します。</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; cordova create cordovatutorial2 com.fixstars.flashair.tutorial CordovaTutorial2
 </code></pre></div></div>
 
-<p>またプロジェクト作成後、<a href="1/#2-browserプラットフォームを追加してローカル上のブラウザでアプリの動作確認を行う">browserプラットフォームの追加</a>も行います。</p>
+<p>またプロジェクト作成後、<a href="/docs/tutorials/cordova/1.html#2-browserプラットフォームを追加してローカル上のブラウザでアプリの動作確認を行う">browserプラットフォームの追加</a>も行います。</p>
 
 <h3 id="2-jqueryを追加する">2. jQueryを追加する</h3>
 
-<p>開発時のJavaScriptのコード量を減らす目的で、jQueryを導入します。 jQueryは<a href="http://jquery.com/" target="_blank">公式ページ</a>からダウンロードできます。 最新版のjQueryファイルをダウンロードして、先程作成した<a href="1/#helloworldアプリの作成と確認">プロジェクト内の/www/js</a>以下に保存しましょう。<br />
+<p>開発時のJavaScriptのコード量を減らす目的で、jQueryを導入します。 jQueryは<a href="http://jquery.com/" target="_blank">公式ページ</a>からダウンロードできます。 最新版のjQueryファイルをダウンロードして、先程作成した<a href="/docs/tutorials/cordova/1.html#helloworldアプリの作成と確認">プロジェクト内の/www/js</a>以下に保存しましょう。<br />
 ※ このチュートリアルでは<code class="highlighter-rouge">jquery-3.1.1.min.js</code>ファイルをjQueryファイルとして利用しています。</p>
 
 <hr />
@@ -847,7 +847,7 @@
   <li>12-14行目<br />
   <code class="highlighter-rouge">load.js</code>と異なり、トップ画面へ戻るように設定しています。</li>
   <li>16-52行目<br />
-   FlashAirのファイル数とコンテンツリストの情報を取得して表示します。 それぞれ<a href="../../api/commandcgi/#101">command.cgi?op=101</a>と<a href="../../api/commandcgi/#100">command.cgi?op=100</a>をAjaxでGETリクエストすることで、情報を取得します。
+   FlashAirのファイル数とコンテンツリストの情報を取得して表示します。 それぞれ<a href="/docs/api/command.cgi.html#101">command.cgi?op=101</a>と<a href="/docs/api/command.cgi.html#100">command.cgi?op=100</a>をAjaxでGETリクエストすることで、情報を取得します。
 ※ 補足: Ajaxを使用したアプリのbrowserプラットフォームでの確認について</li>
 </ul>
 
@@ -915,7 +915,7 @@
 
 <ul>
   <li>このサンプルコードは<a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License, Version 2.0</a>で提供されています。</li>
-  <li>「cordova_tutorial_02」ディレクトリは、zipファイルで圧縮して<a href="https://build.phonegap.com/" target="_blank">PhoneGap Build</a>へアップロードすることでビルドできます。 ビルド方法は<a href="1/#helloworldアプリの作成と確認">HelloWorldアプリをビルドする</a>をご確認ください。</li>
+  <li>「cordova_tutorial_02」ディレクトリは、zipファイルで圧縮して<a href="https://build.phonegap.com/" target="_blank">PhoneGap Build</a>へアップロードすることでビルドできます。 ビルド方法は<a href="/docs/tutorials/cordova/1.html#helloworldアプリの作成と確認">HelloWorldアプリをビルドする</a>をご確認ください。</li>
   <li>Cordovaプロジェクトで確認する場合は、「cordova_tutorial_02」ディレクトリ内のデータをプロジェクト内へ上書きコピーしてください。</li>
 </ul>
 

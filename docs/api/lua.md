@@ -487,7 +487,7 @@ _number_。保存する日時。FAT形式で指定する。
 * savetime引数なしの場合、保存された日時を取得する。
 * FAT形式の日時について
 	* 32ビットの整数値で、上位16ビットが日付、下位16ビットが時刻。
-  * 日付と時刻は、[command.cgiのop=100](command.cgi/#ファイルリストの取得)を実行した際に取得できる値と同じフォーマット。
+  * 日付と時刻は、[command.cgiのop=100]({{ site.baseurl }}/docs/api/command.cgi.html#ファイルリストの取得)を実行した際に取得できる値と同じフォーマット。
 
 ### 戻り値
 
@@ -1205,7 +1205,7 @@ reg = fa.ReadStatusReg()
 
 ### 戻り値
 
-無線LAN機能ステータスレジスタの内容を、文字列として返します。内容は[無線LAN機能ステータスレジスタ（ApplicationStatus for Wireless LAN）](isdio/register/status/#WLANStatusRegister)を参照してください。
+無線LAN機能ステータスレジスタの内容を、文字列として返します。内容は[無線LAN機能ステータスレジスタ（ApplicationStatus for Wireless LAN）]({{ site.baseurl }}/docs/api/register/status.html#WLANStatusRegister)を参照してください。
 
 ### 動作例
 
@@ -1396,7 +1396,7 @@ _number_。検索対象更新日時。-1またはFAT形式の日時を指定す�
   * 指定された更新日時より新しいファイルのうち最も古いファイル（指定された日時の次に新しいファイル）
 * FAT形式の日時について
   * 32ビットの整数値で、上位16ビットが日付、下位16ビットが時刻。
-  * 日付と時刻は、[command.cgiのop=100](command.cgi/#ファイルリストの取得)を実行した際に取得できる値と同じフォーマット。
+  * 日付と時刻は、[command.cgiのop=100]({{ site.baseurl }}/docs/api/command.cgi.html#ファイルリストの取得)を実行した際に取得できる値と同じフォーマット。
 
 ### 戻り値
 
@@ -2575,7 +2575,7 @@ _number_。
 
 <div class="code-example" markdown="1">
 
-1.  CONFIGに`LUA_RUN_SCRIPT=/HelloWorld.lua`を追加します。[こちら](../tutorials/lua/2/)のチュートリアルで使用した`HelloWorld.lua`をFlashAirルート上に保存します。すでにHello.txtがルート上にある場合はリネームまたは削除してください。
+1.  CONFIGに`LUA_RUN_SCRIPT=/HelloWorld.lua`を追加します。[こちら]({{ site.baseurl }}/docs/tutorials/lua/2)のチュートリアルで使用した`HelloWorld.lua`をFlashAirルート上に保存します。すでにHello.txtがルート上にある場合はリネームまたは削除してください。
 
 2.  FlashAirルート上に以下のコードを保存します。
 

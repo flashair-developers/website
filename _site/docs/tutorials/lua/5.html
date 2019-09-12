@@ -510,7 +510,7 @@
 
       <li>
         <br>
-        <a href="./">目次に戻る</a>
+        <a href="/docs/tutorials/lua">目次に戻る</a>
       </li>
     </ul>
   </nav>
@@ -552,7 +552,7 @@
           <h1 id="facebookへのアップロード">Facebookへのアップロード</h1>
 
 <p>このチュートリアルでは、Facebookにファイルをアップロードしてみます。　本サイトでは、Facebookへアップロードする
-<a href="../../api/lua/sample">サンプルプログラム</a>を公開していますので、ここでは、サンプルプログラムがどのように動作するかをみていきます。</p>
+<a href="/docs/api/lua/sample">サンプルプログラム</a>を公開していますので、ここでは、サンプルプログラムがどのように動作するかをみていきます。</p>
 
 <hr />
 <h2 id="facebookhtml">Facebook.html</h2>
@@ -565,7 +565,7 @@
 <p>fb_get_token.luaは、長期アクセストークン(60日間有効)を取得するために使用します。</p>
 
 <p>まず、現在のアクセストークン(有効期限が1時間)が有効であることを確認するために、
-<a href="../../api/lua/#request">fa.request</a>とcjsonを使用します。</p>
+<a href="/docs/api/lua.html#request">fa.request</a>とcjsonを使用します。</p>
 <div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">local</span> <span class="k">function</span> <span class="nf">hasValidToken</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
   <span class="kd">local</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">h</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">request</span> <span class="p">{</span>
     <span class="n">url</span> <span class="o">=</span> <span class="s1">'https://graph.facebook.com/debug_token?input_token='</span>
@@ -597,7 +597,7 @@
 <p>レスポンスコード(c)を確認し、200の場合、JSONレスポンスへデコードします。いずれかのステップで失敗した場合、有効なトークンが取得できず、showAuthorizationURL()が呼ばれ、新しいキーを取得するよう指示する文字が表示されます。</p>
 
 <p>hasValidTokenが「true」を返した場合、長期アクセストークンを取得しにいきます。ここで、FacebookのOAuth APIを呼び出すために、
-<a href="../../api/lua/#request">fa.request</a>を再び使用します。一時的なアクセストークンを渡すと、60日間有効なアクセストークンに更新され、表示されるはずです。</p>
+<a href="/docs/api/lua.html#request">fa.request</a>を再び使用します。一時的なアクセストークンを渡すと、60日間有効なアクセストークンに更新され、表示されるはずです。</p>
 <div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">local</span> <span class="k">function</span> <span class="nf">getLongtermToken</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
   <span class="kd">local</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">h</span> <span class="o">=</span> <span class="n">fa</span><span class="p">.</span><span class="n">request</span> <span class="p">{</span>
   <span class="n">url</span> <span class="o">=</span> <span class="s1">'https://graph.facebook.com/oauth/access_token?grant_type=fb_exchange_token'</span>
@@ -644,7 +644,7 @@
         <span class="c1">--...</span>
 </code></pre></div></div>
 <p>次に、フォルダをアップロードする前に、アルバムを作成するためにFacebookのGraph APIを使います。これは、基本的な
-<a href="../../api/lua/#request">fa.request</a>でリクエストを発行します。正しい場所にアップロードするために、レスポンス文字列をデコードし、アルバムIDを取得します。</p>
+<a href="/docs/api/lua.html#request">fa.request</a>でリクエストを発行します。正しい場所にアップロードするために、レスポンス文字列をデコードし、アルバムIDを取得します。</p>
 <div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">local</span> <span class="k">function</span> <span class="nf">createAlbum</span><span class="p">(</span><span class="n">_name</span><span class="p">,</span> <span class="n">_message</span><span class="p">)</span>
   <span class="kd">local</span> <span class="n">req</span> <span class="o">=</span> <span class="p">{}</span>
   <span class="n">req</span><span class="p">[</span><span class="s2">"url"</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'https://graph.facebook.com/v2.1/me/albums?access_token='</span><span class="o">..</span><span class="n">user_access_token</span>
@@ -669,7 +669,7 @@
 <span class="k">end</span>
 </code></pre></div></div>
 <p>最後に、POSTリクエストを発行するために、
-<a href="../../api/lua/#request">fa.request</a>を使用して各ファイルのアップロードを行います。(uploadFile(filePath,_album_id))</p>
+<a href="/docs/api/lua.html#request">fa.request</a>を使用して各ファイルのアップロードを行います。(uploadFile(filePath,_album_id))</p>
 <div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">local</span> <span class="k">function</span> <span class="nf">uploadFile</span><span class="p">(</span><span class="n">filePath</span><span class="p">,</span> <span class="n">_album_id</span><span class="p">)</span>
   <span class="kd">local</span> <span class="n">boundary</span> <span class="o">=</span> <span class="s1">'--bnfDxpKY69NKk'</span>
   <span class="kd">local</span> <span class="n">headers</span> <span class="o">=</span> <span class="p">{}</span>
@@ -717,7 +717,7 @@
 
 <p><a href="https://github.com/FlashAirDevelopers/LuaTutorial/tree/master/lua_tutorial_5" target="_blank" class="btn btn-primary">リポジトリを見る（GitHub）</a></p>
 
-<p>このサイトのサンプルコードは<a href="../../license">二条項BSDライセンス</a>で提供されています。</p>
+<p>このサイトのサンプルコードは<a href="/docs/license">二条項BSDライセンス</a>で提供されています。</p>
 
 
 

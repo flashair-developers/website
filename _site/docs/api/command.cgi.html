@@ -500,7 +500,7 @@
 
       <li>
         <br>
-        <a href="../api">目次に戻る</a>
+        <a href="/docs/api">目次に戻る</a>
       </li>
     </ul>
   </nav>
@@ -884,7 +884,7 @@ DIR=/ (root)を指定した場合、ディレクトリ名は空になります�
 
 <p>無線起動画面として使う画像ファイルのフルパス(CIPATH)を取得します。 無線起動画面とは、無線LANモードが0,2,3のいずれかである場合に、無線LAN機能のON/OFFを制御するための画像ファイルです。</p>
 
-<p>CIPATHについては、CONFIGの<a href="./config#cipath">CIPATHに関する記述</a>を参照してください。</p>
+<p>CIPATHについては、CONFIGの<a href="/docs/api/config#cipath">CIPATHに関する記述</a>を参照してください。</p>
 
 <h3 id="リクエスト例-8">リクエスト例:</h3>
 
@@ -900,7 +900,7 @@ DIR=/ (root)を指定した場合、ディレクトリ名は空になります�
 <h2 id="110" class="mb-0">無線LANモードの取得</h2>
 <p class="text-small">(op=110)</p>
 
-<p>デフォルトの無線LANモード(APPMODE)を返します。APPMODEについては、CONFIGの<a href="./config#APPMODE">APPMODEに関する記述</a>を参照してください。</p>
+<p>デフォルトの無線LANモード(APPMODE)を返します。APPMODEについては、CONFIGの<a href="/docs/api/config#APPMODE">APPMODEに関する記述</a>を参照してください。</p>
 
 <h3 id="リクエスト例-9">リクエスト例:</h3>
 
@@ -916,7 +916,7 @@ DIR=/ (root)を指定した場合、ディレクトリ名は空になります�
 <h2 id="111" class="mb-0">無線LANタイムアウト時間の取得</h2>
 <p class="text-small">(op=111)</p>
 
-<p>無線LANにアクセスがない場合に自動的に電源を切るまでのタイムアウト時間(APPAUTOTIME)をミリ秒単位で返します。 無線LANモードが自動起動APモードに設定されている場合のみ有効です。APPAUTOTIMEについては、CONFIGの<a href="./config#appautotime">APPAUTOTIMEに関する記述</a>を参照してください。</p>
+<p>無線LANにアクセスがない場合に自動的に電源を切るまでのタイムアウト時間(APPAUTOTIME)をミリ秒単位で返します。 無線LANモードが自動起動APモードに設定されている場合のみ有効です。APPAUTOTIMEについては、CONFIGの<a href="/docs/api/config#appautotime">APPAUTOTIMEに関する記述</a>を参照してください。</p>
 
 <h3 id="リクエスト例-10">リクエスト例:</h3>
 
@@ -932,7 +932,7 @@ DIR=/ (root)を指定した場合、ディレクトリ名は空になります�
 <h2 id="117" class="mb-0">アプリケーション独自情報の取得</h2>
 <p class="text-small">(op=117)</p>
 
-<p>アプリケーションが独自の目的で使用することができる16ケタの英数字(APPINFO)を取得します。APPINFOについては、CONFIGの<a href="./config#appinfo">APPINFOに関する記述</a>を参照してください。</p>
+<p>アプリケーションが独自の目的で使用することができる16ケタの英数字(APPINFO)を取得します。APPINFOについては、CONFIGの<a href="/docs/api/config#appinfo">APPINFOに関する記述</a>を参照してください。</p>
 
 <h3 id="リクエスト例-11">リクエスト例:</h3>
 
@@ -965,7 +965,7 @@ DIR=/ (root)を指定した場合、ディレクトリ名は空になります�
   </tbody>
 </table>
 
-<p>詳しくは、CONFIGの<a href="./config#upload">UPLOADに関する記述</a>を参照してください。</p>
+<p>詳しくは、CONFIGの<a href="/docs/api/config#upload">UPLOADに関する記述</a>を参照してください。</p>
 
 <h3 id="リクエスト例-12">リクエスト例:</h3>
 
@@ -982,7 +982,7 @@ DIR=/ (root)を指定した場合、ディレクトリ名は空になります�
 <p class="text-small">(op=120)</p>
 
 <p>CID(Card Identification number register)を返します。CIDは32ケタの16進数で、SDメモリカード仕様により定められています。<br />
-APPINFOについては、CIDの<a href="./config#cid">CIDに関する記述</a>を参照してください。</p>
+APPINFOについては、CIDの<a href="/docs/api/config#cid">CIDに関する記述</a>を参照してください。</p>
 
 <h3 id="リクエスト例-13">リクエスト例:</h3>
 
@@ -1091,7 +1091,7 @@ APPINFOについては、CIDの<a href="./config#cid">CIDに関する記述</a>�
 
 <ul>
   <li>CONFIGファイルに<code class="highlighter-rouge">IFMODE=1</code>と記載されている。</li>
-  <li>SDメモリカードスロットに挿入されていない（SDメモリカードホスト機器からのSD初期化が無い）。<code class="highlighter-rouge">IFMODE</code>については、CONFIGの<a href="./config#ifmode">IFMODEに関する記述</a>を参照してください。</li>
+  <li>SDメモリカードスロットに挿入されていない（SDメモリカードホスト機器からのSD初期化が無い）。<code class="highlighter-rouge">IFMODE</code>については、CONFIGの<a href="/docs/api/config#ifmode">IFMODEに関する記述</a>を参照してください。</li>
 </ul>
 
 <h3 id="リクエスト例-18">リクエスト例:</h3>
@@ -1146,9 +1146,9 @@ APPINFOについては、CIDの<a href="./config#cid">CIDに関する記述</a>�
 <h3 id="注意">注意:</h3>
 <p>op=200を使用してフォトシェアモードを有効にした場合、SSIDとネットワークセキュリティキーは、既に設定してある内容から変更されません。</p>
 
-<p>ネットワークセキュリティキーを変更する場合には、config.cgiの[ネットワークセキュリティキーの設定]./configcgi/#appnetworkkey)を使用して、ネットワークセキュリティキーを変更してください。</p>
+<p>ネットワークセキュリティキーを変更する場合には、config.cgiの<a href="/docs/api/config.cgi#appnetworkkey">ネットワークセキュリティキーの設定</a>を使用して、ネットワークセキュリティキーを変更してください。</p>
 
-<p>また、SSIDを変更する場合は、config.cgiの<a href="./configcgi/#appssid">SSIDの設定</a>を使用して、SSIDを変更してください。</p>
+<p>また、SSIDを変更する場合は、config.cgiの<a href="/docs/api/config.cgi#appssid">SSIDの設定</a>を使用して、SSIDを変更してください。</p>
 
 <hr />
 <h2 id="201" class="mb-0">フォトシェアモードの解除</h2>
