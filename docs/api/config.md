@@ -577,7 +577,7 @@ Basic認証で使われるユーザ名を設定します。Digest認証時では
 {: .text-small }
 
 SDインターフェイス端子を、汎用のI/O信号端子として利用し、 信号の読み書きを行う機能を有効にします。<br>
-利用方法は[command.cgi: SDインターフェース端子のI/O利用]({{ site.baseurl }}/docs/api/command.cgi.html#sdインターフェース端子のio利用)を参照してください。
+利用方法は[command.cgi: SDインターフェース端子のI/O利用]({{ site.baseurl }}/docs/api/command.cgi.html#190)を参照してください。
 
 1                   | SDインターフェース端子のI/O利用機能有効
 それ以外 (デフォルト) | SDインターフェース端子のI/O利用機能無効
