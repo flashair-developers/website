@@ -14,7 +14,7 @@ permalink: /docs/support
 ---
 ## デベロッパー向けサポート
 
-### [FAQ](faq)
+### [FAQ](/docs/support/faq.html)
 
 FlashAirアプリ開発に関してよくある質問と答えを公開しています。
 
