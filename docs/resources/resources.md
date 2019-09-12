@@ -61,21 +61,21 @@ Arduino互換形状のNXP LPC11U35マイコンボードです。(Arduino互換�
 FlashAir のGPIO 機能を使うための基板です。JavaScript などを利用したHTML ゲームを動作させることが可能です。
 
 [詳細はこちら](/website/docs/resources/airioplay.html){: .btn .btn-blue }
-[購入](/website/docs/resources/airioplay.html/#purchase){: .btn .btn-green }
+[購入](/website/docs/resources/airioplay.html#purchase){: .btn .btn-green }
 
 ### Airio RP（えありおあーるぴー）
 
 FlashAirを用いてプロトタイプ開発を行うためのボードです。DIP形状／SPI-I2Cブリッジ IC／リセットスイッチ・リセット端子／LEDピン
 
 [詳細はこちら](/website/docs/resources/airiorp.html){: .btn .btn-blue }
-[購入](/website/docs/resources/airiorp.html/#purchase){: .btn .btn-green }
+[購入](/website/docs/resources/airiorp.html#purchase){: .btn .btn-green }
 
 ### Airio（えありお）
 
 FlashAir評価ボードです。FlashAirのGPIO機能を使用して、ブラウザからフルカラーLEDを駆動したり、スイッチの値を取得することなどが可能です。
 
 [詳細はこちら](/website/docs/resources/airio.html){: .btn .btn-blue }
-[購入](/website/docs/resources/airio.html/#purchase){: .btn .btn-green }
+[購入](/website/docs/resources/airio.html#purchase){: .btn .btn-green }
 
 ### SDカード配線引出基板 AE-SD
 
@@ -88,7 +88,7 @@ SDカードの配線をブレッドボードやユニバーサル基板等で使
 FlashAirにGPIO と I<sup>2</sup>C インターフェースを拡張することができるボードです。
 
 [詳細はこちら](/website/docs/resources/dipio.html){: .btn .btn-blue }
-[購入](/website/docs/resources/dipio.html/#purchase){: .btn .btn-green }
+[購入](/website/docs/resources/dipio.html#purchase){: .btn .btn-green }
 
 ### Arduino
 
