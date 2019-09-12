@@ -34,11 +34,11 @@ FlashAirの一般的な使い方に関するご質問（例：対応機器、ア
 
 ### 無線LAN経由でFlashAir内のファイルを確認できますか？
 
-FlashAirに無線LAN接続したPC上のウェブブラウザから、ファイル一覧やファイルのダウンロードができます。また、APIを使って行うこともできます。<br>詳細については、[FlashAirアプリ開発の概要](../discover/app/) の「FlashAirとのHTTP通信の種類」をご覧ください。
+FlashAirに無線LAN接続したPC上のウェブブラウザから、ファイル一覧やファイルのダウンロードができます。また、APIを使って行うこともできます。<br>詳細については、[FlashAirアプリ開発の概要]({{ site.baseurl }}/docs/discover/app) の「FlashAirとのHTTP通信の種類」をご覧ください。
 
 ### FlashAirの電波の届く距離を延ばすにはどうすればよいですか？
 
-FlashAir自体の電波の届く距離を延ばす方法はありませんが、中継機となる無線LANアクセスポイント（ルータなど）があれば、FlashAirをステーションモードに設定して無線LANを中継することで、遠くのFlashAirに接続するという方法があります。<br>ステーションモードの設定方法については、[上級者向けチュートリアル - ステーションモードの利用](../tutorials/advanced/1/) をご覧ください。
+FlashAir自体の電波の届く距離を延ばす方法はありませんが、中継機となる無線LANアクセスポイント（ルータなど）があれば、FlashAirをステーションモードに設定して無線LANを中継することで、遠くのFlashAirに接続するという方法があります。<br>ステーションモードの設定方法については、[上級者向けチュートリアル - ステーションモードの利用]({{ site.baseurl }}/docs/tutorials/advanced/1) をご覧ください。
 
 ### 使用しているカメラがFlashAirに対応しているか教えてください。
 
@@ -69,7 +69,7 @@ SSIDはCONFIGファイルにてどなたでも確認できます。パスワー�
 
 ### マスターコードとは何ですか？
 
-マスターコードは、SSIDやネットワークキー（パスワード）を設定する際のパスワードとして使われる12ケタの16進数の数字です。<br>未設定の場合は、[config.cgi](../api/config.cgi/) で各種設定を変更する前に必ず、マスターコードを設定する必要があります。
+マスターコードは、SSIDやネットワークキー（パスワード）を設定する際のパスワードとして使われる12ケタの16進数の数字です。<br>未設定の場合は、[config.cgi]({{ site.baseurl }}/docs/api/config.cgi) で各種設定を変更する前に必ず、マスターコードを設定する必要があります。
 
 ### マスターコードの調べ方を教えてください。
 
@@ -77,13 +77,13 @@ SSIDはCONFIGファイルにてどなたでも確認できます。パスワー�
 
 ### FlashAirをステーションモードに設定しましたが、同じ無線LAN内の端末のブラウザからアクセスできません。
 
-ブラウザを使用している端末及び無線LAN親機がFlashAir対応プロトコル（NetBIOS over TCP/IP または Bonjour）に対応しているかご確認ください。<br>詳細については、[上級者向けチュートリアル - ステーションモードの利用](../tutorials/advanced/1/)の「対応プロトコルによる問題」をご覧ください。
+ブラウザを使用している端末及び無線LAN親機がFlashAir対応プロトコル（NetBIOS over TCP/IP または Bonjour）に対応しているかご確認ください。<br>詳細については、[上級者向けチュートリアル - ステーションモードの利用]({{ site.baseurl }}/docs/tutorials/advanced/1)の「対応プロトコルによる問題」をご覧ください。
 
 ### FlashAirへデータをアップロードできますか？
 
 標準ではFlashAirへデータをアップロードする機能は無効化されています。アップロード機能の有効化やアップロードする方法については以下のページをご参考ください。
-* [APIガイド - upload.cgi](../api/upload.cgi/)
-* [上級者向けチュートリアル - FlashAirへのアップロード](../tutorials/advanced/2/)
+* [APIガイド - upload.cgi]({{ site.baseurl }}/docs/api/upload.cgi)
+* [上級者向けチュートリアル - FlashAirへのアップロード]({{ site.baseurl }}/docs/tutorials/advanced/2)
 
 ### FlashAirのIPアドレスは指定できますか？
 
@@ -274,7 +274,7 @@ W-02シリーズのFlashAirをW-03のファームウェアにアップデート�
 
 ### Arduino Due用iSDIOに関するライブラリやチュートリアルはありませんか？
 
-現時点ではArduino Dueに関するライブラリやチュートリアルはございません。 Arduino Unoで動作確認済みのチュートリアルがありますので、そちらをご参考ください。<br>[チュートリアル - Arduino](../tutorials/isdio/)
+現時点ではArduino Dueに関するライブラリやチュートリアルはございません。 Arduino Unoで動作確認済みのチュートリアルがありますので、そちらをご参考ください。<br>[チュートリアル - Arduino]({{ site.baseurl }}/docs/tutorials/isdio)
 
 ### FlashAirをPCに接続している場合、FlashAirを介してPC側のデータにアクセスできますか？
 

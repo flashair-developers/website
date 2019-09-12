@@ -12,7 +12,7 @@ nav_order: 6
 List.htmというHTMLファイルがその実体で、 これを変更することで、コンテンツの表示方法をカスタマイズすることができます。<br>
 例えば、JavaScriptを使ったユーザーインターフェースを作ったり、 背景写真を組み合わせてフォトフレームのような見た目にすることもできます。
 
-List.htmの編集方法については、[ウェブブラウザ向けテンプレート]({{ site.baseurl }}/docs/tutorials/web/)をご覧ください。
+List.htmの編集方法については、[ウェブブラウザ向けテンプレート]({{ site.baseurl }}/docs/tutorials/web)をご覧ください。
 
 ---
 ## List.htm

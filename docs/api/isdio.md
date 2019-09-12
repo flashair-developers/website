@@ -14,7 +14,7 @@ iSDIOは，ファームウェアバージョン 1.00.00 以上で利用できま
 
 ファームウェアバージョン 4.00.00では、SDモードのみの対応となります。
 
-ファームウェアバージョン 4.00.01+においては、CMD17/24を利用することでSPIモードでのiSDIOコマンドの発行を行うことができます。使用方法に関しては[こちら](../tutorials/arduino/2/)をご覧ください。
+ファームウェアバージョン 4.00.01+においては、CMD17/24を利用することでSPIモードでのiSDIOコマンドの発行を行うことができます。使用方法に関しては[こちら]({{ site.baseurl }}/docs/tutorials/arduino/2)をご覧ください。
 
 SPIモードでのご利用方法については、後日公開予定です。
 
@@ -22,7 +22,7 @@ SPIモードでのご利用方法については、後日公開予定です。
 * [iSDIOコマンド発行の方法](#isdioコマンド発行の方法)
 * [コマンドリファレンス](#コマンドリファレンス)
 * [レジスタマップ](#レジスタマップ)
-* [Arduinoチュートリアル]({{ site.baseurl }}/docs/tutorials/isdio/) (iSDIOを利用しています)
+* [Arduinoチュートリアル]({{ site.baseurl }}/docs/tutorials/isdio) (iSDIOを利用しています)
 
 ---
 ## iSDIOとは
@@ -78,7 +78,7 @@ iSDIOコマンドを発行するには、 コマンドデータをCMD49を使っ
 iSDIO Wireless LAN Addendumのコマンドです。 FlashAirで利用できないものは省略しています。
 
 * [WLAN]({{ site.baseurl }}/docs/api/reference/wlan)
-* [共通](./reference/common/)
+* [共通]({{ site.baseurl }}/docs/api/reference/common)
 * [サーバーアップロード]({{ site.baseurl }}/docs/api/reference/upload)
 * [FTP/FTPS（FlashAir独自拡張）]({{ site.baseurl }}/docs/api/reference/ftp)
 

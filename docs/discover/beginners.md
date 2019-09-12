@@ -125,7 +125,7 @@ FlashAirは、無線LAN機能を内蔵しており、ネットワークに接続
 Androidとは、グーグル社がライセンスフリーで提供する、携帯情報端末向けのオペレーティングシステムです。 
 FlashAirデベロッパーズでは、Androidアプリ開発向けのチュートリアルを紹介しています。
 
-- [Android向けチュートリアル]({{ site.baseurl }}/docs/tutorials/android/)
+- [Android向けチュートリアル]({{ site.baseurl }}/docs/tutorials/android)
 
 参考
 {: .label }
@@ -137,7 +137,7 @@ FlashAirデベロッパーズでは、Androidアプリ開発向けのチュー�
 iOSとは、アップル社が提供する、iPhoneやiPad、iPod touch、Apple TVなどの携帯情報端末向けのオペレーティングシステムです。 
 FlashAirデベロッパーズでは、iOSアプリ開発向けのチュートリアルを紹介しています。
 
-- [iOS向けチュートリアル]({{ site.baseurl }}/docs/tutorials/ios/)
+- [iOS向けチュートリアル]({{ site.baseurl }}/docs/tutorials/ios)
 
 参考
 {: .label }
@@ -155,7 +155,7 @@ Lua言語で書かれたスクリプトファイルをFlashAirに保存するこ
 
 詳しくは、こちらに紹介されています。
 
-- [Lua機能]({{ site.baseurl }}/docs/api/lua/)
+- [Lua機能]({{ site.baseurl }}/docs/api/lua)
 
 参考
 {: .label }

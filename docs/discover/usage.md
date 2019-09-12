@@ -84,7 +84,7 @@ SDホスト機器とのデータ転送速度を定めた規格で、Class 10で�
 | 対応ファームウェア | 4.00系列<br>例: F15DBW3BW4.00.00 | 3.00系列<br>例: FA9CAW3AW3.00.02 | 2.00系列<br>例: F19BAW3AW2.00.04 | 1.00系列<br>例: F24A6W3AW1.00.04 |
 
 | List.htmへのファイル一覧埋め込み方法 | JavaScriptプログラムとして | JavaScriptプログラムとして | JavaScriptプログラムとして | カンマ区切りリストとして |
-List.htmについては[こちら](doc/api/utility/)をご覧ください
+List.htmについては[こちら]({{ site.baseurl }}/docs/api/utility)をご覧ください
 {: .fs-1 }
 
 | Eyefi Connected | <i class="fa fa-check text-green-300"></i> | <i class="fa fa-close text-red-300"></i> | <i class="fa fa-close text-red-300"></i> | <i class="fa fa-close text-red-300"></i> |

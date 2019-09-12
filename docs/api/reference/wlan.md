@@ -23,7 +23,7 @@ nav_order: 1
 ---
 <h2 id="scan">Scan()</h2>
 
-接続可能な無線LANを検索するホストリクエストです。 接続可能なSSIDリストは、コマンドプロセスの結果で[Response Data Register Port](../register/response/)から読み取れます。
+接続可能な無線LANを検索するホストリクエストです。 接続可能なSSIDリストは、コマンドプロセスの結果で[Response Data Register Port]({{ site.baseurl }}/docs/api/register/response)から読み取れます。
 
 ### コマンドID
 

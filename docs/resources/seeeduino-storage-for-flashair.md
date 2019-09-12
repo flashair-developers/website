@@ -44,5 +44,5 @@ Seeeduino Storage for FlashAirは、以下よりご購入いただけます。
 ---
 ## 参考ページ
 
-* [Arduino向けチュートリアル](../tutorials/isdio/)
+* [Arduino向けチュートリアル]({{ site.baseurl }}/docs/tutorials/isdio)
 * [FlashAirの共有メモリにアクセスするライブラリ＆サンプル](https://sites.google.com/site/gpsnmeajp/electricmemo/flashairno-gong-youmemoriniakusesusurusanpuru){: target="_blank" }

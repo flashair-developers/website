@@ -46,7 +46,7 @@ TOSHIBA 無線LAN搭載 FlashAir SDHC/SDXCメモリカード 16GB Class10 日本
 
 Seeeduino Storage for FlashAirは、Arduio開発環境でFlashAirを使ったプロトタイピングを行うことができるボードです。
 
-[詳細はこちら]({{ site.baseurl }}/docs/resources/seeeduino-storage-for-flashair.html){: .btn .btn-blue }
+[詳細はこちら]({{ site.baseurl }}/docs/resources/seeeduino-storage-for-flashair){: .btn .btn-blue }
 [購入](http://akizukidenshi.com/catalog/g/gM-13705/){: target="_blank" .btn .btn-green }
 
 ### Airio-Base（量産モデル）
@@ -60,21 +60,21 @@ Arduino互換形状のNXP LPC11U35マイコンボードです。(Arduino互換�
 
 FlashAir のGPIO 機能を使うための基板です。JavaScript などを利用したHTML ゲームを動作させることが可能です。
 
-[詳細はこちら]({{ site.baseurl }}/docs/resources/airioplay.html){: .btn .btn-blue }
+[詳細はこちら]({{ site.baseurl }}/docs/resources/airioplay){: .btn .btn-blue }
 [購入]({{ site.baseurl }}/docs/resources/airioplay.html#purchase){: .btn .btn-green }
 
 ### Airio RP（えありおあーるぴー）
 
 FlashAirを用いてプロトタイプ開発を行うためのボードです。DIP形状／SPI-I2Cブリッジ IC／リセットスイッチ・リセット端子／LEDピン
 
-[詳細はこちら]({{ site.baseurl }}/docs/resources/airiorp.html){: .btn .btn-blue }
+[詳細はこちら]({{ site.baseurl }}/docs/resources/airiorp){: .btn .btn-blue }
 [購入]({{ site.baseurl }}/docs/resources/airiorp.html#purchase){: .btn .btn-green }
 
 ### Airio（えありお）
 
 FlashAir評価ボードです。FlashAirのGPIO機能を使用して、ブラウザからフルカラーLEDを駆動したり、スイッチの値を取得することなどが可能です。
 
-[詳細はこちら]({{ site.baseurl }}/docs/resources/airio.html){: .btn .btn-blue }
+[詳細はこちら]({{ site.baseurl }}/docs/resources/airio){: .btn .btn-blue }
 [購入]({{ site.baseurl }}/docs/resources/airio.html#purchase){: .btn .btn-green }
 
 ### SDカード配線引出基板 AE-SD
@@ -87,14 +87,14 @@ SDカードの配線をブレッドボードやユニバーサル基板等で使
 
 FlashAirにGPIO と I<sup>2</sup>C インターフェースを拡張することができるボードです。
 
-[詳細はこちら]({{ site.baseurl }}/docs/resources/dipio.html){: .btn .btn-blue }
+[詳細はこちら]({{ site.baseurl }}/docs/resources/dipio){: .btn .btn-blue }
 [購入]({{ site.baseurl }}/docs/resources/dipio.html#purchase){: .btn .btn-green }
 
 ### Arduino
 
 製品プロトタイピングなどの用途でとても人気のあるマイコンボードです。ユーザーがクローンを製造したり、改造して独自のArduino互換ボードを作ることが容易です。
 
-[詳細はこちら]({{ site.baseurl }}/docs/tutorials/arduino/1.html){: .btn .btn-blue }
+[詳細はこちら]({{ site.baseurl }}/docs/tutorials/arduino/1){: .btn .btn-blue }
 [購入](https://www.amazon.co.jp/gp/product/B0044X2E5S/){: target="_blank" .btn .btn-green }
 
 ### PM-232
