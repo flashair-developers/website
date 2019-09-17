@@ -14,6 +14,8 @@ nav_exclude: true
 通常のSDカードの代わりに無線LAN機能を搭載したFlashAirを組み込むことで、あらゆる機器がIoTデバイスになります。 
 {: .fs-6 .fw-300 }
 
+![FlashAir]({{ site.baseurl }}/assets/images/top.png){: .d-block }
+
 [FlashAirでできること](docs/discover/usage){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } 
 
 ---
@@ -31,5 +33,3 @@ nav_exclude: true
 ### 電子工作する
 - [組み込み機器開発の概要]({{ site.baseurl }}{% link docs/discover/device.md %})
 - [Lua]({{ site.baseurl }}{% link docs/api/lua.md %})
-
-![FlashAir]({{ site.baseurl }}/assets/images/top.png){: .d-block }
