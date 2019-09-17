@@ -32,3 +32,4 @@ nav_exclude: true
 - [組み込み機器開発の概要]({{ site.baseurl }}{% link docs/discover/device.md %})
 - [Lua]({{ site.baseurl }}{% link docs/api/lua.md %})
 
+![FlashAir]({{ site.baseurl }}/assets/images/top.png){: .d-block }
