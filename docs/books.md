@@ -7,7 +7,7 @@ nav_order: 5
 # FlashAir Doujinshi (FlashAirの同人誌)
 {: .no_toc }
 
-FlashAir Doujinshiは、FlashAirの開発やマーケティングに関わる人や社内サポーターたちが書いた、その名のとおり同人誌です。開発秘話や評価基板のお話、開発チュートリアルから漫画まで、他では読めないコンテンツ満載です。
+FlashAir Doujinshiは、FlashAirの開発やマーケティングに関わる人や社内外サポーターたちが書いた、その名のとおり同人誌です。開発秘話や評価基板のお話、開発チュートリアルから漫画まで、他では読めないコンテンツ満載です。
 
 - TOC
 {:toc}
