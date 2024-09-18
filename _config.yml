@@ -1,10 +1,16 @@
+title: FlashAir Developers
+description: FlashAir Developers Website Archive
 encding: utf-8
-plugins: 
-  - jekyll-seo-tag
-github : [metadata]
+github : 
+  - metadata
 repository: flashair-developers/website
 theme: just-the-docs
-# Enable or disable the site search
 search_enabled: true
+
 aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+  Template Repository: https://github.com/just-the-docs/just-the-docs
+
+plugins: 
+  - jekyll-seo-tag
+  - jekyll-github-metadata
+  - jekyll-sitemap
