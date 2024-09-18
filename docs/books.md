@@ -49,7 +49,8 @@ FlashAir 同窓会
 1. 開幕！非情のSD ファイト！
 1. 「フラッシュメモリのひみつ」への道+ 書評
 
-[PDF版をダウンロード (13.3MB)]({{ site.baseurl }}/files/books/FlashAir_Dousoukai_web_240917D.pdf){: target="_blank" .btn .btn-primary .no-icon } 
+<!-- [PDF版をダウンロード (13.3MB)]({{ site.baseurl }}/files/books/FlashAir_Dousoukai_web_240917D.pdf){: target="_blank" .btn .btn-primary .no-icon  }  -->
+[公開準備中](){: disabled target="_blank" .btn .btn-primary .no-icon  } 
 
 ---
 ## FlashAir Doujinshi 6
