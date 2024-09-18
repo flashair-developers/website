@@ -13,6 +13,45 @@ FlashAir Doujinshiは、FlashAirの開発やマーケティングに関わる人
 {:toc}
 
 ---
+## FlashAir Dousoukai
+
+FlashAir 同窓会
+
+![dousoukai]({{ site.baseurl }}/assets/images/FlashAir_Dousoukai.png){: .w-50 }
+
+* 発行日: 2023年10月14日 第1版第1刷発行 2024年9月21日第1版第2刷発行
+* 著者: 上岡 裕一 / ragnag / じむ / 伊藤 晋朗 / バブル世代の山女 / 土居 / 寺西 / 余熱 / 田中 瞳 / 福屋 新吾 / GPS_NMEA_JP / 綾瀬ヒロ / せいみ まさみ / あおいさや / にちか / Pochio / 宮内 / とだ勝之
+* 表紙・本文イラスト: じむ
+* 編集: 余熱 / Pochio / 笠原 / にちか
+* 発行: ひらめき空と月
+
+
+### 目次
+{: .no_toc }
+
+1. FlashAir「同想」会
+1. フラッシュメモリが使われている機器を探そう！
+1. SD カードチェンジャーを作るか。
+1. やれる事、やりたい事
+1. 山女日記～ FlashAirとフラッシュメモリ～
+1. いくつかの始まりと終わりの話
+1. NFC 搭載SD メモリカード「Mamolica」
+1. FlashAir の思い出について語る
+1. いつか見た夢　ある特許公開広報の解説
+1. Airio-Base の半生
+1. 電波暗箱を借りて色々遊んでみた
+1. FlashAir のたったひとつの冴えたやり方
+1. FlashAir お焚き上げ集
+1. 4 セグメント1 桁時計の製作
+1. FlashAir で作る自作CPU サーバー
+1. 世界初のNAND フラッシュはSSD の夢を見るか
+1. 室蘭紀行2016
+1. 開幕！非情のSD ファイト！
+1. 「フラッシュメモリのひみつ」への道+ 書評
+
+[PDF版をダウンロード (13.3MB)]({{ site.baseurl }}/files/books/FlashAir_Dousoukai_web_240917D.pdf){: target="_blank" .btn .btn-primary .no-icon } 
+
+---
 ## FlashAir Doujinshi 6
 
 FlashAirの同人誌 6号
